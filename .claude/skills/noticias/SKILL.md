@@ -5,6 +5,8 @@ description: Monta a edição diária de notícias da página inicial da Elite B
 
 # Edição diária de notícias
 
+> Desde 24/11/2026 o site sai do repositório Meruvash/elite-boardgamers pelo Cloudflare Pages (cada push na main publica sozinho, em cerca de 1 minuto). O repositório antigo, Meruvash/Golden-Geek, foi desativado pelo GitHub.
+
 Meta: **até 5 notas por dia, nunca mais** (pedido do usuário em 11/11/2026, para economizar tokens; substitui o "sem limite" de 29/10/2026). Publique as 5 candidatas de maior pontuação que passarem pelos eliminatórios (fonte primária, sem conteúdo pago, dentro do prazo, sem repetir nota, tabuleiro moderno) e pelo padrão das notícias; as demais ficam de fora. Menos de 5 é aceitável num dia fraco: nunca force nota para bater número. **Desde 28/10/2026 tudo sai direto, manchete inclusive** (pedido do usuário): ninguém aprova nada. A segurança vem das checagens e da verificação das 22h (skill `verificacao`), que corrige sozinha o que estiver errado.
 
 ## 1. Coletar, em até três rodadas
@@ -59,7 +61,7 @@ Ao lado da data, as páginas mostram quem publica o jogo, nunca o site de onde v
 3. Commit e push direto na `main` com a mensagem `Notícias de <dd/mm/aaaa>: <títulos curtos>`. A manchete do dia já vai para o topo. Inclua no commit `noticias/capa.jpg`, `lancamentos/capa.jpg`, `sitemap.xml`, `sitemap-noticias.xml`, `robots.txt`, `llms.txt`, `404.html`, `img/`, `jogos-de-tabuleiro/`, `premios/` e `conteudo/sitemap_estado.json`, que os scripts regeram sozinhos.
 4. Depois que as páginas estiverem no ar (o GitHub Pages leva alguns minutos), rode `python3 tools/indexnow.py` para avisar Bing e outros buscadores; página que ainda não subiu fica para a próxima rodada. Se ele gravar `conteudo/indexnow_estado.json`, faça commit e push só desse arquivo (`IndexNow de <dd/mm/aaaa>`).
 5. Escreva em `conteudo/chamadas.json` a `chamada` e a `pergunta` de cada nota nova (PADRAO_EDITORIAL.md, "Chamadas para redes": emoção e curiosidade, sempre cumpridas pelo texto). Depois rode `python3 tools/divulgacao.py`: grava `divulgacao/<AAAA-MM-DD>.md` com o resumo do dia para grupos de WhatsApp/Telegram e, por nota, o texto do WhatsApp e a legenda do Instagram (tudo tirado do que foi publicado). Faça commit e push desse arquivo junto com o IndexNow (ou sozinho, `Divulgação de <dd/mm/aaaa>`). Rode de novo se entrar nota depois, no mesmo dia.
-6. Termine com um resumo curto para o usuário, **começando pelo resumo para os grupos** (o bloco que o `divulgacao.py` imprime, pronto para copiar) e o link do pacote completo: `https://github.com/Meruvash/Golden-Geek/blob/main/divulgacao/<AAAA-MM-DD>.md`. Depois: quantas rodadas de pesquisa foram feitas e o que cada uma achou, as notas publicadas (título, selo e pontos, avisando as que ficaram abaixo de 5), a manchete com o lide e a opinião, o que ficou de fora e por quê, e os avisos da coleta. Não peça aprovação.
+6. Termine com um resumo curto para o usuário, **começando pelo resumo para os grupos** (o bloco que o `divulgacao.py` imprime, pronto para copiar) e o link do pacote completo: `https://github.com/Meruvash/elite-boardgamers/blob/main/divulgacao/<AAAA-MM-DD>.md`. Depois: quantas rodadas de pesquisa foram feitas e o que cada uma achou, as notas publicadas (título, selo e pontos, avisando as que ficaram abaixo de 5), a manchete com o lide e a opinião, o que ficou de fora e por quê, e os avisos da coleta. Não peça aprovação.
 
 ## Troca de manchete
 
