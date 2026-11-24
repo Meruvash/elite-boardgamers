@@ -1,0 +1,623 @@
+# Como jogar Ticket to Ride
+
+*Regras conferidas no manual da edição brasileira de Ticket to Ride (Galápagos, tradução de Luiz Eduardo Ricci Coelho, arquivo de 2016 da Biblioteca de Downloads), o da caixa com 30 Bilhetes de Destino e mapa dos Estados Unidos. As dúvidas de tradução foram resolvidas com o manual original em inglês (Days of Wonder, reimpressão de 2015). O manual não tem número impresso nas páginas: p. 1 é a capa, p. 2 a 4 são as páginas seguintes.*
+
+## setup. Montar a mesa passo a passo
+
+A montagem segue a seção "Preparação do Jogo" do manual (p. 2), na mesma ordem, com a ilustração numerada que ocupa as páginas 2 e 3. Ela é igual de 2 a 5 jogadores; o número de jogadores só muda o uso das Rotas Duplas (p. 3).
+
+**O que vem na caixa** (p. 2):
+
+| Componente | Quantidade |
+|---|---|
+| Tabuleiro com o mapa das rotas ferroviárias dos EUA, com a Trilha de Pontos em volta | 1 |
+| Trens de plástico, nas cores Azul, Vermelho, Verde, Amarelo e Preto | 240: 45 de cada cor, mais alguns extras de cada cor para reposição |
+| Marcadores de pontos de madeira, um de cada cor | 5 |
+| Cartas de Vagão: 12 de cada uma das oito cores (rosa, branco, azul, amarelo, laranja, preto, vermelho e verde; p. 2 e 3) e 14 Locomotivas | 110 |
+| Bilhetes de Destino | 30 |
+| Carta de Ajuda | 1 |
+| Carta Bônus de Maior Caminho Contínuo | 1 |
+| Cartas promocionais (uma para mapas adicionais e uma da Days of Wonder) | 2 |
+| Regra do jogo | 1 |
+| Número de acesso online da Days of Wonder | 1 |
+
+As cartas somam 144, como diz o manual: 110, 30, 1, 1 e as 2 promocionais (p. 2).
+
+!fig[Em cima, as Cartas de Vagão: uma de cada cor e, na ponta direita, a Locomotiva multicolorida. Embaixo, a Carta de Ajuda (frente e verso), um Bilhete de Destino (frente e verso) e a carta de Maior Caminho Contínuo (frente e verso). Ilustração: manual Galápagos (p. 2)](figuras/setup-componentes.webp)
+
+1. **Ponha o tabuleiro no centro da mesa** (p. 2).
+
+!fig[O tabuleiro montado no centro da mesa: o mapa com as rotas e, em volta, a Trilha de Pontos numerada; no canto de baixo, à esquerda, o Início (1). Ilustração: manual Galápagos (p. 2 e 3)](figuras/setup-tabuleiro.webp)
+
+2. **Cada jogador escolhe uma cor e conta 45 trens dessa cor**, que ficam à sua frente como estoque (p. 2); os que sobrarem voltam para a caixa (leitura nossa).
+
+!fig[Os conjuntos de trens dos cinco jogadores da ilustração, um de cada cor: azul, verde, preto, amarelo e vermelho. Ilustração: manual Galápagos (p. 2 e 3)](figuras/setup-trens.webp)
+
+3. **Cada jogador pega o marcador de pontos da sua cor e o põe no Início da Trilha de Pontos** (1), que contorna o mapa. Durante a partida, quem pontua avança o seu marcador (p. 2).
+
+!fig[O Início da Trilha de Pontos (1), no canto de baixo, à esquerda, do tabuleiro, onde ficam os marcadores no começo da partida. Ilustração: manual Galápagos (p. 2)](figuras/setup-inicio.webp)
+
+4. **Embaralhe as Cartas de Vagão e dê 4 a cada jogador**: é a mão inicial (2) (p. 2).
+
+!fig[A mão inicial de um jogador (2): 4 Cartas de Vagão. Ilustração: manual Galápagos (p. 2)](figuras/setup-mao.webp)
+
+5. **Ponha o resto das Cartas de Vagão perto do tabuleiro, viradas para baixo, e revele as cinco primeiras** ao lado (3): são a pilha de compras e as 5 cartas abertas (p. 2).
+
+!fig[As 5 cartas abertas (3), com uma Locomotiva entre elas, ao lado da pilha de compras virada para baixo; à direita, a pilha de Bilhetes de Destino (6), do passo 10. Ilustração: manual Galápagos (p. 3)](figuras/cartas-abertas.webp)
+
+6. **Confira as 5 cartas abertas.** Se 3 delas forem Locomotivas, descarte as 5 (forme a pilha de descarte ao lado da pilha de compras) e revele outras até formar 5 cartas abertas novas. A regra vale "a qualquer momento", inclusive agora (p. 3).
+7. **Ponha a carta de Maior Caminho Contínuo virada para cima perto do tabuleiro** (4) (p. 2).
+
+!fig[A carta de Maior Caminho Contínuo (4), virada para cima ao lado do tabuleiro; ela vale 10 pontos na contagem. Ilustração: manual Galápagos (p. 3)](figuras/setup-bonus.webp)
+
+8. **Embaralhe os Bilhetes de Destino e dê 3 a cada jogador** (5) (p. 2).
+
+!fig[Os 3 Bilhetes de Destino de um jogador (5), virados para baixo, e um Bilhete visto de frente: Chicago a New Orleans, 7 pontos. Ilustração: manual Galápagos (p. 2)](figuras/setup-bilhetes.webp)
+
+9. **Cada jogador olha os seus Bilhetes e fica com pelo menos 2, ou com os 3.** Os que ficam são segredo dele até o fim da partida (p. 2).
+10. **Os Bilhetes devolvidos vão para o final da pilha de Bilhetes de Destino**, e essa pilha fica perto do tabuleiro (6) (p. 2).
+
+!fig[A mesa montada para 5 jogadores, com os números do manual: o marcador de cada um no Início da Trilha de Pontos (1), a mão de 4 Cartas de Vagão (2), as 5 cartas abertas ao lado da pilha de compras (3), a carta de Maior Caminho Contínuo (4), os 3 Bilhetes de cada jogador (5) e a pilha de Bilhetes de Destino (6). Ilustração: manual Galápagos (p. 2 e 3)](figuras/preparacao.webp)
+
+11. **Começa o viajante mais experiente da mesa.** Cada um faz uma ação por turno, e a vez passa no sentido horário (p. 2).
+
+**O que muda com o número de jogadores** (p. 2 e 3):
+
+| Jogadores | Trens de cada um | Cartas de Vagão na mão | Bilhetes recebidos | Rotas Duplas |
+|---|---|---|---|---|
+| 2 ou 3 | 45 | 4 | 3 | Só uma das duas rotas pode ser usada; depois que alguém conquista uma, a outra fica interditada |
+| 4 ou 5 | 45 | 4 | 3 | As duas podem ser usadas (a restrição do manual é só para 2 ou 3), mas nunca pelo mesmo jogador |
+
+**O que fica na caixa:** o manual não diz o que fica na caixa; pela nossa leitura, ficam os trens que sobram de cada cor (o manual os chama de reposição), as cores que ninguém escolheu, com os seus trens e o seu marcador, e as 2 cartas promocionais, que nenhuma regra usa. A Carta de Ajuda aparece na ilustração ao lado do tabuleiro, para consulta (p. 2).
+
+!fig[Ticket to Ride na edição de 2024 da Days of Wonder, com tabuleiro e cartas de arte nova, diferentes dos do manual de 2016; a foto mostra uma partida em andamento, não a mesa recém-montada. Imagem: Days of Wonder](fotos/mesa-1.webp)
+
+**Antes de começar, confira:** tabuleiro no centro; cada jogador com 45 trens e o marcador no Início; 4 Cartas de Vagão na mão de cada um; pilha de compras e 5 cartas abertas, sem 3 Locomotivas entre elas; carta de Maior Caminho Contínuo virada para cima; cada jogador com 2 ou 3 Bilhetes, em segredo; pilha de Bilhetes ao lado do tabuleiro; quem começa definido.
+
+?? Partida de 3 jogadores, mesa montada. O que está certo?
+- ( ) Cada jogador tem 45 trens, 4 Cartas de Vagão e pode ter ficado com 1 só Bilhete
+- (x) Cada jogador tem 45 trens, 4 Cartas de Vagão e 2 ou 3 Bilhetes
+- ( ) Cada jogador tem 45 trens, 5 Cartas de Vagão e 2 ou 3 Bilhetes
+- ( ) Por serem só 3, cada jogador tem 35 trens, 4 Cartas de Vagão e 2 ou 3 Bilhetes
+= Em qualquer número de jogadores, cada um tem 45 trens, recebe 4 Cartas de Vagão e fica com pelo menos 2 dos 3 Bilhetes (p. 2). Ficar com 1 só Bilhete é regra da compra no meio da partida, não da montagem (p. 3); com 3 jogadores, o que muda são as Rotas Duplas (p. 3).
+
+## 4min. Comece a jogar em 4 minutos
+
+**Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
+
+### A ideia do jogo
+
+Você coleciona **Cartas de Vagão** de uma cor e as troca por **rotas** no mapa, pondo seus trens de plástico nelas e marcando pontos na hora. Em segredo, você tem **Bilhetes de Destino**: cada um pede que você ligue duas cidades com uma linha contínua dos seus trens, e vale pontos a mais se você conseguir ou a menos se falhar. Vence quem tiver mais pontos quando os trens de alguém estiverem acabando.
+
+### Monte a mesa
+
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 2 e 3):
+
+1. Tabuleiro no centro; cada jogador com 45 trens de uma cor e o marcador no Início da Trilha de Pontos.
+2. 4 Cartas de Vagão para cada um; o resto vira pilha de compras, com 5 cartas abertas ao lado (3 Locomotivas entre elas: troque as 5).
+3. Carta de Maior Caminho Contínuo virada para cima ao lado do tabuleiro.
+4. 3 Bilhetes de Destino para cada um, que fica com 2 ou 3, em segredo; os devolvidos vão para o final da pilha.
+5. Começa o viajante mais experiente; a vez segue no sentido horário.
+
+### Seu primeiro turno
+
+No seu turno, faça **uma** destas três ações, e só uma:
+
+| Ação | O que você faz |
+|---|---|
+| Comprar Cartas de Vagão | Pega 2 cartas, cada uma das 5 abertas ou do topo da pilha (no escuro) |
+| Conquistar uma Rota | Joga cartas iguais em número e cor à rota e põe 1 trem em cada espaço |
+| Comprar Bilhetes de Destino | Pega 3 Bilhetes e fica com pelo menos 1 |
+
+1. **Comprar Cartas de Vagão.** Ao pegar uma carta aberta, vire na hora outra da pilha para o lugar dela. Locomotiva aberta tem regra própria: se pegar uma, ela é a única carta do turno; se a carta virada para repor for uma Locomotiva, você não pode pegá-la como segunda carta. Locomotiva tirada no escuro conta como uma carta comum, e você ainda pega a segunda.
+2. **Conquistar uma Rota.** Uma rota azul de 3 espaços pede 3 cartas azuis. Uma rota cinza aceita qualquer cor, desde que todas as cartas sejam da mesma cor. A Locomotiva substitui qualquer cor. As cartas usadas vão para o descarte, e você avança o marcador na hora: 1 espaço vale 1 ponto, 2 valem 2, 3 valem 4, 4 valem 7, 5 valem 10 e 6 valem 15. A rota não precisa se ligar às suas outras. Onde duas rotas correm lado a lado entre as mesmas cidades (Rota Dupla), você nunca fica com as duas; com 2 ou 3 jogadores, depois que alguém ocupa uma, a outra fecha para todos.
+3. **Comprar Bilhetes de Destino.** Os que você não quiser voltam para o fundo da pilha.
+
+> [!resolvido] **Exemplo resolvido.** Você recebeu Azul, Azul, Verde e Locomotiva. A rota de Montréal a New York é azul e tem 3 espaços (p. 3). Você joga Azul, Azul e Locomotiva, põe 3 trens nela e avança 4 pontos. Ficam 42 trens no seu estoque e 1 carta na mão, a Verde.
+
+> [!complete] **Complete.** As cartas abertas são Vermelho, Locomotiva, Amarelo, Preto e Branco. Bruno pega a Locomotiva aberta e vira uma carta da pilha para o lugar dela.
+>
+> ?? Ele pode pegar mais uma carta neste turno?
+> - ( ) Sim, qualquer uma das abertas ou a do topo da pilha
+> - ( ) Sim, mas só a do topo da pilha, no escuro
+> - (x) Não, a Locomotiva aberta é a única carta dele neste turno
+> = Não. Quem pega uma Locomotiva aberta pega só ela naquele turno (p. 3).
+
+> [!suavez] **Agora a sua mão.** Antes de agir, conte quantas cartas você tem de cada cor e veja se alguma rota do mapa se paga agora, contando as Locomotivas como qualquer cor. Treine com esta mão: Vermelho, Vermelho, Amarelo e Locomotiva.
+>
+> ?? Qual destas rotas você pode conquistar agora?
+> - (x) Uma rota vermelha de 3 espaços
+> - ( ) Uma rota amarela de 3 espaços
+> - ( ) Uma rota cinza de 4 espaços
+> - ( ) Uma rota vermelha de 4 espaços
+> = A rota vermelha de 3 espaços: 2 Vermelhos e a Locomotiva, que substitui qualquer cor (p. 3). A amarela de 3 pede três cartas e você só tem Amarelo e Locomotiva para ela. As de 4 espaços pedem 4 cartas de uma cor só, e o Amarelo não entra num conjunto vermelho: uma rota se paga com uma cor só, mais Locomotivas.
+
+### Ainda não precisa saber
+
+Pilha de compras vazia: etapa 2. Trens insuficientes e rota paga só com Locomotivas: etapa 3. Comprar Bilhetes no meio da partida, fim da partida, contagem dos Bilhetes e Maior Caminho Contínuo: etapa 4.
+
+### Como a partida acaba
+
+Quando alguém termina o turno com 0, 1 ou 2 trens no estoque, cada jogador, inclusive ele, joga mais um turno. Aí cada um revela os Bilhetes: soma os completos, subtrai os incompletos. O dono do caminho contínuo mais longo ganha 10 pontos.
+
+**Prefere ver?** Regras em vídeo; em caso de diferença, vale o manual.
+
+!video[Ticket to Ride - Como Jogar (Acione Legendas Klingon), canal Romir Play House](https://www.youtube.com/watch?v=pmHGhJdeHsA&t=0s)
+
+> [!atencao] **Os três erros mais caros.** Locomotiva aberta é a única carta do turno. Uma rota se paga com uma cor só (mais Locomotivas), nunca misturando cores. Bilhete que não foi completado tira os pontos dele no fim.
+
+## 0. Antes de tudo: o que é este jogo
+
+Ticket to Ride é uma disputa por espaço num mapa ferroviário dos Estados Unidos, com um pedaço do Canadá. As cidades estão ligadas por **rotas**, filas de espaços retangulares de uma cor ou cinza. Quem conquista uma rota põe nela um trem de plástico em cada espaço, e a partir daí ela é só sua (p. 1 e 3).
+
+Os pontos vêm de três lugares. As rotas pontuam no momento em que você as conquista, e as longas valem muito mais que as curtas. Os **Bilhetes de Destino** pontuam no fim: cada um traz duas cidades e um valor, e você soma o valor se tiver ligado as duas com uma linha contínua dos seus trens, ou subtrai se não tiver. E quem tiver o caminho contínuo mais longo ganha um bônus de 10 pontos (p. 2 e 4).
+
+O jogo inteiro gira em torno de uma escolha repetida a cada turno: juntar mais cartas ou gastar as que tem. Juntar dá opções, mas enquanto você junta, outro jogador pode ocupar a rota de que você precisava. Como os Bilhetes são secretos, ninguém sabe ao certo para onde os outros vão (p. 2).
+
+## 1. Como este guia ensina
+
+O guia segue a partida em quatro etapas: montar a mesa e escolher os primeiros Bilhetes, comprar Cartas de Vagão, conquistar rotas e marcar pontos e, por fim, Bilhetes de Destino, fim da partida e contagem. Cada etapa usa só o que as anteriores já ensinaram.
+
+Os blocos se repetem em cada etapa:
+
+- **Para entender:** como aquela parte do jogo funciona e por quê.
+- **Passo a passo:** as regras exatas, com a página do manual.
+- **Tarefas**, com ajuda que diminui: um **exemplo resolvido**, uma tarefa para **completar** e uma tarefa **sua vez**, sem ajuda.
+- **Treino rápido:** exercícios curtos para o que precisa ficar automático, como a tabela de pontos.
+
+Cada pergunta tem opções: escolha uma e a resposta aparece, com a explicação. No final há uma avaliação curta e uma folha de consulta para deixar ao lado do tabuleiro.
+
+## 2. Etapa 1: montar a mesa e escolher os primeiros Bilhetes
+
+> [!entender] **Para entender.** Quase tudo na caixa serve a uma de três coisas.
+>
+> **Os trens e o marcador de pontos** são seus. Os 45 trens são ao mesmo tempo o que você coloca no mapa e o relógio da partida: quando o estoque de alguém chega a 2 ou menos, o jogo está terminando. O marcador anda na **Trilha de Pontos**, a faixa numerada em volta do mapa (p. 2 e 4).
+>
+> **As Cartas de Vagão** são o dinheiro do jogo. São 110: 12 de cada uma de oito cores (rosa, azul, laranja, branco, verde, amarelo, preto e vermelho), que são as cores das rotas, mais 14 **Locomotivas**, multicoloridas, que valem como qualquer cor. Cada cor tem um tipo de vagão desenhado; o manual cita, por exemplo, o Vagão de Passageiro, que é o azul. Na mesa ficam a **pilha de compras**, virada para baixo, as **5 cartas abertas** ao lado dela e uma pilha de descarte (p. 2 e 3).
+>
+> **Os Bilhetes de Destino** são os seus objetivos secretos. São 30. Cada um tem duas cidades e um valor em pontos (p. 2 e 4). A carta de **Maior Caminho Contínuo** é o prêmio de 10 pontos do fim da partida. A **Carta de Ajuda** é um resumo para consulta.
+
+> [!passos] **Passo a passo: preparação** (p. 2 e 3). É a mesma para 2 a 5 jogadores; o número de jogadores só muda uma regra de rotas, vista na etapa 3.
+>
+> 1. Ponha o tabuleiro no centro da mesa.
+> 2. Cada jogador pega um conjunto de 45 trens de uma cor e o marcador de pontos da mesma cor. Os trens que sobram na caixa são reposição.
+> 3. Cada marcador vai para o Início da Trilha de Pontos.
+> 4. Embaralhe as Cartas de Vagão e dê 4 a cada jogador, como mão inicial.
+> 5. Ponha o resto das Cartas de Vagão perto do tabuleiro, viradas para baixo, e vire as 5 primeiras para cima, ao lado.
+> 6. Se 3 das 5 cartas abertas forem Locomotivas, descarte as 5 e vire 5 novas. A regra vale "a qualquer momento", inclusive agora (p. 3).
+> 7. Ponha a carta de Maior Caminho Contínuo virada para cima perto do tabuleiro.
+> 8. Embaralhe os Bilhetes de Destino e dê 3 a cada jogador. Cada um olha os seus e decide com quais fica: pelo menos 2, ou os 3.
+> 9. Os Bilhetes devolvidos vão para o fundo da pilha de Bilhetes de Destino, que fica perto do tabuleiro.
+> 10. Começa o viajante mais experiente. A vez segue no sentido horário (p. 2).
+
+> [!edicao] **Qual é a sua caixa?** Em 2025 a Days of Wonder lançou uma edição nova do jogo, com manual em português traduzido pela Galápagos. Nela há 33 Bilhetes, cada jogador recebe 4 no começo (e fica com pelo menos 2), a cor que o manual de 2016 chama de rosa aparece como roxo e a ação se chama "Controlar uma Rota". Este guia segue a caixa com 30 Bilhetes de Destino, que é a que a página do produto na loja da Galápagos descreve. Se a sua tiver 33 Bilhetes, prepare com 4 e veja as outras diferenças na seção 6.
+
+> [!resolvido] **Exemplo resolvido: escolher os Bilhetes.** Ana recebe três Bilhetes. Dois deles têm cidades no leste do mapa, perto uma da outra; o terceiro liga o extremo oeste ao extremo leste. Ela olha o mapa e vê que os dois do leste podem compartilhar trechos. Fica com esses dois e devolve o terceiro ao fundo da pilha. Ela não poderia devolver dois: o mínimo na preparação é 2.
+>
+> Por que essa escolha: Bilhetes que usam as mesmas rotas pagam duas vezes pelo mesmo trabalho. Um Bilhete longo vale mais, mas só se for completado; o incompleto tira os mesmos pontos que daria.
+
+> [!complete] **Complete.** Bruno recebe três Bilhetes e gosta de todos. Já sabemos que ele pode ficar com os três.
+>
+> ?? Onde ficam esses Bilhetes durante a partida, e quem pode vê-los?
+> - ( ) Na mesa, virados para cima, à vista de todos
+> - (x) Na mão dele, em segredo; ninguém mais os vê até a contagem final
+> - ( ) Na mão dele, mas ele mostra cada um à mesa quando o completa
+> = Na mão dele, em segredo. Ninguém mais vê os Bilhetes até a contagem final, quando todos os revelam (p. 2 e 4).
+
+> [!suavez] **Sua vez.** Você vai montar uma partida de 4 jogadores. Responda olhando só o passo a passo.
+>
+> ?? 1. Quantas Cartas de Vagão cada um tem na mão antes do primeiro turno, e quantas ficam abertas na mesa?
+> - ( ) 3 na mão e 5 abertas
+> - ( ) 4 na mão e 4 abertas
+> - (x) 4 na mão e 5 abertas
+> - ( ) 5 na mão e 5 abertas
+> = 4 na mão de cada um e 5 abertas (passos 4 e 5; p. 2).
+>
+> ?? 2. Ao virar as cartas abertas, saem Locomotiva, Azul, Locomotiva, Locomotiva e Preto. O que você faz?
+> - (x) Descarta as 5 e vira outras 5; se de novo saírem 3 Locomotivas, repete
+> - ( ) Deixa como está: essa regra só vale depois que a partida começa
+> - ( ) Descarta só as 3 Locomotivas e vira 3 cartas no lugar delas
+> = Há 3 Locomotivas entre as 5 abertas: descarte as 5 e vire outras 5. A regra vale "a qualquer momento", inclusive na preparação. Se de novo saírem 3 Locomotivas, repita (passo 6; p. 3).
+>
+> ?? 3. Cada jogador recebeu 3 Bilhetes. Qual é o menor número de Bilhetes que pode voltar à pilha, somando os quatro jogadores?
+> - ( ) 4
+> - (x) Nenhum
+> - ( ) 1
+> = Nenhum, se todos ficarem com os 3. Ninguém é obrigado a devolver (passo 8; p. 2).
+>
+> ?? 4. E o maior número de Bilhetes que pode voltar à pilha, somando os quatro?
+> - ( ) 8
+> - ( ) 12
+> - (x) 4
+> = No máximo 4, um por jogador, porque na preparação cada um fica com pelo menos 2 (passo 8; p. 2). Ficar com só 1 é a regra da compra de Bilhetes no meio da partida, não da preparação.
+>
+> ?? 5. Quantos trens cada jogador põe à sua frente?
+> - ( ) 40
+> - (x) 45
+> - ( ) 35
+> = 45, em qualquer número de jogadores (passo 2; p. 2).
+
+## 3. Etapa 2: comprar Cartas de Vagão
+
+> [!entender] **Para entender.** Comprar cartas é a ação mais comum da partida. Você pega duas por turno, e a escolha é entre ver o que leva ou arriscar. As 5 cartas abertas mostram exatamente o que está disponível, mas todos veem o que você pega e podem adivinhar a cor que você junta. A carta do topo da pilha é surpresa para você e para os outros.
+>
+> A Locomotiva é a carta mais útil do jogo, porque completa qualquer conjunto. Por isso o jogo cobra por ela quando está à vista: pegar uma Locomotiva aberta custa a sua segunda carta. No escuro, ela sai de graça, por sorte (p. 3).
+
+> [!passos] **Passo a passo: Comprar Cartas de Vagão** (p. 2 e 3)
+>
+> 1. Pegue a primeira carta: uma das 5 abertas ou a do topo da pilha de compras, no escuro.
+> 2. Se pegou uma carta aberta, vire na hora a carta do topo da pilha para o lugar dela, antes de qualquer outra coisa.
+> 3. Pegue a segunda carta, de novo aberta ou do topo da pilha.
+> 4. **Locomotiva aberta:** se você pegar uma Locomotiva entre as abertas, ela é a sua única carta neste turno.
+> 5. **Locomotiva que aparece na reposição:** se, depois da sua primeira carta, a carta virada para repor for uma Locomotiva, você não pode pegá-la como segunda carta.
+> 6. **Locomotiva no escuro:** conta como uma carta comum. Você ainda pega a segunda.
+> 7. **Três Locomotivas abertas:** sempre que 3 das 5 cartas abertas forem Locomotivas, descarte as 5 e vire 5 novas.
+> 8. Não há limite de cartas na mão.
+> 9. **Pilha vazia:** quando a pilha de compras acabar, embaralhe bem o descarte e faça dele a nova pilha. As cartas descartadas estão em grupos da mesma cor, por isso o embaralhamento precisa ser caprichado.
+> 10. **Sem pilha e sem descarte:** se não houver carta na pilha nem no descarte, porque os jogadores seguram muitas cartas, você não pode comprar Cartas de Vagão e escolhe outra ação.
+
+!fig[As 5 cartas abertas, com uma Locomotiva entre elas, ao lado da pilha de compras virada para baixo e da pilha de Bilhetes de Destino. Ilustração: manual Galápagos (p. 3)](figuras/cartas-abertas.webp)
+
+> [!edicao] **Locomotiva aberta como segunda carta.** O manual brasileiro, como o original em inglês, proíbe pegar a Locomotiva que acabou de aparecer na reposição. Ele não fala de uma Locomotiva que já estava aberta desde antes. Como "quem a comprar só poderá comprar uma carta ao invés de duas" (p. 3), pegar uma Locomotiva aberta depois de já ter pego outra carta daria duas cartas no turno. Este guia lê assim: **nenhuma Locomotiva aberta pode ser a segunda carta**. O manual da edição de 2025 diz isso com todas as letras: a Locomotiva aberta tem de ser a primeira carta do turno.
+
+> [!resolvido] **Exemplo resolvido.** As cartas abertas são Verde, Verde, Branco, Laranja e Preto. Você junta verdes. Pega um Verde aberto e vira a carta do topo da pilha para o lugar dele: sai uma Locomotiva. Você não pode pegá-la agora, porque ela apareceu na reposição. Para a segunda carta, você pega o outro Verde aberto e repõe de novo: sai um Amarelo. Fim do turno, com 2 Verdes a mais na mão.
+>
+> A mesa agora mostra Locomotiva, Amarelo, Branco, Laranja e Preto. A Locomotiva continua lá para o próximo jogador, que pode pegá-la como primeira e única carta.
+
+> [!complete] **Complete.** Ana pega a primeira carta no escuro, do topo da pilha, e sai uma Locomotiva. Já sabemos que ela conta como carta comum.
+>
+> ?? Ana pode pegar uma segunda carta?
+> - ( ) Não, Locomotiva é sempre a única carta do turno
+> - (x) Sim, aberta ou do topo da pilha
+> - ( ) Sim, mas só do topo da pilha, no escuro
+> = Sim. Locomotiva tirada no escuro conta como carta comum, e ela pega a segunda, aberta ou do topo (p. 3).
+>
+> ?? Ela pode pegar a Locomotiva que está entre as abertas?
+> - ( ) Sim, porque a primeira carta veio do escuro
+> - ( ) Sim, porque a Locomotiva tirada no escuro não conta como carta
+> - (x) Não, a Locomotiva aberta não pode ser a segunda carta
+> = Não. Pela leitura explicada no bloco "Sobre a edição" acima, nenhuma Locomotiva aberta pode ser a segunda carta: quem a compra "só poderá comprar uma carta ao invés de duas" (p. 3).
+
+> [!suavez] **Sua vez.** Três situações.
+>
+> 1. As abertas são Locomotiva, Locomotiva, Azul, Vermelho e Rosa. Você pega o Azul e, ao repor, sai outra Locomotiva.
+>
+> ?? O que acontece com as cartas abertas?
+> - ( ) Nada: a Locomotiva nova fica na mesa e o turno segue
+> - ( ) Só a Locomotiva nova vai para o descarte, e outra carta é virada no lugar dela
+> - (x) Com 3 Locomotivas abertas, as 5 vão para o descarte e 5 novas são viradas na hora
+> = Com a nova Locomotiva, há 3 Locomotivas abertas. As 5 cartas vão para o descarte e 5 novas são viradas na hora (passo 7; p. 3).
+>
+> ?? E o que você pode pegar como segunda carta?
+> - (x) Uma das 5 novas abertas, menos Locomotiva, ou a do topo da pilha
+> - ( ) Uma das Locomotivas, porque elas estavam abertas antes da sua primeira carta
+> - ( ) Nada: quando as abertas são trocadas, o seu turno acaba
+> = Você pega a segunda carta entre as novas ou do topo da pilha, mas não uma Locomotiva aberta (passos 5 e 7; p. 3).
+>
+> ?? 2. Você tem 14 cartas na mão. Precisa descartar alguma?
+> - ( ) Sim, até ficar com 10
+> - (x) Não, não há limite de cartas na mão
+> - ( ) Sim, até ficar com 12
+> = Não. Não há limite de mão (p. 3).
+>
+> ?? 3. A pilha de compras está vazia e o descarte tem 20 cartas. Você quer comprar. O que faz primeiro?
+> - ( ) Nada: sem pilha de compras, você não pode comprar e escolhe outra ação
+> - ( ) Compra as 2 cartas do topo do descarte
+> - (x) Embaralha bem o descarte, faz dele a nova pilha e compra normalmente
+> = Embaralha bem o descarte e faz dele a nova pilha; depois compra normalmente (p. 3). Só se pilha e descarte estiverem vazios é que não se compra.
+
+> [!treino] **Treino rápido: quantas cartas você leva neste turno?**
+>
+> ?? a) Primeira carta: Locomotiva aberta. Quantas cartas você leva?
+> - (x) 1
+> - ( ) 2
+> - ( ) 2, se a segunda vier do topo da pilha
+> = 1. Locomotiva aberta é a única carta do turno (p. 3).
+>
+> ?? b) Primeira carta: Vermelho aberto. Segunda: topo da pilha, que é uma Locomotiva. Quantas cartas você leva?
+> - ( ) 1, porque a Locomotiva cancela a segunda carta
+> - (x) 2
+> - ( ) 1, porque a Locomotiva volta para a pilha
+> = 2. Locomotiva no escuro é carta comum (p. 3).
+>
+> ?? c) Primeira carta: topo da pilha. Segunda: você quer a única Locomotiva aberta, que estava lá desde o turno anterior. O que acontece?
+> - ( ) Você pega a Locomotiva e leva 2 cartas
+> - (x) Não pode pegá-la: pega outra carta aberta ou a do topo e leva 2
+> - ( ) Pega a Locomotiva e devolve a primeira carta, levando só 1
+> = A segunda escolha não é permitida: a Locomotiva aberta não pode ser a segunda carta (leitura explicada no bloco "Sobre a edição"; p. 3). Você pega outra carta aberta ou a do topo e leva 2.
+>
+> ?? d) Primeira carta: Preto aberto. Segunda: Branco aberto. Quantas cartas você leva?
+> - ( ) 1, porque só a primeira carta pode ser aberta
+> - ( ) 1, porque as duas precisam ser da mesma cor
+> - (x) 2
+> = 2. As duas cartas podem ser abertas, de qualquer cor, desde que nenhuma seja Locomotiva (p. 2 e 3).
+
+## 4. Etapa 3: conquistar rotas e marcar pontos
+
+> [!entender] **Para entender.** Uma rota é a fila de espaços entre duas cidades vizinhas no mapa. Para ocupá-la, você paga com cartas: tantas quanto os espaços, todas da cor da rota. Rota cinza aceita qualquer cor, mas sempre uma cor só por vez. A Locomotiva entra em qualquer conjunto (p. 3).
+>
+> A tabela de pontos cresce mais rápido que o tamanho da rota. Uma rota de 6 espaços vale 15 pontos; duas rotas de 3 espaços, com os mesmos 6 trens, valem 8 no total. Rotas longas pagam melhor o trem e a carta, mas pedem muitas cartas de uma mesma cor e um turno inteiro para conquistar (p. 4).
+
+!fig[A Tabela de Pontuação: rotas de 1 a 6 espaços valem 1, 2, 4, 7, 10 e 15 pontos. Ilustração: manual Galápagos (p. 4)](figuras/tabela-pontos.webp)
+
+> [!passos] **Passo a passo: Conquistar uma Rota** (p. 3 e 4)
+>
+> 1. Escolha uma rota livre no mapa. Ela não precisa se ligar a nenhuma rota sua.
+> 2. Jogue da mão um conjunto de Cartas de Vagão com tantas cartas quanto os espaços da rota. Rota colorida: todas da cor dela. Rota cinza: todas de uma mesma cor, qualquer uma. Locomotivas podem entrar no lugar de qualquer carta do conjunto.
+> 3. Ponha um trem seu em cada espaço da rota.
+> 4. Descarte as cartas usadas.
+> 5. Avance o seu marcador na Trilha de Pontos, na hora, pela Tabela de Pontuação: 1 espaço, 1 ponto; 2, 2 pontos; 3, 4 pontos; 4, 7 pontos; 5, 10 pontos; 6, 15 pontos.
+> 6. No máximo uma rota por turno, ligando duas cidades vizinhas.
+
+!fig[Dois exemplos de conquista. À esquerda, a rota azul de Montréal a New York se paga com 3 cartas azuis e recebe 3 trens do jogador verde; à direita, a rota cinza de Montréal a Toronto se paga com 3 cartas verdes e recebe 3 trens do jogador azul. Ilustração: manual Galápagos (p. 3)](figuras/conquistar-rota.webp)
+
+> [!passos] **Passo a passo: Rotas Duplas** (p. 3)
+>
+> - Algumas cidades vizinhas são ligadas por duas rotas lado a lado: as **Rotas Duplas**.
+> - O mesmo jogador não pode conquistar as duas rotas de um mesmo par de cidades.
+> - **Com 2 ou 3 jogadores**, só uma das duas pode ser usada. Quem conquistar uma delas escolhe qual, e a outra fica interditada para todos até o fim da partida.
+> - Com 4 ou 5 jogadores, as duas podem ser usadas, por jogadores diferentes.
+
+> [!atencao] Não se mistura cor. Duas cartas vermelhas e uma amarela não pagam uma rota cinza de 3 espaços, mesmo que a rota aceite qualquer cor: aceita qualquer cor, mas uma só. Duas vermelhas e uma Locomotiva pagam.
+
+> [!edicao] **Pontos que o manual não diz com todas as letras.**
+>
+> - **Trens suficientes.** O manual manda pôr um trem em cada espaço da rota (p. 3); com menos trens que espaços no estoque, não há como cumprir isso. Este guia lê que você não pode conquistar uma rota maior que o seu estoque. O manual de 2025 confirma: a rota inteira tem de ser conquistada num turno só.
+> - **Só Locomotivas.** O manual diz que a Locomotiva vale em qualquer conjunto, mas não diz se um conjunto pode ser feito só de Locomotivas. Pelo texto, nada proíbe. Combine com a mesa antes de começar.
+
+> [!resolvido] **Exemplo resolvido.** Você tem na mão 3 Verdes, 2 Vermelhos e 1 Locomotiva. A rota de Montréal a Toronto é cinza e tem 3 espaços (no exemplo do manual, ela é paga com 3 cartas verdes).
+>
+> Você tem três jeitos legais de pagá-la: 3 Verdes; 2 Vermelhos e a Locomotiva; ou 2 Verdes e a Locomotiva. Não dá para usar 2 Vermelhos e 1 Verde.
+>
+> Você paga com os 3 Verdes, põe 3 trens e avança 4 pontos. Ficam 2 Vermelhos e a Locomotiva, que juntos ainda pagam uma rota vermelha ou cinza de 3 espaços num turno futuro.
+>
+> Por que essa escolha: a Locomotiva serve para qualquer cor. Gastá-la quando há outra forma de pagar é desperdiçar a carta mais flexível da mão.
+
+> [!complete] **Complete.** Partida de 3 jogadores. Entre duas cidades há uma Rota Dupla. Ana conquista uma das duas rotas. Já sabemos que, com 3 jogadores, só uma das duas pode ser usada.
+>
+> ?? Bruno pode conquistar a outra rota?
+> - (x) Não: a outra rota fica interditada para todos
+> - ( ) Sim, porque só Ana não pode ter as duas
+> - ( ) Sim, mas só a partir do turno seguinte ao de Ana
+> = Não. Com 2 ou 3 jogadores, a outra rota fica interditada para todos até o fim da partida (p. 3).
+>
+> ?? E se fossem 4 jogadores?
+> - ( ) Também não: a outra rota fica interditada para todos
+> - ( ) Sim, e Ana também poderia conquistar a outra num turno seguinte
+> - (x) Sim, Bruno pode; só Ana não pode ter as duas
+> = Com 4 jogadores, sim, Bruno pode; só Ana não pode ter as duas (p. 3).
+
+> [!suavez] **Sua vez.** Três situações.
+>
+> ?? 1. Você tem 4 Azuis e 2 Locomotivas e só 5 trens no estoque. A rota que você quer é azul e tem 6 espaços. Pode conquistá-la?
+> - ( ) Sim: as cartas pagam a rota e os trens não importam
+> - ( ) Sim, pondo os 5 trens e deixando um espaço vazio
+> - ( ) Não, porque um conjunto não pode ter 2 Locomotivas
+> - (x) Não: com 5 trens não há como pôr um trem em cada um dos 6 espaços
+> = Não. A rota tem 6 espaços e você só tem 5 trens; não há como pôr um trem em cada espaço (p. 3; leitura explicada no bloco "Sobre a edição"). As cartas dariam: 4 Azuis e 2 Locomotivas são 6 cartas da cor certa.
+>
+> ?? 2. Em um turno, você quer conquistar uma rota de 2 espaços e outra de 1, porque tem as cartas. Pode?
+> - ( ) Sim, se tiver as cartas para as duas
+> - (x) Não: no máximo uma rota por turno
+> - ( ) Sim, desde que as duas rotas estejam ligadas uma à outra
+> = Não. No máximo uma rota por turno, e conquistar uma rota é a única ação do turno (p. 2 e 3).
+>
+> ?? 3. Ao longo da partida você conquistou rotas de 4, 3, 2 e 1 espaços. Quantos pontos elas deram, e quantos trens você usou?
+> - ( ) 10 pontos, com 10 trens
+> - (x) 14 pontos, com 10 trens
+> - ( ) 14 pontos, com 14 trens
+> - ( ) 13 pontos, com 10 trens
+> = 7 + 4 + 2 + 1 = **14 pontos**, com 4 + 3 + 2 + 1 = 10 trens, um por espaço (p. 3 e 4).
+
+> [!treino] **Treino rápido: a Tabela de Pontuação.** Diga os pontos de cada rota sem olhar.
+>
+> ?? a) Rota de 2 espaços.
+> - ( ) 3 pontos
+> - (x) 2 pontos
+> - ( ) 4 pontos
+> = 2 pontos (p. 4).
+>
+> ?? b) Rota de 4 espaços.
+> - ( ) 4 pontos
+> - ( ) 6 pontos
+> - (x) 7 pontos
+> = 7 pontos (p. 4).
+>
+> ?? c) Rota de 5 espaços.
+> - (x) 10 pontos
+> - ( ) 8 pontos
+> - ( ) 15 pontos
+> = 10 pontos (p. 4).
+>
+> ?? d) Rota de 6 espaços.
+> - ( ) 10 pontos
+> - ( ) 12 pontos
+> - (x) 15 pontos
+> = 15 pontos (p. 4).
+>
+> ?? e) Três rotas de 2 espaços, somadas.
+> - ( ) 15 pontos, como uma rota de 6
+> - (x) 6 pontos
+> - ( ) 12 pontos
+> = 6 pontos: cada rota de 2 espaços vale 2, e as três somam 2 + 2 + 2 (p. 4). Os pontos são por rota; 6 espaços em rotas separadas não valem como uma rota de 6.
+
+## 5. Etapa 4: Bilhetes de Destino, fim da partida e contagem
+
+> [!entender] **Para entender.** Os Bilhetes são a parte arriscada do jogo. Um Bilhete completado no fim soma o valor dele; um incompleto subtrai o mesmo valor. Pegar Bilhetes novos no meio da partida gasta um turno inteiro e é uma aposta: você precisa ficar com pelo menos um, e o manual não prevê devolver depois um Bilhete que você manteve (p. 3 e 4).
+>
+> O fim chega pelo estoque de trens, não por um número de rodadas. Quando alguém está com 2 trens ou menos ao final do turno, todos ganham um último turno, e os Bilhetes que não fecharem até ali descontam (p. 4). Acompanhar quantos trens os outros ainda têm é a forma de saber quanto tempo resta.
+
+> [!passos] **Passo a passo: Comprar Bilhetes de Destino** (p. 3 e 4)
+>
+> 1. Pegue 3 Bilhetes do topo da pilha. Se houver menos de 3, pegue os que houver.
+> 2. Fique com pelo menos 1 deles; pode ficar com 2 ou com os 3.
+> 3. Os devolvidos vão para o fundo da pilha.
+> 4. Os Bilhetes ficam em segredo até o fim, e não há limite de quantos você pode ter.
+
+> [!passos] **Passo a passo: o fim da partida** (p. 4)
+>
+> 1. Se, ao final do turno de um jogador, o estoque de trens dele tiver 0, 1 ou 2 trens, começa a última volta.
+> 2. Cada jogador, incluindo esse, faz mais um turno, na ordem normal.
+> 3. Depois disso a partida acaba e começa a contagem.
+
+> [!passos] **Passo a passo: a contagem** (p. 4)
+>
+> 1. **Rotas:** os pontos já foram marcados durante a partida. Se quiserem, recontem as rotas de cada um pela Tabela de Pontuação para conferir.
+> 2. **Bilhetes:** todos revelam os seus. Bilhete com as duas cidades ligadas por uma série contínua de rotas suas soma o valor; Bilhete incompleto subtrai o valor.
+> 3. **Maior Caminho Contínuo:** quem tiver o caminho contínuo mais longo de trens da própria cor recebe a carta e 10 pontos. O caminho pode ter voltas e passar várias vezes pela mesma cidade, mas nenhum trem conta duas vezes. Em caso de empate, todos os empatados marcam os 10 pontos.
+> 4. **Vencedor:** quem tiver mais pontos. Empate: vence quem completou mais Bilhetes de Destino. Persistindo, vence quem tem a carta de Maior Caminho Contínuo.
+
+!fig[Um Bilhete de Destino (Chicago a New Orleans, 7 pontos) e a carta de Maior Caminho Contínuo, que vale 10 pontos na contagem. Ilustração: manual Galápagos (p. 2)](figuras/bilhete-e-bonus.webp)
+
+> [!atencao] Um Bilhete só conta como completo com rotas **suas**. Passar pelas rotas de outro jogador não liga as cidades para você. E o Maior Caminho Contínuo é medido em trens de uma cor só, a sua: não se somam trechos soltos, só uma linha que dá para percorrer sem pular.
+
+> [!edicao] Para empate no Maior Caminho Contínuo, o manual brasileiro diz que "ambos os jogadores" marcam os 10 pontos; o original fala em todos os empatados. Com três empatados, os três marcam. E se o desempate da vitória chegar à carta de Maior Caminho Contínuo com os empatados ainda empatados, o manual de 2016 não diz o que fazer; o de 2025 manda os empatados dividirem a vitória.
+
+> [!resolvido] **Exemplo resolvido: o fim de uma partida de 2 jogadores.** No fim do turno dela, Ana conquista uma rota e fica com 1 trem no estoque. Começa a última volta: Bruno faz um turno e conquista uma rota de 4 espaços (7 pontos); Ana faz o último turno dela e compra cartas, porque com 1 trem não paga nenhuma rota maior que 1 espaço. A partida acaba.
+>
+> Na Trilha de Pontos, as rotas de Ana somam 83 pontos (44 trens usados) e as de Bruno, 65 (40 trens). Eles revelam os Bilhetes:
+>
+> - Ana: 12 e 9 completos, 7 incompleto. 12 + 9 - 7 = 14.
+> - Bruno: 13, 8, 11 e 5, todos completos. Soma 37.
+>
+> Ana tem o caminho contínuo mais longo e ganha 10 pontos.
+>
+> Total: Ana, 83 + 14 + 10 = **107**. Bruno, 65 + 37 = **102**. Ana vence.
+>
+> Por que importa: Bruno completou mais Bilhetes, mas Ana ganhou nas rotas longas. Os 7 pontos que ela perdeu no Bilhete incompleto não mudaram o resultado; com uma diferença menor, mudariam.
+
+> [!complete] **Complete.** Numa partida de 3 jogadores, Carla tem 52 pontos de rotas na Trilha. Ela completou dois Bilhetes, de 8 e de 5 pontos, e não completou um de 10. Não tem o Maior Caminho Contínuo. Já somamos os Bilhetes completos: 52 + 8 + 5 = 65.
+>
+> ?? Termine a conta: quantos pontos Carla faz?
+> - ( ) 65 pontos
+> - (x) 55 pontos
+> - ( ) 75 pontos
+> - ( ) 45 pontos
+> = 65 - 10 = **55 pontos**. O Bilhete incompleto subtrai o valor dele (p. 4).
+
+> [!suavez] **Sua vez.** Duas situações.
+>
+> ?? 1. Você terminou com 60 pontos de rotas, um Bilhete completo de 9 pontos e dois incompletos, de 6 e de 4. Você e outro jogador empataram no caminho contínuo mais longo. Quanto você faz?
+> - ( ) 59 pontos
+> - ( ) 64 pontos
+> - (x) 69 pontos
+> - ( ) 79 pontos
+> = 60 + 9 - 6 - 4 + 10 = **69 pontos**. No empate, os dois marcam os 10 (p. 4).
+>
+> ?? 2. No fim do seu turno, você tem 3 trens no estoque. A partida entra na última volta?
+> - (x) Não: só com 0, 1 ou 2 trens no fim do turno
+> - ( ) Sim: com 3 trens ou menos começa a última volta
+> - ( ) Sim, mas só os outros jogadores fazem mais um turno
+> = Não. Só com 0, 1 ou 2 trens no fim do turno (p. 4).
+
+> [!treino] **Treino rápido: o caminho mais longo.** Os seus trens formam este esquema (letras, não cidades do mapa): A ligado a B por uma rota de 4 espaços; B a C, 3 espaços; C a D, 2 espaços; e B a E, 5 espaços.
+>
+> ?? Qual é o seu caminho contínuo mais longo, em trens?
+> - ( ) 14 trens
+> - ( ) 9 trens
+> - ( ) 12 trens
+> - (x) 10 trens
+> = **10 trens**, pelo caminho E, B, C, D (5 + 3 + 2). A, B, C, D dá 9 e A, B, E também dá 9. Não dá para somar as quatro rotas: B é um entroncamento, e quem chega a B por um ramo só pode seguir por um dos outros dois. Voltar pelo ramo de onde veio contaria os mesmos trens duas vezes (p. 4).
+
+## 6. Situações especiais
+
+**Cartas na mão sem limite.** Não há limite de Cartas de Vagão na mão nem de Bilhetes de Destino (p. 3 e 4).
+
+**Pilha de Bilhetes curta.** Com menos de 3 Bilhetes na pilha, quem comprar pega os que houver e fica com pelo menos 1 (p. 4).
+
+**Bilhetes antigos.** O manual de 2016 diz que você fica com pelo menos um dos Bilhetes que acabou de comprar e devolve os outros (p. 3 e 4). Ele não fala em devolver Bilhetes que já estavam na sua mão, e o manual de 2025 diz com todas as letras que não se pode. Este guia segue essa leitura: Bilhete que você manteve fica com você até o fim.
+
+**Rota e Bilhete são coisas diferentes.** Conquistar uma rota não exige ter Bilhete que passe por ela, e a rota pontua mesmo que não ajude nenhum Bilhete (p. 3).
+
+**Vagões que voltam.** As cartas usadas numa rota vão para o descarte e voltam ao jogo quando a pilha de compras acabar e o descarte for embaralhado (p. 3).
+
+**Ação impossível.** Sem cartas na pilha e no descarte, não se compra Carta de Vagão. Se você também não puder pagar nenhuma rota, resta comprar Bilhetes de Destino (p. 3).
+
+**Caixa de 2025.** Se a sua caixa for a edição nova (33 Bilhetes), mudam: a preparação (4 Bilhetes por jogador, fica com pelo menos 2, os devolvidos são embaralhados antes de ir para o fundo); os Bilhetes devolvidos depois de uma compra vão para o fundo na ordem que você quiser; a ação de rota se chama "Controlar uma Rota"; o primeiro jogador é escolhido como a mesa quiser; e um empate que persiste depois da carta de Maior Caminho Contínuo vira vitória dividida. O resto das regras deste guia vale para as duas.
+
+## 7. Avaliação final
+
+Responda sem consultar. Depois confira e veja o que reler.
+
+?? 1. Você pega uma carta aberta e, ao repor, aparece uma Locomotiva. Pode pegá-la?
+- ( ) Sim, como segunda carta
+- (x) Não
+- ( ) Sim, mas devolve a primeira e leva só a Locomotiva
+= **Não.** Locomotiva que aparece na reposição não pode ser a segunda carta (p. 3). Se errou, releia a etapa 2.
+
+?? 2. Você tira uma Locomotiva do topo da pilha. Quantas cartas ainda pode pegar neste turno?
+- ( ) Nenhuma
+- ( ) Duas
+- (x) Mais uma
+= **Mais uma.** No escuro ela conta como carta comum (p. 3). Se errou, releia a etapa 2.
+
+?? 3. Uma rota cinza tem 4 espaços. Você tem 2 Pretos, 1 Branco e 1 Locomotiva. Pode conquistá-la?
+- ( ) Sim, porque rota cinza aceita qualquer cor
+- ( ) Sim, porque a Locomotiva cobre a diferença de cor
+- (x) Não
+= **Não.** Só 2 Pretos e a Locomotiva são da mesma cor; o Branco não entra. Faltaria uma carta (p. 3). Se errou, releia a etapa 3.
+
+?? 4. Partida de 2 jogadores, Rota Dupla: Bruno conquistou uma das rotas. Você pode conquistar a outra?
+- (x) Não
+- ( ) Sim, porque só Bruno não pode ter as duas
+- ( ) Sim, se pagar com cartas da cor da outra rota
+= **Não.** Com 2 ou 3 jogadores, a outra rota fica interditada (p. 3). Se errou, releia a etapa 3.
+
+?? 5. Quantos pontos vale uma rota de 5 espaços? E uma de 3?
+- ( ) 5 e 3
+- ( ) 15 e 4
+- (x) 10 e 4
+- ( ) 10 e 3
+= **10 e 4**, pela Tabela de Pontuação (p. 4). Se errou, releia a etapa 3.
+
+?? 6. Você compra Bilhetes de Destino e não gosta de nenhum dos três. Pode devolver todos?
+- ( ) Sim, os três voltam para o fundo da pilha
+- (x) Não, você fica com pelo menos 1
+- ( ) Não, você fica com pelo menos 2
+= **Não.** Você fica com pelo menos 1 (p. 3 e 4). Ficar com pelo menos 2 é a regra da preparação. Se errou, releia a etapa 4.
+
+?? 7. No fim do turno de Ana, ela tem 2 trens. Quantos turnos ainda acontecem numa partida de 4 jogadores?
+- ( ) Nenhum: a partida acaba na hora
+- ( ) Três: um de cada outro jogador
+- (x) Quatro: um de cada jogador, incluindo Ana
+= **Quatro:** um de cada jogador, incluindo Ana (p. 4). Se errou, releia a etapa 4.
+
+?? 8. Você completou um Bilhete de 11 pontos e falhou num de 7. Quanto os dois somam na contagem?
+- ( ) +11
+- (x) +4
+- ( ) +18
+= **+4.** Soma 11 e subtrai 7 (p. 4). Se errou, releia a etapa 4.
+
+> [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1 ou a 2, releia a etapa 2. Errou a 3, a 4 ou a 5, a etapa 3. Errou a 6, a 7 ou a 8, a etapa 4. Depois refaça só as perguntas que errou.
+
+## 8. Para consultar durante a partida
+
+**Seu turno: uma ação, e só uma**
+
+| Ação | Como | Lembre |
+|---|---|---|
+| Comprar Cartas de Vagão | 2 cartas, abertas ou do topo da pilha | Reponha a aberta na hora. Locomotiva aberta: só ela. Locomotiva no escuro: carta comum. Locomotiva aberta nunca é a segunda carta (leitura explicada na etapa 2) |
+| Conquistar uma Rota | Cartas iguais em número e cor à rota; 1 trem por espaço | Cinza: qualquer cor, uma só. Locomotiva vale qualquer cor. Uma rota por turno. Pontos na hora |
+| Comprar Bilhetes de Destino | 3 do topo da pilha | Fique com pelo menos 1; devolvidos vão para o fundo |
+
+**Tabela de Pontuação**
+
+| Espaços | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| Pontos | 1 | 2 | 4 | 7 | 10 | 15 |
+
+**Cartas abertas:** 3 Locomotivas entre as 5, descarte as 5 e vire novas. Pilha vazia: embaralhe bem o descarte.
+
+**Rotas Duplas:** nunca as duas para o mesmo jogador. Com 2 ou 3 jogadores, só uma das duas é usada.
+
+**Fim:** alguém termina o turno com 0, 1 ou 2 trens; todos, inclusive ele, jogam mais um turno.
+
+**Contagem:** rotas (já marcadas), Bilhetes completos somam, incompletos subtraem, Maior Caminho Contínuo +10 (empate: todos marcam). Desempate: mais Bilhetes completos; depois, a carta de Maior Caminho Contínuo.
+
+## 9. Fontes
+
+- Galápagos. *Ticket to Ride: regras* (edição brasileira, arquivo "T2R rules BR", 4 páginas, criado em abril de 2016, tradução de Luiz Eduardo Ricci Coelho). Biblioteca de Downloads da Galápagos, produto TTR001, https://www.asmodee.com.br/download-library. Consultado em 31/10/2026.
+- Days of Wonder. *Ticket to Ride: rules* (reimpressão de 2015 em inglês, 4 páginas). https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf. Consultado em 31/10/2026. Usado para conferir a tradução.
+- Days of Wonder e Galápagos. *Ticket to Ride: regras* (edição de 2025, em português, 4 páginas), na página oficial do jogo, https://www.daysofwonder.com/game/ticket-to-ride/. Consultado em 31/10/2026. Usado só para as diferenças entre edições e para confirmar leituras de pontos que o manual de 2016 deixa em aberto.
+- Galápagos. Página do produto TTR001 na loja Asmodee Brasil (jogadores, duração, idade e componentes). Consultada em 31/10/2026.
+- Não foram encontrados FAQ nem errata oficiais em português até 31/10/2026.

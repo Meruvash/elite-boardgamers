@@ -1,0 +1,426 @@
+{
+ "slug": "codenames",
+ "jogo": "Codenames",
+ "cor": "#e04848",
+ "kicker": "Resenha · Jogo de festa",
+ "og_titulo": "Codenames vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Codenames: resenha do jogo de festa do Spiel des Jahres",
+ "descricao": "Resenha de Codenames (Código Secreto), vencedor do Spiel des Jahres 2016: como funciona, pontos fortes, pontos de atenção e para quem é.",
+ "titulo_html": "Uma palavra, um número e muita discussão: <span>Codenames</span>",
+ "lede": "Codenames, lançado no Brasil pela Devir como Código Secreto, é um jogo de associação de palavras em equipes que virou referência entre os jogos de festa. Venceu o Spiel des Jahres 2016 e os Golden Geek de Família e de Festa em 2015. Uma pista, um número e uma grade de 25 palavras rendem discussões memoráveis em partidas de cerca de 15 minutos.",
+ "tags": [
+  "2–8 jogadores",
+  "15 min",
+  "Festa",
+  "Equipes",
+  "Palavras"
+ ],
+ "alt": "Infográfico Elite Boardgamers sobre o jogo Codenames",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2017,
+   "categoria": "Jeu de l’Année",
+   "colocacao": null,
+   "resultado": "finalista",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Finalista"
+  },
+  {
+   "premio": "Deutscher Spiele Preis",
+   "ano": 2016,
+   "categoria": "Deutscher Spiele Preis",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Spiel des Jahres",
+   "ano": 2016,
+   "categoria": "Spiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2015,
+   "categoria": "Família",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2015,
+   "categoria": "Festa",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2015,
+   "categoria": "Jogo do Ano",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "2º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2015"
+  ],
+  [
+   "Designer",
+   "Vlaada Chvátil"
+  ],
+  [
+   "Editora original",
+   "Czech Games Edition"
+  ],
+  [
+   "Editora no Brasil",
+   "Devir (Código Secreto)"
+  ],
+  [
+   "Jogadores",
+   "2 a 8 segundo o BGG; 4 ou mais segundo a Wikipedia (6 recomendado)"
+  ],
+  [
+   "Duração anunciada",
+   "15 minutos (15 a 30 segundo a Wikipedia)"
+  ],
+  [
+   "Idade",
+   "10+"
+  ],
+  [
+   "Nota BGG",
+   "7,5 / 10 (cerca de 106 mil avaliações)"
+  ],
+  [
+   "Peso BGG",
+   "1,25 / 5"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Modo solo oficial",
+   "Não"
+  ],
+  [
+   "Grade",
+   "25 cartas de palavras em 5×5, com uma carta-chave secreta"
+  ]
+ ],
+ "nota_ficha": "Números do BoardGameGeek obtidos por busca, porque o site bloqueia acesso automatizado.",
+ "como_funciona": [
+  "Duas equipes, vermelha e azul, disputam a mesma grade de 25 cartas de palavras, dispostas em 5 por 5. Cada equipe escolhe um chefe de espionagem; os outros jogadores são os agentes de campo, que tentam adivinhar as palavras certas.",
+  "Os dois chefes sentam do mesmo lado da mesa e veem a carta-chave secreta, que mostra quais palavras pertencem a cada equipe, quais são civis inocentes e qual é o assassino. Os agentes de campo não veem essa carta.",
+  "Na sua vez, o chefe dá uma pista de uma única palavra e um número, que diz quantas palavras da grade se ligam a ela, como Aquático, 3. Ele não pode fazer gestos nem dar dicas além disso, e a pista não pode ser uma das palavras da mesa.",
+  "A equipe discute e aponta as palavras uma a uma. Acertando, cobre a carta com um agente da sua cor e pode continuar, até o número da pista mais um. Errando, a vez passa: um civil só encerra o turno, e uma palavra adversária entrega um ponto ao rival.",
+  "Vence a equipe que encontrar primeiro todos os seus agentes. Quem apontar o assassino perde na hora, e é esse risco que deixa cada pista ousada mais tensa."
+ ],
+ "funciona": [
+  [
+   "Regra que se explica em minutos",
+   "Uma pista, um número, uma grade: é por isso que o jogo funciona com quem nunca jogou nada moderno. Em poucos minutos a mesa entende o objetivo e já está discutindo a primeira pista, sem manual aberto."
+  ],
+  [
+   "Funciona com grupos grandes",
+   "As equipes crescem sem mudar a regra: a Wikipedia registra de 4 a 8 jogadores ou mais, com 6 recomendado, e a Wargamer considera o jogo ideal para grupos grandes. É dos poucos jogos que acomodam uma festa inteira."
+  ],
+  [
+   "Discussões que viram diversão",
+   "Debater o que o chefe quis dizer é o coração do jogo. A Wargamer descreve a sensação de se sentir genial num momento e perdido no seguinte, e cada grade nova cria associações diferentes."
+  ],
+  [
+   "Partidas curtas",
+   "Cerca de 15 minutos por partida, o que faz o grupo pedir revanche e trocar os chefes de espionagem. Dá para jogar várias rodadas numa noite sem cansar e sem precisar arrumar nada entre elas."
+  ],
+  [
+   "Muita rejogabilidade",
+   "A caixa traz centenas de palavras em cartas de dupla face e várias cartas-chave, então as grades quase nunca se repetem. Com o mesmo grupo, o jogo muda conforme as pessoas aprendem o jeito de pensar umas das outras."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Espera enquanto o chefe pensa",
+   "Várias resenhas apontam o tempo parado enquanto o chefe monta a pista, e a Wargamer nota que algumas grades são difíceis e fazem o jogo travar. A Unboxed sugere usar a ampulheta da caixa para limitar a espera."
+  ],
+  [
+   "Moderada",
+   "Depende do chefe de espionagem",
+   "A Roll to Review nota que, se o chefe trava, a partida inteira perde o ritmo. Quem fica com o papel sente a pressão de não poder errar, e alguns jogadores preferem nunca assumir essa função."
+  ],
+  [
+   "Leve",
+   "Regras das pistas difíceis de ensinar",
+   "A Wargamer aponta que explicar quais pistas são permitidas é difícil para quem não joga, e sugere corrigir os primeiros erros com calma para que o grupo não acabe jogando de um jeito sem graça."
+  ],
+  [
+   "Leve",
+   "Pistas grandes geram confusão",
+   "Pistas com números altos tendem a causar mais dúvida e debate, segundo a Wargamer. É tentador ligar quatro palavras de uma vez, mas a equipe acaba errando e entregando pontos ao rival."
+  ],
+  [
+   "Leve",
+   "Precisa de grupo",
+   "Não há modo solo oficial, e a experiência melhora com mais gente. Existe uma versão para duas pessoas lançada à parte, Codenames: Duet, mas na caixa principal o ideal é ter quatro jogadores ou mais."
+  ],
+  [
+   "Leve",
+   "Pouca profundidade estratégica",
+   "É um jogo de festa: a graça está na conversa, não no planejamento de longo prazo. Quem procura um desafio estratégico para jogar várias vezes com o mesmo grupo vai encontrar mais em outros jogos."
+  ]
+ ],
+ "para_quem": [
+  "Reúne amigos e família com frequência",
+  "Quer um jogo de festa que todos entendem rápido",
+  "Gosta de jogos de palavras",
+  "Gosta de discussões e risadas à mesa",
+  "Recebe grupos grandes"
+ ],
+ "nao_e_para": [
+  "Joga quase sempre a 2",
+  "Não gosta de pressão para dar pistas",
+  "Busca estratégia profunda",
+  "Quer jogar sozinho",
+  "Prefere jogos silenciosos"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "festa",
+ "veredito": "Codenames transforma uma ideia simples em discussões memoráveis: uma palavra, um número e uma grade bastam para a mesa inteira debater, rir e se surpreender. A regra cabe em minutos, a partida dura um quarto de hora e funciona com grupos grandes, o que explica o Spiel des Jahres. A espera enquanto o chefe pensa e a dependência de quem dá as pistas pesam, e não é um jogo de estratégia profunda. Por cerca de R$ 200, na edição da Devir, é um dos melhores jogos de festa já feitos.",
+ "tagline": "Um dos melhores jogos de festa já criados.",
+ "consulta": "26/10/2026",
+ "fontes": [
+  [
+   "BoardGameGeek – Codenames",
+   "https://boardgamegeek.com/boardgame/178900/codenames",
+   "nota, avaliações, peso, jogadores, duração"
+  ],
+  [
+   "BoardGameGeek – Código Secreto (2ª edição em português)",
+   "https://boardgamegeek.com/boardgameversion/331224/portuguese-second-edition",
+   "edição Devir"
+  ],
+  [
+   "Wikipedia – Codenames",
+   "https://en.wikipedia.org/wiki/Codenames_(board_game)",
+   "designer, editora, regras, nº recomendado"
+  ],
+  [
+   "Unboxed – Codenames",
+   "https://www.unboxedtheboardgameblog.com/post/2017/08/09/game-night-reviews-codenames",
+   "tempo de espera"
+  ],
+  [
+   "Roll to Review – Codenames",
+   "https://rolltoreview.com/?p=22188",
+   "papel do chefe de espionagem"
+  ],
+  [
+   "Wargamer – Codenames review",
+   "https://www.wargamer.com/codenames/review",
+   "crítica geral"
+  ],
+  [
+   "Omniverse – Código Secreto (Nova Edição)",
+   "https://www.omniverse.com.br/codigo-secreto-nova-edicao",
+   "preço de referência"
+  ],
+  [
+   "Brinka – Código Secreto",
+   "https://www.brinka.shop/estrategia-tabuleiro-e-rpg/codigo-secreto-devir",
+   "preço de referência"
+  ]
+ ],
+ "roteiro": {
+  "tema": "spy thriller, secret agents in sunglasses and suits, red team versus blue team, dark city at night, dramatic red and blue lighting",
+  "cena": "a female spy lit in red and a male spy lit in blue facing each other",
+  "mesa": "a box titled \"CODENAMES\" with two spy silhouettes, a 5x5 grid of beige word cards, a key card stand with a red/blue grid, red and blue agent cards and one black assassin card",
+  "titulo": "CODENAMES",
+  "chamada": "DUAS EQUIPES. 25 PALAVRAS. UMA ÚNICA PISTA.",
+  "lateral": [
+   "2–8 jogadores",
+   "15 minutos",
+   "complexidade 1,25 / 5",
+   "modo solo: não",
+   "sem dados",
+   "designer Vlaada Chvátil",
+   "editora no Brasil Devir",
+   "ano 2015"
+  ],
+  "numeros": [
+   [
+    "NOTA BGG",
+    "7,5/10"
+   ],
+   [
+    "COMPLEXIDADE",
+    "1,25/5"
+   ],
+   [
+    "DURAÇÃO",
+    "15 min"
+   ]
+  ],
+  "passos": [
+   [
+    "MONTE A GRADE",
+    "25 palavras em 5×5."
+   ],
+   [
+    "VEJA A CARTA-CHAVE",
+    "Só os chefes sabem quem é quem."
+   ],
+   [
+    "DÊ UMA PISTA",
+    "Uma palavra e um número."
+   ],
+   [
+    "ACHE SEUS AGENTES",
+    "A equipe discute e aponta."
+   ],
+   [
+    "EVITE O ASSASSINO",
+    "Quem achar o assassino perde."
+   ]
+  ],
+  "fortes": [
+   "Regras explicadas em minutos.",
+   "Ótimo para grupos grandes.",
+   "Discussões muito divertidas.",
+   "Partidas curtas."
+  ],
+  "atencao": [
+   "Espera enquanto o chefe pensa.",
+   "Depende do chefe de espionagem.",
+   "Sem modo solo oficial.",
+   "Pouca profundidade estratégica."
+  ],
+  "ficha": [
+   "Designer: Vlaada Chvátil",
+   "Editora original: Czech Games Edition",
+   "Editora no Brasil: Devir",
+   "Ano: 2015",
+   "Idade: 10+"
+  ],
+  "premios": [
+   "SPIEL DES JAHRES 2016",
+   "GOLDEN GEEK 2015 · FESTA",
+   "GOLDEN GEEK 2015 · FAMÍLIA"
+  ],
+  "veredito": "UM DOS MELHORES JOGOS DE FESTA JÁ CRIADOS."
+ },
+ "legenda": "Uma palavra. Um número. E a discussão mais divertida da noite. 🕵️‍♀️🕵️\n\nDuas equipes, 25 palavras e um chefe de espionagem tentando ligar tudo com uma única pista.\nVencedor do Spiel des Jahres 2016 e dos Golden Geek de Festa e Família.\nA espera enquanto o chefe pensa pesa um pouco, mas para encontros é imbatível.\nVeredito: RECOMENDADO.\n\nQual foi a pista mais absurda que já deram na sua mesa?\nResenha completa no link da bio.\n\n#Codenames #CodigoSecreto #JogosDeTabuleiro #JogoDeFesta #BoardGames #PartyGame #SpielDesJahres #Devir #EliteBoardgamers #BoardGameNight",
+ "passos": [
+  [
+   "FORME AS EQUIPES",
+   "Duas equipes escolhem um chefe de espionagem cada; os outros jogadores são agentes que tentam adivinhar."
+  ],
+  [
+   "VEJA A CARTA-CHAVE",
+   "Só os chefes veem a carta secreta que mostra os agentes de cada cor, os civis e o assassino."
+  ],
+  [
+   "DÊ UMA PISTA",
+   "O chefe diz uma palavra e um número, indicando quantas palavras da grade se ligam a essa pista."
+  ],
+  [
+   "APONTE AS PALAVRAS",
+   "A equipe discute e aponta uma de cada vez. Acertou, continua; errou, a vez passa ao adversário."
+  ],
+  [
+   "EVITE O ASSASSINO",
+   "Vence quem achar todos os seus agentes primeiro. Quem apontar o assassino perde a partida na hora."
+  ]
+ ],
+ "como_resumo": "Ligue várias palavras com uma só pista e leve sua equipe a achar os agentes certos.",
+ "perfil": [
+  [
+   "Diversão em grupo",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Conversa à mesa",
+   5
+  ],
+  [
+   "Profundidade estratégica",
+   2
+  ],
+  [
+   "Modo solo",
+   0
+  ]
+ ],
+ "experiencia": [
+  "A Wargamer dá um exemplo perfeito: o chefe diz Aquático, 3, e a equipe acerta Lago Ness, peixe e ferradura, esta última por causa do caranguejo-ferradura. Em seguida vem a discussão: alguém jura que submarino também era aquático, outro lembra que o assassino pode estar escondido justamente ali. Cada pista vira um pequeno debate, e o chefe sofre em silêncio vendo o grupo ir para o lado errado.",
+  "Para a Wargamer, o jogo faz você se sentir genial num momento e perdido no seguinte. Jogar com o parceiro cria piadas internas; jogar com desconhecidos mostra como as pessoas pensam diferente. Uma partida dura cerca de 15 minutos, e a revanche costuma ser imediata, com os chefes trocados. Com seis ou mais pessoas, as discussões ficam ainda melhores."
+ ],
+ "citacao": {
+  "texto": "Continua sendo um dos melhores jogos de festa que existem.",
+  "fonte": "Wargamer (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "2 ou 3 jogadores",
+   "Funciona com variantes, mas o ideal é usar a versão Codenames: Duet, feita para duplas.",
+   1
+  ],
+  [
+   "4 a 6 jogadores",
+   "Duas equipes completas, com discussão e um chefe para cada lado; a Wikipedia indica 6 como ideal.",
+   3
+  ],
+  [
+   "7 ou mais jogadores",
+   "Funciona bem, com equipes maiores e debates mais animados; a Wargamer o considera ideal para grupos grandes.",
+   3
+  ]
+ ],
+ "primeira_partida": "Explique o papel do chefe e dos agentes com a carta-chave na mão e dê você mesmo a primeira pista, como exemplo. O ponto que mais confunde é o que vale como pista: uma palavra só, sem gestos e sem usar palavras da grade. A Wargamer sugere corrigir os erros iniciais com calma. Dica prática: comece com pistas de número 2 e deixe as ousadas para depois.",
+ "edicao_nacional": "A Devir publica o jogo como Código Secreto, em português, com as palavras adaptadas. Em 27/10/2026, as lojas consultadas vendiam a edição atual entre R$ 189 e R$ 229, com desconto no Pix em algumas delas. Há também a versão Código Secreto Imagens, com desenhos no lugar das palavras.",
+ "preco_ref": {
+  "faixa": "R$ 189 a R$ 229",
+  "data": "27/10/2026",
+  "obs": "edição da Devir"
+ },
+ "versoes": "Codenames: Pictures troca as palavras por imagens e saiu no Brasil como Código Secreto Imagens. Codenames: Duet é a versão cooperativa para duas pessoas, e existem edições temáticas lançadas lá fora. Há também um site oficial para jogar online de graça.",
+ "comparacoes": [
+  [
+   "Flip 7",
+   "flip-7",
+   "Outro jogo de festa rápido e fácil de ensinar, só que de cartas e de arriscar a sorte, sem equipes nem palavras."
+  ],
+  [
+   "The Mind",
+   "the-mind",
+   "Também é sobre entender o que os outros estão pensando, mas cooperativo e em silêncio, com cartas numeradas no lugar das pistas."
+  ],
+  [
+   "MicroMacro: Crime City",
+   "micromacro",
+   "Para grupos que gostam de discutir pistas juntos, mas preferem cooperar numa investigação visual em vez de competir com palavras."
+  ]
+ ]
+}

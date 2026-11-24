@@ -1,0 +1,2944 @@
+{
+ "feuerland-spiele.de": {
+  "nome": "Feuerland Spiele",
+  "apelidos": [
+   "Feuerland Spiele"
+  ],
+  "site": "https://www.feuerland-spiele.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.feuerland-spiele.de/fileadmin/catalog/FL_Katalog_Herbst_2026_web.pdf",
+  "paginas": {
+   "ark-nova": "https://www.feuerland-spiele.de/spielwelten/arche-nova/",
+   "santuario": "https://www.feuerland-spiele.de/spiele/artengarten/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "czechgames.com": {
+  "nome": "Czech Games Edition",
+  "apelidos": [
+   "Czech Games Edition"
+  ],
+  "site": "https://www.czechgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.czechgames.com/for-press-games",
+  "paginas": {
+   "codenames-pictures": "https://www.czechgames.com/games/codenames-pictures"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.czechgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "planbgames.com": {
+  "nome": "Plan B Games",
+  "apelidos": [
+   "Plan B Games"
+  ],
+  "site": "https://www.nextmove-games.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.nextmove-games.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "cephalofair.com": {
+  "nome": "Cephalofair Games",
+  "apelidos": [
+   "Cephalofair Games"
+  ],
+  "site": "https://cephalofair.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {
+   "gloomhaven": "https://cephalofair.com/products/gloomhaven-board-game-2nd-edition"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://cephalofair.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "alderac.com": {
+  "nome": "AEG",
+  "apelidos": [
+   "AEG"
+  ],
+  "site": "https://www.alderac.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.alderac.com/2025/09/15/smash-up-press-release/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.alderac.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "ludonaute.fr": {
+  "nome": "Ludonaute",
+  "apelidos": [
+   "Ludonaute"
+  ],
+  "site": "https://www.ludonaute.fr",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.ludonaute.fr/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "portalgames.pl": {
+  "nome": "Portal Games",
+  "apelidos": [
+   "Portal Games"
+  ],
+  "site": "https://sklep.portalgames.pl",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "detective": "https://en.portalgames.pl/buy-detective/"
+  },
+  "status": "ok",
+  "obs": "loja sklep.portalgames.pl não tem o jogo-base de Detective; só acessórios",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 1.0,
+   "sitemaps": [
+    "https://sklep.portalgames.pl/console/integration/execute/name/GoogleSitemap"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "direwolfdigital.com": {
+  "nome": "Dire Wolf",
+  "apelidos": [
+   "Dire Wolf"
+  ],
+  "site": "https://direwolfdigital.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "dune-imperium": "https://direwolfdigital.com/dune-imperium/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "burntislandgames.com": {
+  "nome": "Burnt Island Games",
+  "apelidos": [
+   "Burnt Island Games"
+  ],
+  "site": "https://www.burntislandgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "endeavor-deep-sea": "https://www.burntislandgames.com/endeavordeepsea"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.burntislandgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "catchupgames.com": {
+  "nome": "Catch Up Games",
+  "apelidos": [
+   "Catch Up Games"
+  ],
+  "site": "https://catchupgames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://catchupgames.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "theop.games": {
+  "nome": "The Op Games",
+  "apelidos": [
+   "The Op Games"
+  ],
+  "site": "https://theop.games",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://theop.games/pages/press",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://theop.games/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "edition-spielwiese.de": {
+  "nome": "Edition Spielwiese",
+  "apelidos": [
+   "Edition Spielwiese"
+  ],
+  "site": "https://edition-spielwiese.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://edition-spielwiese.de/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "awakenrealms.com": {
+  "nome": "Awaken Realms",
+  "apelidos": [
+   "Awaken Realms"
+  ],
+  "site": "https://awakenrealms.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://awakenrealms.com/download",
+  "paginas": {
+   "nemesis": "https://awakenrealms.com/games/awaken-realms/nemesis",
+   "the-castles-of-burgundy": "https://awakenrealms.com/games/awaken-realms/castles-of-burgundy"
+  },
+  "status": "ok",
+  "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-27"
+  },
+  "js": true
+ },
+ "zmangames.com": {
+  "nome": "Z-Man Games",
+  "apelidos": [
+   "Z-Man Games"
+  ],
+  "site": "https://www.zmangames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.zmangames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "stonemaiergames.com": {
+  "nome": "Stonemaier Games",
+  "apelidos": [
+   "Stonemaier Games"
+  ],
+  "site": "https://stonemaiergames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://stonemaiergames.com/about/interview-and-promotion-requests/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://stonemaiergames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "scorpionmasque.com": {
+  "nome": "Le Scorpion Masqué",
+  "apelidos": [
+   "Le Scorpion Masqué"
+  ],
+  "site": "https://scorpionmasque.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "sky-team": "https://scorpionmasque.com/en/sky-team"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 10.0,
+   "sitemaps": [],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "fryxgames.se": {
+  "nome": "FryxGames",
+  "apelidos": [
+   "FryxGames"
+  ],
+  "site": "https://fryxgames.se",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "kosmos.de": {
+  "nome": "Kosmos",
+  "apelidos": [
+   "Kosmos"
+  ],
+  "site": "https://www.kosmos.de",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://kosmos-verlag.myshopify.com/pages/apps/apps",
+  "paginas": {
+   "the-crew-mission-deep-sea": "https://www.kosmos.de/products/die-crew-mission-tiefsee"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.kosmos.de/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "nsv.de": {
+  "nome": "Nürnberger-Spielkarten-Verlag",
+  "apelidos": [
+   "Nürnberger-Spielkarten-Verlag"
+  ],
+  "site": "https://nsv.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "robots.txt proíbe https://nsv.de"
+ },
+ "devir.com.br": {
+  "nome": "Devir",
+  "apelidos": [
+   "Devir"
+  ],
+  "site": "https://devir.com.br",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://devir.com.br/devir-download/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "www.devir.com.br/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "grokgames.com.br": {
+  "nome": "Grok Games",
+  "apelidos": [
+   "Grok Games"
+  ],
+  "site": "https://loja.grokgames.com.br",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 10.0,
+   "sitemaps": [
+    "https://loja.grokgames.com.br/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "meeplebr.com": {
+  "nome": "MeepleBR",
+  "apelidos": [
+   "MeepleBR"
+  ],
+  "site": "https://meeplebr.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://meeplebr.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "ludofun.com.br": {
+  "nome": "Ludofun",
+  "apelidos": [
+   "Ludofun"
+  ],
+  "site": "https://www.ludofun.com.br",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://ludofun.com.br/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "flatout.games": {
+  "nome": "Flatout Games",
+  "apelidos": [
+   "Flatout Games"
+  ],
+  "site": "https://www.flatout.games",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.flatout.games/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "galapagosjogos.com.br": {
+  "nome": "Galápagos",
+  "apelidos": [
+   "Galápagos"
+  ],
+  "site": "https://www.galapagosjogos.com.br",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "robots.txt proíbe https://www.galapagosjogos.com.br"
+ },
+ "ludofy.com.br": {
+  "nome": "Ludofy",
+  "apelidos": [
+   "Ludofy"
+  ],
+  "site": "https://www.ludofy.com.br",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://www.ludofy.com.br inacessível (erro de rede); tente mais tarde"
+ },
+ "cocktailgames.com": {
+  "nome": "Cocktail Games",
+  "apelidos": [
+   "Cocktail Games"
+  ],
+  "site": "https://www.cocktailgames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "bomb-busters": "https://www.cocktailgames.com/jeu/bomb-busters/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.cocktailgames.com/sitemaps.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "pandasaurusgames.com": {
+  "nome": "Pandasaurus Games",
+  "apelidos": [
+   "Pandasaurus Games"
+  ],
+  "site": "https://pandasaurusgames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://pandasaurusgames.com/pages/press",
+  "paginas": {
+   "the-mind": "https://pandasaurusgames.com/products/the-mind"
+  },
+  "status": "ok",
+  "obs": "edita The Mind nos EUA (licença da NSV, que bloqueia robôs)",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://pandasaurusgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "strongholdgames.com": {
+  "nome": "Stronghold Games",
+  "apelidos": [
+   "Stronghold Games"
+  ],
+  "site": "https://strongholdgames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://strongholdgames.com/sitemap_index.xml",
+    "https://indieboardsandcards.com/sitemap_index.xml",
+    "https://boardgame.rustyquill.com/sitemap_index.xml",
+    "https://magnusprotocolmysteries.com/sitemap_index.xml",
+    "https://freeradio.site/sitemap_index.xml",
+    "https://yourchartwellington.com/sitemap_index.xml",
+    "https://magnusarchivesmysteries.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "pegasus.de": {
+  "nome": "Pegasus Spiele",
+  "apelidos": [
+   "Pegasus Spiele"
+  ],
+  "site": "https://pegasus.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://pegasus.de/Produkte/Downloads/",
+  "paginas": {
+   "detective": "https://pegasus.de/en/Detective-Ein-Krimi-Brettspiel-Portal-Games-Nominiert-Kennerspiel-des-Jahres-2019/57505G"
+  },
+  "status": "ok",
+  "obs": " edita Detective na Alemanha (licença da Portal)",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "fantasyflightgames.com": {
+  "nome": "Fantasy Flight Games",
+  "apelidos": [
+   "Fantasy Flight Games"
+  ],
+  "site": "https://www.fantasyflightgames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.fantasyflightgames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "rprod.com": {
+  "nome": "Repos Production",
+  "apelidos": [
+   "Repos Production"
+  ],
+  "site": "https://www.rprod.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "so-clover": "https://www.rprod.com/en/games/so-clover",
+   "the-lord-of-the-rings": "https://www.rprod.com/en/press/duel-for-middle-earth"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "kinsonkey.com": {
+  "nome": "Kinson Key Games",
+  "apelidos": [
+   "Kinson Key Games"
+  ],
+  "site": "https://www.kinsonkeygames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.kinsonkeygames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "en.palaisdesfestivals.com": {
+  "nome": "Palais des Festivals",
+  "apelidos": [
+   "Palais des Festivals"
+  ],
+  "site": "https://en.palaisdesfestivals.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://en.palaisdesfestivals.com/press-area/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://en.palaisdesfestivals.com/sitemap.xml/"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "diversaooffline.com.br": {
+  "nome": "Diversão Offline",
+  "apelidos": [
+   "Diversão Offline"
+  ],
+  "site": "https://diversaooffline.com.br",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://diversaooffline.com.br/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "restorationgames.com": {
+  "nome": "Restoration Games",
+  "apelidos": [
+   "Restoration Games"
+  ],
+  "site": "https://restorationgames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://restorationgames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "capstone-games.com": {
+  "nome": "Capstone Games",
+  "apelidos": [
+   "Capstone Games"
+  ],
+  "site": "https://capstone-games.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://capstone-games.com/pages/become-a-retailer",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://capstone-games.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "asmodee.co.uk": {
+  "nome": "Asmodee UK",
+  "apelidos": [
+   "Asmodee UK"
+  ],
+  "site": "https://www.asmodee.co.uk",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://www.asmodee.co.uk/account/login?return_url=%2F&return_to=%2F",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.asmodee.co.uk/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "daysofwonder.com": {
+  "nome": "Days of Wonder",
+  "apelidos": [
+   "Days of Wonder"
+  ],
+  "site": "https://www.daysofwonder.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.daysofwonder.com/press/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.daysofwonder.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "libellud.com": {
+  "nome": "Libellud",
+  "apelidos": [
+   "Libellud"
+  ],
+  "site": "https://www.libellud.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.libellud.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "deep-print-games.com": {
+  "nome": "Deep Print Games",
+  "apelidos": [
+   "Deep Print Games"
+  ],
+  "site": "https://www.deep-print-games.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.deep-print-games.com/wp-sitemap.xml",
+    "https://www.deep-print-games.com/sitemap.xml",
+    "https://www.deep-print-games.com/sitemap.html"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "cmyk.games": {
+  "nome": "CMYK",
+  "apelidos": [
+   "CMYK"
+  ],
+  "site": "https://www.cmyk.games",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.cmyk.games/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "quined.nl": {
+  "nome": "Quined Games",
+  "apelidos": [
+   "Quined Games"
+  ],
+  "site": "https://quinedgames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://quinedgames.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "1moretimegames.com": {
+  "nome": "1 More Time Games",
+  "apelidos": [
+   "1 More Time Games"
+  ],
+  "site": "https://1moretimegames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "adamsapplegames.com": {
+  "nome": "Adam's Apple Games",
+  "apelidos": [
+   "Adam's Apple Games"
+  ],
+  "site": "https://adamsapplegames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://adamsapplegames.com/media/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "http://cdn.attracta.com/sitemap/4273372.xml.gz"
+   ],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "ravensburger.de": {
+  "nome": "Ravensburger",
+  "apelidos": [
+   "Ravensburger"
+  ],
+  "site": "https://www.ravensburger.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.ravensburger-gruppe.de/de/presse/index.html",
+  "paginas": {
+   "the-castles-of-burgundy": "https://www.ravensburger.de/de-DE/produkte/spiele/spiele-fuer-erwachsene/the-castles-of-burgundy-special-edition-27564"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.ravensburger.de/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "hans-im-glueck.de": {
+  "nome": "Hans im Glück",
+  "apelidos": [
+   "Hans im Glück"
+  ],
+  "site": "https://www.hans-im-glueck.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.hans-im-glueck.de/presse/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "greyfoxgames.com": {
+  "nome": "Grey Fox Games",
+  "apelidos": [
+   "Grey Fox Games"
+  ],
+  "site": "https://greyfoxgames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://greyfoxgames.com/pages/downloads",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://greyfoxgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "tlamagames.com": {
+  "nome": "tlamagames.com",
+  "apelidos": [],
+  "site": "https://www.tlamagames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "ready-set-bet": "https://www.tlamagames.com/en/board-games/sazky--prosim--herni-podlozka--playmat"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.tlamagames.com/en/sitemap.xml",
+    "https://www.tlamagames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "hegemonicproject.com": {
+  "nome": "Hegemonic Project Games",
+  "apelidos": [
+   "Hegemonic Project Games"
+  ],
+  "site": "https://hegemonicproject.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 20.0,
+   "sitemaps": [],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "redravengames.com": {
+  "nome": "Red Raven Games",
+  "apelidos": [
+   "Red Raven Games"
+  ],
+  "site": "https://www.redravengames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.redravengames.com/frequently-asked-questions-retailers/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.redravengames.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "insideupgames.com": {
+  "nome": "Inside Up Games",
+  "apelidos": [
+   "Inside Up Games"
+  ],
+  "site": "https://insideupgames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://insideupgames.com/media/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://insideupgames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "lookout-spiele.de": {
+  "nome": "Lookout Games",
+  "apelidos": [
+   "Lookout Games"
+  ],
+  "site": "https://www.lookout-spiele.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "eggertspiele.de": {
+  "nome": "eggertspiele",
+  "apelidos": [
+   "eggertspiele"
+  ],
+  "site": "https://www.eggertspiele.de",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.eggertspiele.de/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "officedoggames.com": {
+  "nome": "Office Dog",
+  "apelidos": [
+   "Office Dog"
+  ],
+  "site": "https://www.officedoggames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.officedoggames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "ravensburger.com.au": {
+  "nome": "Ravensburger Australia",
+  "apelidos": [
+   "Ravensburger Australia"
+  ],
+  "site": "https://ravensburger.com.au",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://ravensburger.com.au/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "gf9games.com": {
+  "nome": "Gale Force Nine",
+  "apelidos": [
+   "Gale Force Nine"
+  ],
+  "site": "https://gf9games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "403 em https://gf9games.com"
+ },
+ "northstargames.com": {
+  "nome": "North Star Games",
+  "apelidos": [
+   "North Star Games"
+  ],
+  "site": "https://www.northstargames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://www.northstargames.com/pages/press-content-creators",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.northstargames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "schmidtspiele.de": {
+  "nome": "Schmidt Spiele",
+  "apelidos": [
+   "Schmidt Spiele"
+  ],
+  "site": "https://www.schmidtspiele.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "thats-pretty-clever": "https://www.schmidtspiele.de/details-93/fruehjahrsneuheit-ganz-schoen-clever.html"
+  },
+  "status": "ok",
+  "obs": "b2k-media.de (antigo press_kit) é uma agência de sites de Berlim, não a imprensa da Schmidt; contato do impressum: info@schmidtspiele.de.",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.schmidtspiele.de/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "spiel-des-jahres.de": {
+  "nome": "Spiel des Jahres",
+  "apelidos": [
+   "Spiel des Jahres"
+  ],
+  "site": "https://www.spiel-des-jahres.de",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.spiel-des-jahres.de/presseservice-informationen-2026/",
+  "paginas": {
+   "so-clover": "https://www.spiel-des-jahres.de/empfehlungsliste-spiel-des-jahres-so-kleever/",
+   "thats-pretty-clever": "https://www.spiel-des-jahres.de/spiele/ganz-schoen-clever/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.spiel-des-jahres.de/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "roxley.com": {
+  "nome": "Roxley Games",
+  "apelidos": [
+   "Roxley Games"
+  ],
+  "site": "https://roxley.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://roxley.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "beziergames.com": {
+  "nome": "Bezier Games",
+  "apelidos": [
+   "Bezier Games"
+  ],
+  "site": "https://beziergames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://beziergames.com/pages/press-reviewers-clubs-inquiries",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://beziergames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "mechsvsminions.com": {
+  "nome": "Riot Games",
+  "apelidos": [
+   "Riot Games"
+  ],
+  "site": "https://mechsvsminions.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://mechsvsminions.com inacessível (erro de rede); tente mais tarde"
+ },
+ "ledergames.com": {
+  "nome": "Leder Games",
+  "apelidos": [
+   "Leder Games"
+  ],
+  "site": "https://ledergames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://ledergames.com/a/wsg/proxy/login",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://ledergames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "contentiongames.com": {
+  "nome": "Contention Games",
+  "apelidos": [
+   "Contention Games"
+  ],
+  "site": "https://contentiongames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "slay-the-spire-the-board-game": "https://contentiongames.com/slay/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://contentiongames.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "luckyduckgames.com": {
+  "nome": "Lucky Duck Games",
+  "apelidos": [
+   "Lucky Duck Games"
+  ],
+  "site": "https://luckyduckgames.com:443",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://luckyduckgames.com/usa/1_index_sitemap.xml",
+    "https://luckyduckgames.com/polska/2_index_sitemap.xml",
+    "https://luckyduckgames.com/france/3_index_sitemap.xml",
+    "https://luckyduckgames.com/global/4_index_sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "wehrlegig.com": {
+  "nome": "Wehrlegig Games",
+  "apelidos": [
+   "Wehrlegig Games"
+  ],
+  "site": "https://wehrlegig.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://wehrlegig.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  }
+ },
+ "merch.riotgames.com": {
+  "nome": "Riot Games (loja oficial)",
+  "apelidos": [
+   "Riot Games Merch",
+   "Riot Games"
+  ],
+  "site": "https://merch.riotgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "mechs-vs-minions": "https://merch.riotgames.com/en-us/product/mechs-v-s-minions-wave-3/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://merch.riotgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  },
+  "js": true
+ },
+ "asmodee.ca": {
+  "nome": "Asmodee Canada",
+  "apelidos": [
+   "Asmodee Canada"
+  ],
+  "site": "https://www.asmodee.ca",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.asmodee.ca/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  }
+ },
+ "strohmann-games.de": {
+  "nome": "Strohmann Games",
+  "apelidos": [
+   "Strohmann Games"
+  ],
+  "site": "https://strohmann-games.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "403 em https://strohmann-games.de"
+ },
+ "koreaboardgames.com": {
+  "nome": "Korea Boardgames",
+  "apelidos": [
+   "Korea Boardgames"
+  ],
+  "site": "https://www.koreaboardgames.com:443",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-01"
+  }
+ },
+ "eaglegames.net": {
+  "nome": "Eagle-Gryphon Games",
+  "apelidos": [
+   "Eagle-Gryphon Games",
+   "Eagle-Gryphon",
+   "Eagle Games"
+  ],
+  "site": "https://www.eagle-gryphon.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://www.eagle-gryphon.com/pages/store-locator",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.eagle-gryphon.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  }
+ },
+ "spacecowboys.fr": {
+  "nome": "Space Cowboys",
+  "apelidos": [
+   "Space Cowboys"
+  ],
+  "site": "https://www.spacecowboys-games.com:443",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.spacecowboys-games.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  }
+ },
+ "buriedgiant.com": {
+  "nome": "Buried Giant Studios",
+  "apelidos": [
+   "Buried Giant Studios"
+  ],
+  "site": "https://buriedgiant.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://buriedgiant.com/media",
+  "paginas": {},
+  "status": "ok",
+  "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-02"
+  },
+  "js": true
+ },
+ "vanrydergames.com": {
+  "nome": "Van Ryder Games",
+  "apelidos": [
+   "Van Ryder Games"
+  ],
+  "site": "https://vanrydergames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://vanrydergames.com/pages/press-kits",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://vanrydergames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-02"
+  }
+ },
+ "eerieidolgames.com": {
+  "nome": "Eerie Idol Games",
+  "apelidos": [
+   "Eerie Idol Games"
+  ],
+  "site": "https://www.eerieidolgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.dropbox.com/scl/fo/st2zoegtbn2iso1q2fjwe/AGE_DD2vV4fQS9xVNWathQs?rlkey=v5gar5zid7u27s2xoba85uyl0&dl=0",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.eerieidolgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-02"
+  }
+ },
+ "thamesandkosmos.com": {
+  "nome": "Thames & Kosmos",
+  "apelidos": [
+   "Thames & Kosmos"
+  ],
+  "site": "https://thamesandkosmos.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://docs.google.com/forms/d/e/1FAIpQLSf2fZVuZANsB3WwWbB5vaBvGfPCswDTp0UzSWB9TKEhQdkguQ/viewform",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://thamesandkosmos.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "store.thamesandkosmos.com": {
+  "nome": "Thames & Kosmos",
+  "apelidos": [
+   "Thames & Kosmos"
+  ],
+  "site": "https://thamesandkosmos.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://docs.google.com/forms/d/e/1FAIpQLSf2fZVuZANsB3WwWbB5vaBvGfPCswDTp0UzSWB9TKEhQdkguQ/viewform",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://thamesandkosmos.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "iello.fr": {
+  "nome": "IELLO",
+  "apelidos": [
+   "IELLO"
+  ],
+  "site": "https://iello.fr",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://iello.fr/presse/",
+  "paginas": {
+   "codenames-pictures": "https://iello.fr/jeux/codenames-images-nouvelle-edition/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://iello.fr/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "999games.com": {
+  "nome": "999 Games",
+  "apelidos": [
+   "999 Games"
+  ],
+  "site": "https://999games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://999games.com inacessível (erro de rede); tente mais tarde"
+ },
+ "999games.nl": {
+  "nome": "999 Games",
+  "apelidos": [
+   "999 Games"
+  ],
+  "site": "https://www.999games.nl",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 10.0,
+   "sitemaps": [
+    "https://www.999games.nl/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "skellig-games.de": {
+  "nome": "Skellig Games",
+  "apelidos": [
+   "Skellig Games"
+  ],
+  "site": "https://www.skellig-games.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "keyforging.com": {
+  "nome": "Ghost Galaxy (KeyForge)",
+  "apelidos": [
+   "Ghost Galaxy (KeyForge)"
+  ],
+  "site": "https://keyforging.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "keyforge-call-of-the-archons": "https://keyforging.com/products/keyforge-call-of-the-archons-starter-set/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://keyforging.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "ospreypublishing.com": {
+  "nome": "Osprey Games",
+  "apelidos": [
+   "Osprey Games"
+  ],
+  "site": "https://www.ospreypublishing.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.ospreypublishing.com/media/p00nx5vg/modern-slavery-statement-2026.pdf",
+  "paginas": {
+   "undaunted-battle-of-britain": "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
+   "undaunted-stalingrad": "https://www.ospreypublishing.com/uk/osprey-blog/2022/undaunted-stalingrad-launch-day/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://ospreypublishing.com/uk/sitemap/",
+    "https://ospreypublishing.com/ca/sitemap/",
+    "https://ospreypublishing.com/us/sitemap/"
+   ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "moodpublishing.com": {
+  "nome": "MOOD Publishing",
+  "apelidos": [
+   "MOOD Publishing"
+  ],
+  "site": "https://moodpublishing.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://moodpublishing.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "mynewsdesk.com": {
+  "nome": "Coffee Stain (Mynewsdesk)",
+  "apelidos": [
+   "Coffee Stain (Mynewsdesk)"
+  ],
+  "site": "https://www.mynewsdesk.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.mynewsdesk.com/en/media-monitoring/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.mynewsdesk.com/sitemaps/index.xml",
+    "https://www.mynewsdesk.com/post-sitemap.xml",
+    "https://www.mynewsdesk.com/page-sitemap.xml",
+    "https://www.mynewsdesk.com/customer_case-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "catan.com": {
+  "nome": "Catan GmbH",
+  "apelidos": [
+   "Catan GmbH"
+  ],
+  "site": "https://www.catan.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.catan.com/press-inquiries",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "gamelyngames.com": {
+  "nome": "Gamelyn Games",
+  "apelidos": [
+   "Gamelyn Games",
+   "Gamelyn",
+   "Tycoon Games"
+  ],
+  "site": "https://tycoongames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://tycoongames.com/pages/media-application",
+  "paginas": {
+   "tiny-epic-crimes": "https://tycoongames.com/products/tiny-epic-crimes-deluxe",
+   "tiny-epic-cthulhu": "https://tycoongames.com/products/tiny-epic-cthulhu-deluxe",
+   "tiny-epic-dinosaurs": "https://tycoongames.com/products/tiny-epic-dinosaurs-deluxe",
+   "tiny-epic-dungeons": "https://tycoongames.com/products/tiny-epic-dungeons-deluxe",
+   "tiny-epic-pirates": "https://tycoongames.com/products/tiny-epic-pirates-deluxe",
+   "tiny-epic-vikings": "https://tycoongames.com/products/tiny-epic-vikings-deluxe",
+   "tiny-epic-zombies": "https://tycoongames.com/products/tiny-epic-zombies"
+  },
+  "status": "ok",
+  "obs": "gamelyngames.com redireciona para tycoongames.com (loja oficial da linha Tiny Epic); verificado em 2026-11-04",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://tycoongames.com/sitemap.xml",
+    "https://tycoongames.com/sitemap.xml",
+    "https://tycoongames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "dicethrone.com": {
+  "nome": "Dice Throne",
+  "apelidos": [
+   "Dice Throne",
+   "Dice Throne Inc.",
+   "Roxley Games"
+  ],
+  "site": "https://dicethrone.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://shop.dicethrone.com/pages/retailer-portal",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 10.0,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "shop.dicethrone.com": {
+  "nome": "Dice Throne",
+  "apelidos": [
+   "Dice Throne"
+  ],
+  "site": "https://shop.dicethrone.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://shop.dicethrone.com/pages/retailer-portal",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://shop.dicethrone.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "plaidhatgames.com": {
+  "nome": "Plaid Hat Games",
+  "apelidos": [
+   "Plaid Hat Games"
+  ],
+  "site": "https://www.plaidhatgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.plaidhatgames.com/accounts/retailer-redirect/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "gmtgames.com": {
+  "nome": "GMT Games",
+  "apelidos": [
+   "GMT Games"
+  ],
+  "site": "https://gmtgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "robots.txt proíbe https://gmtgames.com"
+ },
+ "matagot.com": {
+  "nome": "Matagot",
+  "apelidos": [
+   "Matagot"
+  ],
+  "site": "https://www.matagot.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.matagot.com/en/content/13-press",
+  "paginas": {},
+  "status": "ok",
+  "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  },
+  "js": true
+ },
+ "garphill.com": {
+  "nome": "Garphill Games",
+  "apelidos": [
+   "Garphill Games"
+  ],
+  "site": "https://www.garphill.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.garphill.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "renegadegamestudios.com": {
+  "nome": "Renegade Game Studios",
+  "apelidos": [
+   "Renegade Game Studios"
+  ],
+  "site": "https://renegadegamestudios.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://renegadegamestudios.com/downloads/free-pdf-downloads/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "asmodee.de": {
+  "nome": "Asmodee Deutschland",
+  "apelidos": [
+   "Asmodee Deutschland"
+  ],
+  "site": "https://www.asmodee.de",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://archiv.asmodee.de/archiv.php",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "dontpanicgames.com": {
+  "nome": "Don't Panic Games",
+  "apelidos": [
+   "Don't Panic Games"
+  ],
+  "site": "https://www.dontpanicgames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "cmon.com": {
+  "nome": "CMON",
+  "apelidos": [
+   "CMON"
+  ],
+  "site": "https://cmon.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "403 em https://cmon.com"
+ },
+ "frostedgames.de": {
+  "nome": "Frosted Games",
+  "apelidos": [
+   "Frosted Games"
+  ],
+  "site": "https://frostedgames.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://frostedgames.de/presse-anmeldung/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://frostedgames.de/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "phalanxgames.co.uk": {
+  "nome": "PHALANX",
+  "apelidos": [
+   "PHALANX"
+  ],
+  "site": "https://phalanx.co.uk",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "academygames.com": {
+  "nome": "Academy Games",
+  "apelidos": [
+   "Academy Games"
+  ],
+  "site": "https://www.academygames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.academygames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "greaterthangames.com": {
+  "nome": "Greater Than Games",
+  "apelidos": [
+   "Greater Than Games"
+  ],
+  "site": "https://www.greaterthangames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.greaterthangames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "indieboardsandcards.com": {
+  "nome": "Indie Boards & Cards",
+  "apelidos": [
+   "Indie Boards & Cards"
+  ],
+  "site": "https://indieboardsandcards.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://indieboardsandcards.com/sitemap_index.xml",
+    "https://strongholdgames.com/sitemap_index.xml",
+    "https://boardgame.rustyquill.com/sitemap_index.xml",
+    "https://magnusprotocolmysteries.com/sitemap_index.xml",
+    "https://freeradio.site/sitemap_index.xml",
+    "https://yourchartwellington.com/sitemap_index.xml",
+    "https://magnusarchivesmysteries.com/sitemap_index.xml",
+    "https://indieboardsandcards.com/unrevealingthetruth/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "estrela.com.br": {
+  "nome": "Estrela",
+  "apelidos": [
+   "Estrela"
+  ],
+  "site": "https://www.estrela.com.br",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.estrela.com.br/sitemap/deco.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "explodingkittens.com": {
+  "nome": "Exploding Kittens",
+  "apelidos": [
+   "Exploding Kittens"
+  ],
+  "site": "https://www.explodingkittens.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {
+   "exploding-kittens": "https://www.explodingkittens.com/products/exploding-kittens-original-edition"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.explodingkittens.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "dvgiochi.com": {
+  "nome": "dV Giochi",
+  "apelidos": [
+   "dV Giochi"
+  ],
+  "site": "https://www.dvgiochi.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.dvgiochi.com/area-download/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "abacusspiele.de": {
+  "nome": "Abacusspiele",
+  "apelidos": [
+   "Abacusspiele"
+  ],
+  "site": "https://abacusspiele.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://abacusspiele.de/page-sitemap.xml",
+    "https://abacusspiele.de/post-sitemap.xml",
+    "https://abacusspiele.de/product-sitemap.xml",
+    "https://abacusspiele.de/category-sitemap.xml",
+    "https://abacusspiele.de/product_cat-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "heidelbaer.de": {
+  "nome": "Heidelbär Games",
+  "apelidos": [
+   "Heidelbär Games"
+  ],
+  "site": "https://www.heidelbaer.de",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.heidelbaer.de/presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-05"
+  }
+ },
+ "blueorangegames.eu": {
+  "nome": "Blue Orange",
+  "apelidos": [
+   "Blue Orange"
+  ],
+  "site": "https://blueorangegames.eu",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://blueorangegames.eu/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-05"
+  }
+ },
+ "asmodee.com.br": {
+  "nome": "Asmodee Brasil",
+  "apelidos": [
+   "Asmodee Brasil"
+  ],
+  "site": "https://asmodee.com.br",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://asmodee.com.br inacessível (erro de rede); tente mais tarde"
+ },
+ "insidegmt.com": {
+  "nome": "GMT Games (InsideGMT)",
+  "apelidos": [
+   "GMT Games (InsideGMT)"
+  ],
+  "site": "https://insidegmt.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "robots.txt proíbe https://insidegmt.com"
+ },
+ "ravensburger.us": {
+  "nome": "Ravensburger USA",
+  "apelidos": [
+   "Ravensburger USA"
+  ],
+  "site": "https://ravensburger.us",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "403 em https://ravensburger.us"
+ },
+ "starling.games": {
+  "nome": "Starling Games",
+  "apelidos": [
+   "Starling Games"
+  ],
+  "site": "https://www.starling.games",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "404 em https://www.starling.games"
+ },
+ "everdell.com": {
+  "nome": "Starling Games",
+  "apelidos": [
+   "Starling Games"
+  ],
+  "site": "https://everdell.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://everdell.com inacessível (erro de rede); tente mais tarde"
+ },
+ "tycoongames.com": {
+  "nome": "Tabletop Tycoon",
+  "apelidos": [
+   "Starling Games",
+   "Tabletop Tycoon"
+  ],
+  "site": "https://tycoongames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://tycoongames.com/pages/media-application",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://tycoongames.com/sitemap.xml",
+    "https://tycoongames.com/sitemap.xml",
+    "https://tycoongames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-05"
+  }
+ },
+ "americantabletopawards.com": {
+  "nome": "American Tabletop Awards",
+  "apelidos": [
+   "American Tabletop Awards"
+  ],
+  "site": "https://americantabletopawards.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://americantabletopawards.com/press/",
+  "paginas": {
+   "hot-streak": "https://americantabletopawards.com/hot-streak/",
+   "thunder-road-vendetta": "https://americantabletopawards.com/thunder-road-vendetta/",
+   "planet-unknown": "https://americantabletopawards.com/planet-unknown/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://americantabletopawards.com/sitemap.xml",
+    "https://americantabletopawards.com/news-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-06"
+  }
+ },
+ "gamewright.com": {
+  "nome": "Gamewright",
+  "apelidos": [
+   "Gamewright"
+  ],
+  "site": "https://gamewright.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://gamewright.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-06"
+  }
+ },
+ "zoch-verlag.com": {
+  "nome": "Zoch",
+  "apelidos": [
+   "Zoch"
+  ],
+  "site": "https://www.zoch-verlag.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.simba-dickie-group.com/en/press/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.zoch-verlag.com/sitemaps/zoch.index.xml"
+   ],
+   "verificado_em": "2026-11-06"
+  }
+ },
+ "blueorangegames.com": {
+  "nome": "Blue Orange Games",
+  "apelidos": [
+   "Blue Orange Games"
+  ],
+  "site": "https://blueorangegames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://blueorangegames.com/about-us/awards-and-press?see=awards",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-06"
+  }
+ },
+ "blog.blueorangegames.com": {
+  "nome": "Blue Orange Games (blog)",
+  "apelidos": [
+   "Blue Orange Games (blog)"
+  ],
+  "site": "https://blog.blueorangegames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://blog.blueorangegames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-06"
+  }
+ },
+ "gigamic.com": {
+  "nome": "Gigamic",
+  "apelidos": [
+   "Gigamic"
+  ],
+  "site": "https://www.gigamic.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.gigamic.com/content/6-presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.gigamic.com/2_index_sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "pd-verlag.de": {
+  "nome": "PD-Verlag",
+  "apelidos": [
+   "PD-Verlag"
+  ],
+  "site": "https://www.pd-verlag.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "helvetiq.com": {
+  "nome": "Helvetiq",
+  "apelidos": [
+   "Helvetiq"
+  ],
+  "site": "https://helvetiq.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 10.0,
+   "sitemaps": [
+    "https://helvetiq.com/sitemap/helvetiq_intl.xml",
+    "https://helvetiq.com/sitemap/helvetiq_fr.xml",
+    "https://helvetiq.com/sitemap/helvetiq_de.xml",
+    "https://helvetiq.com/sitemap/helvetiq_us.xml",
+    "https://helvetiq.com/sitemap/helvetiq_ch_fr.xml",
+    "https://helvetiq.com/sitemap/helvetiq_ch_de.xml",
+    "https://helvetiq.com/sitemap/helvetiq_ch_en.xml",
+    "https://helvetiq.com/sitemap/DE/sitemap.xml",
+    "https://helvetiq.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "boardgameatelier.de": {
+  "nome": "Boardgame Atelier",
+  "apelidos": [
+   "Boardgame Atelier"
+  ],
+  "site": "https://www.boardgameatelier.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.boardgameatelier.de/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "playpunk.com": {
+  "nome": "PlayPunk",
+  "apelidos": [
+   "PlayPunk"
+  ],
+  "site": "https://playpunk.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://playpunk.com/en/press",
+  "paginas": {},
+  "status": "ok",
+  "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-09"
+  },
+  "js": true
+ },
+ "auzou.com": {
+  "nome": "Auzou",
+  "apelidos": [
+   "Auzou"
+  ],
+  "site": "https://auzou.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://auzou.com inacessível (erro de rede); tente mais tarde"
+ },
+ "happybaobab.com": {
+  "nome": "Happy Baobab",
+  "apelidos": [
+   "Happy Baobab"
+  ],
+  "site": "https://happybaobab.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://happybaobab001.cafe24.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "cardboardalchemy.com": {
+  "nome": "Cardboard Alchemy",
+  "apelidos": [
+   "Cardboard Alchemy"
+  ],
+  "site": "https://cardboardalchemy.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://cardboardalchemy.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "papergames.com.br": {
+  "nome": "PaperGames",
+  "apelidos": [
+   "PaperGames"
+  ],
+  "site": "https://papergames.com.br",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://papergames.com.br/sitemap.xml",
+    "https://papergames.com.br/news-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "auzou.fr": {
+  "nome": "Auzou",
+  "apelidos": [
+   "Auzou"
+  ],
+  "site": "https://www.auzou.fr",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.auzou.fr/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "gamefactory-games.com": {
+  "nome": "Game Factory",
+  "apelidos": [
+   "Game Factory"
+  ],
+  "site": "https://www.gamefactory-games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.gamefactory-games.com/presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "game-flow.fr": {
+  "nome": "Game Flow",
+  "apelidos": [
+   "Game Flow"
+  ],
+  "site": "https://game-flow.fr",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://game-flow.fr/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "dlp-games.de": {
+  "nome": "dlp games",
+  "apelidos": [
+   "dlp games"
+  ],
+  "site": "https://www.dlp-games.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.dlp-games.de/unser-verlag/presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.dlp-games.de/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "gamesup-games.com": {
+  "nome": "Game's Up",
+  "apelidos": [
+   "Game's Up"
+  ],
+  "site": "https://gamesup-games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://gamesup-games.com inacessível (erro de rede); tente mais tarde"
+ },
+ "hachetteboardgames.com": {
+  "nome": "Studio H",
+  "apelidos": [
+   "Studio H"
+  ],
+  "site": "https://www.hachetteboardgames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://www.hachetteboardgames.com/pages/press",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.hachetteboardgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "sandcastlegames.com": {
+  "nome": "Sand Castle Games",
+  "apelidos": [
+   "Sand Castle Games"
+  ],
+  "site": "https://sandcastlegames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://sandcastlegames.com inacessível (erro de rede); tente mais tarde"
+ },
+ "haba-play.com": {
+  "nome": "Haba",
+  "apelidos": [
+   "Haba"
+  ],
+  "site": "https://www.haba-play.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.haba-play.com/de-de/magazin/kindererziehung-psychologie/kinder-und-digitale-medien",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.haba-play.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "habausa.com": {
+  "nome": "HABA USA",
+  "apelidos": [
+   "HABA USA"
+  ],
+  "site": "https://www.habausa.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.habausa.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "shop.asmodee.ca": {
+  "nome": "Asmodee Canada",
+  "apelidos": [
+   "Asmodee Canada"
+  ],
+  "site": "https://shop.asmodee.ca",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "goonboard.com": {
+  "nome": "Go On Board",
+  "apelidos": [
+   "Go On Board"
+  ],
+  "site": "https://goonboard.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-17"
+  }
+ },
+ "asmodeenordics.com": {
+  "nome": "Asmodee Nordics",
+  "apelidos": [
+   "Asmodee Nordics"
+  ],
+  "site": "https://www.asmodeenordics.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.asmodeenordics.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-17"
+  }
+ },
+ "press.cdprojektred.com": {
+  "nome": "CD PROJEKT RED",
+  "apelidos": [
+   "CD PROJEKT RED"
+  ],
+  "site": "https://press.cdprojektred.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://press.cdprojektred.com/pt-br#media",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-17"
+  }
+ },
+ "store.asmodee.com": {
+  "nome": "Asmodee USA",
+  "apelidos": [
+   "Asmodee USA"
+  ],
+  "site": "https://store.asmodee.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://store.asmodee.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-17"
+  }
+ },
+ "rebel.pl": {
+  "nome": "Rebel",
+  "apelidos": [
+   "Rebel"
+  ],
+  "site": "https://www.rebel.pl",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.rebel.pl/theme/movies-tv-radio-theme.html",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 5.0,
+   "sitemaps": [
+    "https://www.rebel.pl/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-17"
+  }
+ }
+}

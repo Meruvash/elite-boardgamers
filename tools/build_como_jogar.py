@@ -1,0 +1,232 @@
+"""Moldura comum do site nas páginas Como Jogar (como-jogar/<slug>/index.html) e ajustes de leitura.
+
+As páginas Como Jogar são escritas à parte (docs/como-jogar/) e publicadas como HTML pronto. Este script:
+- troca o cabeçalho e o rodapé próprios pelos do site (logo, menu, busca, rodapé e barra de compartilhar/grupo);
+- põe uma faixa presa abaixo do menu com a etapa em que o leitor está e uma barra de progresso;
+- transforma as tabelas em fichas no celular (cada linha vira um cartão com o nome da coluna);
+- tira a nota "Para entender" que explicava o método (4C/ID), a pedido do editor.
+Vale também para o índice /como-jogar/ (sem a faixa de progresso). O texto das páginas não muda. Pode rodar quantas vezes quiser: cada troca fica entre marcadores.
+
+Uso: python3 tools/build_como_jogar.py   (também roda dentro de build_home.py)
+"""
+import re
+from pathlib import Path
+
+import html as _html
+
+import seo
+from layout import CSS_BUSCA, cabecalho, rodape
+
+ROOT = Path(__file__).resolve().parent.parent
+PRE = "../../"
+
+# cabeçalho do site, igual ao das outras páginas (build_home.CSS)
+CSS_MOLDURA = (".in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}"
+               ".ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}"
+               ".bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}"
+               ".bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}"
+               ".bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}"
+               ".bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}"
+               ".bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}"
+               ".nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}"
+               "@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}"
+               "footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}"
+               "footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}")
+
+CSS_GUIA = """
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+"""
+
+JS_GUIA = """document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});"""
+
+
+def rotular_tabelas(html):
+    """Põe em cada célula o nome da coluna (data-label), para a ficha do celular."""
+    def tabela(m):
+        t = m.group(0)
+        if "data-label" in t or 'class="grade"' in t:
+            return t
+        # grade (parede do Azul, linha de valores): células curtas continuam tabela no celular
+        celulas = [re.sub(r"<[^>]+>", "", c).strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", t, re.S)]
+        if celulas and max(len(c) for c in celulas) <= 4:
+            return t.replace("<table>", '<table class="grade">', 1)
+        cab = [re.sub(r"<[^>]+>", "", h).replace('"', "") for h in re.findall(r"<th[^>]*>(.*?)</th>", t, re.S)]
+        def linha(r):
+            n = iter(range(10 ** 6))
+            return re.sub(r"<td(?=[ >])", lambda _: f'<td data-label="{cab[min(next(n), len(cab) - 1)]}"', r.group(0))
+        return re.sub(r"<tr>.*?</tr>", linha, t, flags=re.S)
+    return re.sub(r"<table>.*?</table>", tabela, html, flags=re.S)
+
+
+def montar(arq):
+    """Uma página: o índice /como-jogar/ (indice=True, sem faixa de progresso) ou um tutorial /como-jogar/<slug>/."""
+    indice = arq.parent.name == "como-jogar"
+    pre = "../" if indice else PRE
+    s = arq.read_text(encoding="utf-8")
+    novo = s
+    # estilos: moldura do site + ajustes do guia, depois do estilo próprio da página
+    estilos = f'<style id="moldura">{CSS_BUSCA}{CSS_MOLDURA}</style>\n<style id="guia-extra">{CSS_GUIA}</style>\n'
+    novo = re.sub(r'(?:<style id="moldura">.*?</style>\n<style id="guia-extra">.*?</style>\n)?</head>', lambda _: estilos + "</head>", novo, count=1, flags=re.S)
+    # cabeçalho: na primeira vez, o próprio (banner + menu); depois, o que está entre marcadores
+    topo = (f'<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>\n{cabecalho(pre, "Como jogar", sub=not indice)}'
+            + ("" if indice else '\n<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div>')
+            + '<!--/moldura-->\n')
+    novo = re.sub(r'<!--moldura-->.*?<!--/moldura-->\n|<a class="skip".*?</nav>\n(?=\s*<main)', lambda _: topo, novo, count=1, flags=re.S)
+    # rodapé: a nota da página vira um parágrafo no fim do conteúdo, e entra o rodapé comum (com a barra do pé da tela)
+    m = re.search(r'<footer><div class="in gut">(.*?)</div></footer>', novo, re.S)
+    if m and 'class="nota-pe"' not in novo:
+        nota = re.sub(r'<a [^>]*>Elite Boardgamers</a> · ', "", m.group(1))
+        novo = re.sub(r"</div>\s*</main>", lambda _: f'<p class="nota-pe">{nota}</p>\n</div></main>', novo, count=1)
+    fim = f"<!--rodape-->{rodape(pre)}\n<script>{JS_GUIA}</script><!--/rodape-->"
+    novo = re.sub(r'<!--rodape-->.*?<!--/rodape-->|<footer><div class="in gut">.*?</div></footer>', lambda _: fim, novo, count=1, flags=re.S)
+    # índice com âncora, para a faixa de progresso levar até ele
+    novo = novo.replace('<nav class="bloco indice" aria-label="Neste guia">', '<nav class="bloco indice" id="neste-guia" aria-label="Neste guia">')
+    # a nota "Para entender" que explicava o método (4C/ID) saiu das páginas a pedido do editor (31/10/2026)
+    novo = re.sub(r'\n?(?:<details class="metodo"><summary>[^<]*</summary>)?<aside class="call entender"><p class="rot">Para entender</p><p>Este formato segue o modelo de ensino.*?</aside>(?:</details>)?',
+                  "", novo, flags=re.S)
+    # o mesmo contador de visitas sem cookies das outras páginas (sem ele, o Como Jogar não aparece no resumo de visitas)
+    if "cloudflareinsights" not in novo:
+        novo = novo.replace("</body>", seo.ANALYTICS + "\n</body>", 1)
+    novo = rotular_tabelas(novo)
+    # SEO no padrão das outras páginas: imagem grande no Google e dados estruturados (artigo + trilha)
+    if 'name="robots"' not in novo:
+        novo = re.sub(r'(<link rel="canonical"[^>]*>)', r'\1\n<meta name="robots" content="max-image-preview:large">', novo, count=1)
+    url = re.search(r'<link rel="canonical" href="([^"]+)"', novo).group(1)
+    titulo = _html.unescape(re.sub(r"<[^>]+>", "", re.search(r"<h1[^>]*>(.*?)</h1>", novo, re.S).group(1))).strip()
+    descr = _html.unescape(re.search(r'<meta name="description" content="([^"]*)"', novo).group(1))
+    img = re.search(r'<meta property="og:image" content="([^"]+)"', novo).group(1)
+    if indice:
+        ld = seo.script(seo.trilha(("Início", f"{seo.SITE}/"), ("Como jogar", url)))
+    else:
+        data = re.search(r'<time datetime="([^"]+)">', novo).group(1)
+        ld = seo.script(seo.artigo("Article", url, titulo, descr, img, data),
+                        seo.trilha(("Início", f"{seo.SITE}/"), ("Como jogar", f"{seo.SITE}/como-jogar/"), (titulo, url)))
+    novo = re.sub(r'(?:<script type="application/ld\+json">.*?</script>\n)?(?=<style id="moldura">)', lambda _: ld + "\n", novo, count=1, flags=re.S)
+    if novo != s:
+        arq.write_text(novo, encoding="utf-8")
+    return arq
+
+
+def lista_indice():
+    """Lista de tutoriais em /como-jogar/, a partir de conteudo/como-jogar/*.json (mais novos primeiro), com a foto de
+    cada jogo no cartão e um mosaico de fotos no topo da página (pedido do editor em 04/11/2026)."""
+    import como_jogar_md
+    arq = ROOT / "como-jogar" / "index.html"
+    if not arq.exists():
+        return
+    e = _html.escape
+    lista = [m for m in sorted(como_jogar_md.metas(), key=lambda m: (m["data"], m["titulo"]), reverse=True)
+             if (ROOT / "como-jogar" / m["slug"] / "index.html").exists()]
+
+    def foto(m):
+        fs = como_jogar_md.ordem_fotos(como_jogar_md.fotos_jogo(m))
+        if not fs:
+            return None
+        f = dict(fs[0])
+        # caminho visto de /como-jogar/: "../../x/" (resenha) vira "../x/"; "fotos/..." do tutorial vira "<slug>/fotos/..."
+        f["src"] = f["src"][3:] if f["src"].startswith("../../") else f"{m['slug']}/{f['src']}"
+        return f
+
+    itens = ""
+    for m in lista:
+        f = foto(m)
+        img = (f'<img src="{e(f["src"])}" alt="" loading="lazy" decoding="async" width="96" height="96">' if f else "")
+        itens += (f'<li><a href="{m["slug"]}/"{" class=\"com-foto\"" if f else ""}>{img}<span class="num-l">{e(m["genero"])}</span><b>{e(m["titulo"])}</b><span>{e(m["chamada"])}</span>'
+                  f'<span class="meta-e"><span>{e(m["jogadores"])}</span>{f'<span>{e(m["duracao"])}</span>' if m.get("duracao") else ''}<span>{e(m["edicao"])}</span></span></a></li>')
+    s = arq.read_text(encoding="utf-8")
+    novo = re.sub(r'(<ul class="lista-t">).*?(</ul>)', lambda x: f"{x.group(1)}\n      {itens}\n    {x.group(2)}", s, count=1, flags=re.S)
+    # topo da página: mosaico com as fotos dos três tutoriais mais novos que têm foto
+    mos = [(m, f) for m in lista if (f := foto(m))][:3]
+    if len(mos) == 3:
+        imgs = "".join(f'<img src="{e(f["src"])}" alt="{e(f["alt"])}"{"" if i else " fetchpriority=\"high\""} decoding="async">' for i, (m, f) in enumerate(mos))
+        cred = " · ".join(dict.fromkeys(f"{re.sub(r'^(Imagem|Foto): ', '', f['credito'])} ({m['jogo']})" for m, f in mos))
+        bloco = f'<!--mosaico--><div class="cj-mosaico">{imgs}</div><p class="cj-mosaico-c">Fotos: {e(cred)}</p><!--/mosaico-->'
+    else:
+        bloco = "<!--mosaico--><!--/mosaico-->"
+    if "<!--mosaico-->" in novo:
+        novo = re.sub(r"<!--mosaico-->.*?<!--/mosaico-->", lambda _: bloco, novo, count=1, flags=re.S)
+    else:
+        novo = novo.replace('<article class="bloco">\n    <span class="num-l">Tutoriais</span>', f'<article class="bloco topo-cj">\n    {bloco}\n    <span class="num-l">Tutoriais</span>', 1)
+    if novo != s:
+        arq.write_text(novo, encoding="utf-8")
+
+
+def build():
+    import como_jogar_md
+    como_jogar_md.build()
+    lista_indice()
+    return [montar(a) for a in [ROOT / "como-jogar" / "index.html", *sorted((ROOT / "como-jogar").glob("*/index.html"))] if a.exists()]
+
+
+if __name__ == "__main__":
+    for a in build():
+        print("ok", a.relative_to(ROOT))

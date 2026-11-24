@@ -1,0 +1,499 @@
+{
+ "slug": "gloomhaven",
+ "jogo": "Gloomhaven",
+ "cor": "#a3452c",
+ "kicker": "Resenha · Campanha tática",
+ "og_titulo": "Gloomhaven vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Gloomhaven vale a pena? Resenha da campanha na caixa",
+ "descricao": "Resenha de Gloomhaven, vencedor de seis Golden Geek em 2017 incluindo Jogo do Ano: como funciona, pontos fortes, pontos de atenção e para quem é.",
+ "titulo_html": "Uma campanha inteira dentro de uma caixa: <span>Gloomhaven</span>",
+ "lede": "Gloomhaven é um jogo cooperativo de exploração de masmorras com uma campanha de 95 cenários, em que cada herói luta com um baralho próprio de habilidades e evolui ao longo de meses de partidas. Venceu seis Golden Geek em 2017, incluindo Jogo do Ano, foi o número 1 do BoardGameGeek por cerca de cinco anos e tem edição em português da Asmodee. É uma referência para quem ama combate tático, desde que aceite uma caixa de quase 9 kg e muito compromisso.",
+ "tags": [
+  "1–4 jogadores",
+  "90–115 min por cenário",
+  "Cooperativo",
+  "Campanha",
+  "Pesado"
+ ],
+ "alt": "Infográfico Elite Boardgamers sobre o jogo Gloomhaven",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2020,
+   "categoria": "Jeu de l’Année Expert",
+   "colocacao": null,
+   "resultado": "finalista",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Finalista"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Jogo do Ano",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Cooperativo",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Inovação",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Solo",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Estratégia",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Temático",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2017"
+  ],
+  [
+   "Designer",
+   "Isaac Childres"
+  ],
+  [
+   "Editora original",
+   "Cephalofair Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Asmodee (edição em português)"
+  ],
+  [
+   "Jogadores",
+   "1 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "90 a 115 minutos por cenário"
+  ],
+  [
+   "Idade",
+   "14+"
+  ],
+  [
+   "Nota BGG",
+   "não confirmado nas fontes consultadas (foi o 1º lugar geral do BGG de 2017 até ser superado por Brass: Birmingham)"
+  ],
+  [
+   "Peso BGG",
+   "3,9 / 5"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim"
+  ],
+  [
+   "Componentes",
+   "18 miniaturas, 504 cartas de habilidade, 457 cartas de modificador de ataque, 253 cartas de item, 30 peças de mapa"
+  ],
+  [
+   "Peso da caixa",
+   "cerca de 9 kg"
+  ],
+  [
+   "Conteúdo",
+   "95 cenários e classes a desbloquear"
+  ]
+ ],
+ "nota_ficha": "A nota atual do BGG varia entre as fontes e foi omitida; o peso vem de resenha que cita o BGG.",
+ "como_funciona": [
+  "O grupo forma uma companhia de mercenários na cidade de Gloomhaven. Cada cenário é uma missão num mapa de hexágonos montado com peças de cenário: limpar uma masmorra, proteger alguém, alcançar uma saída. Os heróis são miniaturas de plástico e os monstros, marcadores de papelão. A campanha liga os cenários numa história ramificada, e as escolhas do grupo destravam caminhos diferentes.",
+  "Não há dados. Cada herói tem uma mão de cartas de habilidade, e cada carta traz duas ações: uma na metade de cima e outra na de baixo. No começo da rodada, todos escolhem em segredo duas cartas. Uma delas define a iniciativa, o número que diz a ordem em que heróis e monstros agem.",
+  "No seu turno, você usa a ação de cima de uma carta e a de baixo da outra: atacar, mover, curar, armar uma armadilha, invocar um aliado. O dano de cada ataque passa por um baralho de modificadores, que substitui os dados e pode aumentar, reduzir ou anular o golpe. Algumas cartas carregam elementos, como fogo e gelo, que outras habilidades consomem para ficar mais fortes.",
+  "Os monstros agem sozinhos: a cada rodada, uma carta de comportamento diz como cada tipo de inimigo se move e ataca. Por isso ninguém precisa ser o mestre do jogo, e Gloomhaven funciona até sozinho.",
+  "As cartas também são o seu fôlego. As usadas vão para o descarte, e para recuperá-las é preciso descansar, o que faz perder uma carta para o resto do cenário. As ações mais fortes queimam a carta na hora. Se a mão acabar, o herói fica exausto e sai da missão.",
+  "Entre os cenários, o grupo volta à cidade para comprar itens, subir de nível e escolher cartas novas. Cada herói tem uma missão pessoal secreta; ao cumpri-la, ele se aposenta e destrava uma das 11 classes guardadas em caixas lacradas. Ao todo, são 17 classes."
+ ],
+ "funciona": [
+  [
+   "Combate tático com escolhas difíceis",
+   "O sistema de duas cartas por turno obriga a decidir, a cada rodada, entre agir cedo ou agir forte, entre gastar fôlego agora ou guardar para depois. O baralho de modificadores varia o dano, mas não há dado para culpar: o plano é seu. Para a Tabletop Gaming, é um RPG inteiro numa caixa."
+  ],
+  [
+   "Monstros que jogam sozinhos",
+   "As cartas de comportamento movem e atacam pelos inimigos, com regras claras de quem eles perseguem. Ninguém fica de fora como mestre do jogo, todo mundo joga junto, e o mesmo sistema faz o jogo funcionar de 1 a 4 pessoas."
+  ],
+  [
+   "Campanha para meses",
+   "São 95 cenários ligados por uma história ramificada, com escolhas que abrem caminhos diferentes e eventos de cidade e de estrada entre as missões. Um grupo fixo tem conteúdo para muitos meses, e as caixas lacradas guardam surpresas até o fim da campanha."
+  ],
+  [
+   "Heróis que evoluem de verdade",
+   "Cada personagem ganha experiência, compra itens e escolhe cartas novas a cada nível. A missão pessoal secreta dá um fim para a história de cada herói: ao cumpri-la, ele se aposenta e destrava uma classe nova, das 11 guardadas em caixas lacradas."
+  ],
+  [
+   "Ótimo sozinho",
+   "O modo solo usa as mesmas regras, com o jogador controlando dois ou mais heróis. A Opinionated Gamers avalia a experiência solo como muito boa, e Gloomhaven venceu o Golden Geek de melhor jogo solo em 2017."
+  ],
+  [
+   "Reconhecimento raro",
+   "Além dos seis Golden Geek de 2017, Gloomhaven foi o número 1 do ranking geral do BoardGameGeek por cerca de cinco anos, segundo a Kotaku, até ser superado por Brass: Birmingham. Também foi finalista do As d'Or Expert 2020, na França."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Preparação demorada",
+   "Montar o mapa e separar monstros, cartas e marcadores leva de 15 a 20 minutos por cenário, segundo a Hexagamers. Organizadores de caixa ajudam muito, como mostra a série de diários da Giant Brain, mas o tempo antes da primeira jogada continua alto."
+  ],
+  [
+   "Moderada",
+   "Caixa enorme e cara",
+   "A caixa pesa cerca de 9 kg e ocupa muito espaço na estante e na mesa. A edição nacional aparece acima de R$ 1.100 nas lojas consultadas, um investimento alto para quem ainda não sabe se vai gostar do gênero."
+  ],
+  [
+   "Moderada",
+   "Exige grupo fixo",
+   "A campanha rende mais com o mesmo grupo por muitas sessões. Quem joga com pessoas diferentes a cada semana perde a evolução dos heróis e o fio da história, ou acaba jogando sozinho para não travar a campanha."
+  ],
+  [
+   "Moderada",
+   "Curva de aprendizado alta",
+   "Com peso 3,9 de 5 no BoardGameGeek, segundo a Opinionated Gamers, é um jogo pesado. As primeiras partidas pedem consultas ao manual sobre linha de visão, movimento dos monstros e uso dos elementos."
+  ],
+  [
+   "Leve",
+   "História pouco marcante",
+   "A Tabletop Gaming acha a escrita familiar e a história pouco memorável. O enredo existe e as escolhas importam, mas quem procura uma narrativa forte pode se decepcionar e deve olhar para campanhas mais centradas na história."
+  ],
+  [
+   "Leve",
+   "Dependência de idioma alta",
+   "A Ludopedia classifica a dependência de idioma como alta: cartas, livro de cenários e eventos têm muito texto. A edição da Asmodee resolve isso, mas edições importadas exigem que toda a mesa leia bem em inglês."
+  ]
+ ],
+ "para_quem": [
+  "Gosta de RPG e combate tático",
+  "Tem um grupo fixo ou joga sozinho",
+  "Quer um jogo para meses",
+  "Gosta de ver o personagem evoluir ao longo de muitas sessões",
+  "Não se incomoda com preparação e organização"
+ ],
+ "nao_e_para": [
+  "Quer abrir a caixa e jogar em minutos",
+  "Tem pouco espaço",
+  "Busca uma história marcante",
+  "Joga com grupos diferentes a cada vez",
+  "Não quer investir mais de R$ 1.000 num jogo"
+ ],
+ "selo": "Recomendado com ressalva",
+ "melhor_para": "campanha",
+ "ressalva": "preço acima de R$ 1.000",
+ "veredito": "Gloomhaven entrega o combate tático cooperativo mais rico do tabuleiro: cada rodada é um quebra-cabeça de duas cartas, os monstros jogam sozinhos e os heróis evoluem por meses de campanha, inclusive no modo solo. O preço disso é alto em todos os sentidos: caixa de 9 kg, 15 a 20 minutos de preparação por cenário, regras pesadas, grupo fixo e edição nacional acima de R$ 1.100. Para quem ama o gênero e tem com quem jogar, ou joga sozinho, é compra de coleção e uma das experiências mais completas do hobby. Para quem ainda tem dúvida, Presas do Leão e a versão digital são o melhor teste.",
+ "tagline": "Uma campanha inteira dentro de uma caixa.",
+ "consulta": "27/10/2026",
+ "fontes": [
+  [
+   "Cephalofair – Gloomhaven",
+   "https://cephalofair.com/products/gloomhaven-board-game-2nd-edition",
+   "página da editora"
+  ],
+  [
+   "Wikipedia – Gloomhaven",
+   "https://en.wikipedia.org/wiki/Gloomhaven",
+   "designer, editora, regras, cenários"
+  ],
+  [
+   "Kotaku – Gloomhaven perde o 1º lugar no BGG",
+   "https://kotaku.com/gloomhaven-brass-birmingham-bgg-rating-review-charts-1850142919",
+   "ranking"
+  ],
+  [
+   "Opinionated Gamers – Gloomhaven",
+   "https://opinionatedgamers.com/2020/11/28/gloomhaven-does-it-live-up-to-the-hype-review-by-rj-garrison/",
+   "peso, solo"
+  ],
+  [
+   "Hexagamers – Is Gloomhaven worth it",
+   "https://hexagamers.com/is-gloomhaven-worth-it/",
+   "preparação, caixa"
+  ],
+  [
+   "Tabletop Gaming – Gloomhaven",
+   "https://www.tabletopgaming.co.uk/reviews/gloomhaven-review/",
+   "crítica"
+  ],
+  [
+   "The Giant Brain – Gloomhaven diaries",
+   "https://giantbrain.co.uk/2018/02/02/the-gloomhaven-diaries-organisation/",
+   "organização"
+  ],
+  [
+   "Brechó Lúdico – Gloomhaven (Galápagos)",
+   "https://brecholudico.com.br/produto/gloomhaven/",
+   "componentes da edição nacional, peso da caixa"
+  ],
+  [
+   "Portal RPG e Jogos – Gloomhaven (Galápagos)",
+   "https://portalrpgejogos.com.br/produto/gloomhaven-board-game-ed-galapagos/",
+   "edição em português, preço de referência"
+  ],
+  [
+   "Magazine Luiza – Gloomhaven (Galápagos)",
+   "https://www.magazineluiza.com.br/gloomhaven-board-game-galapagos-galapagos/p/af327976gh/br/jogo/",
+   "preço de referência"
+  ],
+  [
+   "Ludopedia – Gloomhaven",
+   "https://ludopedia.com.br/jogo/gloomhaven",
+   "dependência de idioma"
+  ],
+  [
+   "Game Rules – Gloomhaven",
+   "https://gamerules.com/rules/gloomhaven/",
+   "idade, componentes"
+  ],
+  [
+   "PC Gamer – Gloomhaven sai do acesso antecipado",
+   "https://www.pcgamer.com/uk/gloomhaven-the-digital-version-of-the-acclaimed-board-game-leaves-early-access-on-october-20/",
+   "versão digital para PC"
+  ],
+  [
+   "Cephalofair – Gloomhaven nos consoles",
+   "https://cephalofair.com/blogs/blog/the-hit-tactical-rpg-gloomhaven-launches-september-18-on-playstation-xbox-nintendo-switch",
+   "versão para consoles, cooperativo online"
+  ],
+  [
+   "Ludopedia – Análise Gloomhaven: Presas do Leão",
+   "https://ludopedia.com.br/topico/69885/analise-gloomhaven-presas-do-leao",
+   "Presas do Leão pela Asmodee"
+  ],
+  [
+   "Ludopedia – Gloomhaven: Círculos Esquecidos",
+   "https://ludopedia.com.br/jogo/gloomhaven-forgotten-circles",
+   "expansão em português"
+  ],
+  [
+   "Ludopedia – Gloomhaven 2ª edição",
+   "https://ludopedia.com.br/topico/91902/gloomhaven-2a-edicao",
+   "segunda edição"
+  ]
+ ],
+ "roteiro": {
+  "tema": "dark fantasy dungeon crawl, torch-lit stone dungeons, mercenary heroes, monsters, deep crimson, bronze and shadow tones",
+  "cena": "a party of four fantasy mercenaries entering a torch-lit dungeon facing monsters",
+  "mesa": "a huge heavy box titled \"GLOOMHAVEN\" with dark fantasy art, a hexagonal dungeon map built from interlocking tiles, painted hero miniatures, cardboard monster standees on plastic bases, fanned ability cards with top and bottom halves, small attack modifier decks and wooden element discs",
+  "titulo": "GLOOMHAVEN",
+  "chamada": "UMA CAMPANHA INTEIRA DENTRO DE UMA CAIXA: 95 CENÁRIOS, 17 CLASSES E DUAS CARTAS POR TURNO.",
+  "destaque": "O GRANDE VENCEDOR DO GOLDEN GEEK 2017. MESES DE CAMPANHA, MONSTROS AUTOMÁTICOS E UM COMBATE TÁTICO QUE PUNE CADA ERRO.",
+  "lateral": [
+   "1–4 jogadores",
+   "90–115 min por cenário",
+   "complexidade 3,9 / 5 (pesado)",
+   "modo solo: oficial",
+   "sem dados",
+   "designer Isaac Childres",
+   "editora original Cephalofair Games",
+   "editora no Brasil Asmodee",
+   "ano 2017",
+   "idioma português (BR)"
+  ],
+  "numeros": [
+   [
+    "PESO BGG",
+    "3,9/5",
+    "pesado"
+   ],
+   [
+    "CENÁRIOS",
+    "95",
+    "campanha ramificada"
+   ],
+   [
+    "CLASSES",
+    "17",
+    "6 iniciais, 11 a destravar"
+   ],
+   [
+    "RANKING BGG",
+    "Nº 1",
+    "por cerca de 5 anos"
+   ]
+  ],
+  "como_resumo": "Combate tático cooperativo em campanha: cada carta é uma ação e também o seu fôlego.",
+  "passos": [
+   [
+    "ESCOLHA DUAS CARTAS",
+    "Todo turno, cada jogador escolhe em segredo duas cartas da mão. A iniciativa de uma delas define quando o herói age na rodada."
+   ],
+   [
+    "CIMA E BAIXO",
+    "Use a ação de cima de uma carta e a de baixo da outra: ataques, movimentos, curas, armadilhas e efeitos elementais."
+   ],
+   [
+    "MONSTROS AUTOMÁTICOS",
+    "Os inimigos agem sozinhos, guiados por cartas de comportamento. Ninguém precisa ser o mestre, por isso dá para jogar até sozinho."
+   ],
+   [
+    "CUIDE DO FÔLEGO",
+    "As cartas são o seu tempo no cenário. Descansar recupera a mão, mas custa uma carta; se elas acabarem, o herói fica exausto."
+   ],
+   [
+    "EVOLUA NA CIDADE",
+    "Entre os cenários, compre itens, suba de nível e cumpra a sua missão pessoal. Ao se aposentar, o herói libera uma classe nova."
+   ]
+  ],
+  "fortes": [
+   "Combate tático com escolhas difíceis em todo turno.",
+   "95 cenários ligados por uma história ramificada.",
+   "Monstros automáticos: ninguém precisa ser o mestre.",
+   "Modo solo oficial, muito elogiado pela crítica.",
+   "Heróis evoluem, se aposentam e liberam classes novas.",
+   "Caixas lacradas guardam classes e surpresas da campanha.",
+   "Nº 1 do BGG por cerca de cinco anos."
+  ],
+  "atencao": [
+   "Preparação de 15 a 20 minutos por cenário.",
+   "Caixa de quase 9 kg ocupa muito espaço.",
+   "Campanha exige grupo fixo por muitas sessões.",
+   "Peso 3,9/5: curva de aprendizado alta para iniciantes.",
+   "História considerada comum por parte da crítica.",
+   "Alta dependência de idioma, segundo a Ludopedia.",
+   "Edição nacional custa acima de R$ 1.100 nas lojas."
+  ],
+  "ficha": [
+   "Designer: Isaac Childres",
+   "Editora original: Cephalofair Games",
+   "Editora no Brasil: Asmodee",
+   "Jogadores: 1 a 4",
+   "Duração: 90–115 min por cenário",
+   "Idade: 14+",
+   "Peso BGG: 3,9 / 5",
+   "Dependência de idioma: alta",
+   "Componentes: 18 miniaturas, 504 cartas de habilidade, 30 peças de mapa",
+   "Peso da caixa: cerca de 9 kg"
+  ],
+  "premios": [
+   "GOLDEN GEEK 2017 · JOGO DO ANO",
+   "GOLDEN GEEK 2017 · COOPERATIVO E SOLO",
+   "FINALISTA AS D'OR 2020 · EXPERT"
+  ],
+  "perfil": [
+   [
+    "Combate tático",
+    5
+   ],
+   [
+    "Campanha e progressão",
+    5
+   ],
+   [
+    "Modo solo",
+    5
+   ],
+   [
+    "Cooperação",
+    4
+   ],
+   [
+    "Facilidade de ensinar",
+    1
+   ],
+   [
+    "Preparação rápida",
+    1
+   ]
+  ],
+  "extra": {
+   "titulo": "EXPERIMENTE NO DIGITAL",
+   "texto": "Versão oficial para PC desde 2021 e para consoles desde 2023, com a campanha completa e cooperativo online para até 4 jogadores. Boa forma de testar antes de comprar a caixa."
+  },
+  "veredito": "REFERÊNCIA ABSOLUTA PARA QUEM AMA COMBATE TÁTICO.",
+  "veredito_texto": "Combate tático cooperativo riquíssimo e campanha para meses, ótimo até sozinho. Caixa de 9 kg, preparação longa e preço acima de R$ 1.100 pesam: compra de coleção para grupo fixo; para começar, Presas do Leão."
+ },
+ "legenda": "Uma campanha inteira dentro de uma caixa: 95 cenários, 17 classes e duas cartas por turno. ⚔️\n\nGloomhaven venceu o Golden Geek 2017 de Jogo do Ano, além de Cooperativo e Solo, e foi finalista do As d'Or Expert 2020.\nOs monstros agem sozinhos, cada carta é ação e fôlego, e os heróis evoluem até se aposentar.\nA caixa de 9 kg, a preparação demorada e o preço acima de R$ 1.100 pesam, mas para quem ama combate tático é referência.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nVocê encararia uma campanha de 95 cenários?\nResenha completa no link da bio.\n\n#Gloomhaven #JogosDeTabuleiro #BoardGames #Boardgamer #Cooperativo #JogoSolo #DungeonCrawler #GoldenGeek #Galapagos #EliteBoardgamers",
+ "experiencia": [
+  "Uma rodada típica começa em silêncio, com cada um estudando a própria mão. O grupo pode combinar planos, mas a regra proíbe revelar números e nomes exatos das cartas, então a coordenação sai em frases como \"vou agir cedo e segurar o corredor\". O Brute, por exemplo, joga uma carta de iniciativa baixa para agir antes dos monstros e usa a metade de baixo de outra para avançar e bloquear a passagem, enquanto a Spellweaver espera os inimigos se juntarem para soltar um ataque em área.",
+  "A tensão vem do relógio escondido nas cartas: gastar uma habilidade poderosa agora pode significar ficar exausto três rodadas antes do fim. A Tabletop Gaming resume a sensação como a de um RPG numa caixa. A duração anunciada é de 90 a 115 minutos por cenário, mais a preparação, e a campanha inteira ocupa meses de sessões."
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Funciona muito bem: o jogador controla dois ou mais heróis, e o jogo levou o Golden Geek de melhor solo em 2017.",
+   3
+  ],
+  [
+   "2 jogadores",
+   "Cada pessoa controla um herói; os cenários colocam menos monstros, e a partida fica mais curta e fácil de coordenar.",
+   2
+  ],
+  [
+   "3 ou 4 jogadores",
+   "O formato mais completo: mais combinações de classes e mais conversa sobre planos, com mais espera entre um turno e outro.",
+   3
+  ]
+ ],
+ "primeira_partida": "Separe uma sessão inteira para a primeira partida: entre ler as regras, montar o primeiro cenário e jogar, o tempo passa fácil da duração anunciada. Os pontos que mais confundem são a iniciativa, o movimento dos monstros e a hora de descansar. Dica prática: comece pelo cenário 1 com as classes iniciais e, enquanto o grupo aprende, jogue com as mãos abertas na mesa. Quem quer uma entrada mais gradual pode começar por Presas do Leão.",
+ "edicao_nacional": "A Asmodee publicou Gloomhaven em português, com o conteúdo da caixa original: 18 miniaturas, 504 cartas de habilidade, 30 peças de mapa e uma caixa de cerca de 9 kg. Em 27/10/2026, as lojas consultadas mostravam preços entre R$ 1.128 (no Pix) e R$ 1.350, e várias estavam sem estoque. Vale acompanhar as reposições e o mercado de usados da Ludopedia.",
+ "versoes": "Presas do Leão (Jaws of the Lion), lançado no Brasil pela Asmodee em 2022, é uma versão menor e mais barata, pensada como porta de entrada. A expansão Círculos Esquecidos (Forgotten Circles) também saiu em português em 2022. Há versão digital oficial para PC desde 2021 e para consoles desde 2023, com cooperativo online para até 4 jogadores, e a Cephalofair lançou uma segunda edição revisada do jogo.",
+ "comparacoes": [
+  [
+   "Gloomhaven: Presas do Leão",
+   "gloomhaven-jaws-of-the-lion",
+   "A mesma base de combate numa caixa bem menor, com campanha mais curta e regras ensinadas aos poucos. É o melhor jeito de testar o sistema antes de investir na caixa grande."
+  ],
+  [
+   "Pandemic Legacy: Season 1",
+   "pandemic-legacy",
+   "Outra campanha cooperativa que muda a cada sessão, mas mais curta, com regras leves e uma história mais marcante. Troca o combate tático pela tensão de conter doenças pelo mundo."
+  ],
+  [
+   "Lost Ruins of Arnak",
+   "arnak",
+   "Para quem gosta de exploração e de fazer o baralho do personagem render, mas quer partidas de uma noite, sem campanha e com bem menos preparação."
+  ]
+ ],
+ "citacao": {
+  "texto": "Um RPG numa caixa.",
+  "fonte": "Tabletop Gaming (tradução livre)"
+ },
+ "preco_ref": {
+  "faixa": "R$ 1.128 a R$ 1.350",
+  "data": "27/10/2026",
+  "obs": "várias lojas sem estoque"
+ }
+}

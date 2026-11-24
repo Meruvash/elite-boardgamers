@@ -1,0 +1,824 @@
+# Como jogar Clank! Catacombs
+
+*Rascunho experimental da linha COMO JOGAR do Elite Boardgamers. Não publicado. Regras conferidas no manual da edição brasileira (Galápagos, v1.0) e no manual original em inglês (Dire Wolf Digital, 2022). As páginas citadas são as do manual brasileiro, que tem a mesma paginação do original.*
+
+## setup. Montar a mesa passo a passo
+
+A montagem segue as páginas de preparação do manual brasileiro (p. 4 e 5), na mesma ordem, das letras A a H. É igual para 2, 3 ou 4 jogadores, salvo no Marcador do Dragão (passo 2), nas fichas de Maestria (passos 15 e 16) e nos cubos iniciais da área de Clank! (passo 27).
+
+**O que vem na caixa** (p. 2 e 3):
+
+| Componente | Quantidade |
+|---|---|
+| Tabuleiro de Clank! | 1 |
+| Peça Inicial de dois lados | 1 |
+| Peças quadradas | 28: 22 das Profundezas e 6 em segurança |
+| Marcador do Dragão e Bolsa do Dragão | 1 de cada |
+| Cubos de Dragão (pretos) | 24 |
+| Cubos Clank! | 120, 30 de cada cor de jogador |
+| Peões de jogador | 4 |
+| Cubos de Fantasma (brancos) | 5 |
+| Cartas da Reserva | 43: 15 Mercenário, 15 Explorar, 12 Tomo Secreto e 1 Goblin |
+| Baralhos iniciais de 10 cartas | 4, cada um com 6 Roubar, 2 Tropeçar, 1 Contornar e 1 Rastejar |
+| Baralho da Masmorra | 100 cartas |
+| Tabuleiro do Mercado | 1 |
+| Artefatos | 7 |
+| Grandes Segredos / Pequenos Segredos | 11 / 20 |
+| Prisioneiros | 20 |
+| Mochilas / Amuletos de Sangue / Kits de Ladrão / Coroas | 2 / 2 / 3 / 3 |
+| Ídolos de Macaco | 3 |
+| Fichas de Maestria | 4 |
+| Ouro (moedas de 1, 5 e 10) | o manual não dá a quantidade |
+| Gazuas | 24 |
+| Guia de Referência de Fichas | 1, suplemento de regras |
+
+!fig[Peças da masmorra, cartas, Marcador do Dragão, peões e fichas, na imagem da editora (cartas da edição em inglês). Imagem: Dire Wolf](fotos/componentes-1.webp)
+
+**A. O tabuleiro de Clank!** (p. 4)
+
+1. **Ponha o tabuleiro de Clank! num dos lados da mesa.** Ele tem a área de Clank!, no alto, os Contadores de Pontos de Vida de cada cor e, à direita, a Trilha de Fúria (p. 2 e 4).
+
+!fig[O tabuleiro de Clank!: a área de Clank! no alto, os quatro Contadores de Pontos de Vida e a Trilha de Fúria na coluna da direita. Ilustração: manual Galápagos (p. 2)](figuras/setup-tabuleiro.webp)
+
+2. **Ponha o Marcador do Dragão na Trilha de Fúria, na casa que mostra o número de jogadores.** As três casas de baixo têm um peão com o número 2, 3 ou 4: com 2 jogadores, a terceira casa de baixo para cima; com 3, a segunda; com 4, a primeira (p. 4).
+
+!fig[O Marcador do Dragão e as três casas de baixo da Trilha de Fúria, com os peões numerados 2, 3 e 4. Ilustração: manual Galápagos (p. 4)](figuras/setup-trilha.webp)
+
+**B. As peças da masmorra** (p. 4)
+
+3. **Separe as 28 peças quadradas pelo verso, em duas pilhas:** as 22 das Profundezas, de verso azul, e as 6 em segurança, de verso roxo com uma porta de madeira (p. 2 e 4).
+4. **Embaralhe as 22 peças das Profundezas** e ponha a pilha virada para baixo no Banco, perto do tabuleiro de Clank! O Banco é o estoque comum, ao alcance de todos, onde ficam as peças e fichas que ninguém pegou ainda (p. 4).
+5. **Embaralhe as 6 peças em segurança e devolva 2 delas à caixa, sorteadas e sem ver.** Elas não serão usadas nesta partida (p. 4).
+6. **Ponha as 4 peças em segurança que sobraram, as de verso roxo, em cima da pilha das Profundezas.** Assim, as quatro primeiras peças descobertas são sempre as seguras (p. 4).
+
+!fig[Os dois versos das peças quadradas: atrás, o azul das Profundezas; na frente, o roxo das peças em segurança, com a porta. A seta indica que as roxas vão em cima da pilha azul. Ilustração: manual Galápagos (p. 4)](figuras/setup-pecas.webp)
+
+**C. O Banco** (p. 4)
+
+7. **Ponha no Banco o Ouro (moedas de 1, 5 e 10) e as Gazuas.** Eles não acabam: se faltar, substitua por qualquer coisa (p. 4).
+
+!fig[As moedas de Ouro de 1, 5 e 10 e uma Gazua. Ilustração: manual Galápagos (p. 4)](figuras/setup-ouro.webp)
+
+8. **Ponha no Banco os 5 cubos brancos de Fantasma** (p. 4).
+9. **Ponha os 24 cubos pretos de dragão dentro da Bolsa do Dragão** e deixe a bolsa no Banco (p. 4).
+
+!fig[À esquerda, um cubo branco de Fantasma; à direita, os cubos pretos de dragão entrando na Bolsa do Dragão. Ilustração: manual Galápagos (p. 4)](figuras/setup-bolsa.webp)
+
+10. **Empilhe os 7 Artefatos virados para cima, em ordem de valor:** o de 5 pontos no topo, o de 20 pontos na base (p. 4).
+
+!fig[Os 7 Artefatos, fichas de seis lados com o valor em pontos no canto. Ilustração: manual Galápagos (p. 3)](figuras/setup-artefatos.webp)
+
+11. **Separe os Grandes Segredos, os Pequenos Segredos e os Prisioneiros em três montes e embaralhe cada monte virado para baixo** (p. 4).
+
+!fig[Os versos das fichas, da esquerda para a direita: Grande Segredo, Pequeno Segredo e Prisioneiro. Ilustração: manual Galápagos (p. 4)](figuras/setup-segredos.webp)
+
+12. **Ponha o Tabuleiro do Mercado no Banco e empilhe nele as fichas do Mercado:** 2 Mochilas, 2 Amuletos de Sangue, 3 Kits de Ladrão e 3 Coroas. As Coroas vão em ordem decrescente de valor, a de 10 pontos no topo e a de 8 na base (p. 4).
+
+!fig[O Tabuleiro do Mercado e as quatro pilhas de fichas: Mochilas, Amuletos de Sangue, Kits de Ladrão e Coroas. Ilustração: manual Galápagos (p. 4)](figuras/setup-mercado.webp)
+
+!fig[A mesa montada até aqui: o tabuleiro de Clank! com o Marcador do Dragão na Trilha de Fúria (A), a pilha de peças da masmorra (B) e o Banco com Ouro, Gazuas, Artefatos, fichas, Tabuleiro do Mercado e Bolsa do Dragão (C). O H marca a área de Clank!, no alto do tabuleiro, onde entram os cubos iniciais do passo 27. Ilustração: manual Galápagos (p. 4)](figuras/preparacao.webp)
+
+**D. A Peça Inicial** (p. 4)
+
+13. **Ponha a Peça Inicial no centro da mesa, com qualquer um dos lados para cima.** Deixe espaço em volta para as peças novas que vão entrar durante o jogo (p. 4).
+14. **Ponha os 3 Ídolos de Macaco na sala do Altar dos Macacos**, na Peça Inicial (p. 4).
+15. **Perto da Cripta, empilhe uma ficha de Maestria por jogador** (p. 4).
+16. **Devolva à caixa as fichas de Maestria que sobraram** (p. 4).
+
+!fig[A Peça Inicial: a Cripta é a plataforma de borda verde no meio da peça. A linha de cima aponta o Altar dos Macacos com os Ídolos de Macaco; a de baixo, a pilha de fichas de Maestria, logo acima da Cripta. Ilustração: manual Galápagos (p. 4)](figuras/setup-peca-inicial.webp)
+
+**E. As cartas** (p. 5)
+
+17. **Monte a Reserva num dos lados da mesa, longe da Peça Inicial e do tabuleiro de Clank!:** a carta de Goblin e três pilhas, uma de Mercenário, uma de Explorar e uma de Tomo Secreto (p. 5).
+18. **Embaralhe o Baralho da Masmorra e abra 6 cartas viradas para cima:** é a Fileira da Masmorra (p. 5).
+19. **Troque toda carta da Fileira que tem o símbolo de Ataque do Dragão no canto direito**, abrindo cartas novas até haver 6 sem o símbolo. Embaralhe as cartas trocadas de volta no Baralho da Masmorra (p. 5).
+
+!fig[O símbolo de Ataque do Dragão, que aparece no canto direito de algumas cartas da Masmorra. Ilustração: manual Galápagos (p. 5)](figuras/setup-ataque.webp)
+
+20. **Ponha o Baralho da Masmorra perto da Fileira** e deixe ao lado um espaço para a pilha de descarte das cartas da Masmorra (p. 5).
+
+!fig[A Reserva (Goblin, Mercenário, Explorar e Tomo Secreto) em cima e, embaixo, o Baralho da Masmorra ao lado das 6 cartas abertas da Fileira da Masmorra. Ilustração: manual Galápagos (p. 5)](figuras/fileira.webp)
+
+**F e G. Cada jogador** (p. 5)
+
+21. **Cada jogador escolhe uma cor e pega os 30 cubos Clank! dela**, que ficam no seu suprimento pessoal, à sua frente (p. 5).
+
+!fig[Os cubos Clank! nas quatro cores de jogador: vermelho, amarelo, verde e azul. Ilustração: manual Galápagos (p. 5)](figuras/setup-cubos.webp)
+
+22. **Cada jogador põe o peão da sua cor na Cripta, na Peça Inicial.** A Cripta fica fora da masmorra (p. 5). Cubos, peões e baralhos iniciais das cores que ninguém escolheu ficam na caixa.
+
+!fig[Os quatro peões na Cripta da Peça Inicial. Ilustração: manual Galápagos (p. 5)](figuras/setup-peoes.webp)
+
+23. **Cada jogador pega 3 Gazuas do Banco** para o seu suprimento (p. 5).
+24. **Cada jogador pega um baralho inicial de 10 cartas:** 6 Roubar, 2 Tropeçar, 1 Contornar e 1 Rastejar (p. 5).
+25. **Cada jogador embaralha o seu baralho e compra 5 cartas dele.** Comprar, no jogo, é puxar do seu próprio baralho (p. 5).
+
+!fig[O suprimento de cada jogador ao começar: 3 Gazuas e o baralho inicial de 10 cartas. Ilustração: manual Galápagos (p. 5)](figuras/setup-suprimento.webp)
+
+**H. Quem começa** (p. 5)
+
+26. **Começa o jogador mais furtivo, ou alguém sorteado.** A vez segue no sentido horário (p. 5).
+27. **Cada jogador põe cubos seus na área de Clank! do tabuleiro de Clank!:** o primeiro põe 3, o segundo 2, o terceiro 1 e o quarto nenhum (p. 5).
+28. **Se alguma carta da Fileira tiver o texto Revelar, execute esse texto antes do primeiro turno** (p. 11).
+
+!fig[Partida em andamento, em imagem promocional da editora (cartas da edição em inglês); na montagem só a Peça Inicial fica na mesa. Imagem: Dire Wolf](fotos/mesa-1.webp)
+
+**O que muda com o número de jogadores** (p. 4, 5 e 12):
+
+| Jogadores | Casa do Marcador do Dragão (de baixo para cima) | Cubos tirados da bolsa no primeiro ataque (com o Marcador na casa inicial; +1 por carta de Perigo na Fileira, p. 11) | Fichas de Maestria perto da Cripta | Fichas de Maestria que voltam à caixa | Cubos na área de Clank!, na ordem dos jogadores |
+|---|---|---|---|---|---|
+| 2 | 3ª | 3 | 2 | 2 | 3 e 2 |
+| 3 | 2ª | 2 | 3 | 1 | 3, 2 e 1 |
+| 4 | 1ª | 2 | 4 | nenhuma | 3, 2, 1 e 0 |
+
+Para saber quantos cubos saem em cada ataque, conte os ícones vermelhos da casa do Marcador (p. 2, 4 e 12). Para 5 ou 6 jogadores é preciso a expansão Bando de Aventureiros, com regras próprias (p. 15).
+
+**O que volta para a caixa:** 2 das 6 peças em segurança, sorteadas e sem ver (passo 5), e as fichas de Maestria além de uma por jogador (passo 16) (p. 4).
+
+**Antes de começar, confira:** Marcador do Dragão na casa do número de jogadores; pilha da masmorra com as 4 peças em segurança em cima; Bolsa do Dragão com os 24 cubos pretos; Artefatos com o de 5 pontos no topo; Ídolos no Altar dos Macacos; uma Maestria por jogador perto da Cripta; Fileira com 6 cartas sem Ataque do Dragão; cada jogador com o peão na Cripta, 30 cubos, 3 Gazuas e 5 cartas na mão; cubos iniciais na área de Clank!.
+
+?? Das 6 peças em segurança, quantas entram na partida, e onde?
+- ( ) As 6, embaralhadas junto com as 22 das Profundezas
+- (x) 4, em cima da pilha das Profundezas; as outras 2 voltam à caixa sem ninguém ver
+- ( ) 4, embaixo da pilha das Profundezas, para aparecerem no fim
+- ( ) 2, em cima da pilha das Profundezas; as outras 4 voltam à caixa
+= Das 6 peças em segurança, 2 voltam à caixa sem ninguém ver e as 4 restantes vão para o topo da pilha embaralhada das Profundezas (p. 4).
+
+## 4min. Comece a jogar em 4 minutos
+
+**Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
+
+### A ideia do jogo
+
+Você é um ladrão: pega um **Artefato** nas catacumbas do dragão e volta à **Cripta**, de onde todos partem. O que é forte faz barulho, o **Clank!**, e cada Clank! vira um cubo seu que o dragão pode transformar em dano. Seu baralho começa fraco e melhora com as cartas adquiridas.
+
+### Monte a mesa
+
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 4 e 5):
+
+1. Tabuleiro de Clank! num lado da mesa, Marcador do Dragão na casa do número de jogadores; Peça Inicial no centro.
+2. Peças da masmorra numa pilha, com 4 das 6 em segurança em cima; Banco com Ouro, Gazuas e a Bolsa do Dragão com os 24 cubos pretos.
+3. Artefatos empilhados (o de 5 pontos no topo), Segredos e Prisioneiros embaralhados, Mercado montado e os 5 cubos de Fantasma no Banco; Ídolos no Altar dos Macacos e uma Maestria por jogador perto da Cripta.
+4. Reserva ao lado e Fileira da Masmorra com 6 cartas sem o símbolo de Ataque do Dragão. Carta com o texto Revelar: faça o que ela diz agora.
+5. Cada jogador: 30 cubos de uma cor, peão na Cripta, 3 Gazuas e as 10 cartas iniciais, embaralhadas; compre 5.
+6. Começa o mais furtivo (ou um sorteado), no sentido horário. Na área de Clank!, o primeiro põe 3 cubos, o segundo 2, o terceiro 1, o quarto nenhum.
+
+### Seu primeiro turno
+
+| Carta inicial | Quantas | O que dá |
+|---|---|---|
+| Roubar | 6 | 1 Habilidade |
+| Tropeçar | 2 | +1 Clank!, nada em troca |
+| Contornar | 1 | 1 Bota |
+| Rastejar | 1 | o efeito impresso na carta |
+
+1. **Jogue as 5 cartas**, todas, em qualquer ordem, e some: **Habilidade** adquire cartas, **Espadas** combatem monstros (as cartas iniciais não dão nenhuma), **Botas** andam. Cada +1 Clank! põe na hora 1 cubo seu na área de Clank!, sem escolha.
+2. **Gaste**, se quiser, quantas vezes puder pagar:
+   - Adquirir carta da Fileira ou da Reserva: custo em Habilidade no canto inferior direito. Ela vai para o descarte, não para a mão.
+   - Andar: 1 Bota por túnel. Por enquanto, só túneis sem desenhos.
+   - Sobra se perde no fim do turno.
+3. **Feche o turno**, nesta ordem: cartas jogadas para o descarte e compre 5 (baralho vazio: embaralhe o descarte); reponha a Fileira até 6 (Revelar age na hora); carta nova com o símbolo de Ataque do Dragão faz o dragão atacar, uma vez só.
+
+> [!resolvido] **Exemplo resolvido.** Roubar, Roubar, Roubar, Tropeçar e Contornar: 3 Habilidades, 1 Bota e 1 cubo na área de Clank!. Adquire um Explorar da Reserva (custo 3), que vai para o descarte, e sai da Cripta por um túnel sem desenhos. No fim, compra as outras 5; Fileira intacta, sem ataque.
+
+> [!complete] **Complete.** O Jogador 2 tem Roubar, Roubar, Roubar, Tropeçar e Tropeçar.
+>
+> ?? Quantos cubos ele põe na área de Clank!?
+> - ( ) 1
+> - (x) 2
+> - ( ) 3
+> = 2 cubos, um por Tropeçar. Cada +1 Clank! põe na hora 1 cubo seu na área de Clank! (p. 6).
+>
+> ?? Ele consegue adquirir um Explorar?
+> - (x) Sim: tem 3 Habilidades, e o Explorar custa 3
+> - ( ) Não: o Explorar custa 4
+> - ( ) Não: cada Tropeçar anula uma Habilidade
+> = Com 3 Habilidades, adquire o Explorar, que custa 3 e vai para o descarte (p. 7).
+>
+> ?? Ele consegue sair da Cripta?
+> - ( ) Sim, pagando o túnel com 1 Habilidade
+> - ( ) Sim: o primeiro túnel não custa Bota
+> - (x) Não: ele não tem Bota
+> = Não sai da Cripta: não tem Bota, e cada túnel custa pelo menos 1 Bota (p. 7).
+
+> [!suavez] **Agora a sua mão.** Olhe as suas 5 cartas antes de jogar.
+>
+> ?? Quantos cubos você vai pôr na área de Clank!?
+> - (x) Um para cada Tropeçar da mão
+> - ( ) Um para cada carta jogada
+> - ( ) Nenhum agora: o cubo do Tropeçar só entra no ataque
+> = Cada Tropeçar faz +1 Clank!, e o cubo vai para a área de Clank! na hora, sem escolha (p. 6).
+>
+> ?? Dá para sair da Cripta?
+> - ( ) Sempre: sair da Cripta é de graça
+> - ( ) Só com 3 Habilidades ou mais
+> - (x) Só se a mão tiver pelo menos 1 Bota
+> = Andar custa 1 Bota por túnel, e na mão inicial só o Contornar dá Bota, além do que o Rastejar imprimir (p. 7).
+
+### O ataque do dragão
+
+Os cubos da área de Clank! vão para a Bolsa do Dragão, e saem dela tantos quanto os ícones vermelhos da casa do Marcador (não é o número de jogadores) (p. 2 e 4). Preto volta ao Banco; cubo da sua cor vai para o seu Contador de Pontos de Vida, 1 de dano cada. Os não sorteados continuam na Bolsa. No décimo dano, você é nocauteado.
+
+### Ainda não precisa saber
+
+Desenhos nos túneis, peças novas e salas especiais: etapa 4. Fantasma e Perigo: etapa 3. Artefato, Profundezas, fuga e pontos: etapa 5. Abra a etapa quando aparecerem.
+
+### Como a partida acaba
+
+Voltar à Cripta com um Artefato é escapar: ganha a ficha de Maestria (20 pontos). Quando todos escaparam ou foram nocauteados, vence quem tem mais pontos. Nocauteado sem Artefato ou nas Profundezas faz zero.
+
+**Prefere ver?** Partida resumida em vídeo; em caso de diferença, vale o manual.
+
+!video[CLANK! CATACOMBS - Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=xKw1CC_aZHU&t=0s)
+
+> [!atencao] **Os três erros mais caros.** Carta adquirida vai para o descarte, não para a mão. Pegar o Artefato sobe o Marcador uma casa: ataques piores para todos, você inclusive. Nocaute nas Profundezas zera a pontuação, com qualquer Artefato.
+
+## 0. Antes de tudo: o que é este jogo
+
+Você é um ladrão que desce às catacumbas de um dragão. O plano tem três partes: entrar, pegar um **Artefato** e sair vivo pela **Cripta**, o lugar de onde todos partem. Quem sai ganha um bônus de 20 pontos. No fim, vence quem tiver mais pontos somando o Artefato, o ouro, as fichas e as cartas que juntou (p. 3 e 14).
+
+O que torna isso difícil é o barulho, que o jogo chama de **Clank!**. Quase tudo o que você faz de mais forte faz barulho, e cada Clank! vira um cubo da sua cor numa área do tabuleiro. De tempos em tempos o dragão ataca: esses cubos vão para uma bolsa, alguns são sorteados, e cada cubo sorteado é um ferimento para o dono. Quem fez mais barulho tem mais cubos na bolsa e mais chance de se ferir. Os cubos que não saem continuam na bolsa, esperando o próximo ataque (p. 12).
+
+Há ainda uma aposta que atravessa a partida. Os Artefatos mais valiosos aparecem longe, nas **Profundezas**. Se você cair lá embaixo, ou cair sem ter pego um Artefato, termina com zero ponto, não importa o que tenha juntado (p. 14).
+
+Duas ideias sustentam o resto:
+
+- **Seu baralho é o seu personagem.** Todos começam com as mesmas 10 cartas fracas. Durante a partida, você adquire cartas melhores, que entram no seu baralho e voltam para a sua mão mais adiante. Esse tipo de jogo se chama construção de baralho (p. 3).
+- **O mapa nasce durante a partida.** A masmorra começa com uma única peça. Quem anda até a borda revela uma peça nova e a encaixa ali (p. 9).
+
+## 1. Como este guia ensina
+
+Você vai aprender jogando, em cinco etapas. Cada etapa é uma parte real da partida, e cada uma é mais completa que a anterior: montar a mesa, jogar um turno, fechar o turno e sobreviver ao dragão, explorar a masmorra e, por fim, jogar a partida inteira até a contagem de pontos.
+
+Dentro de cada etapa, os blocos aparecem sempre na mesma ordem:
+
+- **Para entender:** como aquela parte do jogo funciona e por quê.
+- **Passo a passo:** as regras exatas, na ordem em que você vai usá-las.
+- **Tarefas**, com ajuda que vai diminuindo: primeiro um **exemplo resolvido**, depois uma tarefa para **completar** (o começo já está feito) e, por fim, uma tarefa **sua vez**, sem ajuda.
+- **Treino rápido:** exercícios curtos para o que precisa ficar automático, como somar recursos ou resolver um ataque.
+
+Os exercícios são de múltipla escolha: toque numa opção e aparece a resposta certa, com a explicação. Pense antes de tocar. No final há uma avaliação curta, com a indicação de qual etapa reler se algo não ficou claro, e uma folha de consulta para levar à mesa.
+
+
+## 2. Etapa 1: montar a mesa
+
+> [!entender] **Para entender.** Você não precisa decorar a caixa. Precisa saber para que serve cada grupo de peças.
+>
+> **Suas cartas e os três recursos.** Quase toda carta produz recursos, mostrados por ícones no canto superior esquerdo: **Habilidade** adquire cartas e usa Dispositivos; **Espadas** combatem monstros e protegem você em certos túneis; **Botas** movem seu peão (p. 6). Cartas também podem dar Ouro, fazer Clank! (ou tirar Clank!, quando o número é negativo) e mandar comprar cartas. O custo fica no canto inferior direito; os pontos que a carta vale no fim, quando vale, ficam no canto superior direito (p. 7 e 14).
+>
+> **O tabuleiro de Clank!** não é um mapa. Ele guarda a **área de Clank!**, onde os cubos de barulho esperam o próximo ataque; a **Trilha de Fúria**, onde anda o **Marcador do Dragão** e que diz quantos cubos saem da bolsa em cada ataque; e um **Contador de Pontos de Vida** de cada cor, onde você marca seus ferimentos (p. 4 e 12).
+>
+> **A Bolsa do Dragão** começa com 24 cubos pretos, que não ferem ninguém. Durante a partida, seus cubos de barulho também entram nela (p. 12).
+>
+> **As cartas à venda** ficam em dois lugares. A **Fileira da Masmorra** tem seis cartas abertas, tiradas do **Baralho da Masmorra**, e muda o tempo todo. A **Reserva** tem sempre as mesmas pilhas: Mercenário, Explorar e Tomo Secreto, mais o Goblin (p. 5 e 7). A cor da faixa no alto da carta diz o que ela é: azul é carta para o seu baralho, amarela é carta da Reserva, roxa é Dispositivo (você paga, usa na hora e ela vai embora) e vermelha é monstro (p. 7).
+>
+> **A masmorra** é feita de **peças**. Cada peça tem **salas** ligadas por **túneis**. **Seu suprimento pessoal** é o que fica à sua frente: 30 cubos da sua cor, Gazuas, Ouro e fichas. Os cubos servem para duas coisas: são o seu barulho e também os seus ferimentos. **O Banco** é o estoque comum (p. 4, 5 e 12).
+
+**As cartas que todo mundo usa.** Valores lidos nas ilustrações do manual (p. 2, 8 e 13). As outras cartas trazem o efeito escrito nelas.
+
+| Carta | Onde | Dá | Custo | Pontos |
+|---|---|---|---|---|
+| Roubar (6 no baralho inicial) | inicial | 1 Habilidade | | |
+| Tropeçar (2) | inicial | +1 Clank! | | |
+| Contornar (1) | inicial | 1 Bota | | |
+| Rastejar (1) | inicial | leia o efeito na carta (nenhum dos dois manuais o mostra) | | |
+| Explorar | Reserva | 2 Habilidades e 1 Bota | 3 | |
+| Mercenário | Reserva | 1 Habilidade e 2 Espadas | impresso na carta | |
+| Tomo Secreto | Reserva | nada ao ser jogada | 7 | 7 |
+| Goblin (monstro) | Reserva | ao ser derrotado, 1 de Ouro | 2 Espadas | |
+
+> [!passos] **Passo a passo: preparação** (p. 4 e 5). É igual para 2, 3 ou 4 jogadores, salvo nos passos 1, 7 e 11.
+>
+> 1. Ponha o tabuleiro de Clank! num canto da mesa. A Trilha de Fúria é a coluna de pedras à direita, lida de baixo para cima; cada casa mostra quantos cubos saem da bolsa num ataque: 2, 2, 3, 3, 4, 4 e 5. As três casas de baixo têm um peão com um número. Ponha o Marcador do Dragão na casa com o número de jogadores: com 4, na primeira casa (2 cubos); com 3, na segunda (2 cubos); com 2, na terceira (3 cubos) (ilustração da p. 4).
+> 2. Separe as 28 peças quadradas pelo verso. Embaralhe as 22 das Profundezas e faça uma pilha virada para baixo no Banco. Embaralhe as 6 outras, devolva 2 à caixa sem olhar e ponha as 4 restantes em cima da pilha. Assim, as quatro primeiras peças descobertas serão sempre seguras.
+> 3. Monte o Banco: Ouro (moedas de 1, 5 e 10) e Gazuas, que não acabam (se faltar, substitua por qualquer coisa); os 5 cubos brancos de Fantasma; a Bolsa do Dragão com os 24 cubos pretos dentro.
+> 4. Empilhe os 7 Artefatos virados para cima, em ordem de valor: o de 5 pontos no topo, o de 20 na base.
+> 5. Separe Grandes Segredos, Pequenos Segredos e Prisioneiros, e embaralhe cada tipo virado para baixo.
+> 6. Ponha o Tabuleiro do Mercado no Banco e empilhe nele 2 Mochilas, 2 Amuletos de Sangue, 3 Kits de Ladrão e 3 Coroas (a de 10 pontos no topo, a de 8 na base).
+> 7. Ponha a Peça Inicial no centro da mesa, com qualquer lado para cima, deixando espaço ao redor. Ponha os 3 Ídolos de Macaco na sala do Altar dos Macacos. Perto da Cripta, empilhe uma ficha de Maestria por jogador e devolva as outras à caixa.
+> 8. Monte a Reserva longe da Peça Inicial: o Goblin e três pilhas, de Mercenário, Explorar e Tomo Secreto.
+> 9. Embaralhe o Baralho da Masmorra e abra 6 cartas: é a Fileira da Masmorra. Troque toda carta com o símbolo de Ataque do Dragão no canto direito, até haver 6 cartas sem o símbolo, e embaralhe as trocadas de volta. Deixe espaço para a pilha de descarte da Masmorra.
+> 10. Cada jogador escolhe uma cor, pega os 30 cubos dela, põe o peão na Cripta (fora da masmorra), pega 3 Gazuas do Banco e o baralho inicial de 10 cartas (6 Roubar, 2 Tropeçar, 1 Contornar, 1 Rastejar), embaralha e compra 5.
+> 11. Começa o jogador mais furtivo (ou alguém sorteado), e a ordem segue no sentido horário. O primeiro põe 3 cubos seus na área de Clank!, o segundo 2, o terceiro 1 e o quarto nenhum.
+> 12. Se alguma carta da Fileira tiver um texto **Revelar**, execute-o antes do primeiro turno (p. 11).
+
+!fig[A mesa montada: o tabuleiro de Clank! com o Marcador do Dragão na Trilha de Fúria (A), a pilha de peças da masmorra (B) e o Banco com Ouro, Gazuas, Artefatos, fichas, Tabuleiro do Mercado e Bolsa do Dragão (C). Ilustração: manual Galápagos (p. 4)](figuras/preparacao.webp)
+
+!fig[A Reserva (Goblin, Mercenário, Explorar e Tomo Secreto) em cima e, embaixo, o Baralho da Masmorra ao lado das 6 cartas abertas da Fileira da Masmorra. Ilustração: manual Galápagos (p. 5)](figuras/fileira.webp)
+
+> [!atencao] O peão começa na Cripta, que fica na Peça Inicial mas fora da masmorra. A Cripta é também a única saída.
+
+> [!suavez] **Sua vez.** Você vai montar uma partida de 3 jogadores: o Jogador 1 começa, depois o Jogador 2, depois o Jogador 3. Responda olhando só o passo a passo.
+>
+> ?? Em que casa da Trilha de Fúria fica o Marcador do Dragão, e quantos cubos sairão no primeiro ataque se nada mudar?
+> - ( ) Na terceira casa de baixo para cima; saem 3 cubos
+> - (x) Na segunda casa de baixo para cima; saem 2 cubos
+> - ( ) Na primeira casa de baixo para cima; saem 2 cubos
+> - ( ) Na casa que mostra 3; saem 3 cubos
+> = Na segunda casa de baixo para cima, a do peão com o número 3. Ela mostra 2, então saem 2 cubos (passo 1; p. 4).
+>
+> ?? Quantas fichas de Maestria ficam perto da Cripta?
+> - ( ) Uma só, para quem escapar primeiro
+> - ( ) Todas as da caixa
+> - (x) Três, uma por jogador
+> = Três, uma por jogador; as outras voltam à caixa (passo 7; p. 4).
+>
+> ?? Quantos cubos cada um põe na área de Clank! antes de começar?
+> - (x) Jogador 1: 3; Jogador 2: 2; Jogador 3: 1
+> - ( ) Jogador 1: 1; Jogador 2: 2; Jogador 3: 3
+> - ( ) 3 cubos cada um
+> - ( ) Nenhum: a área de Clank! começa vazia
+> = Jogador 1: 3; Jogador 2: 2; Jogador 3: 1. Quem começa põe mais (passo 11; p. 5).
+>
+> ?? Na Fileira aparece uma carta com o símbolo de Ataque do Dragão. O que você faz?
+> - ( ) Deixa a carta: o dragão ataca antes do primeiro turno
+> - ( ) Troca por outra e põe a trocada no descarte da Masmorra
+> - ( ) Deixa a carta: ela só ataca quando alguém a adquirir
+> - (x) Troca por outra até haver 6 cartas sem o símbolo, e embaralha a trocada de volta no Baralho da Masmorra
+> = Troca por outra carta do Baralho da Masmorra até haver 6 cartas sem o símbolo, e embaralha a trocada de volta (passo 9; p. 5).
+
+## 3. Etapa 2: jogar o primeiro turno
+
+> [!entender] **Para entender.** Um turno é o momento de transformar cinco cartas em ações. Os recursos se acumulam num caixa comum: duas cartas com 1 Habilidade cada dão 2 Habilidades para gastar. O que sobrar no fim do turno se perde, então o turno é um pequeno problema de orçamento (p. 6).
+>
+> As cartas que você adquire não vão para a mão: vão para a sua pilha de descarte. Elas só voltam quando o seu baralho acaba e você embaralha o descarte. Por isso uma carta boa adquirida hoje rende daqui a alguns turnos, e o jogo recompensa quem melhora o baralho cedo (p. 7).
+>
+> O barulho é o preço de várias cartas. Cartas como Tropeçar fazem barulho sem dar nada em troca; outras tiram barulho. O que conta é quantos cubos seus estão na área de Clank! quando o dragão atacar.
+
+> [!passos] **Passo a passo: o turno e as primeiras ações** (p. 6 e 7)
+>
+> 1. Você começa com 5 cartas na mão e é obrigado a jogar todas antes de encerrar, na ordem que quiser. Cada carta jogada fica na sua área de jogo até o fim do turno.
+> 2. Pode agir a qualquer momento: antes, entre ou depois das cartas. Cada ação pode ser repetida quantas vezes você puder pagar. Os recursos de uma carta podem ser divididos entre ações.
+> 3. O efeito de uma carta não depende da ordem em que você joga. Uma carta que dá Ouro "para cada Clank! que você fizer neste turno" conta também o barulho feito antes dela (p. 6).
+> 4. **+1 Clank!:** ponha 1 cubo do seu suprimento na área de Clank!. Com o suprimento vazio, não põe nada. **-2 Clank!:** tire 2 cubos seus da área de Clank!. Se não houver cubos seus lá, o desconto fica guardado para barulho que você fizer mais tarde no mesmo turno. No fim do turno, desconto não usado se perde.
+> 5. **Comprar cartas**, no manual brasileiro, é puxar do seu próprio baralho para a mão, nunca do Baralho da Masmorra. Se o seu baralho acabar, embaralhe o seu descarte, sem as cartas da área de jogo.
+> 6. **Adquirir uma Carta:** pague em Habilidade o custo do canto inferior direito. Pode ser uma carta de faixa azul da Fileira ou uma de faixa amarela da Reserva. Ela vai para o seu descarte. Não reponha a Fileira agora. A Reserva tem estoque limitado. O texto **Adquirir** de uma carta, se houver, acontece uma vez, na hora da aquisição na Fileira (p. 11).
+> 7. **Movimentação:** cada túnel custa pelo menos 1 Bota. Nesta etapa, use só túneis sem ícones; os ícones ficam para a etapa 4.
+
+!fig[O exemplo de turno do manual: a jogadora verde joga as cinco cartas de cima, gasta Espadas para derrotar o Kobold de Cristal e, com a Habilidade somada, adquire o Guia Especialista, que vai para o descarte. Ilustração: manual Galápagos (p. 13)](figuras/turno.webp)
+
+> [!resolvido] **Exemplo resolvido.** O Jogador 1 começa com Roubar, Roubar, Roubar, Tropeçar e Contornar. Ele joga as cinco. Os três Roubar dão 3 Habilidades; o Contornar dá 1 Bota; o Tropeçar faz +1 Clank!, e ele põe 1 cubo vermelho na área de Clank!.
+>
+> Com 3 Habilidades, ele não alcança um Tomo Secreto, que custa 7. Um Explorar custa 3: ele o adquire e o põe no descarte. Com a Bota, sai da Cripta por um túnel sem ícones e chega à primeira sala da masmorra.
+>
+> Ele encerra o turno: as cinco cartas vão para o descarte, onde já está o Explorar, e ele compra as 5 cartas que restam no baralho inicial. Ninguém tirou carta da Fileira, então nada entra e o dragão não ataca.
+>
+> Por que essa escolha: o Explorar (2 Habilidades e 1 Bota) é melhor que qualquer carta inicial, mas o Jogador 1 só vai usá-lo depois de embaralhar o descarte, no terceiro turno dele ou mais tarde.
+
+> [!complete] **Complete.** O Jogador 2 tem Roubar, Roubar, Tropeçar, Tropeçar e Contornar. Já somamos: 2 Habilidades e 1 Bota. Falta o resto.
+>
+> ?? Quantos cubos ele põe na área de Clank!?
+> - ( ) 1
+> - ( ) Nenhum: o cubo só entra no ataque
+> - (x) 2
+> = 2 cubos, um por Tropeçar (p. 6).
+>
+> ?? Ele consegue adquirir um Explorar?
+> - (x) Não: o Explorar custa 3, e ele tem 2 Habilidades
+> - ( ) Sim: o Explorar custa 2
+> - ( ) Sim, usando a Bota no lugar da Habilidade que falta
+> = Não adquire o Explorar, que custa 3. Com 2 Habilidades, pode adquirir uma carta ou usar um Dispositivo de custo até 2, se houver na Fileira, e andar um túnel sem ícones (p. 6 e 7).
+>
+> ?? Ele consegue combater o Goblin?
+> - ( ) Sim: o Goblin custa 2 Habilidades
+> - (x) Não: o Goblin exige 2 Espadas, e ele não tem nenhuma
+> - ( ) Sim, aceitando 1 de dano no lugar das Espadas
+> = Não combate o Goblin, que exige 2 Espadas; as cartas iniciais não dão Espada (p. 7).
+
+> [!suavez] **Sua vez.** O Jogador 3 tem Roubar, Roubar, Roubar, Roubar e Tropeçar, e está na Cripta.
+>
+> ?? O que ele pode fazer com a Habilidade?
+> - ( ) Adquirir um Explorar e guardar a Habilidade que sobra para o próximo turno
+> - ( ) Adquirir dois Explorar
+> - (x) Adquirir um Explorar e perder a Habilidade que sobra, ou adquirir outra carta de custo até 4
+> = Ele tem 4 Habilidades. Pode adquirir um Explorar (3) e perde a Habilidade que sobra, ou adquirir outra carta de custo até 4 (p. 6 e 7).
+>
+> ?? Ele pode sair da Cripta?
+> - (x) Não: ele não tem Bota
+> - ( ) Sim, pagando o túnel com 1 Habilidade
+> - ( ) Sim, se deixar o Tropeçar na mão
+> = Ele não pode sair da Cripta, porque não tem Bota (p. 7).
+>
+> ?? E o Tropeçar?
+> - ( ) Ele pode deixar o Tropeçar na mão e evitar o cubo
+> - (x) O cubo do Tropeçar vai para a área de Clank! de qualquer jeito
+> - ( ) O cubo só entra se ele adquirir alguma carta
+> = Todas as 5 cartas são jogadas, e o +1 Clank! do Tropeçar põe o cubo na área de Clank! de qualquer jeito (p. 6).
+
+> [!treino] **Treino rápido: recursos e barulho.** Para cada mão, diga quantas Habilidades, Espadas e Botas ela gera e quantos cubos o dono deixa na área de Clank! no fim do turno (comece com nenhum cubo dele lá).
+>
+> ?? a) Roubar, Roubar, Tropeçar, Tropeçar, Explorar
+> - ( ) 3 Habilidades, 0 Espadas, 1 Bota, 2 cubos
+> - (x) 4 Habilidades, 0 Espadas, 1 Bota, 2 cubos
+> - ( ) 4 Habilidades, 0 Espadas, 1 Bota, 1 cubo
+> - ( ) 4 Habilidades, 0 Espadas, 2 Botas, 2 cubos
+> = 4 Habilidades (1 de cada Roubar e 2 do Explorar), 0 Espadas, 1 Bota, 2 cubos (p. 6).
+>
+> ?? b) Ataque Surpresa (3 Espadas e -2 Clank!), Tropeçar, Roubar, Roubar, Contornar
+> - ( ) 2 Habilidades, 3 Espadas, 1 Bota, 1 cubo
+> - ( ) 2 Habilidades, 3 Espadas, 1 Bota, nenhum cubo e um desconto de 1 guardado para o próximo turno
+> - ( ) 3 Habilidades, 3 Espadas, 1 Bota, nenhum cubo
+> - (x) 2 Habilidades, 3 Espadas, 1 Bota, nenhum cubo
+> = 2 Habilidades, 3 Espadas, 1 Bota, nenhum cubo. O Tropeçar põe 1 cubo e o Ataque Surpresa tira esse cubo; sobra um desconto de 1 que se perde no fim do turno (p. 6).
+>
+> ?? c) Mercenário, Mercenário, Explorar, Roubar, Tropeçar
+> - (x) 5 Habilidades, 4 Espadas, 1 Bota, 1 cubo
+> - ( ) 4 Habilidades, 4 Espadas, 1 Bota, 1 cubo
+> - ( ) 5 Habilidades, 2 Espadas, 1 Bota, 1 cubo
+> - ( ) 5 Habilidades, 4 Espadas, 2 Botas, 1 cubo
+> = 5 Habilidades (1 de cada Mercenário, 2 do Explorar, 1 do Roubar), 4 Espadas, 1 Bota, 1 cubo (p. 6).
+>
+> ?? d) A mesma mão de b, mas jogando o Tropeçar antes do Ataque Surpresa. Muda alguma coisa?
+> - ( ) Sim: fica 1 cubo, porque o desconto só vale para barulho feito depois dele
+> - (x) Não muda nada
+> - ( ) Sim: o desconto que sobra tira um cubo de outro jogador
+> = Não muda nada. A ordem não altera o resultado (p. 6; é a situação do exemplo da p. 13).
+
+## 4. Etapa 3: fechar o turno e enfrentar o dragão
+
+> [!entender] **Para entender.** O dragão não ataca em turnos fixos. Ele ataca quando uma carta nova com o símbolo de Ataque do Dragão entra na Fileira. Cada carta que alguém tira da Fileira abre um espaço, e cada espaço é uma carta nova no fim do turno: é assim que a pressão cresce.
+>
+> O ataque é um sorteio. Quanto mais cubos seus estiverem na bolsa, maior a chance de um deles sair. E a fúria do dragão aumenta durante a partida: cada Artefato pego faz o Marcador subir uma casa, e casas mais altas tiram mais cubos (p. 12). No começo, o barulho custa pouco; perto do fim, custa caro.
+
+> [!passos] **Passo a passo: fim do turno** (p. 12)
+>
+> 1. Ponha todas as cartas da área de jogo no seu descarte, virado para cima, e compre 5 cartas do seu baralho.
+> 2. Reponha a Fileira da Masmorra até ter 6 cartas. Se uma carta nova tiver texto **Revelar**, execute-o assim que ela aparecer, antes de qualquer ataque (p. 11).
+> 3. Se alguma das cartas novas tiver o símbolo de Ataque do Dragão (um dragão na borda direita), o dragão ataca. É um ataque só, mesmo que entrem vários símbolos. Cartas que já estavam na Fileira não atacam de novo.
+
+> [!passos] **Passo a passo: Ataque do Dragão** (p. 11 e 12)
+>
+> 1. Todos os cubos da área de Clank! vão para a Bolsa do Dragão.
+> 2. Tire tantos cubos quanto o número da casa do Marcador na Trilha de Fúria, mais 1 para cada carta de **Perigo** na Fileira.
+> 3. Cubo preto: vai para o Banco e não fere ninguém. Cubo colorido: 1 de dano para o dono, e o cubo vai para o Contador de Pontos de Vida dele.
+> 4. Cubo de Fantasma: **todos** os jogadores sofrem 1 de dano, cada um com um cubo do próprio suprimento (quem não tiver usa um cubo preto separado no Banco). Depois do ataque, os Fantasmas voltam para a área de Clank!.
+> 5. Os cubos não sorteados ficam na bolsa.
+
+!fig[O ataque do exemplo do manual: com o Marcador na quinta casa da Trilha de Fúria, saem 4 cubos. O preto vai para o Banco, o verde dá 1 de dano à jogadora verde e os dois amarelos dão 2 ao amarelo, marcados no Contador de Pontos de Vida. Ilustração: manual Galápagos (p. 13)](figuras/ataque.webp)
+
+> [!passos] **Passo a passo: vida, dano e cura** (p. 12)
+>
+> - O Contador de Pontos de Vida tem 10 casas, do coração à caveira (ilustração da p. 12). O dano entra da esquerda para a direita.
+> - No ataque, o cubo do dano é o que saiu da bolsa. Fora do ataque (um túnel com Monstro, por exemplo), o cubo sai do seu suprimento.
+> - Curar é devolver um cubo do Contador ao suprimento.
+> - Contador cheio, no décimo dano: você está **nocauteado**.
+
+> [!mais] **Dano por escolha.** Você não pode escolher sofrer dano fora do ataque (atravessar um Monstro sem Espada, por exemplo) se não tiver cubos no suprimento ou se isso fosse encher o seu Contador (p. 12).
+
+> [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores. Na área de Clank! estão 2 cubos vermelhos (Jogador 1), 3 azuis (Jogador 2) e 1 de Fantasma, que entrou quando alguém revelou uma peça assombrada. O Marcador está na quinta casa, que mostra 4; não há carta de Perigo na Fileira.
+>
+> Os seis cubos vão para a bolsa. Saem 4: um preto, um azul, o Fantasma e um vermelho. O preto vai para o Banco. O azul é 1 de dano para o Jogador 2; o vermelho, 1 para o Jogador 1; o Fantasma, 1 para cada um, com cubos do próprio suprimento. Resultado: 2 de dano para cada. O Fantasma volta para a área de Clank!, e 1 vermelho e 2 azuis continuam na bolsa.
+>
+> Por que importa: os cubos que ficaram vão disputar o próximo sorteio junto com o barulho novo.
+
+> [!complete] **Complete.** Partida de 3 jogadores: Jogador 1 (vermelho), Jogador 2 (azul) e Jogador 3 (verde). O Marcador está na quarta casa, que mostra 3, e há uma carta de Perigo na Fileira, então saem 4 cubos. Saem: azul, Fantasma, verde e preto. O preto vai para o Banco e o azul é 1 de dano para o Jogador 2. Termine.
+>
+> ?? Quanto dano cada um sofre no total?
+> - ( ) Jogador 1: 0; Jogador 2: 1; Jogador 3: 1
+> - ( ) Jogador 1: 0; Jogador 2: 2; Jogador 3: 2
+> - (x) Jogador 1: 1; Jogador 2: 2; Jogador 3: 2
+> = Jogador 1: 1 (o Fantasma); Jogador 2: 2 (azul e Fantasma); Jogador 3: 2 (verde e Fantasma). O Fantasma fere todos os jogadores, mesmo quem não tem cubo sorteado (p. 12).
+>
+> ?? Para onde vai o Fantasma?
+> - ( ) Para o Banco, como o cubo preto
+> - (x) Volta para a área de Clank!
+> - ( ) Fica na Bolsa do Dragão
+> = O Fantasma volta para a área de Clank! depois do ataque (p. 12).
+
+> [!suavez] **Sua vez.** No fim do turno do Jogador 2, entram duas cartas novas na Fileira, as duas com o símbolo de Ataque do Dragão. Uma terceira carta com o símbolo já estava lá desde o turno anterior. Uma das novas tem um texto Revelar.
+>
+> ?? Em que ordem as coisas acontecem?
+> - ( ) Primeiro o ataque; depois o texto Revelar
+> - ( ) O ataque acontece, e o texto Revelar só vale quando alguém adquirir a carta
+> - (x) Primeiro o texto Revelar, assim que a carta aparece; depois o ataque
+> = Primeiro o texto Revelar é executado, assim que a carta aparece. Depois vem o ataque (p. 11 e 12).
+>
+> ?? Quantos ataques há?
+> - (x) Um
+> - ( ) Dois, um por carta nova com o símbolo
+> - ( ) Três, um por carta com o símbolo na Fileira
+> = Há **um** ataque, porque entraram cartas novas com o símbolo; vários símbolos não fazem mais de um. A carta antiga não conta (p. 11 e 12).
+
+> [!treino] **Treino rápido: quantos cubos saem?**
+>
+> ?? a) Marcador na terceira casa, nenhuma carta de Perigo.
+> - ( ) 2
+> - (x) 3
+> - ( ) 4
+> = 3, o número da terceira casa da Trilha de Fúria (2, 2, 3, 3, 4, 4, 5, de baixo para cima) (p. 4 e 12).
+>
+> ?? b) Marcador na sexta casa, duas cartas de Perigo.
+> - ( ) 4
+> - ( ) 5
+> - (x) 6
+> - ( ) 7
+> = 4 da casa mais 2 de Perigo, 6 (p. 11 e 12).
+>
+> ?? c) Marcador na quinta casa e uma carta de Perigo, mas o ataque é no turno de um jogador que já escapou, numa partida de 3 jogadores (veja a etapa 5).
+> - ( ) 5
+> - (x) 4
+> - ( ) 6
+> = 4, porque no turno de quem saiu do jogo a trilha e o Perigo são ignorados; numa partida de 2 seriam 6 (p. 14).
+
+## 5. Etapa 4: explorar a masmorra
+
+> [!entender] **Para entender.** Andar custa Botas, e o caminho tem obstáculos que custam mais: Botas extras, ferimentos, Gazuas. A masmorra também paga: salas que dão Ouro, cura ou segredos, mercados, prisões, e os Artefatos.
+>
+> Como a pilha de Artefatos começa com o de 5 pontos no topo e o de 20 na base, os Artefatos encontrados mais tarde valem mais. Mas as peças descobertas depois das quatro primeiras são as Profundezas, onde cair custa a partida inteira (p. 4, 10 e 14). Explorar é decidir até onde ir.
+
+> [!passos] **Passo a passo: túneis** (p. 7)
+>
+> - **Pegada:** o túnel custa 2 Botas em vez de 1.
+> - **Monstro:** cada ícone causa 1 de dano ao atravessar. Cada Espada gasta evita o dano de um ícone. Gastar Espadas aqui não é obrigatório.
+> - **Cadeado:** só passa quem gasta uma Gazua do suprimento, que fica sobre o ícone. O túnel fica destrancado para todos até o fim da partida. Dois cadeados no mesmo túnel (um de cada peça) pedem uma Gazua cada.
+> - **Sentido único:** o túnel em forma de seta só pode ser usado no sentido da seta.
+>
+> Os ícones somam: um túnel com Pegada e um Monstro custa 2 Botas e causa 1 de dano, que 1 Espada evita.
+
+> [!passos] **Passo a passo: descobrir uma nova peça** (p. 9)
+>
+> 1. Um túnel que termina na borda, sem peça do outro lado, leva ao desconhecido. Ao atravessá-lo, pegue a peça do topo da pilha, revele e encaixe ao lado da peça que você está deixando.
+> 2. A peça vai num espaço vazio (nunca empilhada), pode ser girada à vontade e precisa encostar uma borda inteira em outra peça. A exceção são as bordas longas da Peça Inicial: ali a nova peça se alinha com a metade de cima ou com a de baixo.
+> 3. A peça nova completa o túnel por onde você saiu e pode acrescentar ícones a ele. Se você não tiver Botas para uma Pegada ou Gazua para um Cadeado, gire a peça para outra orientação, no mesmo lugar. Você também pode parar o movimento para buscar ajuda: adquirir uma carta, usar um Dispositivo ou combater um monstro.
+> 4. Se a peça trouxer uma sala de Artefato, o Artefato do topo da pilha vai para ela. Com um ou dois sinais de "mais" na sala, vai o Artefato uma ou duas posições abaixo do topo; se não houver tantos, o mais valioso que restar; se a pilha estiver vazia, nada (p. 10).
+
+!fig[A masmorra crescendo: o peão verde sai pela borda e a peça nova é posta encostando uma borda inteira em outra. A peça marcada com X está fora do lugar. Ilustração: manual Galápagos (p. 9)](figuras/nova-peca.webp)
+
+> [!mais] **Peça assombrada.** Se a peça revelada for assombrada (quatro das Profundezas são), um cubo de Fantasma do Banco vai para a área de Clank! (p. 10).
+
+> [!mais] **Sem peças na pilha.** Com a pilha de peças vazia, ninguém mais sai pela borda (p. 9).
+
+> [!passos] **Passo a passo: as salas e as outras ações** (p. 7, 8, 10 e 11)
+>
+> - **Recompensas ao entrar** (Pequeno Segredo, Ídolo de Macaco, Ouro, Cura): uma vez por turno por sala. Para ganhar de novo, volte em outro turno. Duas salas diferentes do mesmo tipo valem no mesmo turno. O Ídolo de Macaco vale 5 pontos e não é Artefato.
+> - **Combater um Monstro** (faixa vermelha): pague em Espadas o número do canto inferior direito e ganhe a recompensa de DERROTA; a carta vai para o descarte da Masmorra. O Goblin da Reserva não vai embora: pode ser combatido várias vezes no mesmo turno.
+> - **Usar um Dispositivo** (faixa roxa): pague em Habilidade, faça o texto USE na hora; a carta vai para o descarte da Masmorra.
+> - **Abrir um Baú, Biblioteca ou Prisão:** gaste 1 Gazua e cubra o atributo; ninguém mais o abre. Baú: um Grande Segredo sorteado. Biblioteca: um Tomo Secreto da Reserva, de graça, no seu descarte. Prisão: dois Prisioneiros sorteados, abertos no seu suprimento. Não gaste a Gazua se não houver o que pegar.
+> - **Comprar do Mercado:** numa sala de Mercado, cada item custa 7 de Ouro. Pode repetir e comprar itens iguais.
+
+> [!mais] **Prisioneiros.** Alguns têm efeito imediato, como a Aventureira (fúria sobe 1 casa), a Bárbara (2 Espadas neste turno), o Clérigo (cura 1) e o Prisioneiro Assombrado (um Fantasma na área de Clank!), e todos ficam com você para a pontuação (Guia de Fichas). O último Prisioneiro sozinho pode ser libertado.
+
+> [!mais] **Itens do Mercado.** Mochila: permite carregar um segundo Artefato; vale 5 pontos. Amuleto de Sangue: só para quem tem pelo menos 5 de dano; cura 2 na hora; vale 7. Kit de Ladrão: 2 Gazuas na hora; vale 2. Coroa: vale o número impresso; quem compra leva a mais valiosa que sobrou (Guia de Fichas, p. 18 do manual original).
+
+> [!mais] **Caverna de Cristal.** Ao entrar, você fica exausto e não gasta mais Botas neste turno. O Teletransporte continua permitido, e você continua exausto.
+
+> [!mais] **Portal.** Você não para nele. Entra e sai por qualquer outro portal da masmorra. O percurso inteiro, de sala a sala, custa 1 Bota; os ícones dos túneis ligados continuam valendo. Teletransporte também passa por portais.
+
+> [!mais] **Santuário de Passagem.** Ação especial. Ponha um cubo do suprimento num espaço vazio e ganhe 1 de Ouro por Santuário que você já marcou, contando este (1, depois 2, depois 3). Não se marca o mesmo duas vezes, e esses cubos nunca viram barulho.
+
+> [!mais] **Teletransporte.** Leva a uma sala, quase sempre vizinha, sem gastar Botas, ignorando os ícones do túnel e até contra a seta. Também pode sair pela borda e descobrir peça.
+
+> [!resolvido] **Exemplo resolvido: Espadas no túnel ou no Goblin.** O Jogador 1 tem Explorar, Explorar, Mercenário, Contornar e Roubar: 6 Habilidades, 2 Espadas e 3 Botas. Para chegar à sala que ele quer, precisa atravessar um túnel com Pegada e depois um túnel com dois ícones de Monstro.
+>
+> O primeiro túnel custa 2 Botas; o segundo, 1. As três Botas acabam ali. Os dois Monstros causam 2 de dano, a menos que ele gaste Espadas.
+>
+> Ele pode gastar as 2 Espadas nos ícones e chegar inteiro, ou guardá-las para o Goblin, que dá 1 de Ouro, e aceitar 2 de dano: 2 cubos do suprimento no Contador. O Jogador 1 prefere chegar inteiro: 1 de Ouro não paga dois ferimentos tão cedo. As 6 Habilidades viram dois Explorar da Reserva (3 cada). Nenhum recurso se perdeu.
+
+> [!complete] **Complete.** O Jogador 2 está numa sala na borda da masmorra e ainda tem 1 Bota. Ele atravessa o túnel que leva à borda e revela a peça nova. Na posição em que ele a encaixaria, o túnel ganha um ícone de Pegada. Já sabemos que, nessa posição, o túnel custaria 2 Botas.
+>
+> ?? Quais são as duas saídas que a regra permite?
+> - ( ) Atravessar com a Bota que tem e sofrer 1 de dano no lugar da segunda Bota; ou devolver a peça à pilha e revelar a próxima
+> - (x) Girar a peça, no mesmo lugar, para uma orientação em que o túnel não tenha Pegada; ou parar o movimento e conseguir mais uma Bota antes de continuar
+> - ( ) Encaixar a peça em outro espaço vazio da borda; ou adquirir uma carta que dê Bota e usá-la na hora
+> = Ele pode girar a peça para outra orientação, no mesmo lugar, em que o túnel não tenha Pegada. Ou pode interromper o movimento e conseguir mais uma Bota antes de continuar, por exemplo com um Dispositivo ou um monstro cuja recompensa dê Bota, se houver na Fileira. Adquirir uma carta não serve aqui: ela vai para o descarte, não para a mão (p. 7 e 9).
+
+> [!suavez] **Sua vez.** Três situações.
+>
+> ?? 1. O Jogador 3 entra numa sala que dá 2 de Ouro, sai e volta a ela no mesmo turno. Quanto Ouro ganha?
+> - ( ) 4
+> - (x) 2
+> - ( ) Nenhum: a recompensa só vem no fim do turno
+> = 2 de Ouro, só uma vez. Cada sala dá a recompensa uma vez por turno (p. 10).
+>
+> ?? 2. O Jogador 1 entra numa Caverna de Cristal com 2 Botas ainda não gastas e uma carta que permite se teletransportar para uma sala vizinha. O que ele pode fazer?
+> - ( ) Gastar as 2 Botas, mas não se teletransportar
+> - ( ) Se teletransportar; o Teletransporte tira a exaustão e libera as 2 Botas
+> - ( ) Nada até o fim do turno
+> - (x) Se teletransportar, sem gastar as Botas, e continuar exausto
+> = Pode se teletransportar, mas não pode gastar as Botas. Continua exausto depois (p. 10 e 11).
+>
+> ?? 3. O Jogador 2 quer ir de uma sala a outra por um portal. O túnel até o portal de saída tem um ícone de Monstro, e ele não tem Espadas. Quanto custa a viagem?
+> - (x) 1 Bota pelo percurso inteiro e 1 de dano pelo Monstro
+> - ( ) 2 Botas, uma por túnel, e 1 de dano pelo Monstro
+> - ( ) 1 Bota e nenhum dano: o portal ignora os ícones
+> - ( ) Ele não pode passar sem Espada
+> = 1 Bota pelo percurso inteiro e 1 de dano pelo Monstro, com um cubo do suprimento, desde que ele tenha cubos e que isso não encha o Contador (p. 10 e 12).
+
+> [!treino] **Treino rápido: quanto custa este túnel?** Diga as Botas, as Gazuas e o dano.
+>
+> ?? a) Um túnel sem ícones.
+> - ( ) Nenhuma Bota, nenhuma Gazua, nenhum dano
+> - ( ) 2 Botas, nenhuma Gazua, nenhum dano
+> - (x) 1 Bota, nenhuma Gazua, nenhum dano
+> = 1 Bota: todo túnel custa pelo menos 1 (p. 7).
+>
+> ?? b) Pegada e um Monstro, gastando 1 Espada.
+> - (x) 2 Botas, nenhuma Gazua, nenhum dano
+> - ( ) 2 Botas, nenhuma Gazua, 1 de dano
+> - ( ) 3 Botas, nenhuma Gazua, nenhum dano
+> - ( ) 1 Bota, nenhuma Gazua, nenhum dano
+> = 2 Botas, nenhum dano: a Pegada dobra o custo, e a Espada evita o dano do Monstro (p. 7).
+>
+> ?? c) Cadeado e dois Monstros, sem gastar Espadas.
+> - ( ) 1 Bota, 2 Gazuas, 2 de dano
+> - ( ) 1 Bota, 1 Gazua, 1 de dano
+> - ( ) 2 Botas, 1 Gazua, 2 de dano
+> - (x) 1 Bota, 1 Gazua, 2 de dano
+> = 1 Bota, 1 Gazua, 2 de dano, um por ícone de Monstro (p. 7).
+>
+> ?? d) Um túnel de sentido único, andando contra a seta, com 3 Botas.
+> - ( ) 2 Botas
+> - (x) Não pode passar, com qualquer número de Botas
+> - ( ) As 3 Botas
+> - ( ) 1 Bota e 1 de dano
+> = Não pode passar, com qualquer número de Botas. Só Teletransporte ou um Grande Segredo específico permitem ir contra a seta (p. 7, 11 e Guia de Fichas).
+
+## 6. Etapa 5: a partida inteira, do Artefato aos pontos
+
+> [!entender] **Para entender.** A partida termina para cada pessoa de um de dois jeitos: ela escapa ou cai. Quem escapa primeiro não sai de cena: no turno dela, ela passa a sortear cubos da bolsa contra quem ficou. Por isso a corrida pela saída aperta quem demora (p. 14).
+>
+> O Artefato é ao mesmo tempo o prêmio e o bilhete de saída. Sem ele, você não pode voltar à Cripta, e cair sem ele vale zero ponto. Pegar um Artefato também deixa o dragão mais furioso para todos.
+
+> [!passos] **Passo a passo: o fim da partida** (p. 8 e 14)
+>
+> 1. **Pegar um Artefato:** numa sala com Artefato, a qualquer momento do turno, sem obrigação de pegar ao chegar. Você não pode pegar outro se já tem um (a Mochila permite um segundo). Depois de pegar, não pode trocar nem devolver. O Marcador do Dragão sobe 1 casa.
+> 2. **Escapar:** chegue à Cripta com um Artefato. Termine o resto do turno; antes de repor a Fileira, tire o peão do tabuleiro e pegue uma ficha de Maestria (20 pontos).
+> 3. **Ser nocauteado:** Contador cheio, deite o peão. Sem Artefato, ou com o peão nas Profundezas, você faz 0 ponto. Com Artefato e fora das Profundezas, você pontua, mas sem a ficha de Maestria.
+> 4. **Quem saiu do jogo** não joga cartas, não faz barulho, não é afetado por cartas que atingem todos os jogadores e não sofre dano. No turno dessa pessoa, todos os cubos da área de Clank! vão para a bolsa e saem exatamente 4 (6 numa partida de 2 jogadores), ignorando a Trilha de Fúria e o Perigo. O dano é aplicado como num ataque.
+> 5. A partida termina quando todos escaparam ou foram nocauteados.
+> 6. **Pontos**, só para quem tem Artefato e não caiu nas Profundezas: o valor do Artefato; os pontos das outras fichas (Maestria, Ídolos de Macaco, Prisioneiros, itens do Mercado, segredos que valem pontos); 1 ponto por Ouro; os pontos das cartas do baralho inteiro, contando mão e descarte.
+> 7. **Empate:** vence quem tem o Artefato mais valioso.
+
+!fig[O que soma pontos no fim: o valor do Artefato, as outras fichas (como o Ídolo de Macaco, de 5 pontos), o Ouro e os pontos impressos nas cartas do seu baralho. Ilustração: manual Galápagos (p. 14)](figuras/pontuacao.webp)
+
+> [!mais] **Fim antecipado.** Ela também termina na hora, com todos os que ainda estão na masmorra nocauteados, se o Baralho da Masmorra não tiver cartas para repor a Fileira, ou se a Bolsa do Dragão ficar vazia depois de um ataque (p. 12).
+
+> [!edicao] A Mochila permite carregar um segundo Artefato, mas a pontuação fala em "o valor do próprio Artefato", no singular, e também manda somar "quaisquer outras fichas adquiridas" (p. 14). O manual não resolve o caso de forma explícita; a leitura mais provável é que os dois contam. Combine com a mesa antes de jogar.
+
+> [!resolvido] **Exemplo resolvido: três finais.** Partida de 3 jogadores.
+>
+> O Jogador 1 escapa com o Artefato de 15 pontos. Tem a ficha de Maestria (20), um Ídolo de Macaco (5), 9 de Ouro, um Tomo Secreto no baralho (7), um Ataque Surpresa (1) e um Prisioneiro Aldeão (2). Total: 15 + 20 + 5 + 9 + 7 + 1 + 2 = **59 pontos**.
+>
+> O Jogador 2 pegou o Artefato de 20, o melhor da partida, mas foi nocauteado numa peça escura, nas Profundezas: **0 ponto**.
+>
+> O Jogador 3 foi nocauteado numa das quatro peças seguras, com o Artefato de 10, 12 de Ouro e 3 pontos em cartas: 10 + 12 + 3 = **25 pontos**, sem ficha de Maestria.
+>
+> O Jogador 1 vence. O Artefato do Jogador 2 não conta para nada, nem para desempate.
+
+> [!complete] **Complete.** Numa outra partida, o Jogador 2 escapa com o Artefato de 12 pontos. Ele tem 6 de Ouro, uma Coroa de 10 pontos e um Tomo Secreto no baralho. Já somamos o Artefato e o Ouro: 18. Termine a conta.
+>
+> ?? Quantos pontos ele faz no total?
+> - ( ) 35
+> - ( ) 48
+> - (x) 55
+> = 18 + 20 (Maestria) + 10 (Coroa) + 7 (Tomo Secreto) = **55 pontos** (p. 14).
+
+> [!suavez] **Sua vez.** Nessa mesma partida, o Jogador 3 foi nocauteado numa peça segura, com o Artefato de 10, um Ídolo de Macaco, um Kit de Ladrão, 4 de Ouro e uma carta que vale 1 ponto. O Jogador 4 foi nocauteado numa peça segura sem Artefato, com 30 de Ouro.
+>
+> ?? Quanto faz o Jogador 3?
+> - ( ) 42, com a ficha de Maestria
+> - (x) 22
+> - ( ) 20, porque o Kit de Ladrão não vale ponto
+> - ( ) 0, porque foi nocauteado
+> = O Jogador 3 faz 10 + 5 + 2 + 4 + 1 = **22**, sem a ficha de Maestria, que é só de quem escapa (p. 14).
+>
+> ?? Quanto faz o Jogador 4?
+> - ( ) 30, porque caiu numa peça segura
+> - ( ) 50, com a ficha de Maestria
+> - (x) 0
+> = O Jogador 4 faz **0**: sem Artefato, nada conta (p. 14).
+
+> [!treino] **Treino rápido: pontua ou zera?**
+>
+> ?? a) Nocauteado na metade de cima da Peça Inicial, com Artefato.
+> - (x) Zera
+> - ( ) Pontua, sem a ficha de Maestria
+> - ( ) Pontua, com a ficha de Maestria
+> = Zera. A metade de cima da Peça Inicial faz parte das Profundezas (p. 14).
+>
+> ?? b) Nocauteado na metade de baixo da Peça Inicial, com Artefato.
+> - ( ) Zera
+> - (x) Pontua, sem a ficha de Maestria
+> - ( ) Pontua, com a ficha de Maestria
+> = Pontua, sem a ficha de Maestria: a metade de baixo não é Profundezas, e a ficha é só de quem escapa (p. 14).
+>
+> ?? c) Escapou com Artefato, mas sem nenhuma outra ficha nem Ouro.
+> - ( ) Zera: sem Ouro nem fichas, não há o que somar
+> - ( ) Pontua só o valor do Artefato
+> - (x) Pontua: o Artefato, a ficha de Maestria (20) e os pontos das cartas, se houver
+> = Pontua: o Artefato, a ficha de Maestria (20) e os pontos das cartas, se houver (p. 14).
+
+## 7. Situações especiais
+
+**Descartar.** Algumas cartas pedem que você descarte outra. Só vale carta na mão, ainda não jogada, e ela vai para o descarte sem efeito. É um jeito de se livrar de um Tropeçar sem fazer barulho. Se o descarte é o preço de algo, sem carta para descartar você não ganha a coisa (p. 11).
+
+**Eliminar.** Algumas cartas e fichas mandam eliminar uma carta: ela sai do jogo e vai para a caixa. É o melhor destino para as cartas fracas do baralho inicial (p. 11).
+
+**Cada Jogador.** Quando a ordem importa (girar uma peça, por exemplo), começa quem está jogando ou terminando o turno, em sentido horário, ignorando quem escapou ou foi nocauteado (p. 11).
+
+**Fichas.** O Guia de Referência de Fichas descreve segredos e prisioneiros. Algumas fichas fazem efeito na hora e voltam para a caixa; outras ficam com você até serem usadas; outras só valem pontos no fim, às vezes com condição (o Prefeito vale pontos se você tiver uma ficha de Maestria). O Cupom de Desconto tira 5 de Ouro de uma compra no Mercado e não é Prisioneiro para nenhum efeito. O Macaco Robô Dourado conta como Ídolo de Macaco para tudo, mas vale menos pontos.
+
+**O que acaba.** Ouro e Gazuas não acabam. Acabam a Reserva, os itens do Mercado, os Artefatos, os Grandes e Pequenos Segredos, os Tomos Secretos e os Prisioneiros. Sem eles, a ação ou a recompensa correspondente deixa de existir (p. 4, 7, 8 e 10). Mais Gazuas vêm do Kit de Ladrão e de um dos Pequenos Segredos.
+
+**Suprimento sem cubos.** Você não faz barulho (o "+Clank!" é ignorado), não marca Santuário e não pode escolher sofrer dano fora do ataque (p. 6, 11 e 12).
+
+**Cinco ou seis jogadores.** A p. 15 explica como misturar Catacombs com a expansão Bando de Aventureiros. Este guia não cobre esse modo.
+
+## 8. Avaliação final
+
+Responda sem consultar. Cada explicação diz o que reler se você errar.
+
+?? 1. Você joga Tropeçar e depois Ataque Surpresa, sem cubos seus na área de Clank!. Mais tarde, joga outro Tropeçar. Quantos cubos seus ficam lá no fim do turno?
+- ( ) 1
+- (x) Nenhum
+- ( ) 2
+= **Nenhum.** O Ataque Surpresa tira o cubo do primeiro Tropeçar, e o desconto que sobra cobre o segundo Tropeçar (p. 6). Errou: releia a etapa 2.
+
+?? 2. Você tem 2 Botas e 1 Espada. O túnel tem Pegada e um Monstro. Pode atravessar? O que acontece?
+- ( ) Não: Pegada e Monstro juntos custam 3 Botas
+- ( ) Sim, gastando 1 Bota e a Espada
+- ( ) Sim, mas sofre 1 de dano mesmo gastando a Espada
+- (x) Sim: gasta as 2 Botas; a Espada evita o dano, ou você sofre 1 com um cubo do suprimento
+= **Sim.** Gasta as 2 Botas; a Espada evita o dano, ou você sofre 1 com um cubo do suprimento (p. 7). Errou: releia a etapa 4.
+
+?? 3. Você adquiriu uma carta da Fileira e derrotou um monstro dela. Quando os espaços são repostos? Se as duas cartas novas tiverem o símbolo de ataque, quantos ataques acontecem?
+- (x) No fim do turno, depois de comprar as 5 cartas; um ataque
+- ( ) Na hora, a cada carta tirada; dois ataques
+- ( ) No fim do turno; dois ataques, um por símbolo
+- ( ) No começo do turno do próximo jogador; um ataque
+= **No fim do turno**, no passo 2, depois de descartar e comprar 5. **Um ataque**, mesmo com dois símbolos (p. 7 e 12). Errou: releia a etapa 3.
+
+?? 4. Marcador numa casa que mostra 3 e uma carta de Perigo na Fileira. Quantos cubos saem? E no turno de um jogador que já escapou, numa partida de 4?
+- ( ) 3; e 4 no turno de quem escapou
+- ( ) 4; e 5 no turno de quem escapou
+- (x) 4; e 4 no turno de quem escapou
+- ( ) 4; e 6 no turno de quem escapou
+= **4 cubos**, 3 da casa mais 1 de Perigo. No turno de quem escapou, **4**, ignorando trilha e Perigo; 6 é só numa partida de 2 (p. 11, 12 e 14). Errou: releia as etapas 3 e 5.
+
+?? 5. Você está numa sala com o Artefato de 15 e já carrega o de 10, sem Mochila. Pode trocar?
+- ( ) Sim: devolve o de 10 à sala e pega o de 15
+- (x) Não
+- ( ) Não troca, mas pode pegar o de 15 e ficar com os dois
+= **Não.** Depois de pegar um Artefato, você não pode trocar nem devolver, e sem Mochila não carrega um segundo (p. 8). Errou: releia a etapa 5.
+
+?? 6. Um cubo de Fantasma sai da bolsa num ataque com 3 jogadores. Quem sofre dano?
+- ( ) Ninguém: o Fantasma é como um cubo preto
+- ( ) Só o jogador da vez
+- ( ) Quem tem mais cubos na bolsa
+- (x) Os três jogadores, 1 de dano cada
+= **Os três jogadores**, 1 de dano cada, com um cubo do próprio suprimento (p. 12). Errou: releia a etapa 3.
+
+?? 7. Você foi nocauteado nas Profundezas com o Artefato de 20 e 40 de Ouro. Quanto faz?
+- (x) Zero
+- ( ) 60
+- ( ) 40, só o Ouro
+- ( ) 80, com a ficha de Maestria
+= **Zero.** Nocaute nas Profundezas zera a pontuação, com qualquer Artefato (p. 14). Errou: releia a etapa 5.
+
+?? 8. Qual é a ordem do fim do turno?
+- ( ) Reponha a Fileira; verifique o ataque; descarte e compre 5
+- ( ) Descarte e compre 5; verifique o ataque; reponha a Fileira e execute os Revelar
+- (x) Descarte e compre 5; reponha a Fileira e execute os Revelar; verifique o ataque
+= Descarte e compre 5; reponha a Fileira (e execute os Revelar); verifique o ataque (p. 12). Errou: releia a etapa 3.
+
+> [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 2. Errou a 2, a etapa 4. Errou a 3, a 4, a 6 ou a 8, a etapa 3. Errou a 5 ou a 7, a etapa 5. Depois refaça só as perguntas que errou.
+
+## 9. Para consultar durante a partida
+
+**Seu turno**
+1. Jogue as 5 cartas, em qualquer ordem. Todas são obrigatórias.
+2. Faça ações quantas vezes puder pagar, antes, entre ou depois das cartas.
+3. Recursos não usados se perdem no fim do turno. Desconto de Clank! também.
+
+**Ações**
+
+| Ação | Paga com | Onde | Nota |
+|---|---|---|---|
+| Adquirir uma Carta | Habilidade | Fileira (azul) ou Reserva (amarela) | Vai para o seu descarte |
+| Usar um Dispositivo | Habilidade | Fileira (roxa) | Efeito na hora; carta vai para o descarte da Masmorra |
+| Combater um Monstro | Espadas | Fileira (vermelha) ou Goblin | O Goblin fica e pode ser combatido de novo |
+| Movimentação | Botas | Túneis | Pegada: 2 Botas. Monstro: 1 dano por ícone, 1 Espada evita 1. Cadeado: 1 Gazua. Seta: sentido único |
+| Comprar do Mercado | 7 de Ouro | Sala de Mercado | Pode repetir |
+| Pegar um Artefato | nada | Sala com Artefato | Um só (dois com Mochila); sem troca. Fúria +1 |
+| Abrir Baú, Biblioteca ou Prisão | 1 Gazua | Sala com o atributo | Grande Segredo, Tomo Secreto ou 2 Prisioneiros |
+| Marcar Santuário de Passagem | 1 cubo | Santuário | Ouro = Santuários que você já marcou |
+
+**Salas:** recompensa ao entrar, uma vez por turno por sala. Caverna de Cristal: sem Botas até o fim do turno. Portal: 1 Bota de sala a sala. Peça assombrada: Fantasma na área de Clank!.
+
+**Fim do turno:** (1) área de jogo para o descarte, compre 5; (2) reponha a Fileira e execute os Revelar; (3) carta nova com símbolo: um ataque.
+
+**Ataque:** área de Clank! para a bolsa; tire o número da Trilha de Fúria, mais 1 por Perigo. Preto: Banco. Colorido: 1 de dano ao dono. Fantasma: 1 de dano a todos e volta para a área de Clank!.
+
+**Trilha de Fúria** (de baixo para cima): 2, 2, 3, 3, 4, 4, 5. **Contador de Pontos de Vida:** 10 casas.
+
+**Fim:** escapar = Cripta com Artefato, ficha de Maestria de 20. Nocaute sem Artefato ou nas Profundezas = 0. Quem saiu: área de Clank! para a bolsa e saem 4 cubos (6 com 2 jogadores). Pontos: Artefato, fichas, Ouro, cartas. Empate: Artefato mais valioso.
+
+**Caixa em inglês?** Habilidade = Skill; Espadas = Swords; Botas = Boots; Gazua = Lockpick; Fileira da Masmorra = Dungeon Row; Trilha de Fúria = Rage Track; Contador de Pontos de Vida = Health Meter; Santuário de Passagem = Wayshrine; Ídolo de Macaco = Monkey Idol; ficha de Maestria = Mastery token; Revelar = Arrive; Perigo = Danger; Eliminar = Trash; Roubar = Burgle; Tropeçar = Stumble; Contornar = Sidestep; Rastejar = Scramble.
+
+## 10. Fontes
+
+- Galápagos. *CLANK! Catacombs: regras* (edição brasileira, arquivo CLK101_regras_v1.0.pdf, 16 páginas, tradução de Fernanda Di Costanzo). Biblioteca de Downloads da Galápagos, https://www.asmodee.com.br/download-library. Consultado em 31/10/2026.
+- Dire Wolf Digital. *CLANK! Catacombs Rulebook and Token Reference Guide* (2022, 18 páginas). https://www.direwolfdigital.com/clank-catacombs/. Consultado em 31/10/2026. Usado para o Guia de Fichas (segredos e itens do Mercado), que não veio no arquivo brasileiro.
+- Galápagos. Página do produto CLK101, https://www.asmodee.com.br/clank-catacombs/produto/CLK101 (jogadores, duração e idade). Consultado em 31/10/2026.
+- Não foram encontrados FAQ nem errata oficiais até 31/10/2026.
+- Sobre o método: Jeroen J. G. van Merriënboer e Paul A. Kirschner, *Ten Steps to Complex Learning* (3ª ed., Routledge, 2018).

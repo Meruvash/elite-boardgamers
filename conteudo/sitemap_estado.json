@@ -1,0 +1,998 @@
+{
+ "https://eliteboardgamers.com.br/878/": {
+  "hash": "0e848646d41d2ad9",
+  "lastmod": "2026-11-05"
+ },
+ "https://eliteboardgamers.com.br/akropolis/": {
+  "hash": "c1b646ea396bccf1",
+  "lastmod": "2026-11-10T01:11:07+00:00"
+ },
+ "https://eliteboardgamers.com.br/arcs/": {
+  "hash": "6b4c4cccb63c7521",
+  "lastmod": "2026-11-04T01:25:37+00:00"
+ },
+ "https://eliteboardgamers.com.br/ark-nova/": {
+  "hash": "51d04e007c6be3b4",
+  "lastmod": "2026-10-28T22:22:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/arnak/": {
+  "hash": "008a7c3bcb6a004d",
+  "lastmod": "2026-11-03T01:10:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/azul/": {
+  "hash": "26bab43093f10937",
+  "lastmod": "2026-10-31T19:16:03+00:00"
+ },
+ "https://eliteboardgamers.com.br/black/": {
+  "hash": "449b5a8deb118fb3",
+  "lastmod": "2026-11-21T09:50:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/bomb-busters/": {
+  "hash": "efa986b879637172",
+  "lastmod": "2026-10-29T14:51:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/brass-birmingham/": {
+  "hash": "0154842fa05ff174",
+  "lastmod": "2026-11-02T01:12:43+00:00"
+ },
+ "https://eliteboardgamers.com.br/bubble-stories/": {
+  "hash": "1cdb9c07acce6eff",
+  "lastmod": "2026-11-11T01:07:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/carnegie/": {
+  "hash": "33e7be0411f86b01",
+  "lastmod": "2026-10-31T01:16:17+00:00"
+ },
+ "https://eliteboardgamers.com.br/cascadia/": {
+  "hash": "a10c94f6d0286097",
+  "lastmod": "2026-10-29T12:57:23+00:00"
+ },
+ "https://eliteboardgamers.com.br/castle-combo/": {
+  "hash": "d094d6c860957265",
+  "lastmod": "2026-11-05"
+ },
+ "https://eliteboardgamers.com.br/cat-in-the-box-deluxe-edition/": {
+  "hash": "4fb2bd6903aa6dda",
+  "lastmod": "2026-11-01T01:09:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/century-spice-road/": {
+  "hash": "862f0f4bcf44a9c9",
+  "lastmod": "2026-11-04T01:25:37+00:00"
+ },
+ "https://eliteboardgamers.com.br/challengers/": {
+  "hash": "82a9b5d566bf2560",
+  "lastmod": "2026-10-31T01:16:17+00:00"
+ },
+ "https://eliteboardgamers.com.br/civolution/": {
+  "hash": "7f0a6c496d2668ea",
+  "lastmod": "2026-10-30T13:24:28+00:00"
+ },
+ "https://eliteboardgamers.com.br/codenames-pictures/": {
+  "hash": "bf25dc52bafc445e",
+  "lastmod": "2026-11-04"
+ },
+ "https://eliteboardgamers.com.br/codenames/": {
+  "hash": "675adcc91b446ddc",
+  "lastmod": "2026-10-28T22:22:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/colt-express/": {
+  "hash": "0106c138c76c7b24",
+  "lastmod": "2026-10-29T12:57:23+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/": {
+  "hash": "ad76d6873b25d165",
+  "lastmod": "2026-11-19T21:10:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/7-wonders/": {
+  "hash": "94c7d3a4e58d676d",
+  "lastmod": "2026-11-05T20:00:29+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/andromedas-edge/": {
+  "hash": "663bb34d97b80598",
+  "lastmod": "2026-11-09T18:44:57+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/arcs/": {
+  "hash": "1acc575aeb3b6047",
+  "lastmod": "2026-11-04T21:45:42+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/azul/": {
+  "hash": "659c39f56468a2b9",
+  "lastmod": "2026-11-04T21:46:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/bang/": {
+  "hash": "aec2b894c15e26a9",
+  "lastmod": "2026-11-04T21:37:22+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/carcassonne/": {
+  "hash": "59a13eba795c9abf",
+  "lastmod": "2026-11-05T20:04:00+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/cascadia/": {
+  "hash": "3990877b19b7f2bc",
+  "lastmod": "2026-11-08T14:35:09+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/catan/": {
+  "hash": "73afd0493497bfc3",
+  "lastmod": "2026-11-04T21:50:28+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/clank-catacombs/": {
+  "hash": "6c23f164d1b48eee",
+  "lastmod": "2026-11-04T21:46:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/codenames/": {
+  "hash": "e5e72e5f4cc2b879",
+  "lastmod": "2026-11-04T21:36:49+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/dice-throne/": {
+  "hash": "d7ccd47e5b205400",
+  "lastmod": "2026-11-04T21:46:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/dixit/": {
+  "hash": "18e0ebe5ef085701",
+  "lastmod": "2026-11-04T21:37:22+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/dragon-eclipse/": {
+  "hash": "1a725a9738190265",
+  "lastmod": "2026-11-12T11:25:24+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/dune-imperium-uprising/": {
+  "hash": "340c9f043f164f2b",
+  "lastmod": "2026-11-19T21:10:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/dune-imperium/": {
+  "hash": "aaaebea2e46a5e17",
+  "lastmod": "2026-11-08T14:38:18+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/everdell/": {
+  "hash": "be7c40f3624dfbe0",
+  "lastmod": "2026-11-05T20:10:19+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/exploding-kittens/": {
+  "hash": "355f9f0a2c5d0689",
+  "lastmod": "2026-11-04T21:36:49+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/great-western-trail-el-paso/": {
+  "hash": "9327e32c5fd3cb9d",
+  "lastmod": "2026-11-18T16:09:04+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/harmonies/": {
+  "hash": "f8b8c064da01b8ee",
+  "lastmod": "2026-11-05T20:04:58+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/heat/": {
+  "hash": "546e234f4c1819e3",
+  "lastmod": "2026-11-05T20:01:53+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/king-of-tokyo/": {
+  "hash": "037792bf59d2667e",
+  "lastmod": "2026-11-05T20:04:58+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/kingdomino/": {
+  "hash": "7e196ee5847b3639",
+  "lastmod": "2026-11-08T14:31:19+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/pandemic/": {
+  "hash": "8673a2b0a3d8b2a0",
+  "lastmod": "2026-11-08T14:17:43+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/root/": {
+  "hash": "071f953e97ec8bb3",
+  "lastmod": "2026-11-08T14:40:03+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/santuario/": {
+  "hash": "5061faa83e4484b1",
+  "lastmod": "2026-11-04T21:46:26+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/sky-team/": {
+  "hash": "3b6a417797ae0b91",
+  "lastmod": "2026-11-08T14:47:22+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/spirit-island/": {
+  "hash": "f0972816d4cd731b",
+  "lastmod": "2026-11-04T21:38:50+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/splendor/": {
+  "hash": "11d6bbb7d94cb964",
+  "lastmod": "2026-11-04T21:36:49+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/sushi-go/": {
+  "hash": "61e4e2edd77180e3",
+  "lastmod": "2026-11-08T14:23:39+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/terraforming-mars-jogo-de-dados/": {
+  "hash": "fcb0410064f04ab2",
+  "lastmod": "2026-11-04T21:51:13+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/the-mind/": {
+  "hash": "16cc8e265cb8e631",
+  "lastmod": "2026-11-05T19:56:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/ticket-to-ride/": {
+  "hash": "c21e1c288738bcf0",
+  "lastmod": "2026-11-04T21:44:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/tiny-epic-crimes/": {
+  "hash": "c707cf6726ccf525",
+  "lastmod": "2026-11-04T22:11:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/tiny-epic-cthulhu/": {
+  "hash": "1c71fc6f1aadeb32",
+  "lastmod": "2026-11-04T22:11:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/tiny-epic-dinosaurs/": {
+  "hash": "e135f7a7e002ff96",
+  "lastmod": "2026-11-04T22:11:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/tiny-epic-dungeons/": {
+  "hash": "6ec2f7db5f0179f5",
+  "lastmod": "2026-11-04T22:11:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/tiny-epic-galaxies/": {
+  "hash": "9ddaab5ee9c0be20",
+  "lastmod": "2026-11-04T22:06:32+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/tiny-epic-pirates/": {
+  "hash": "67d6a15c40664628",
+  "lastmod": "2026-11-04T22:06:32+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/tiny-epic-vikings/": {
+  "hash": "9e0137023cca8e7e",
+  "lastmod": "2026-11-04T22:06:32+00:00"
+ },
+ "https://eliteboardgamers.com.br/como-jogar/tiny-epic-zombies/": {
+  "hash": "c7143eadd9d13710",
+  "lastmod": "2026-11-04T22:06:32+00:00"
+ },
+ "https://eliteboardgamers.com.br/darwins-journey/": {
+  "hash": "0f8fcf43f182feb7",
+  "lastmod": "2026-11-17T14:10:13+00:00"
+ },
+ "https://eliteboardgamers.com.br/daybreak/": {
+  "hash": "e2411e13a319611c",
+  "lastmod": "2026-10-31T01:16:17+00:00"
+ },
+ "https://eliteboardgamers.com.br/detective/": {
+  "hash": "c5976c307ed737c9",
+  "lastmod": "2026-10-29T14:52:20+00:00"
+ },
+ "https://eliteboardgamers.com.br/dorfromantik-the-board-game/": {
+  "hash": "25da92dc31949606",
+  "lastmod": "2026-10-30T13:24:28+00:00"
+ },
+ "https://eliteboardgamers.com.br/dragomino/": {
+  "hash": "4cb5bb627e5f2ae7",
+  "lastmod": "2026-11-06"
+ },
+ "https://eliteboardgamers.com.br/dragon-s-breath/": {
+  "hash": "7f31f8a005af4593",
+  "lastmod": "2026-11-11"
+ },
+ "https://eliteboardgamers.com.br/dune-imperium/": {
+  "hash": "a1ad3299c54eda0c",
+  "lastmod": "2026-10-29T14:51:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/earth/": {
+  "hash": "8cdf1248b7bca031",
+  "lastmod": "2026-11-04T01:25:37+00:00"
+ },
+ "https://eliteboardgamers.com.br/endeavor-deep-sea/": {
+  "hash": "d703177da0c1ab4b",
+  "lastmod": "2026-11-04T21:59:18+00:00"
+ },
+ "https://eliteboardgamers.com.br/faraway/": {
+  "hash": "d284cafa03020b8d",
+  "lastmod": "2026-10-28T22:22:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/fate-of-the-fellowship/": {
+  "hash": "c3bfa63548fc3284",
+  "lastmod": "2026-10-29T14:51:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/flamecraft/": {
+  "hash": "c340490952895190",
+  "lastmod": "2026-11-02T01:12:43+00:00"
+ },
+ "https://eliteboardgamers.com.br/flip-7/": {
+  "hash": "585318f92a050a5e",
+  "lastmod": "2026-10-28T22:22:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/forest-shuffle/": {
+  "hash": "18e44ed780f12ea1",
+  "lastmod": "2026-11-10T01:10:19+00:00"
+ },
+ "https://eliteboardgamers.com.br/galactic-cruise/": {
+  "hash": "249b39b544cac43f",
+  "lastmod": "2026-10-29T12:57:23+00:00"
+ },
+ "https://eliteboardgamers.com.br/gloomhaven-jaws-of-the-lion/": {
+  "hash": "7890b0bd3ed29afc",
+  "lastmod": "2026-11-01T01:09:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/gloomhaven/": {
+  "hash": "d55aa361b67384ee",
+  "lastmod": "2026-10-31T11:04:29+00:00"
+ },
+ "https://eliteboardgamers.com.br/great-western-trail/": {
+  "hash": "b10a2dd4f9260176",
+  "lastmod": "2026-10-31T01:12:53+00:00"
+ },
+ "https://eliteboardgamers.com.br/harmonies/": {
+  "hash": "fe759cd212c79a52",
+  "lastmod": "2026-10-30T01:13:42+00:00"
+ },
+ "https://eliteboardgamers.com.br/heat-pedal-to-the-metal/": {
+  "hash": "c76c2a2f17d9317e",
+  "lastmod": "2026-10-30T01:13:42+00:00"
+ },
+ "https://eliteboardgamers.com.br/hegemony/": {
+  "hash": "d72704cdd878b6bd",
+  "lastmod": "2026-11-06T11:14:57+00:00"
+ },
+ "https://eliteboardgamers.com.br/hot-streak/": {
+  "hash": "9ada2d85b1a9b1e7",
+  "lastmod": "2026-11-09T01:12:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/inventors-of-the-south-tigris/": {
+  "hash": "36d6ec33a793057c",
+  "lastmod": "2026-11-01T01:09:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/isle-of-skye/": {
+  "hash": "3cbd5983ea5853ad",
+  "lastmod": "2026-11-11T01:09:06+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/": {
+  "hash": "6900b7f5dc9af6bb",
+  "lastmod": "2026-11-17T18:36:44+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/campanha-e-legacy/": {
+  "hash": "17e5acfb6ac92918",
+  "lastmod": "2026-11-17T14:08:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/cooperativos/": {
+  "hash": "5f621d0c07d1d349",
+  "lastmod": "2026-11-17T14:08:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/estrategia/": {
+  "hash": "2b3d81ac3aa7221c",
+  "lastmod": "2026-11-17T14:10:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/melhores/": {
+  "hash": "2373338b162efa0d",
+  "lastmod": "2026-11-17T14:08:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/para-dois-jogadores/": {
+  "hash": "c2856696ec7fc87f",
+  "lastmod": "2026-11-17T14:10:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/para-familia/": {
+  "hash": "69fec9c76df24c05",
+  "lastmod": "2026-11-17T14:08:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/para-festa-e-grupos/": {
+  "hash": "77d106f1b8c3fd03",
+  "lastmod": "2026-11-17T14:08:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/para-iniciantes/": {
+  "hash": "c530b8388059db2a",
+  "lastmod": "2026-11-17T14:08:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/para-jogar-sozinho/": {
+  "hash": "41a1db4c6770f46a",
+  "lastmod": "2026-11-17T14:08:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/peso-medio/": {
+  "hash": "f8b53c5722f7cd60",
+  "lastmod": "2026-11-17T14:08:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/jogos-de-tabuleiro/tematicos/": {
+  "hash": "8c1d6edd4bd18c28",
+  "lastmod": "2026-11-17T14:08:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/just-one/": {
+  "hash": "a9b39379d65ee56f",
+  "lastmod": "2026-11-09T01:12:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/kutna-hora/": {
+  "hash": "b2a4474a10397531",
+  "lastmod": "2026-11-10T01:10:19+00:00"
+ },
+ "https://eliteboardgamers.com.br/lancamentos/": {
+  "hash": "563fa0710f944b20",
+  "lastmod": "2026-11-20T09:50:00+00:00"
+ },
+ "https://eliteboardgamers.com.br/last-light/": {
+  "hash": "736a019656d3d921",
+  "lastmod": "2026-10-31T01:12:53+00:00"
+ },
+ "https://eliteboardgamers.com.br/magic-mountain/": {
+  "hash": "db073f3609468f98",
+  "lastmod": "2026-11-11T01:07:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/mechs-vs-minions/": {
+  "hash": "d760c3e2761c574b",
+  "lastmod": "2026-11-03T01:11:25+00:00"
+ },
+ "https://eliteboardgamers.com.br/micromacro/": {
+  "hash": "159651840dfcc440",
+  "lastmod": "2026-10-29T14:51:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/mon-puzzle-aventure/": {
+  "hash": "8d8cd495b2910e99",
+  "lastmod": "2026-11-11T01:09:06+00:00"
+ },
+ "https://eliteboardgamers.com.br/mr-wolf/": {
+  "hash": "82cdc78bde5e43bb",
+  "lastmod": "2026-11-11"
+ },
+ "https://eliteboardgamers.com.br/mysterium-kids/": {
+  "hash": "b554f7ab1c2b29da",
+  "lastmod": "2026-11-10T01:10:19+00:00"
+ },
+ "https://eliteboardgamers.com.br/nemesis/": {
+  "hash": "4bfb22964405ae72",
+  "lastmod": "2026-11-04T21:59:18+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/abalone-minimundos-25-de-marco-meeplestarter/": {
+  "hash": "66c0203edc75e61f",
+  "lastmod": "2026-11-11T01:07:14+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/acelera-bruxa-fecha-financiamento-meeplestarter/": {
+  "hash": "0a4eea9bd6120433",
+  "lastmod": "2026-11-04T01:25:37+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/adventure-time-card-wars-2026-passa-de-1-milhao/": {
+  "hash": "6dda0fadd0ffd228",
+  "lastmod": "2026-11-10T01:08:40+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/an-infamous-traffic-cole-wehrle-fecha-kickstarter/": {
+  "hash": "cfa850f9a3a0eaef",
+  "lastmod": "2026-11-02T01:12:43+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/": {
+  "hash": "030fadf0b7907e53",
+  "lastmod": "2026-11-09T01:10:48+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/arkham-horror-remastered-gamefound/": {
+  "hash": "1f9d81c45b017920",
+  "lastmod": "2026-11-01T01:12:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/arnak-caminhos-tortuosos-e-gaudi-ganham-preco/": {
+  "hash": "b2827ef8e6d71d3c",
+  "lastmod": "2026-11-03T01:10:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/asmodee-essen-toy-battle-too-many-bones-nemesis-lockdown/": {
+  "hash": "92e63407d913937d",
+  "lastmod": "2026-11-01T01:12:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/asmodee-vendas-tabuleiro-sobem-18-board-game-arena/": {
+  "hash": "a75282a92d0c45a5",
+  "lastmod": "2026-11-17T09:51:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/boss-fighters-qr-e-galactic-cruise-no-podio-do-dsp/": {
+  "hash": "51bb387d04fde919",
+  "lastmod": "2026-10-28T21:39:06+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/brava-gente-e-oyo-batem-a-meta/": {
+  "hash": "240867e7e3bcdbfb",
+  "lastmod": "2026-11-02T01:12:43+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/cannes-2027-as-dor/": {
+  "hash": "89f3d27a09d4fd7b",
+  "lastmod": "2026-10-29T16:48:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/carcassonne-labyrinth-chega-aos-eua/": {
+  "hash": "4acf2ac4ce8e1493",
+  "lastmod": "2026-11-03T01:10:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/categoria/chegando-ao-brasil/": {
+  "hash": "b454886e62a09f1a",
+  "lastmod": "2026-11-11T09:55:55+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/categoria/eventos/": {
+  "hash": "1e22bdc52bfc247d",
+  "lastmod": "2026-11-05T10:05:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/categoria/financiamento/": {
+  "hash": "c0e598b6189a71f3",
+  "lastmod": "2026-11-15T09:50:27+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/categoria/mercado/": {
+  "hash": "59b97dc87a24560e",
+  "lastmod": "2026-11-17T09:51:22+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/categoria/premios/": {
+  "hash": "8d6997cc8fd21bac",
+  "lastmod": "2026-10-31T10:06:07+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/chicago-68-vence-summit-award-2026/": {
+  "hash": "d31325a3619692f0",
+  "lastmod": "2026-11-14T15:08:42+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/civolution-e-horizontes-de-spirit-island-chegam-as-lojas/": {
+  "hash": "d54a25ea2019f3fe",
+  "lastmod": "2026-11-05T01:12:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/clash-royale-the-grand-arena-kickstarter/": {
+  "hash": "c3c9c82d70d2b5a8",
+  "lastmod": "2026-11-11T01:05:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/coffee-rush-inverno-anunciado-asmodee/": {
+  "hash": "1034a8ef10db1038",
+  "lastmod": "2026-11-05T10:05:39+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/coffee-rush-inverno-harmonies-crescendo-pre-venda/": {
+  "hash": "14be7b9cd05f1a08",
+  "lastmod": "2026-11-11T09:55:30+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/coveiros-vs-caveiras-pre-venda-amaze-games/": {
+  "hash": "a524d36a8f5b350d",
+  "lastmod": "2026-11-06T10:02:48+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/cubyria-architects-of-a-lost-city-kickstarter/": {
+  "hash": "fdfb05c788fdaf5a",
+  "lastmod": "2026-11-09T10:03:34+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/dante-inferno-across-the-board/": {
+  "hash": "bd25d8cd5209f6fc",
+  "lastmod": "2026-10-29T16:48:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/devir-civolution-e-formigas-pre-venda/": {
+  "hash": "0e0c88f147b73555",
+  "lastmod": "2026-10-29T15:06:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/devir-dc-super-heroes-united-e-one-round/": {
+  "hash": "2731c4e415f82a5d",
+  "lastmod": "2026-10-31T09:57:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/devir-gaudi-e-catan-jogo-de-cartas-novembro/": {
+  "hash": "500da09e02ed3fbf",
+  "lastmod": "2026-10-29T14:39:11+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/devir-looot-e-through-the-desert/": {
+  "hash": "edd1e60ea8769aa8",
+  "lastmod": "2026-10-30T01:11:26+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/devir-pre-venda-ace-of-spades-compile-berlim-1960/": {
+  "hash": "349c88b452469b60",
+  "lastmod": "2026-11-19T09:50:23+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/dezembro-earthborne-rangers-santorini-agent-avenue/": {
+  "hash": "c680471b68f2d144",
+  "lastmod": "2026-10-31T10:06:42+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/dia-da-caca-bate-meta-meeplestarter/": {
+  "hash": "514c2587b6d0aca8",
+  "lastmod": "2026-11-15T09:50:04+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/dice-throne-asmodee-europa-tres-acordos/": {
+  "hash": "f7a1e142f084c1f4",
+  "lastmod": "2026-11-11T09:55:30+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/dice-throne-nexus-kickstarter-2-milhoes/": {
+  "hash": "59303a9624e08acd",
+  "lastmod": "2026-11-04T01:25:37+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/diversao-offline-2027-tavernando-ingressos/": {
+  "hash": "306cef1338dc851b",
+  "lastmod": "2026-11-05T10:05:39+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/diversao-offline-2027/": {
+  "hash": "a2b640aa28abbd48",
+  "lastmod": "2026-10-29T16:48:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/dual-em-nome-do-rei-goblin-game-outubro/": {
+  "hash": "ea96cb57630dbf72",
+  "lastmod": "2026-10-31T01:11:40+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/eleicao-e-rogue-duel-independentes-dezembro/": {
+  "hash": "9d8369915539757c",
+  "lastmod": "2026-10-31T01:11:40+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/excursions-fecha-kickstarter-660-mil/": {
+  "hash": "c21d24adb6fce9d5",
+  "lastmod": "2026-11-02T01:12:43+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/excursions-galactic-cruise-campanha-termina/": {
+  "hash": "cfe6ef8d2d4c14aa",
+  "lastmod": "2026-10-29T14:35:26+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/expansoes-endeavor-e-arnak-novembro/": {
+  "hash": "93e5a7f899cf7509",
+  "lastmod": "2026-10-29T14:39:11+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/fable-quest-arcadia-quest-cooperativo-gamefound/": {
+  "hash": "79ce38770580f8aa",
+  "lastmod": "2026-11-10T01:08:40+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/feed-the-kraken-black-box-sea-of-shadows-gamefound/": {
+  "hash": "8fb3994419abbc62",
+  "lastmod": "2026-11-11T09:55:30+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/financiamentos-abertos-battleforge-dia-da-caca/": {
+  "hash": "273495544d32cb03",
+  "lastmod": "2026-10-28T21:44:01+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/galapagos-azul-kids-caper-europe-nas-lojas/": {
+  "hash": "07a1aba6b11ec26d",
+  "lastmod": "2026-10-30T01:11:26+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/galapagos-lanca-duna-linhagens-vantage-harmonies-pulsar/": {
+  "hash": "fa770dbb3b2a0676",
+  "lastmod": "2026-10-29T15:06:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/gama-andrew-zorowitz-diretor-interino/": {
+  "hash": "acafae53f6dc2224",
+  "lastmod": "2026-11-09T01:09:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/greenwood-feuerland-esgota-em-essen/": {
+  "hash": "8a304a20a2af2aea",
+  "lastmod": "2026-10-30T01:12:18+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/grok-propolis-colegas-blind-jack-em-breve/": {
+  "hash": "8d74384b650fdd40",
+  "lastmod": "2026-11-03T01:10:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/guia-dos-premios-2027/": {
+  "hash": "71e00425416bff3f",
+  "lastmod": "2026-10-29T16:48:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/halo-campaign-evolved-tabuleiro-mantic-pre-venda/": {
+  "hash": "5eb726ee4047c782",
+  "lastmod": "2026-11-09T01:09:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/": {
+  "hash": "c46170002ef02f6b",
+  "lastmod": "2026-11-11T01:07:14+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/harmonies-crescendo-e-bang-dice-explosion-ganham-preco/": {
+  "hash": "7e4424e44448e057",
+  "lastmod": "2026-11-03T10:00:16+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/heat-ganha-versao-digital-mipmap/": {
+  "hash": "938f5a4cb4403715",
+  "lastmod": "2026-11-01T10:02:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/horizontes-de-spirit-island-pre-venda-ace-studios/": {
+  "hash": "fa2bf7528c718cc9",
+  "lastmod": "2026-10-30T01:12:18+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/inimigos-da-terra-media-entrega-2027/": {
+  "hash": "e39d399d82328ecf",
+  "lastmod": "2026-10-29T12:57:23+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/jack-kittredge-cosmic-encounter-morre-aos-82/": {
+  "hash": "6ca07d70aa598f30",
+  "lastmod": "2026-11-11T09:55:30+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/japao-j-tan-arclight-forma-criadores-de-jogos/": {
+  "hash": "129b77a3b96de08e",
+  "lastmod": "2026-11-06T10:02:48+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/kelp-offshore-offspring-expansao-gamefound/": {
+  "hash": "de7bf6e73dd2db03",
+  "lastmod": "2026-11-06T10:02:48+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/kinfire-delve-pre-venda-ludofun/": {
+  "hash": "0d53ecdce018da59",
+  "lastmod": "2026-10-30T01:12:18+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/kings-gambit-fecha-com-2-5-milhoes/": {
+  "hash": "e3a9f3a5c7d717ac",
+  "lastmod": "2026-10-29T14:51:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/lancamentos-editoras-menores-novembro/": {
+  "hash": "75819edd9850238b",
+  "lastmod": "2026-10-29T14:39:11+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/ludofun-cubaneo-innovation-ultimate-em-breve/": {
+  "hash": "19eaebaeb95c8bb4",
+  "lastmod": "2026-11-02T10:05:41+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/ludofun-money-reiner-knizia/": {
+  "hash": "2e18f9be59ee2d84",
+  "lastmod": "2026-10-30T10:00:42+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/magical-athlete-pre-venda-asmodee/": {
+  "hash": "5fabaaf642832e2c",
+  "lastmod": "2026-11-04T01:25:37+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/marco-polo-deluxe-master-set-gamefound/": {
+  "hash": "45206eb7b343b544",
+  "lastmod": "2026-11-10T01:08:40+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/meeplebr-lanca-valheim-thesauros-biddle/": {
+  "hash": "0106bbb45f57f44c",
+  "lastmod": "2026-10-29T14:39:11+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/mosaico-a-anarquia-e-por-northwood/": {
+  "hash": "a02ff5782d833d7b",
+  "lastmod": "2026-10-31T01:11:40+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/mosaico-jogos-terraria-e-floe-novembro/": {
+  "hash": "c0bbd4bd10b13907",
+  "lastmod": "2026-10-29T14:39:11+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/nemesis-legacy-fecha-com-12-milhoes-de-euros/": {
+  "hash": "6485003e2ff0b33c",
+  "lastmod": "2026-11-01T01:12:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/nemesis-legacy-recorde-financiamento-ano-416-milhoes/": {
+  "hash": "a47d7b7c91d17738",
+  "lastmod": "2026-11-14T15:08:42+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/night-at-the-zoo-pondscape-bucaneiros/": {
+  "hash": "a15cc4875990e781",
+  "lastmod": "2026-11-01T10:02:56+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/night-at-the-zoo-pondscape-fecham-331-mil/": {
+  "hash": "b33e91a9c6344751",
+  "lastmod": "2026-11-11T01:07:14+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/oceanos-abre-meeplestarter-204-por-cento/": {
+  "hash": "b6c7032f3a8e8b4b",
+  "lastmod": "2026-11-11T09:55:30+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/oceanos-ace-studios-meeplestarter/": {
+  "hash": "8e3242092c34918b",
+  "lastmod": "2026-11-02T01:12:43+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/ordinary-magic-unstable-games-gamefound/": {
+  "hash": "fac58119d249da7d",
+  "lastmod": "2026-11-09T01:11:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/origins-of-light-final-fantasy-tabuleiro-kickstarter/": {
+  "hash": "b49cbf21ddf56b07",
+  "lastmod": "2026-11-04T10:08:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/osprey-desmonta-equipe-destemidos-imperium/": {
+  "hash": "258837c57766d9e3",
+  "lastmod": "2026-10-29T14:35:26+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/pagina/2/": {
+  "hash": "d412a0e36aeede40",
+  "lastmod": "2026-11-19T09:50:48+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/pagina/3/": {
+  "hash": "65677f510be39efa",
+  "lastmod": "2026-11-19T09:50:48+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/pagina/4/": {
+  "hash": "4a54a78295bd5cc9",
+  "lastmod": "2026-11-19T09:50:48+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/pilgrims-curious-adventures-jelly-monster/": {
+  "hash": "45720c30cbb9e10d",
+  "lastmod": "2026-11-06T01:13:13+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/plants-vs-zombies-tabuleiro-passa-de-1-milhao-de-libras/": {
+  "hash": "9d6ac476ab947117",
+  "lastmod": "2026-11-05T01:12:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/radar-table-top-asmodee-pesquisa-jogadores-brasil/": {
+  "hash": "2a88df421744544b",
+  "lastmod": "2026-11-06T10:02:48+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/ragnarok-online-jogo-de-tabuleiro-kickstarter/": {
+  "hash": "2c4d887e97f97a0e",
+  "lastmod": "2026-11-06T01:13:13+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/rebirth-vence-gioco-dell-anno-lucca/": {
+  "hash": "0f47e5cf8ccc2e3c",
+  "lastmod": "2026-11-01T01:12:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/restoration-games-workshop-refaz-chaos-in-the-old-world/": {
+  "hash": "24af2bb35306dfad",
+  "lastmod": "2026-11-06T10:02:48+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/ruins-alebrijes-protocolo-scintilla-outubro/": {
+  "hash": "66dc2a05bc88d64b",
+  "lastmod": "2026-10-30T01:12:18+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/santuario-vence-deutscher-spiele-preis-2026/": {
+  "hash": "9dfb1ce35d0afb11",
+  "lastmod": "2026-10-29T15:06:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/satisfactory-reta-final-quase-3-milhoes/": {
+  "hash": "66c03ee7f9e49f5c",
+  "lastmod": "2026-11-11T01:05:10+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/satisfactory-tabuleiro-passa-de-2-milhoes-gamefound/": {
+  "hash": "ad19b30316dd6cc1",
+  "lastmod": "2026-11-04T10:08:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/sentando-a-pua-e-revive-call-of-the-abyss/": {
+  "hash": "b894e896ff3df831",
+  "lastmod": "2026-10-30T10:00:42+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/speakeasy-vital-lacerda-pre-venda-mosaico/": {
+  "hash": "39fbd7c14e2d3902",
+  "lastmod": "2026-10-29T14:39:11+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/spellrift-legends-financiamento-meeplestarter/": {
+  "hash": "8d8959150ad3b422",
+  "lastmod": "2026-11-01T01:12:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/spiel-essen-2026-recorde-230-mil-visitantes/": {
+  "hash": "772e71aa4d373378",
+  "lastmod": "2026-11-03T10:00:16+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/spiel-essen-seis-furtos-montagem-desmontagem/": {
+  "hash": "a29766f63614b6cf",
+  "lastmod": "2026-11-05T01:12:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/stomp-leder-games-robos-contra-kaijus/": {
+  "hash": "b5c6bfc5d843d2ce",
+  "lastmod": "2026-11-05T10:05:39+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/stormlight-war-for-roshar-kickstarter/": {
+  "hash": "8afecd87c6313b41",
+  "lastmod": "2026-11-03T10:06:30+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/tasting-history-max-miller-jogo-kickstarter/": {
+  "hash": "85afbc32976533d2",
+  "lastmod": "2026-11-09T01:11:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/the-danes-rosenberg-gamefound/": {
+  "hash": "ba88636a1da46b85",
+  "lastmod": "2026-11-04T01:24:01+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/the-thing-boardgame-cardgame-gamefound/": {
+  "hash": "3c27b5e8e386a6ba",
+  "lastmod": "2026-11-11T09:55:30+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/through-the-mountains-knizia-kickstarter/": {
+  "hash": "db9482e8c59e4c82",
+  "lastmod": "2026-11-03T01:10:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/too-little-time-chip-theory-gamefound/": {
+  "hash": "e62ceab55caeb323",
+  "lastmod": "2026-11-05T01:12:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/vantage-chega-ao-brasil/": {
+  "hash": "0c94a6a0bacd5891",
+  "lastmod": "2026-10-29T17:49:26+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/wallguards-of-the-east-empire-garphill-kickstarter/": {
+  "hash": "eeb44161aafbe62e",
+  "lastmod": "2026-11-10T01:08:40+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/wavelength-1-10-cmyk-versao-de-bolso/": {
+  "hash": "5678e8d7dc41f11a",
+  "lastmod": "2026-11-03T01:10:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/noticias/zoo-tycoon-dinosaur-digs-kickstarter/": {
+  "hash": "bb0cea607dbfe549",
+  "lastmod": "2026-11-08T14:33:57+00:00"
+ },
+ "https://eliteboardgamers.com.br/oath/": {
+  "hash": "2ed60c6081d8f7d0",
+  "lastmod": "2026-11-03T01:10:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/paleo/": {
+  "hash": "f864b2790a5597da",
+  "lastmod": "2026-11-06"
+ },
+ "https://eliteboardgamers.com.br/pandemic-legacy/": {
+  "hash": "eb27112819f85560",
+  "lastmod": "2026-10-28T22:22:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/photosynthesis/": {
+  "hash": "567968e826d3fa47",
+  "lastmod": "2026-11-06"
+ },
+ "https://eliteboardgamers.com.br/planet-unknown/": {
+  "hash": "51b14f33d03c56de",
+  "lastmod": "2026-11-09T01:12:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/politica-editorial/": {
+  "hash": "fc2f011dd87befb9",
+  "lastmod": "2026-10-29T18:33:05+00:00"
+ },
+ "https://eliteboardgamers.com.br/premios/": {
+  "hash": "71b1b05d2f4b1294",
+  "lastmod": "2026-11-11T11:07:04+00:00"
+ },
+ "https://eliteboardgamers.com.br/radlands/": {
+  "hash": "325b320ed117a78d",
+  "lastmod": "2026-11-04T01:25:37+00:00"
+ },
+ "https://eliteboardgamers.com.br/return-to-dark-tower/": {
+  "hash": "1e9a1a500a8c1352",
+  "lastmod": "2026-11-01T01:13:28+00:00"
+ },
+ "https://eliteboardgamers.com.br/root/": {
+  "hash": "8cca693bdea1abab",
+  "lastmod": "2026-10-28T22:22:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/santuario/": {
+  "hash": "6ed197de2ae7df36",
+  "lastmod": "2026-11-04T21:59:18+00:00"
+ },
+ "https://eliteboardgamers.com.br/scythe/": {
+  "hash": "200a1216f2a1599c",
+  "lastmod": "2026-10-28T22:22:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/seti/": {
+  "hash": "edb35add3b7d8002",
+  "lastmod": "2026-10-30T13:24:28+00:00"
+ },
+ "https://eliteboardgamers.com.br/sky-team/": {
+  "hash": "5f9465be1b8c3fdb",
+  "lastmod": "2026-10-29T14:51:54+00:00"
+ },
+ "https://eliteboardgamers.com.br/sleeping-gods/": {
+  "hash": "3558b85bebe3e9f6",
+  "lastmod": "2026-11-01T01:12:02+00:00"
+ },
+ "https://eliteboardgamers.com.br/so-clover/": {
+  "hash": "11f121e9a71cf2e5",
+  "lastmod": "2026-11-05T01:12:36+00:00"
+ },
+ "https://eliteboardgamers.com.br/splendor-duel/": {
+  "hash": "662241a5869036fe",
+  "lastmod": "2026-11-03T01:10:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/star-wars-the-battle-of-hoth/": {
+  "hash": "d606ac72e54d7592",
+  "lastmod": "2026-11-05"
+ },
+ "https://eliteboardgamers.com.br/tapestry/": {
+  "hash": "f305bb5b82da14f4",
+  "lastmod": "2026-11-11"
+ },
+ "https://eliteboardgamers.com.br/terraforming-mars/": {
+  "hash": "64f46b3ab6b82ed9",
+  "lastmod": "2026-10-28T22:22:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/the-crew/": {
+  "hash": "4f82f8962360b092",
+  "lastmod": "2026-10-28T22:22:59+00:00"
+ },
+ "https://eliteboardgamers.com.br/the-mind/": {
+  "hash": "c37495be336c57ed",
+  "lastmod": "2026-11-03T01:13:09+00:00"
+ },
+ "https://eliteboardgamers.com.br/the-quacks-of-quedlinburg/": {
+  "hash": "a088b3c3730ee31b",
+  "lastmod": "2026-11-03T01:13:09+00:00"
+ },
+ "https://eliteboardgamers.com.br/the-witcher-old-world/": {
+  "hash": "4c3f5b39cecd34c5",
+  "lastmod": "2026-11-17T18:37:35+00:00"
+ },
+ "https://eliteboardgamers.com.br/thunder-road-vendetta/": {
+  "hash": "469ac3097e3d8d02",
+  "lastmod": "2026-11-09T01:12:51+00:00"
+ },
+ "https://eliteboardgamers.com.br/undaunted-battle-of-britain/": {
+  "hash": "3c29cde472a5b52d",
+  "lastmod": "2026-11-04"
+ },
+ "https://eliteboardgamers.com.br/undaunted-stalingrad/": {
+  "hash": "06d48a603bbb2abf",
+  "lastmod": "2026-11-04"
+ },
+ "https://eliteboardgamers.com.br/under-falling-skies/": {
+  "hash": "e83a83f7e3cc675b",
+  "lastmod": "2026-11-05T11:12:29+00:00"
+ },
+ "https://eliteboardgamers.com.br/vantage/": {
+  "hash": "8da12c17cd6271f4",
+  "lastmod": "2026-10-30T01:13:42+00:00"
+ },
+ "https://eliteboardgamers.com.br/watergate/": {
+  "hash": "edfb7814ec98dfc7",
+  "lastmod": "2026-11-11"
+ },
+ "https://eliteboardgamers.com.br/wavelength/": {
+  "hash": "103f125d83c8604e",
+  "lastmod": "2026-11-02T01:12:43+00:00"
+ },
+ "https://eliteboardgamers.com.br/werewords/": {
+  "hash": "72bcfff968df5801",
+  "lastmod": "2026-11-02T01:12:43+00:00"
+ },
+ "https://eliteboardgamers.com.br/wingspan/": {
+  "hash": "6b15fd94e2b5b1e3",
+  "lastmod": "2026-11-04T21:59:18+00:00"
+ }
+}

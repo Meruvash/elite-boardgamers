@@ -1,0 +1,156 @@
+{
+ "data": "2026-11-06",
+ "trends": {
+  "relacionadas": [],
+  "subindo": [],
+  "erro": "HTTP Error 429: unknown"
+ },
+ "ranking": [
+  {
+   "jogo": "pandemic",
+   "nota": 3.0,
+   "google": 2,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar pandemic",
+    "como jogar pandemic resposta rapida"
+   ]
+  },
+  {
+   "jogo": "sushi go",
+   "nota": 3.0,
+   "google": 2,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar sushi go",
+    "como jogar sushi go party"
+   ]
+  },
+  {
+   "jogo": "kingdomino",
+   "nota": 3.0,
+   "google": 2,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar kingdomino",
+    "como jogar kingdomino origins"
+   ]
+  },
+  {
+   "jogo": "wingspan",
+   "nota": 2.5,
+   "google": 1,
+   "youtube": 3,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar wingspan"
+   ]
+  },
+  {
+   "jogo": "root",
+   "nota": 2.5,
+   "google": 1,
+   "youtube": 3,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar root"
+   ]
+  },
+  {
+   "jogo": "dune imperium",
+   "nota": 2.0,
+   "google": 1,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar dune imperium"
+   ]
+  },
+  {
+   "jogo": "cascadia",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar cascadia"
+   ]
+  },
+  {
+   "jogo": "patchwork",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar patchwork"
+   ]
+  },
+  {
+   "jogo": "love letter",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar love letter"
+   ]
+  },
+  {
+   "jogo": "ark nova",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar ark nova"
+   ]
+  },
+  {
+   "jogo": "sky team",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar sky team"
+   ]
+  },
+  {
+   "jogo": "flip 7",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar flip 7"
+   ]
+  },
+  {
+   "jogo": "takenoko",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar takenoko"
+   ]
+  }
+ ]
+}

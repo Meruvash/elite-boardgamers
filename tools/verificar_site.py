@@ -1,0 +1,229 @@
+"""Verificação noturna do site (22h): confere o que está publicado e lista o que entrou no dia para a revisão editorial.
+
+Uso: python3 tools/verificar_site.py [--data AAAA-MM-DD] [--online]
+
+Checagens automáticas (saem com código 1 se alguma falhar):
+  - todo JSON de conteudo/ abre;
+  - todas as notícias passam em tools/noticias/checar_noticia.py e têm página em noticias/<slug>/;
+  - toda resenha publicada em pauta.json tem conteúdo que passa no texto de docs/padrao/resenhas.md, fotos oficiais
+    liberadas (ou infográfico), index.html e capa.jpg, e a página bate com o que build_review.py gera hoje;
+  - links e imagens internos de todas as páginas apontam para arquivos que existem;
+  - canonical, Open Graph e JSON-LD de cada página batem com o conteúdo visível (tools/checar_seo.py);
+  - toda página publicada tem canonical para a própria URL e está no sitemap.xml, e robots.txt aponta para o sitemap;
+  - com --online, as páginas do dia e a página inicial respondem 200 no site no ar.
+No fim, lista as notícias e resenhas publicadas na data (padrão: hoje) com as fontes, para a revisão de fatos.
+"""
+import json
+import re
+import sys
+from datetime import date
+from pathlib import Path
+from urllib.parse import unquote, urlparse
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+from checar_roteiro import checar_texto, fotos_liberadas  # noqa: E402
+from noticias.checar_noticia import problemas  # noqa: E402
+import checar_seo  # noqa: E402
+
+SITE = "https://eliteboardgamers.com.br"
+FORA = {".git", ".cache", "tools", "modelos", "marca", "lotes", "fontes", "triagem", ".claude", ".impeccable"}
+LINK = re.compile(r'(?:href|src)="([^"]+)"')
+
+
+# Link de afiliado de outra pessoa nunca pode ir ao ar (pedido do usuário em 05/11/2026: pelas regras da Amazon, divulgar a
+# tag de outro afiliado pode causar problema para ele). Vale para tudo que o site publica, inclusive os dados em conteudo/.
+AFILIADO_PUBLICO = re.compile(r"(?i)[?&]tag=[a-z0-9_-]+-2[0-9]\b|amzn\.to/|amzlink\.to/|link\.amazon/|amzlinks\.|meli\.la/|mercadoli[vb]re\.com(\.br)?/(sec|social)/|shope\.ee/|s\.shopee|"
+                              r"tidd\.ly/|lmd\.ink/|awin1\.com|redir\.lomadee")
+
+
+def checar_afiliados(erros):
+    pulos = (".cache", "node_modules", ".git", "tools", ".claude", "worker")
+    for p in sorted(ROOT.rglob("*")):
+        if p.suffix not in (".html", ".json", ".xml", ".txt", ".md", ".js") or any(x in p.parts for x in pulos) or not p.is_file():
+            continue
+        try:
+            m = AFILIADO_PUBLICO.search(p.read_text(encoding="utf-8", errors="ignore"))
+        except OSError:
+            continue
+        if m:
+            erros.append(f"link de afiliado de terceiros publicado em {p.relative_to(ROOT)} ({m.group(0)}): tire na origem")
+
+
+def checar_json(erros):
+    for p in sorted((ROOT / "conteudo").rglob("*.json")):
+        try:
+            json.loads(p.read_text(encoding="utf-8"))
+        except ValueError as ex:
+            erros.append(f"JSON inválido: {p.relative_to(ROOT)} ({ex})")
+
+
+def checar_noticias(erros):
+    ns = []
+    for p in sorted((ROOT / "conteudo" / "noticias").glob("*.json")):
+        n = json.loads(p.read_text(encoding="utf-8"))
+        ns.append(n)
+        for e in problemas(n):
+            erros.append(f"notícia {n['slug']}: {e}")
+        if not (ROOT / "noticias" / n["slug"] / "index.html").exists():
+            erros.append(f"notícia {n['slug']}: sem página (rode tools/build_home.py)")
+        img = n.get("imagem")
+        if img and not (ROOT / "noticias" / img["arquivo"]).exists():
+            erros.append(f"notícia {n['slug']}: imagem {img['arquivo']} não existe")
+    return ns
+
+
+def checar_resenhas(erros):
+    import build_review
+    pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
+    publicadas = []
+    for p in pauta["publicadas"]:
+        slug = p["url"].rstrip("/").split("/")[-1]
+        arq = ROOT / "conteudo" / f"{slug}.json"
+        if not arq.exists():
+            erros.append(f"resenha {slug}: falta conteudo/{slug}.json")
+            continue
+        c = json.loads(arq.read_text(encoding="utf-8"))
+        publicadas.append((p, c))
+        if c.get("experiencia"):  # só o padrão v2 tem texto conferido; as antigas ficam como estão
+            for e in checar_texto(c):
+                erros.append(f"resenha {slug}: {e}")
+        if not (fotos_liberadas(slug) or (ROOT / slug / "infografico.webp").exists()):
+            erros.append(f"resenha {slug}: sem fotos oficiais liberadas e sem infográfico")
+        for f, limite in (("index.html", None), ("capa.jpg", 250_000)):
+            alvo = ROOT / slug / f
+            if not alvo.exists():
+                erros.append(f"resenha {slug}: falta {f}")
+            elif limite and alvo.stat().st_size > limite * 1.2:
+                erros.append(f"resenha {slug}: {f} com {alvo.stat().st_size // 1000} KB (limite ~{limite // 1000} KB)")
+        pagina = ROOT / slug / "index.html"
+        try:
+            if pagina.exists() and pagina.read_text(encoding="utf-8") != build_review.build(c):
+                erros.append(f"resenha {slug}: página desatualizada (rode tools/build_review.py conteudo/{slug}.json)")
+        except SystemExit as ex:
+            erros.append(f"resenha {slug}: build_review.py recusou ({ex})")
+        estado = {j["jogo"]: j["status"] for j in pauta["jogos"]}.get(c["jogo"])
+        if estado not in (None, "publicado"):
+            erros.append(f"resenha {slug}: está em publicadas, mas o status na pauta é {estado!r}")
+    return publicadas
+
+
+def checar_links(erros):
+    for pagina in sorted(ROOT.rglob("index.html")):
+        rel = pagina.relative_to(ROOT)
+        if rel.parts[0] in FORA:
+            continue
+        html = pagina.read_text(encoding="utf-8")
+        for alvo in set(LINK.findall(html)):
+            u = urlparse(alvo)
+            # "${...}" é modelo de link montado pelo JavaScript da página, não endereço
+            if u.scheme or alvo.startswith(("#", "//", "data:", "mailto:", "tel:", "javascript:")) or not u.path or "${" in alvo:
+                continue
+            caminho = (ROOT / u.path.lstrip("/")) if u.path.startswith("/") else (pagina.parent / unquote(u.path))
+            if u.path.endswith("/") or caminho.is_dir():
+                caminho = caminho / "index.html"
+            if not caminho.resolve().exists():
+                erros.append(f"link quebrado em {rel}: {alvo}")
+
+
+def checar_sitemap(erros, ns, publicadas):
+    sitemap = ROOT / "sitemap.xml"
+    if not sitemap.exists() or not (ROOT / "robots.txt").exists():
+        erros.append("falta sitemap.xml ou robots.txt (rode python3 tools/build_sitemap.py)")
+        return
+    no_sitemap = set(re.findall(r"<loc>([^<]+)</loc>", sitemap.read_text(encoding="utf-8")))
+    if f"{SITE}/sitemap.xml" not in (ROOT / "robots.txt").read_text(encoding="utf-8"):
+        erros.append("robots.txt não aponta para o sitemap.xml")
+    urls = [f"{SITE}/", f"{SITE}/noticias/", f"{SITE}/resenhas/", f"{SITE}/politica-editorial/"]
+    urls += [f"{SITE}/{g.parent.relative_to(ROOT).as_posix()}/" for g in [*(ROOT / "jogos-de-tabuleiro").glob("**/index.html"), *(ROOT / "premios").glob("index.html")]]
+    urls += [f"{SITE}/noticias/{n['slug']}/" for n in ns] + [p["url"] for p, _ in publicadas]
+    for url in urls:
+        arq = ROOT / url[len(SITE) + 1:] / "index.html"
+        if not arq.exists():
+            continue
+        canon = re.search(r'<link rel="canonical" href="([^"]+)">', arq.read_text(encoding="utf-8"))
+        if not canon or canon.group(1) != url:
+            erros.append(f"canonical ausente ou errado em {url}")
+        if url not in no_sitemap:
+            erros.append(f"fora do sitemap.xml: {url} (rode python3 tools/build_sitemap.py)")
+
+
+def checar_online(erros, urls):
+    import requests
+    for url in urls:
+        try:
+            r = requests.get(url, timeout=30, headers={"User-Agent": "EliteBoardgamers-verificacao/1.0"})
+            if r.status_code != 200:
+                erros.append(f"no ar: {url} respondeu {r.status_code}")
+        except requests.RequestException as ex:
+            erros.append(f"no ar: {url} não respondeu ({ex.__class__.__name__})")
+
+
+def checar_como_jogar(erros):
+    """Como Jogar: foto no topo e imagem em todas as seções (pedido do editor em 04/11/2026)."""
+    import re as _re
+    pasta = ROOT / "conteudo" / "como-jogar"
+    feitos = []
+    for arq in sorted(pasta.glob("*.json")) if pasta.exists() else []:
+        m = json.loads(arq.read_text(encoding="utf-8"))
+        if not m.get("publicar") or m.get("html_manual"):
+            continue
+        pag = ROOT / "como-jogar" / m["slug"] / "index.html"
+        if not pag.exists():
+            erros.append(f"como jogar {m['slug']}: página não gerada (rode tools/build_como_jogar.py)")
+            continue
+        feitos.append(m)
+        h = pag.read_text(encoding="utf-8")
+        if 'class="foto-topo' not in h:
+            erros.append(f"como jogar {m['slug']}: sem foto no topo (rode tools/build_como_jogar.py; fotos em como-jogar/{m['slug']}/fotos/)")
+        sem = [sid for sid, corpo in _re.findall(r'<section class="bloco sec[^"]*" id="([^"]+)">(.*?)</section>', h, _re.S) if "<figure" not in corpo]
+        if sem:
+            erros.append(f"como jogar {m['slug']}: seção sem foto: {', '.join(sem)}")
+    return feitos
+
+
+def main():
+    args = sys.argv[1:]
+    dia = args[args.index("--data") + 1] if "--data" in args else date.today().isoformat()
+    erros = []
+    checar_json(erros)
+    checar_afiliados(erros)
+    import duplicatas  # postagem duplicada (Black e notícias), pedido do usuário em 05/11/2026
+    erros.extend(f"postagem duplicada em {x['onde']}: {x['item']}" for x in duplicatas.black() + duplicatas.noticias())
+    ns = checar_noticias(erros)
+    publicadas = checar_resenhas(erros)
+    checar_links(erros)
+    checar_sitemap(erros, ns, publicadas)
+    checar_seo.checar(erros)
+    tutoriais = checar_como_jogar(erros)
+
+    do_dia_n = [n for n in ns if n["data"] == dia]
+    do_dia_r = [(p, c) for p, c in publicadas if p.get("data") == dia]
+    if "--online" in args:
+        checar_online(erros, [SITE + "/"] + [f"{SITE}/noticias/{n['slug']}/" for n in do_dia_n] + [p["url"] for p, _ in do_dia_r])
+
+    print(f"# Verificação do site · {dia}\n")
+    print("## Checagens automáticas\n")
+    print("\n".join(f"- ❌ {e}" for e in erros) if erros else "- ✅ tudo certo")
+    print(f"\n## Publicado em {dia}: revisar fatos, números e fontes\n")
+    for n in do_dia_n:
+        manchete = " · MANCHETE" if n.get("manchete") else ""
+        print(f"- notícia `conteudo/noticias/{n['slug']}.json`{manchete}: {n['titulo']}")
+        for f in n["fontes"]:
+            print(f"  - {f['nome']}: {f['url']}")
+    for p, c in do_dia_r:
+        print(f"- resenha `conteudo/{c['slug']}.json`: {c['jogo']} ({p['url']})")
+        for f in c.get("fontes", []):
+            nome, url = (f.get("nome"), f.get("url")) if isinstance(f, dict) else (f[0], f[1] if len(f) > 1 else "")
+            print(f"  - {nome}: {url}")
+    do_dia_t = [m for m in tutoriais if m.get("data") == dia]
+    for m in do_dia_t:
+        print(f"- como jogar `conteudo/como-jogar/{m['slug']}.json`: {m['jogo']} ({SITE}/como-jogar/{m['slug']}/)")
+    print(f"\nComo Jogar em {dia}: {len(do_dia_t)} tutorial(is) (meta: pelo menos 5 por dia)")
+    if not (do_dia_n or do_dia_r or do_dia_t):
+        print("- nada publicado nesta data")
+    sys.exit(1 if erros else 0)
+
+
+if __name__ == "__main__":
+    main()

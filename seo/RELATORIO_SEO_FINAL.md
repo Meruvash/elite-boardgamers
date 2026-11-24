@@ -1,0 +1,81 @@
+# Relatório final de SEO: Elite Boardgamers
+
+Período: 28/10/2026 · Responsável editorial: Anderson Pelicioni de Castro · Diagnóstico completo em `seo/AUDITORIA_SEO.md`.
+
+Todas as mudanças estão na `main` (no ar) e foram feitas nos **geradores** (`tools/`). Assim, as rotinas diárias de notícias, resenhas e verificação mantêm tudo sozinhas.
+
+## Antes e depois (evidências)
+
+| Item | Antes | Depois | Como foi medido |
+|---|---|---|---|
+| `robots.txt` | 404 | 200, libera todos os robôs e aponta os sitemaps | `curl` no site no ar |
+| `sitemap.xml` | 404 | 51 URLs, `lastmod` real | idem |
+| Sitemap de notícias | não existia | notas das últimas 48 h | idem |
+| Canonical | 0 de 50 páginas | todas as páginas | `tools/checar_seo.py` contra o site no ar |
+| Dados estruturados (JSON-LD) | 0 páginas | todas; 0 erros e 0 avisos | validator.schema.org (home, notícia, resenha, listas, consulta) |
+| Datas legíveis por máquina | nenhuma | `<time datetime>` em notícias e resenhas | `checar_seo.py` (data visível = `datePublished`) |
+| Data visível nas resenhas | não havia | "Resenha publicada em … · com base em N fontes" | inspeção |
+| Arquivos internos publicados | 102 (planos, pauta, tools, fotos reservadas) | 0 (404) | Jekyll 3.10 local + `curl` no ar |
+| Página 404 | padrão do GitHub, em inglês | no visual do site, `noindex`, com links | `curl` (status 404 mantido) |
+| Consulta Golden Geek sem JS | 129 palavras | ~4.700 palavras, 477 resultados | Playwright com JS desligado |
+| H1 em `/noticias/` | ausente | presente, com o mesmo visual | captura antes/depois |
+| Transparência | sem página institucional | `/politica-editorial/` assinada, no rodapé de todas as páginas | inspeção |
+| LCP da home (laboratório) | 3,8 s · 716 KB | 1,7 s · 284 KB | Playwright, Moto G4, 1,6 Mbps, CPU 4x, mediana de 3 |
+| LCP da resenha Wingspan (laboratório) | 2,8 s · 497 KB | 2,0 s · 357 KB | idem |
+| CLS | 0,000 | 0,000 | idem |
+
+**Os números de LCP são de laboratório**, não de usuários reais. Os dados de campo (CrUX/Search Console) só vão existir quando houver tráfego suficiente.
+
+## Mudanças por arquivo
+
+| Arquivo | O que mudou |
+|---|---|
+| `tools/build_home.py` | canonical, `og:site_name`/`og:locale`/`twitter:card`, `og:type=article` e `article:published_time` nas notícias, H1 em `/noticias/`, JSON-LD (`WebSite`, `NewsArticle`, `BreadcrumbList`), `<time>`, dimensões reais da manchete, `404.html`, `/politica-editorial/`, `srcset`; no fim, chama `build_consulta` e `build_sitemap` |
+| `tools/build_review.py` | canonical, `twitter:card`, JSON-LD `Article` sobre o `Game`, linha de publicação visível, `srcset` na foto do topo, link para a política no rodapé, chama `build_sitemap` |
+| `tools/build_lista.py` | canonical, `BreadcrumbList`, `srcset` nas capas, link para a política |
+| `tools/build_sitemap.py` | novo: sitemap, sitemap de notícias, robots.txt e registro de `lastmod` (`conteudo/sitemap_estado.json`) |
+| `tools/build_consulta.py` | novo: escreve no HTML a tabela do Golden Geek que o JS monta |
+| `tools/imagens_resp.py` | novo: variantes WebP em `img/` |
+| `tools/seo.py` | novo: JSON-LD centralizado |
+| `tools/checar_seo.py` | novo: testes de canonical, og:url, H1, JSON-LD, datas e tipos proibidos |
+| `tools/verificar_site.py` | roda `checar_seo` e confere o sitemap |
+| `tools/publicar.py` | chama `build_sitemap` no fim |
+| `consulta/index.html` | canonical, JSON-LD, tabela pré-gerada, link para a política |
+| `_config.yml` | novo: exclui os arquivos internos do site |
+| `.claude/skills/{noticias,resenha,verificacao}/SKILL.md` | incluir no commit os arquivos que os scripts regeram |
+
+## Decisões registradas
+
+- **Robôs de busca e de IA liberados**, inclusive os de treinamento (decisão do responsável: prioridade a SEO e GEO).
+- **Sem `Review`, `AggregateRating` nem `Product`.** O site não dá nota própria (a nota exibida é a do BGG, de terceiros) e não vende jogos.
+- **Uso de IA declarado** na política editorial, com verificação pessoal do responsável.
+- **`llms.txt` não implementado.** Não é requisito de nenhum buscador; fica como experimento opcional.
+- **Google Indexing API não usada.** Ela não se aplica a notícias.
+
+## Depois do relatório inicial (28/10/2026, mesma data)
+
+- Google Search Console verificado (arquivo `google6eabfb67f89b80bc.html`, que não pode ser apagado) e sitemaps enviados.
+- IndexNow: chave `788e463403f2d9cfd5dffb7304088938.txt`; primeiro envio de 51 URLs, depois só o que muda (`tools/indexnow.py`).
+- Cloudflare Web Analytics (sem cookies) em todas as páginas, declarado na política editorial.
+- Títulos: `titulo_seo` em 10 notícias, `titulo_busca` com ângulo próprio nas 26 resenhas, veredito "<jogo> vale a pena?".
+- Links internos: 8 notícias passaram a ligar para resenhas citadas; "Notícias sobre <jogo>" nas resenhas; "Leia também" nas notícias.
+- Imagem de compartilhamento da consulta hospedada no site.
+
+## 29/10/2026
+
+| Entrega | Evidência |
+|---|---|
+| Selo das resenhas dividido em **nível** (Recomendado / com ressalva / Não recomendado) e **perfil "Melhor para"** (9 perfis com critério) | `melhor_para`, `ressalva` nos JSONs; `checar_roteiro.py` exige os dois e cobra ressalva com ponto grave ou preço acima de R$ 800 |
+| Busca com filtros em `/resenhas/` (jogadores e melhor contagem, duração, complexidade, perfil, estilo, mecânica, prêmio, idade, preço, solo, português), em botão + gaveta | dados de `tools/filtros_resenha.py`; teste no ar: 1º cartão visível na 1ª tela do celular; sem JS a lista segue completa |
+| Guia `/jogos-de-tabuleiro/` + 8 guias "Melhores jogos para…" | `tools/build_guias.py`; critério visível em cada página; guia com menos de 3 jogos não é publicado (campanha e legacy: 2); validator.schema.org 0 erros |
+| Links para os guias | rodapé comum (`tools/layout.py`), topo de `/resenhas/`, balão "Melhor para" de cada resenha |
+| Imagens leves abaixo da dobra (infográficos, fotos, capas pequenas) | lendo a página inteira num Pixel 5: home 1.647 → 861 KB; Wingspan 2.225 → 1.901 KB; Cascadia 2.708 → 2.130 KB |
+| Verificação noturna sem falso alarme na página `/lancamentos/` | `verificar_site.py` ignora modelos de link `${…}` do JavaScript |
+
+## Pendências que dependem de acesso externo ou de decisão
+
+1. **Bing Webmaster Tools:** importar do Search Console (o Search Console já está feito).
+2. **Dados reais de Core Web Vitals:** aguardar tráfego e acompanhar no Search Console.
+3. **Revisar os títulos "vale a pena"** com dados do Search Console em 4 a 6 semanas.
+4. **Links de outros sites:** divulgar a Consulta Golden Geek e os guias (grupos, Ludopedia, editoras). É o que mais pesa para "jogos de tabuleiro" e "board game".
+5. **Logs de robôs:** o GitHub Pages não fornece. Só com um CDN próprio na frente (mudança de infraestrutura, a decidir).

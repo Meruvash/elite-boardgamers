@@ -1,0 +1,41 @@
+{
+ "slug": "bomb-busters",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Cocktail Games",
+   "credito": "Imagem: Cocktail Games (kit de imprensa)",
+   "pagina": "https://www.cocktailgames.com/wp-content/uploads/2023/10/Bombbusters.zip",
+   "imagem": "https://www.cocktailgames.com/wp-content/uploads/2023/10/Bombbusters.zip#Bombbusters_3D.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1262,
+   "altura": 1600,
+   "editora": "Cocktail Games",
+   "credito": "Imagem: Cocktail Games (kit de imprensa)",
+   "pagina": "https://www.cocktailgames.com/wp-content/uploads/2023/10/Bombbusters.zip",
+   "imagem": "https://www.cocktailgames.com/wp-content/uploads/2023/10/Bombbusters.zip#Bombbusters_partie_en_cours_HD.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1001,
+   "editora": "Cocktail Games",
+   "credito": "Imagem: Cocktail Games (kit de imprensa)",
+   "pagina": "https://www.cocktailgames.com/wp-content/uploads/2023/10/Bombbusters.zip",
+   "imagem": "https://www.cocktailgames.com/wp-content/uploads/2023/10/Bombbusters.zip#Bombbusters_eclate_HD.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  }
+ ]
+}

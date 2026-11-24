@@ -1,0 +1,177 @@
+{
+ "edicao": "2026-11-19",
+ "em_alta": [
+  {
+   "nome": "Nemesis: Legacy",
+   "motivo": "Vira o tabuleiro mais financiado da história, com mais de €13,2 milhões",
+   "link": "noticias/nemesis-legacy-recorde-financiamento-ano-416-milhoes/",
+   "id_ludopedia": "nemesis-legacy-recorde-financiamento-ano-416-milhoes"
+  },
+  {
+   "nome": "Satisfactory: The Board Game",
+   "motivo": "Chegou ao último dia no Gamefound com quase 3 milhões de euros",
+   "link": "noticias/satisfactory-reta-final-quase-3-milhoes/",
+   "id_ludopedia": "satisfactory-reta-final-quase-3-milhoes"
+  },
+  {
+   "nome": "The Thing: The Boardgame",
+   "motivo": "Volta ao Gamefound com jogo de cartas novo",
+   "link": "noticias/the-thing-boardgame-cardgame-gamefound/",
+   "id_ludopedia": "the-thing-boardgame-cardgame-gamefound"
+  },
+  {
+   "nome": "Arkham Horror Remastered",
+   "motivo": "Fecha no Gamefound e passa de US$ 5,7 milhões",
+   "link": "noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/",
+   "id_ludopedia": "arkham-horror-remastered-fecha-gamefound-5-milhoes"
+  },
+  {
+   "nome": "Harmonies: Crescendo",
+   "id_ludopedia": 86576,
+   "motivo": "Entra em pré-venda nas lojas brasileiras com Coffee Rush: Inverno",
+   "link": "noticias/coffee-rush-inverno-harmonies-crescendo-pre-venda/"
+  }
+ ],
+ "financiamentos": [
+  {
+   "nome": "Nemesis: Legacy",
+   "editora": "Awaken Realms",
+   "onde": "Gamefound · pré-venda tardia",
+   "situacao": "Campanha encerrada em 27/10; passou de €13,2 milhões de quase 35 mil apoiadores, recorde entre jogos de tabuleiro",
+   "fonte": "BoardGameWire, 13/11/2026",
+   "noticia": "nemesis-legacy-recorde-financiamento-ano-416-milhoes"
+  },
+  {
+   "nome": "Marco Polo Deluxe Master Set",
+   "editora": "Board&Dice",
+   "onde": "Gamefound · abertura prevista em 12/11",
+   "situacao": "Pré-campanha; junta os dois Marco Polo e Agents of Venice",
+   "fonte": "Brettspielbox, 08/11/2026",
+   "noticia": "marco-polo-deluxe-master-set-gamefound"
+  },
+  {
+   "nome": "Wallguards of the East Empire",
+   "editora": "Garphill Games",
+   "onde": "Kickstarter · aberto",
+   "situacao": "Campanha aberta em 10/11",
+   "fonte": "Tabletop Analytics, 10/11/2026",
+   "noticia": "wallguards-of-the-east-empire-garphill-kickstarter"
+  },
+  {
+   "nome": "The Thing: The Boardgame & The Cardgame",
+   "editora": "Pendragon Game Studio",
+   "onde": "Gamefound · aberto",
+   "situacao": "€251 mil de 1.799 apoiadores; termina em 01/12",
+   "fonte": "Tabletop Analytics, 11/11/2026",
+   "noticia": "the-thing-boardgame-cardgame-gamefound"
+  },
+  {
+   "nome": "Feed the Kraken: Black Box e Sea of Shadows",
+   "editora": "Funtails",
+   "onde": "Gamefound · aberto",
+   "situacao": "€141 mil de 933 apoiadores; termina em 01/12",
+   "fonte": "Tabletop Analytics, 11/11/2026",
+   "noticia": "feed-the-kraken-black-box-sea-of-shadows-gamefound"
+  },
+  {
+   "nome": "Adventure Time Card Wars 2026",
+   "editora": "Cryptozoic",
+   "onde": "Kickstarter · aberto",
+   "situacao": "US$ 1,04 milhão de 3.340 apoiadores; termina em 25/11",
+   "fonte": "Tabletop Analytics, 09/11/2026",
+   "noticia": "adventure-time-card-wars-2026-passa-de-1-milhao"
+  },
+  {
+   "nome": "Fable Quest",
+   "editora": "Tycoon Games",
+   "onde": "Gamefound · aberto",
+   "situacao": "Cerca de €135 mil em 08/11",
+   "fonte": "Brettspielbox, 08/11/2026",
+   "noticia": "fable-quest-arcadia-quest-cooperativo-gamefound"
+  },
+  {
+   "nome": "Zoo Tycoon: Dinosaur Digs",
+   "editora": "Treecer",
+   "onde": "Kickstarter · aberto",
+   "situacao": "CHF 186 mil de 1.371 apoiadores; termina em 03/12",
+   "fonte": "Tabletop Analytics, 08/11/2026",
+   "noticia": "zoo-tycoon-dinosaur-digs-kickstarter"
+  },
+  {
+   "nome": "Oceanos",
+   "editora": "Ace Studios",
+   "onde": "Brasil · aberto",
+   "situacao": "R$ 51 mil (204% da meta); termina em 11/12",
+   "fonte": "MeepleStarter, 11/11/2026",
+   "noticia": "oceanos-abre-meeplestarter-204-por-cento"
+  },
+  {
+   "nome": "Brava Gente e Oyó",
+   "editora": "Independente",
+   "onde": "Brasil · aberto",
+   "situacao": "Metas batidas; Oyó encerrou em 09/11, Brava Gente vai até 10/12",
+   "fonte": "MeepleStarter, 10/11/2026",
+   "noticia": "brava-gente-e-oyo-batem-a-meta"
+  },
+  {
+   "nome": "Harakiri: Blades of Honor",
+   "editora": "First Turn Games",
+   "onde": "Brasil · abre em 07/12",
+   "situacao": "Pré-campanha da versão em inglês no MeepleStarter",
+   "fonte": "MeepleStarter, 10/11/2026",
+   "noticia": "harakiri-blades-of-honor-first-turn-meeplestarter"
+  },
+  {
+   "nome": "Abalone, MiniMundos e 25 de Março",
+   "editora": "Ludens Spirit, Engrene e independente",
+   "onde": "Brasil · abrem de 13/11 a 01/12",
+   "situacao": "Pré-campanhas no MeepleStarter",
+   "fonte": "MeepleStarter, 10/11/2026",
+   "noticia": "abalone-minimundos-25-de-marco-meeplestarter"
+  }
+ ],
+ "agenda": [
+  {
+   "quando": "Novembro",
+   "titulo": "11 jogos de tabuleiro previstos no Brasil",
+   "detalhe": "Nosso calendário de lançamentos",
+   "previsto": false,
+   "link": "lancamentos/"
+  },
+  {
+   "quando": "26 a 28 fev 2027",
+   "titulo": "Festival International des Jeux, Cannes",
+   "detalhe": "Entrega do As d'Or",
+   "previsto": false,
+   "noticia": "cannes-2027-as-dor"
+  },
+  {
+   "quando": "Abril de 2027",
+   "titulo": "Indicados ao Golden Geek",
+   "detalhe": "Pela data dos anos anteriores",
+   "previsto": true,
+   "noticia": "guia-dos-premios-2027"
+  },
+  {
+   "quando": "Maio de 2027",
+   "titulo": "Indicados ao Spiel des Jahres",
+   "detalhe": "Pela data dos anos anteriores",
+   "previsto": true,
+   "noticia": "guia-dos-premios-2027"
+  },
+  {
+   "quando": "9 a 11 jul 2027",
+   "titulo": "Diversão Offline, São Paulo",
+   "detalhe": "Ingressos pela Tavernando a partir da Black Friday",
+   "previsto": false,
+   "noticia": "diversao-offline-2027-tavernando-ingressos"
+  },
+  {
+   "quando": "21 a 24 out 2027",
+   "titulo": "SPIEL Essen 2027",
+   "detalhe": "Datas anunciadas pela organização",
+   "previsto": false,
+   "noticia": "spiel-essen-2026-recorde-230-mil-visitantes"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "maracaibo",
+ "usar_na_pagina": false,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1080,
+   "altura": 1080,
+   "editora": "MeepleBR",
+   "credito": "Imagem: MeepleBR",
+   "pagina": "https://meeplebr.com/product/maracaibo/",
+   "imagem": "https://meeplebr.com/wp-content/uploads/2020/07/Maracaibo-Caixa-com-fundo.png",
+   "baixada_em": "2026-11-11",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 960,
+   "altura": 960,
+   "editora": "MeepleBR",
+   "credito": "Imagem: MeepleBR",
+   "pagina": "https://meeplebr.com/product/maracaibo/",
+   "imagem": "https://meeplebr.com/wp-content/uploads/2020/03/Maracaibo-componentes-1.png",
+   "baixada_em": "2026-11-11",
+   "aprovada": true
+  }
+ ]
+}
