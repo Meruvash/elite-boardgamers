@@ -1,0 +1,12 @@
+# Lojas com feed e catálogo: a cada 30 minutos (igual ao GitHub Actions antigo).
+[Unit]
+Description=Radar Black: agenda do robô normal
+
+[Timer]
+OnCalendar=*-*-* *:05,35:00
+RandomizedDelaySec=120
+Persistent=true
+Unit=elite-radar@normal.service
+
+[Install]
+WantedBy=timers.target

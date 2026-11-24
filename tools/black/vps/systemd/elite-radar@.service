@@ -1,0 +1,15 @@
+# Um ciclo de um robô do Radar Black (%i = normal, ml, educado ou alertas). Chamado pelos timers ao lado.
+[Unit]
+Description=Radar Black: robô %i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=elite
+EnvironmentFile=/etc/elite-radar.env
+# código novo antes de cada ciclo (só tools/, nunca os dados); falhar aqui não impede o ciclo
+ExecStartPre=-/bin/sh -c 'git -C /opt/elite/site fetch -q --depth 1 origin main && git -C /opt/elite/site checkout -q origin/main -- tools'
+ExecStart=/opt/elite/site/tools/black/vps/rodar.sh %i
+TimeoutStartSec=5h
+Nice=10

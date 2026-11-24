@@ -1,0 +1,12 @@
+# Lojas lidas devagar, respeitando o robots.txt: a cada 3 horas.
+[Unit]
+Description=Radar Black: agenda do robô educado
+
+[Timer]
+OnCalendar=*-*-* 00/3:45:00
+RandomizedDelaySec=120
+Persistent=true
+Unit=elite-radar@educado.service
+
+[Install]
+WantedBy=timers.target

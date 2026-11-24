@@ -1,0 +1,12 @@
+# Fila de alertas (Telegram e avisos): a cada 15 minutos.
+[Unit]
+Description=Radar Black: agenda do robô alertas
+
+[Timer]
+OnCalendar=*-*-* *:00/15:00
+RandomizedDelaySec=120
+Persistent=true
+Unit=elite-radar@alertas.service
+
+[Install]
+WantedBy=timers.target

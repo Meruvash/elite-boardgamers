@@ -1,0 +1,12 @@
+# Mercado Livre pela API oficial: a cada 30 minutos.
+[Unit]
+Description=Radar Black: agenda do robô ml
+
+[Timer]
+OnCalendar=*-*-* *:20,50:00
+RandomizedDelaySec=120
+Persistent=true
+Unit=elite-radar@ml.service
+
+[Install]
+WantedBy=timers.target
