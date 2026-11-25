@@ -172,8 +172,11 @@ def _fechar(cfg, p, pecas, itens, sl, bar):
 
 def montar(cfg, p=None):
     """Escolhe a versão pelo conteúdo da caixa: só o jogo base (padrão) ou com extras."""
-    if cfg.get("extras", {}).get("tem", False):
+    ex = cfg.get("extras", {})
+    if ex.get("misterios") or ex.get("tem"):
         return _montar_completo(cfg, p)
+    if ex.get("miniaturas"):
+        return _montar_v4(cfg, p)
     return _montar_base(cfg, p)
 
 
@@ -277,4 +280,108 @@ def _montar_base(cfg, p=None):
                 "Caixa com tampa: dados e fichas soltas"), (B_x, peq.tamanho[1], 0))
     add(tampada("caixa-longa", larg_d, FAIXA, MEIO, [(1, [1, 1, 1])],
                 "Caixa longa com tampa: fichas de descoberta / marcadores"), (B_x, 0, NIVEL))
+    return _fechar(cfg, p, pecas, itens, sl, bar)
+
+
+def _montar_v4(cfg, p=None):
+    """Versão 4: jogo base + Everything New (miniaturas, cartas extras, vulcão desmontado),
+    sem Mistérios nem Livro de Aventuras. Caixa ~127 mm de altura interna.
+
+    As três bandejas originais de 52 mm (personagens/peças, recursos/fichas, miniaturas) não cabem
+    lado a lado; em vez de empilhar uma inteira sobre a outra (104 mm), as três bandejas finas de
+    recursos/dados/fichas são distribuídas por cima:
+      X 0-151,2    obj_13+obj_12+obj_11 (0-51) + fichas obj_16 + dados obj_15 (51-83) + caixa estreita
+      X 151,2-249  miniaturas obj_3 (0-52) + recursos obj_14 (52-72) + bolsão do vulcão (72-86)
+      X 249-318,4  maço das expansões, cartas pequenas em pé, caixa (0-52) + caixa longa (52-86)
+      Faixa do fundo: Eventos compra|descarte e Mistério (0-52), 3 Aventuras (52-86)
+    """
+    p = p or Params()
+    lay = cfg.get("layout", {})
+    cat = carregar_catalogo()
+    sl = {t: sleeve_envelope(cat, d["usar"], d["compativel_com"]) for t, d in cfg["sleeves"].items()}
+    bar = {}
+    for k, d in cfg["baralhos"].items():
+        c = cfg["cartas"][d["tipo"]]
+        bar[k] = Baralho(k, c["tamanho"], d["qtd"], c["espessura"], sl[d["tipo"]])
+    B = lambda *ks: [bar[k] for k in ks]  # noqa: E731
+    gc = cfg["cartas"]["grande"]
+    ref_g = Baralho("ref", gc["tamanho"], 0, gc["espessura"], sl["grande"])
+    orig_t = cfg["originais_reaproveitados"]
+    TOPO4 = lay.get("topo_v4", 86.0)
+    X_OK = cfg["caixa_interna"].get("ocupacao_comprovada", {}).get("x", 318.4)
+
+    pecas, itens = [], []
+
+    def add(peca, pos, rot90=0):
+        if peca not in pecas:
+            pecas.append(peca)
+        it = Item(peca.nome, peca.tamanho, pos, peca.solido, rot90=rot90)
+        itens.append(it)
+        return it
+
+    def orig(nome, pos, rot90=0):
+        it = Item("ORIGINAL " + nome, orig_t[nome], pos, None, rot90=rot90, origem="original")
+        itens.append(it)
+        return it
+
+    def tampada(nome, X, Y, Z, colunas, desc):
+        t, tp = bandeja_fichas(nome, X, Y, Z, colunas, p, descricao=desc)
+        pecas.append(tp)
+        return t
+
+    def deitada(nome, pocos, alt, desc):
+        return bandeja_baralhos(nome, pocos, p, altura=alt, descricao=desc, ref=ref_g)
+
+    # coluna A: personagens/peças/abrigo + fichas + dados
+    z = 0.0
+    for n in ("obj_13_shelter-upgrades-herb-garden-pen-spyglass.stl",
+              "obj_12_map-tiles-animals-misc-expansions.stl", "obj_11_characters.stl",
+              "obj_16_tokens.stl", "obj_15_dice-determination-black-white-blue.stl"):
+        z = orig(n, (0, 0, z)).caixa[1][2]
+    topo_A, A_x = z, orig_t["obj_11_characters.stl"][0]
+    B_x = orig_t["obj_14_resources.stl"][0]
+    add(tampada("caixa-estreita", A_x - B_x, FAIXA, TOPO4 - 51.0, [(1, [1, 1, 1])],
+                "Caixa estreita com tampa (marcadores, fichas extras)"), (B_x, 0, 51.0))
+
+    # coluna das miniaturas + recursos por cima + bolsão do vulcão
+    mini = orig("obj_3_Player Miniatures", (A_x, 0, 0), rot90=1)
+    col_x = mini.caixa[1][0]
+    rec = orig("obj_14_resources.stl", (A_x, 0, NIVEL))
+    vx, vy, vz = cfg["componentes_soltos"]["vulcao_placas"]["mm"]
+    itens.append(Item("PLACAS DO VULCÃO (deitadas, sem bandeja)", (vx, vy, vz), (A_x, 0, rec.caixa[1][2]),
+                      None, origem="componente"))
+
+    # coluna direita (0-52): maço das expansões, cartas pequenas em pé, caixa
+    larg_d = X_OK - col_x
+    exp = deitada("cartas-expansoes", [B("praia", "tracos", "tracos-secretos", "moral-dramatica")], NIVEL,
+                  "Procurando na Praia + Traços + Traços Secretos + Moral Dramática (maços empilhados)")
+    add(exp, (col_x, 0, 0))
+    par_pe = lay.get("parede_em_pe", 1.2)
+    peq = bandeja_em_pe("cartas-pequenas-em-pe", B("invencoes", "equipamento", "feras"), p, NIVEL, parede=par_pe,
+                        descricao="Cartas pequenas em pé: Invenções | Equipamento inicial | Feras (2 divisórias)")
+    add(peq, (col_x, exp.tamanho[1], 0))
+    div = divisoria("divisoria-pequenas", peq.tamanho[1] - 2 * par_pe, NIVEL - p.piso)
+    div.qtd = 2
+    pecas.append(div)
+    y_cx = exp.tamanho[1] + peq.tamanho[1]
+    add(tampada("caixa-dados-extras", larg_d, FAIXA - y_cx, NIVEL, [(1, [1])],
+                "Caixa com tampa: dados de madeira extras, especiais"), (col_x, y_cx, 0))
+    x_longa = rec.caixa[1][0]
+    add(tampada("caixa-longa", X_OK - x_longa, FAIXA, TOPO4 - NIVEL, [(1, [1, 1, 1])],
+                "Caixa longa com tampa: fichas de descoberta / marcadores"), (x_longa, 0, NIVEL))
+
+    # faixa do fundo
+    eve = deitada("cartas-eventos", [B("eventos"), []], NIVEL, "Eventos: compra | descarte")
+    mis = deitada("cartas-misterio", [B("misterio", "especiais")], NIVEL,
+                  "Mistério (compra); as cartas Especiais ficam por baixo")
+    add(eve, (0, FAIXA, 0), rot90=1)
+    add(mis, (eve.tamanho[1], FAIXA, 0), rot90=1)
+    passo = mis.tamanho[1]
+    an = bar["animais"]
+    terco = -(-an.qtd // 3)
+    for i, k in enumerate(("aventura-construir", "aventura-coletar", "aventura-explorar")):
+        parte = Baralho(f"animais ({k.split('-')[1]})", an.carta, terco, an.espessura_carta, an.sl)
+        add(deitada("cartas-" + k, [B(k) + [parte]], TOPO4 - NIVEL,
+                    "Aventura — " + k.split("-")[1].capitalize() + " (as de Animais podem ir misturadas)"),
+            (i * passo, FAIXA, NIVEL), rot90=1)
     return _fechar(cfg, p, pecas, itens, sl, bar)

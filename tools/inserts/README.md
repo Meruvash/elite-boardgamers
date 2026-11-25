@@ -41,29 +41,49 @@ mede os poços de carta direto nos STLs:
 O próprio autor do js500 diz que o projeto é para o **playmat de neoprene** e que o tabuleiro de papelão só cabe se a
 tampa ficar levantada. Por isso o original também não tem espaço para o tabuleiro.
 
-### A solução atual (versão 3): só o jogo base
+### A solução atual (versão 4): jogo base + Everything New, com miniaturas
 
-Desde 25/11/2026 o projeto é só o jogo base da Edição de Colecionador: você não tem Mistérios, Livro de Aventuras,
-Treasure Chest, torre nem miniaturas. Isso fica no JSON em `"extras": {"tem": false}`. Trocando para `true`, o gerador
-volta para a versão 2, que tem 104 mm de altura. Com as estimativas atuais da camada plana, a versão 2 **não fecha a
-tampa**; ela só serve se a caixa e a pilha medidas permitirem.
+O que você tem (25/11/2026): Edição de Colecionador com a pledge Everything New (18 miniaturas, todas as cartas
+extras, torre-vulcão desmontada). Não tem Livro de Aventuras nem Mistérios. No JSON isso fica como
+`"extras": {"miniaturas": true}`.
 
-- **Altura**: o insert tem **78 mm**, em dois níveis de 52 + 26 mm. Sobram ~56 mm para a camada plana numa caixa de
-  134 mm. O gerador também exige que feche no **pior caso de 127 mm** de altura interna: sobram 6 mm além dos 43 mm
-  estimados para tabuleiro + fichas + manual + 2 cadernos.
-- **Fundo**: 318,4 x 318,4 mm, o mesmo tamanho comprovado pelo js500.
-- **Cartas** (tamanho oficial da Portal, 58 x 88 e 44 x 68), com sleeve Bucaneiros PADRÃO e MINI EURO:
-  - grandes deitadas em bandejas que vão para a mesa (poço de 68,4 x 93,4 mm):
-    - Eventos, com compra e descarte na mesma peça;
-    - Mistério;
-    - 3 Aventuras;
-    - Especiais;
-    - 3 descartes vazios;
-  - pequenas em pé numa bandeja com 2 divisórias soltas.
-- **Componentes**: as 6 bandejas originais de componentes ficam lado a lado no fundo.
-  - O `obj_19_animals` é a bandeja removível que **encaixa dentro** do `obj_12`, como no js500.
-  - Não imprima as dos Mistérios nem a de miniaturas: `obj_3`, `obj_17` e `obj_20`.
-- **Caixas com tampa** completam o topo. A de 122,8 x 246 mm fica livre para os extras no futuro.
+**Medidas usadas:**
+
+| Medida | Valor | Origem |
+|---|---|---|
+| Fundo da caixa | 318,4 x 318,4 mm | comprovado pelo js500; a bandeja de fábrica mede ~321 mm na foto |
+| Altura interna | 127 mm (o gerador exige que feche também com 124) | foto com A4 + carta: 122–128 mm |
+| Sleeves | Bucaneiros **CHIMERA** (57,5 x 89) nas grandes, **MINI EURO** (45 x 68) nas pequenas | fotos dos pacotes |
+| Cartas | 58 x 88 e 44 x 68 | loja oficial da Portal |
+| Tabuleiro dobrado | ~277 x 239 mm, ~12 mm de espessura | foto com A4; espessura estimada |
+| Bandeja de miniaturas | a original `obj_3` (Hooper) | confirmada pelo usuário |
+
+**Como resolvi a altura.** As três bandejas originais de 52 mm não cabem lado a lado. Em vez de empilhar uma inteira
+sobre a outra (104 mm), separei as três bandejas finas de recursos, dados e fichas:
+
+- **Coluna da esquerda:** personagens/peças/abrigo (as fichas de personagem de 3 camadas ficam aqui) + fichas
+  (obj_16) + dados (obj_15) = 83 mm, mais uma caixa estreita com tampa ao lado.
+- **Coluna do meio:** miniaturas (obj_3, 52 mm) + recursos (obj_14) por cima, e sobre eles um **bolsão** onde as
+  placas do vulcão ficam deitadas, sem bandeja. Total: 86 mm.
+- **Coluna da direita, com as cartas:**
+  - no fundo: Procurando na Praia, Traços, Traços Secretos e Moral Dramática; cartas pequenas em pé, com 2
+    divisórias; caixa de dados extras;
+  - por cima: caixa longa com tampa.
+- **Faixa do fundo, com as cartas de mesa:**
+  - embaixo: Eventos (compra e descarte) e Mistério (com as Especiais por baixo);
+  - em cima: as 3 Aventuras, com as cartas de Animais misturadas, como o js500 sugere.
+- **Por cima de tudo (35 mm):** tabuleiro, fichas de cenário, manual e os 2 guias.
+
+**Resultado:** o insert tem **86 mm** de altura e a camada plana estimada tem 35 mm. Sobram 6 mm numa caixa de 127 e
+3 mm numa de 124.
+
+**O que ainda é estimado:**
+- a espessura da pilha de cima;
+- o tamanho das placas do vulcão;
+- a quantidade de cartas das expansões.
+
+Se a pilha real passar de ~38 mm, o gerador acusa. A versão 3 (sem miniaturas, 78 mm) continua disponível com
+`"miniaturas": false`.
 
 ![montagem](saida/robinson-crusoe-ce/montagem.png)
 
@@ -87,9 +107,11 @@ Depois rode `gerar.py` de novo. Se algo deixar de caber, ele diz o que e por qua
 - **Antes de tudo:** imprima as peças de `saida/teste-encaixe/` (`python3 tools/inserts/gerar_teste.py`). São um poço
   deitado, uma bandeja em pé, um poço de carta pequena e uma tampa, com as mesmas folgas do insert. Confira o encaixe
   com o seu sleeve e ajuste `Params` se precisar.
-- Os **19 STLs** de `saida/robinson-crusoe-ce/`. A `divisoria-pequenas` sai em **2 cópias**; o resto, 1 de cada (as
+- Os **14 STLs** de `saida/robinson-crusoe-ce/`. A `divisoria-pequenas` sai em **2 cópias**; o resto, 1 de cada (as
   quantidades estão no `relatorio.json`).
-- As 7 bandejas originais de componentes: `obj_11` a `obj_16` e `obj_19` (que vai dentro do `obj_12`).
+- As 8 bandejas originais: `obj_3` (miniaturas), `obj_11` a `obj_16` e `obj_19` (que vai dentro do `obj_12`). Não
+  imprima as originais que tinham cartas (`obj_1`, `obj_2`, `obj_4`, `obj_5`, `obj_6`, `obj_8`, `obj_9`,
+  `obj_10`, `obj_21`) nem as dos Mistérios (`obj_17`, `obj_20`).
 - PLA ou PETG, camada de 0,2 mm, sem suporte, com a boca para cima. As bandejas em pé têm parede de 1,2 mm: use 3
   perímetros.
 

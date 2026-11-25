@@ -17,19 +17,15 @@
   },
   "camada_plana": {
     "status": "estimado",
-    "nota": "Tudo que vai deitado por cima do insert. Valores estimados; troque pelos medidos (dá para medir com cartão de banco: 85,6 x 54 x 0,76 mm).",
+    "nota": "Versão 4: fichas de personagem de 3 camadas vão na bandeja original de personagens (obj_11, como no js500); placas do vulcão vão num bolsão dentro do insert. Valores estimados.",
     "itens": [
       {
         "nome": "Tabuleiro dobrado",
         "espessura": 12.0,
-        "nota": "Dobrado: ~277 x 239 mm medido em foto com A4 (25/11/2026). Espessura ainda estimada (6 camadas x ~2 mm)."
+        "nota": "~277 x 239 mm (foto com A4); espessura estimada"
       },
       {
-        "nome": "4 fichas de cenário",
-        "espessura": 8.0
-      },
-      {
-        "nome": "4 fichas de personagem",
+        "nome": "Fichas de cenário",
         "espessura": 8.0
       },
       {
@@ -37,14 +33,8 @@
         "espessura": 4.0
       },
       {
-        "nome": "2 cadernos da Campanha Introdutória (espiral)",
-        "espessura": 10.0,
-        "nota": "listados na Rebel.pl ('2 zeszyty Kampanii Wprowadzającej'); fotos do js500 mostram que vão deitados por cima"
-      },
-      {
-        "nome": "Torre de dados vulcão, desmontada (placas)",
-        "espessura": 8.0,
-        "nota": "Usuário (25/11/2026): veio desmontada e vai ficar desmontada, deitada com o tabuleiro. Estimativa: ~4 placas x ~2 mm; medir na foto de lado da pilha."
+        "nome": "2 Guias da Campanha Introdutória (espiral)",
+        "espessura": 10.0
       }
     ],
     "folga_tampa": 1.0,
@@ -267,6 +257,18 @@
   },
   "extras": {
     "tem": false,
-    "nota": "Usuário (25/11/2026): não tem os extras atualmente (Mistérios, Livro de Aventuras, Treasure Chest, torre-vulcão, miniaturas). Com false o gerador monta a versão só do jogo base; true volta à versão completa (v2). Atualização 25/11/2026: tem as 18 miniaturas (pledge Everything New, sem Livro de Aventuras) e a torre-vulcão, guardada desmontada. Usuário confirmou (25/11/2026): vieram todas as cartas da Everything New."
+    "nota": "Usuário (25/11/2026): não tem os extras atualmente (Mistérios, Livro de Aventuras, Treasure Chest, torre-vulcão, miniaturas). Com false o gerador monta a versão só do jogo base; true volta à versão completa (v2). Atualização 25/11/2026: tem as 18 miniaturas (pledge Everything New, sem Livro de Aventuras) e a torre-vulcão, guardada desmontada. Usuário confirmou (25/11/2026): vieram todas as cartas da Everything New.",
+    "miniaturas": true,
+    "misterios": false
+  },
+  "componentes_soltos": {
+    "vulcao_placas": {
+      "mm": [
+        120,
+        125,
+        14
+      ],
+      "nota": "6-7 placas contadas na foto de 25/11/2026, ~2 mm cada; tamanho estimado pela placa de lava (~100 x 120)"
+    }
   }
 }

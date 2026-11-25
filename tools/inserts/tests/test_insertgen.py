@@ -142,8 +142,8 @@ class TestMontagem(unittest.TestCase):
     def test_projeto_rc_valido(self):
         cfg = rc.carregar()
         pecas, itens, reservas, ctx = rc.montar(cfg)
-        self.assertEqual(validar_montagem((320, 320, 134), itens, reservas), [])
-        self.assertLessEqual(ctx["topo_insert"], 134 - ctx["espessura_plana"])
+        self.assertEqual(validar_montagem((320, 320, 127), itens, reservas), [])
+        self.assertLessEqual(ctx["topo_insert"], 127 - ctx["espessura_plana"])
         for pc in pecas:
             self.assertEqual(validar_peca(pc)[0], [], pc.nome)
 
@@ -157,9 +157,22 @@ class TestMontagem(unittest.TestCase):
         self.assertEqual(ctx["topo_insert"], 104)
 
     def test_versao_base_mais_baixa(self):
-        _, itens, reservas, ctx = rc.montar(rc.carregar())
+        cfg = rc.carregar()
+        cfg["extras"]["miniaturas"] = False
+        cfg["camada_plana"]["itens"] = [{"nome": "tabuleiro", "espessura": 12.0}]
+        _, itens, reservas, ctx = rc.montar(cfg)
         self.assertEqual(ctx["topo_insert"], 78)
         self.assertEqual(validar_montagem((320, 320, 134), itens, reservas), [])
+
+    def test_versao_4_com_miniaturas(self):
+        cfg = rc.carregar()
+        pecas, itens, reservas, ctx = rc.montar(cfg)
+        self.assertEqual(ctx["topo_insert"], 86)
+        self.assertTrue(any("Miniatures" in it.nome for it in itens))
+        self.assertTrue(any("VULCÃO" in it.nome for it in itens))
+        self.assertEqual(validar_montagem((320, 320, 127), itens, reservas), [])
+        for pc in pecas:
+            self.assertEqual(validar_peca(pc)[0], [], pc.nome)
 
     def test_tabuleiro_grosso_demais_falha(self):
         cfg = rc.carregar()
