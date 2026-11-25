@@ -545,11 +545,22 @@
    "girada_90": false
   }
  ],
- "erros_montagem": [],
+ "erros_montagem": [
+  "cartas-aventura-construir invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)",
+  "cartas-aventura-coletar invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)",
+  "cartas-aventura-explorar invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)",
+  "cartas-especiais invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)",
+  "cartas-descarte-aventura invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)",
+  "cartas-descarte-misterio invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)",
+  "cartas-descarte-extra invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)",
+  "caixa-sobre-personagens invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)",
+  "caixa-sobre-recursos invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)",
+  "caixa-longa invade o espaço reservado de tabuleiro + camada plana (caixa de 127 mm)"
+ ],
  "topo_insert": 78.0,
- "espessura_plana": 43.0,
+ "espessura_plana": 51.0,
  "espaco_tabuleiro": 56.0,
- "folga_sobrando": 13.0,
+ "folga_sobrando": 5.0,
  "sleeves": {
   "grande": {
    "chave": "chimera",

@@ -40,6 +40,11 @@
         "nome": "2 cadernos da Campanha Introdutória (espiral)",
         "espessura": 10.0,
         "nota": "listados na Rebel.pl ('2 zeszyty Kampanii Wprowadzającej'); fotos do js500 mostram que vão deitados por cima"
+      },
+      {
+        "nome": "Torre de dados vulcão, desmontada (placas)",
+        "espessura": 8.0,
+        "nota": "Usuário (25/11/2026): veio desmontada e vai ficar desmontada, deitada com o tabuleiro. Estimativa: ~4 placas x ~2 mm; medir na foto de lado da pilha."
       }
     ],
     "folga_tampa": 1.0,
@@ -237,6 +242,6 @@
   },
   "extras": {
     "tem": false,
-    "nota": "Usuário (25/11/2026): não tem os extras atualmente (Mistérios, Livro de Aventuras, Treasure Chest, torre-vulcão, miniaturas). Com false o gerador monta a versão só do jogo base; true volta à versão completa (v2)."
+    "nota": "Usuário (25/11/2026): não tem os extras atualmente (Mistérios, Livro de Aventuras, Treasure Chest, torre-vulcão, miniaturas). Com false o gerador monta a versão só do jogo base; true volta à versão completa (v2). Atualização 25/11/2026: tem as 18 miniaturas (pledge Everything New, sem Livro de Aventuras) e a torre-vulcão, guardada desmontada."
   }
 }
