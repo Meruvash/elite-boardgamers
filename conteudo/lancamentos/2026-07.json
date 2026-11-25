@@ -2,7 +2,7 @@
  "mes": "2026-07",
  "label": "Julho de 2026",
  "titulo_previstos": "Previstos para julho",
- "total": 140,
+ "total": 141,
  "lancados": [
   {
    "id_jogo": 65241,
@@ -660,6 +660,27 @@
    "nome": "Centavos Macabros: Penny Dreadful RPG",
    "url": "https://ludopedia.com.br/jogo/centavos-macabros-penny-dreadful-rpg",
    "capa": "https://storage.googleapis.com/ludopedia-capas/87944_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 2,
+   "editora": {
+    "id": 3183,
+    "nome": "New Order Editora",
+    "url": "https://ludopedia.com.br/editora/3183/New Order Editora"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 72475,
+   "nome": "Condenados ao Poder",
+   "url": "https://ludopedia.com.br/jogo/condenados-ao-poder",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/72475_t.jpg",
    "fl_jogo_base": 1,
    "fl_tipo": 2,
    "editora": {

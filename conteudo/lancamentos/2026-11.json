@@ -2,7 +2,7 @@
  "mes": "2026-11",
  "label": "Novembro de 2026",
  "titulo_previstos": "Previstos para novembro",
- "total": 31,
+ "total": 33,
  "lancados": [
   {
    "id_jogo": 70028,
@@ -89,6 +89,27 @@
    "pode_criar_topico": true
   },
   {
+   "id_jogo": 87034,
+   "nome": "Cubaneo",
+   "url": "https://ludopedia.com.br/jogo/cubaneo",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/87034_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 6011,
+    "nome": "Ludofun",
+    "url": "https://ludopedia.com.br/editora/6011/Ludofun"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
    "id_jogo": 84451,
    "nome": "Fallout RPG: Cartas de Vantagem",
    "url": "https://ludopedia.com.br/jogo/fallout-the-roleplaying-game-perk-cards",
@@ -141,6 +162,27 @@
     "id": 2650,
     "nome": "RetroPunk Publicações",
     "url": "https://ludopedia.com.br/editora/2650/RetroPunk Publicações"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 89923,
+   "nome": "Kapitalistate",
+   "url": "https://ludopedia.com.br/jogo/kapitalistate",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89923_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 2,
+   "editora": {
+    "id": 86,
+    "nome": "Independente",
+    "url": "https://ludopedia.com.br/editora/86/Independente"
    },
    "status": {
     "id": 1,

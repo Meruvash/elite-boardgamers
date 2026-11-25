@@ -1,0 +1,111 @@
+{
+ "slug": "meeplebr-pre-venda-12-rios-ahoy-presas-fortuna",
+ "data": "2026-11-25",
+ "categoria": "Lançamento",
+ "jogo": "12 Rios",
+ "editora": "MeepleBR",
+ "titulo": "MeepleBR abre pré-venda de 12 Rios e da expansão Ahoy: Presas & Fortuna",
+ "titulo_seo": "MeepleBR: pré-venda de 12 Rios e Ahoy: Presas & Fortuna",
+ "selo": "Informativo",
+ "lide": "A MeepleBR colocou em pré-venda na loja da editora 12 Rios, jogo de Romain Caterdjian para 2 a 4 pessoas, por R$ 399,90, e Ahoy: Presas & Fortuna, expansão do jogo de piratas Ahoy, por R$ 199,90, segundo a loja em 25/11/2026. Os dois entraram no nosso calendário de lançamentos com previsão para dezembro de 2026.",
+ "por_que_importa": "Ahoy ganha a segunda expansão em português antes de muita gente terminar de entender quem afunda quem no jogo base. É bom sinal: editora só traduz expansão de jogo que vendeu. Já 12 Rios chega como aposta, com caixa de R$ 400 e quase ninguém por aqui tendo jogado. Coragem de editora, paciência de comprador.",
+ "numeros": [
+  [
+   "R$ 399,90",
+   "12 Rios na loja da MeepleBR em 25/11/2026 (R$ 379,90 no Pix)",
+   "MeepleBR"
+  ],
+  [
+   "R$ 199,90",
+   "Ahoy: Presas & Fortuna na loja da MeepleBR em 25/11/2026 (R$ 189,90 no Pix)",
+   "MeepleBR"
+  ],
+  [
+   "2 a 4",
+   "jogadores em 12 Rios, partidas de 45 a 75 minutos",
+   "MeepleBR"
+  ],
+  [
+   "dezembro de 2026",
+   "previsão dos dois lançamentos",
+   "Ludopedia, calendário de lançamentos"
+  ]
+ ],
+ "corpo": [
+  "12 Rios, de Romain Caterdjian, com arte de Dofinn, é um jogo de 2 a 4 pessoas que mistura alocação de trabalhadores, coleção de conjuntos e gerenciamento de mão, com partidas de 45 a 75 minutos, segundo a ficha da MeepleBR.",
+  "Presas & Fortuna é uma expansão de Ahoy, jogo de piratas assimétrico de Greg Loring-Albright publicado pela MeepleBR no Brasil. Ela traz facções novas, como o Leviatã, que pode devorar tripulantes do mercado e despedaçar navios. Na mesma loja, a outra expansão, Rivais & Renegados, também custa R$ 199,90, e a editora vende um combo com a coleção de Ahoy por R$ 979,90."
+ ],
+ "no_brasil": "As duas caixas são edições em português da MeepleBR, vendidas na loja da própria editora em 25/11/2026: 12 Rios por R$ 399,90 e Ahoy: Presas & Fortuna por R$ 199,90, com desconto no Pix. A previsão de chegada é dezembro de 2026, segundo o nosso calendário de lançamentos. Presas & Fortuna exige o jogo base Ahoy.",
+ "critica": [],
+ "para_quem": [
+  "Já tem Ahoy na estante e cansou de ver as mesmas duas facções brigando pelo mesmo mar",
+  "Gosta de alocação de trabalhadores que cabe numa noite e não exige planilha para contar pontos"
+ ],
+ "nao_e_para": [
+  "Ainda não jogou Ahoy: a expansão não roda sem o jogo base, e comprar as três caixas de uma vez é coragem demais",
+  "Quer ler crítica antes de gastar R$ 400: a gente ainda não jogou 12 Rios"
+ ],
+ "veredito": "Informativo. Para quem já gosta de Ahoy, Presas & Fortuna é a compra mais segura das duas: preço de expansão e jogo já testado em casa. 12 Rios a gente prefere ver na mesa de alguém antes, porque R$ 400 é caro para descobrir que o rio não leva a lugar nenhum.",
+ "fontes": [
+  {
+   "nome": "MeepleBR: 12 Rios",
+   "url": "https://www.lojameeplebrjogos.com.br/12-rios",
+   "data": "25/11/2026"
+  },
+  {
+   "nome": "MeepleBR: Ahoy: Presas & Fortuna",
+   "url": "https://www.lojameeplebrjogos.com.br/ahoy-presas-fortuna",
+   "data": "25/11/2026"
+  },
+  {
+   "nome": "MeepleBR: loja da editora",
+   "url": "https://www.lojameeplebrjogos.com.br/",
+   "data": "25/11/2026"
+  },
+  {
+   "nome": "Ludopedia: calendário de lançamentos de dezembro de 2026",
+   "url": "https://ludopedia.com.br/lancamentos",
+   "data": "25/11/2026"
+  }
+ ],
+ "imagem": {
+  "arquivo": "capas/40793.jpg",
+  "credito": "Capa via Ludopedia"
+ },
+ "ids_ludopedia": [
+  40793,
+  80140
+ ],
+ "jogos": [],
+ "crivo": {
+  "pontos": 6,
+  "criterios": [
+   "Pré-venda confirmada no Brasil (4)",
+   "Confirmada por duas fontes: loja da MeepleBR e nosso calendário de lançamentos (2)"
+  ]
+ },
+ "verificacao_nacional": [
+  {
+   "jogo": "12 Rios",
+   "resultado": "edição nacional",
+   "data": "25/11/2026",
+   "fontes": [
+    "https://www.lojameeplebrjogos.com.br/12-rios",
+    "https://www.comparajogos.com.br/item/12-rivers"
+   ],
+   "obs": "pré-venda na loja da MeepleBR"
+  },
+  {
+   "jogo": "Ahoy: Presas & Fortuna",
+   "resultado": "edição nacional",
+   "data": "25/11/2026",
+   "fontes": [
+    "https://www.lojameeplebrjogos.com.br/ahoy-presas-fortuna",
+    "https://ludopedia.com.br/jogo/ahoy-fang-fortune"
+   ],
+   "obs": "pré-venda na loja da MeepleBR"
+  }
+ ],
+ "manchete": true,
+ "publicado_em": "2026-11-25T09:49:33+00:00"
+}
