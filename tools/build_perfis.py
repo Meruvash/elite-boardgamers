@@ -43,7 +43,7 @@ def cartao(j, pre):
         c = resenha(j["resenha"])
         capa = ROOT / c["slug"] / "capa.jpg"
         return (f'<li><a href="{pre}{c["slug"]}/"><img src="{pre}{c["slug"]}/capa.jpg{versao(capa)}" width="96" height="96" alt="" loading="lazy">'
-                f'<div><h3>{e(nome_br(c))}</h3><p class="tg">{e(c["tagline"])}</p><ul class="fx">{fatos(derivar(c), c)}</ul>'
+                f'<div><h3>{e(nome_br(c))}</h3><p class="tg">{e(j.get("porque") or c["tagline"])}</p><ul class="fx">{fatos(derivar(c), c)}</ul>'
                 f'<p class="sem-res" style="color:var(--link)">Ler a nossa resenha →</p></div></a></li>')
     capa = ROOT / "img" / "perfis" / f'{j["ludopedia"]}.jpg'
     img = (f'<img src="{pre}img/perfis/{j["ludopedia"]}.jpg{versao(capa)}" width="96" height="96" alt="" loading="lazy">'
