@@ -259,3 +259,23 @@ Folded Space, e-Raptor, spiele4us e da resenha do Coop Gestalt.
   powiększone pudełko". A medida interna não foi publicada.
 - **Livros**: o Coop Gestalt só diz que o livro da campanha introdutória "flops over the edges of the chair" (é
   grande); nenhuma medida.
+
+## Manual oficial da Edição de Colecionador (RC_CE_rules.pdf, lido em 25/11/2026)
+
+**Materiais do jogo base**, da página "Game Materials":
+- **Cartas:** 73 Evento, 52 Mistério (13 armadilha, 26 tesouro, 13 criatura), 3 Naufrágio, 90 Aventura (30 Construir,
+  30 Coletar, 30 Explorar), 30 Invenção, 1 "Arrumar Acampamento", 8 Equipamento inicial, 16 Fera, cartas de Sexta-feira
+  e do Cão.
+- **Tiles e fichas:** 11 tiles de Ilha, 4 fichas de Cenário (frente e verso), 4 fichas de Personagem (lado masculino e
+  feminino).
+- **Dados:** 9 dados de ação e 3 dados de clima.
+- **Marcadores e tokens:** 22 Descoberta, 20 Determinação, 22 adicionais, 12 Ferimento especial, 6 Número, marcadores de
+  recurso de madeira, peões.
+- **Miniaturas** (apêndice): 16 de personagem (2 por representação), 1 Sexta-feira, 1 Cão e 8 bases de Líder.
+
+**Stretch goals da Gamefound**, segundo a Dice Tower e a The Game Steward:
+- **Miniaturas:** acampamento modular (8 peças), companheiros cavalo, papagaio e gato, e 10 miniaturas de itens.
+- **Cartas:** +30 de Aventura, +10 de Evento e Moral Dramática.
+- **Tiles:** 3 tiles de clima e caverna (1 tile e 5 fichas).
+- **Exclusivos de campanha:** torre-vulcão, marcador de 1º jogador de madeira, marcador de rodada e fichas de
+  personagem de 3 camadas.
