@@ -1,0 +1,92 @@
+{
+ "titulo": "Que tipo de jogador você é? Os jogos certos para cada perfil",
+ "titulo_seo": "Jogos de tabuleiro para cada perfil de jogador",
+ "lide": "Doze perfis de jogador de tabuleiro, do conquistador ao jogador de galera, e três jogos para ficar de olho em cada um. Quando o jogo tem resenha nossa, o cartão leva até ela; nos outros, mostramos a ficha básica para você começar a pesquisa.",
+ "atualizado": "2026-11-25",
+ "perfis": [
+  {"id": "conquistador", "emoji": "⚔️", "nome": "O conquistador",
+   "texto": "Mapa grande, exército na mão e o prazer de expulsar alguém da região que ele jurava ser dele. Para quem acha que negociar é só a fase antes da guerra.",
+   "jogos": [
+    {"ludopedia": 17363, "nome": "Eclipse: Segundo Amanhecer", "frase": "Exploração e guerra espacial para até 6 pessoas, em partidas de cerca de três horas."},
+    {"resenha": "arcs"},
+    {"ludopedia": 7168, "nome": "Blood Rage", "frase": "Clãs vikings disputam territórios com miniaturas e cartas escolhidas em draft, de Eric M. Lang."}
+   ]},
+  {"id": "estrategista", "emoji": "🧠", "nome": "O estrategista",
+   "texto": "Planeja cinco rodadas à frente e sofre quando o plano dá certo cedo demais. Gosta de economia, de rede e de perceber o erro do adversário antes dele.",
+   "jogos": [
+    {"resenha": "brass-birmingham"},
+    {"ludopedia": 18993, "nome": "Barrage", "frase": "Construção de represas e disputa pela água, de Simone Luciani e Tommaso Battista, para 1 a 4 pessoas."},
+    {"resenha": "hegemony"}
+   ]},
+  {"id": "dados", "emoji": "🎲", "nome": "O apaixonado por dados",
+   "texto": "Rolar é a melhor parte, mas só se der para fazer algo inteligente com o resultado. Para quem prefere administrar a sorte a reclamar dela.",
+   "jogos": [
+    {"ludopedia": 11168, "nome": "Sagrada", "frase": "Cada dado vira um pedaço de vitral, com regras de cor e número: partidas de cerca de 40 minutos."},
+    {"ludopedia": 35666, "nome": "Tiletum", "frase": "Os dados escolhidos dão recurso e ação ao mesmo tempo, de Simone Luciani e Daniele Tascini."},
+    {"ludopedia": 26359, "nome": "Terraforming Mars: o Jogo de Dados", "frase": "A transformação de Marte em versão de dados, de 1 a 4 jogadores, em cerca de 40 minutos."}
+   ]},
+  {"id": "aventureiro", "emoji": "🐉", "nome": "O aventureiro",
+   "texto": "Quer um mapa para explorar, um herói que cresce e uma história para contar depois. A vitória importa, mas a jornada importa mais.",
+   "jogos": [
+    {"ludopedia": 17559, "nome": "Mage Knight", "frase": "Exploração com construção de baralho, de Vlaada Chvátil: famoso pelo modo solo e pela curva de aprendizado."},
+    {"resenha": "the-witcher-old-world"},
+    {"ludopedia": 48357, "nome": "Dragon Eclipse", "frase": "Aventura para 1 ou 2 pessoas em que você captura e treina criaturas, de 2024."}
+   ]},
+  {"id": "sofredor", "emoji": "💀", "nome": "O psicopata (ama sofrer)",
+   "texto": "Perder por pouco é a melhor parte. Se o jogo não ameaça matar todo mundo de frio, de fome ou de tristeza, não é para ele.",
+   "jogos": [
+    {"ludopedia": 26078, "nome": "Frostpunk: The Board Game", "frase": "Adaptação do videogame: manter uma cidade viva no frio extremo, de 1 a 4 jogadores."},
+    {"ludopedia": 366, "nome": "Robinson Crusoe", "frase": "Sobrevivência cooperativa numa ilha, de Ignacy Trzewiczek, conhecido por ser cruel com quem joga."},
+    {"ludopedia": 10595, "nome": "This War of Mine: The Board Game", "frase": "Civis tentando sobreviver numa cidade em guerra, adaptado do videogame, com narrativa em livro."}
+   ]},
+  {"id": "solo", "emoji": "👤", "nome": "O jogador solo",
+   "texto": "A mesa é dele e o adversário é o próprio jogo. Quer modo solo de verdade, não uma regra de rodapé que alguém esqueceu de testar.",
+   "jogos": [
+    {"ludopedia": 10959, "nome": "Spirit Island", "frase": "Espíritos defendem uma ilha dos colonizadores: cooperativo que funciona muito bem sozinho, de 1 a 4."},
+    {"ludopedia": 66426, "nome": "Unstoppable", "frase": "Construção de baralho para 1 ou 2 pessoas, de John D. Clair, lançado em 2025."},
+    {"ludopedia": 17559, "nome": "Mage Knight", "frase": "Um dos solos mais citados do hobby: longo, difícil e cheio de decisões."}
+   ]},
+  {"id": "hibrido", "emoji": "🔥", "nome": "O jogador híbrido",
+   "texto": "Quer o motor do eurogame e a briga do jogo temático na mesma caixa. Colocar trabalhador é bom; colocar trabalhador e depois atacar é melhor.",
+   "jogos": [
+    {"ludopedia": 56534, "nome": "Dune: Imperium – Uprising", "frase": "Versão independente de Dune: Imperium, com construção de baralho e colocação de agentes, até 6 jogadores.", "relacionada": "dune-imperium"},
+    {"ludopedia": 41546, "nome": "Andromeda's Edge", "frase": "Exploração espacial com motor de recursos, de Luke e Maximus Laurie, em partidas longas."},
+    {"ludopedia": 9538, "nome": "Anachrony", "frase": "Colocação de trabalhadores com viagem no tempo, de Dávid Turczi e Richard Amann."}
+   ]},
+  {"id": "combos", "emoji": "🏗️", "nome": "O engenheiro de combos",
+   "texto": "Joga uma carta, que dispara outra, que dispara mais três. O jogo é bom quando o turno final parece uma fábrica funcionando sozinha.",
+   "jogos": [
+    {"resenha": "ark-nova"},
+    {"resenha": "earth"},
+    {"ludopedia": 57141, "nome": "Ratos de Wistar", "frase": "Ratos constroem uma colônia em colocação de trabalhadores, de Simone Luciani e Danilo Sabia, de 1 a 4 jogadores."}
+   ]},
+  {"id": "casual", "emoji": "👨‍👩‍👧‍👦", "nome": "O jogador casual",
+   "texto": "Quer explicar em cinco minutos, jogar com a família e terminar antes do sono. Bonito na mesa conta pontos.",
+   "jogos": [
+    {"resenha": "harmonies"},
+    {"resenha": "azul"},
+    {"ludopedia": 19876, "nome": "Camel Up", "frase": "Apostas numa corrida de camelos que se empilham, de 3 a 8 pessoas, vencedor do Spiel des Jahres 2014."}
+   ]},
+  {"id": "deckbuilding", "emoji": "🃏", "nome": "O fã de deckbuilding",
+   "texto": "Começa com um baralho fraco e termina com uma máquina. O prazer está em cortar carta ruim e comprar a carta certa.",
+   "jogos": [
+    {"ludopedia": 37012, "nome": "Clank!: Catacombs", "frase": "Construção de baralho numa masmorra que se monta com peças, de Paul Dennen."},
+    {"ludopedia": 66426, "nome": "Unstoppable", "frase": "Construção de baralho de John D. Clair para 1 ou 2 pessoas, de 2025."},
+    {"ludopedia": 10425, "nome": "Aeon's End", "frase": "Construção de baralho cooperativa em que o baralho não é embaralhado: a ordem do descarte é estratégia."}
+   ]},
+  {"id": "galera", "emoji": "🎉", "nome": "O jogador de galera",
+   "texto": "Mesa cheia, regra curta e alguém acusando alguém de mentir. Se não tem gritaria, não foi uma boa partida.",
+   "jogos": [
+    {"ludopedia": 2060, "nome": "Bang! The Dice Game", "frase": "Papéis secretos e duelos com dados, de 3 a 8 jogadores, em cerca de 15 minutos."},
+    {"ludopedia": 780, "nome": "The Resistance", "frase": "Dedução social para 5 a 10 pessoas: espiões infiltrados sabotam as missões do grupo."},
+    {"ludopedia": 306, "nome": "King of Tokyo", "frase": "Monstros gigantes disputam Tóquio com dados, de Richard Garfield, de 2 a 6 jogadores."}
+   ]},
+  {"id": "colecionador", "emoji": "💎", "nome": "O colecionador premium",
+   "texto": "Componente bonito não é detalhe, é motivo. Quer a caixa que impressiona fechada e aberta na mesa.",
+   "jogos": [
+    {"ludopedia": 36265, "nome": "The Castles of Burgundy: Special Edition", "frase": "Edição de luxo do clássico de Stefan Feld, lançada em 2023."},
+    {"ludopedia": 17363, "nome": "Eclipse: Segundo Amanhecer", "frase": "Miniaturas de naves e tabuleiro modular numa caixa que ocupa a mesa inteira."},
+    {"ludopedia": 41546, "nome": "Andromeda's Edge", "frase": "Tem edição deluxe com componentes aprimorados, além da edição comum."}
+   ]}
+ ]
+}
