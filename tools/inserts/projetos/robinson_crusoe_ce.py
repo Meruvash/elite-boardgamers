@@ -36,8 +36,8 @@ def carregar(config=CONFIG):
         return json.load(fh)
 
 
-def montar(cfg, p=None):
-    """Devolve (pecas_geradas, itens_na_caixa, reservas, contexto)."""
+def _montar_completo(cfg, p=None):
+    """Versão 2 (com extras: Mistérios, miniaturas). Devolve (pecas, itens, reservas, contexto)."""
     p = p or Params()
     lay = cfg.get("layout", {})
     cat = carregar_catalogo()
@@ -152,12 +152,129 @@ def montar(cfg, p=None):
     add(d1, (2 * passo, FAIXA, NIVEL), rot90=1)
     add(d2, (2 * passo, FAIXA, NIVEL + d1.tamanho[2]), rot90=1)
 
-    # ---------- camada plana (tabuleiro) ----------
+    return _fechar(cfg, p, pecas, itens, sl, bar)
+
+
+def _fechar(cfg, p, pecas, itens, sl, bar):
     X, Y, Z = (cfg["caixa_interna"][k] for k in "xyz")
     cp = cfg["camada_plana"]
     espessura_plana = sum(i["espessura"] for i in cp["itens"]) + cp["folga_tampa"]
     topo = max(it.caixa[1][2] for it in itens)
     reservas = [("tabuleiro + camada plana", ((0, 0, Z - espessura_plana), (X, Y, Z)))]
-    ctx = {"topo_insert": topo, "espessura_plana": espessura_plana, "espaco_tabuleiro": Z - topo,
+    zmin = cfg["caixa_interna"].get("z_minimo_provavel")
+    if zmin:  # a tampa precisa fechar também no pior caso de altura da caixa
+        reservas.append((f"tabuleiro + camada plana (caixa de {zmin:.0f} mm)",
+                         ((0, 0, zmin - espessura_plana), (X, Y, zmin))))
+    ctx = {"z_minimo": zmin, "folga_pior_caso": (zmin - topo - espessura_plana) if zmin else None,"topo_insert": topo, "espessura_plana": espessura_plana, "espaco_tabuleiro": Z - topo,
            "folga_sobrando": Z - topo - espessura_plana, "sleeves": sl, "baralhos": bar, "params": p}
     return pecas, itens, reservas, ctx
+
+
+def montar(cfg, p=None):
+    """Escolhe a versão pelo conteúdo da caixa: só o jogo base (padrão) ou com extras."""
+    if cfg.get("extras", {}).get("tem", False):
+        return _montar_completo(cfg, p)
+    return _montar_base(cfg, p)
+
+
+def _montar_base(cfg, p=None):
+    """Versão 3: só o jogo base da Edição de Colecionador (sem Mistérios, miniaturas, Treasure Chest,
+    Livro de Aventuras). Insert mais baixo (78 mm) para sobrar altura ao tabuleiro e aos cadernos.
+
+    Planta (Y 0-246 = peças originais de 246 mm; Y 246-318,4 = faixa do fundo):
+      X 0-151,2    pilha original personagens/peças/abrigo (0-51) + bandejas de carta de mesa (51-78)
+      X 151,2-274  pilha original recursos/dados/fichas (0-52) + caixa com tampa (52-78)
+      X 274-318,4  cartas pequenas em pé (0-52) + caixa com tampa (0-52) + caixa longa (52-78)
+      Faixa do fundo: Eventos compra|descarte e Mistério (0-52), 3 Aventuras (52-78)
+    """
+    p = p or Params()
+    lay = cfg.get("layout", {})
+    cat = carregar_catalogo()
+    sl = {t: sleeve_envelope(cat, d["usar"], d["compativel_com"]) for t, d in cfg["sleeves"].items()}
+    bar = {}
+    for k, d in cfg["baralhos"].items():
+        c = cfg["cartas"][d["tipo"]]
+        bar[k] = Baralho(k, c["tamanho"], d["qtd"], c["espessura"], sl[d["tipo"]])
+    B = lambda *ks: [bar[k] for k in ks]  # noqa: E731
+    gc = cfg["cartas"]["grande"]
+    ref_g = Baralho("ref", gc["tamanho"], 0, gc["espessura"], sl["grande"])
+    orig_t = cfg["originais_reaproveitados"]
+    MEIO = NIVEL / 2
+    topo = NIVEL + MEIO  # 78
+
+    pecas, itens = [], []
+
+    def add(peca, pos, rot90=0):
+        if peca not in pecas:
+            pecas.append(peca)
+        it = Item(peca.nome, peca.tamanho, pos, peca.solido, rot90=rot90)
+        itens.append(it)
+        return it
+
+    def orig(nome, pos):
+        it = Item("ORIGINAL " + nome, orig_t[nome], pos, None, origem="original")
+        itens.append(it)
+        return it
+
+    def tampada(nome, X, Y, Z, colunas, desc):
+        t, tp = bandeja_fichas(nome, X, Y, Z, colunas, p, descricao=desc)
+        pecas.append(tp)
+        return t
+
+    def deitada(nome, pocos, alt, desc):
+        return bandeja_baralhos(nome, pocos, p, altura=alt, descricao=desc, ref=ref_g)
+
+    # pilhas originais lado a lado no fundo
+    z = 0.0
+    for n in ("obj_13_shelter-upgrades-herb-garden-pen-spyglass.stl",
+              "obj_12_map-tiles-animals-misc-expansions.stl", "obj_11_characters.stl"):
+        z = orig(n, (0, 0, z)).caixa[1][2]
+    topo_A, A_x = z, orig_t["obj_11_characters.stl"][0]
+    z = 0.0
+    for n in ("obj_16_tokens.stl", "obj_15_dice-determination-black-white-blue.stl", "obj_14_resources.stl"):
+        z = orig(n, (A_x, 0, z)).caixa[1][2]
+    topo_B, B_x = z, A_x + orig_t["obj_14_resources.stl"][0]
+
+    # faixa do fundo: jogo deitado
+    eve = deitada("cartas-eventos", [B("eventos"), []], NIVEL, "Eventos: compra | descarte")
+    mis = deitada("cartas-misterio", [B("misterio")], NIVEL, "Mistério (compra)")
+    add(eve, (0, FAIXA, 0), rot90=1)
+    x_mis = eve.tamanho[1]
+    add(mis, (x_mis, FAIXA, 0), rot90=1)
+    passo = mis.tamanho[1]
+    for i, k in enumerate(("aventura-construir", "aventura-coletar", "aventura-explorar")):
+        add(deitada("cartas-" + k, [B(k)], MEIO, "Aventura — " + k.split("-")[1].capitalize()),
+            (i * passo, FAIXA, NIVEL), rot90=1)
+
+    # sobre a pilha A: bandejas de mesa de meia altura (2 x 2) + caixa com tampa no resto
+    alt_A = topo - topo_A
+    sobre = [deitada("cartas-especiais", [B("especiais")], alt_A,
+                     "Naufrágio, Arrumar acampamento, Sexta-feira, Cão"),
+             deitada("cartas-descarte-aventura", [[]], alt_A, "Descarte de aventura (vazio, vai para a mesa)"),
+             deitada("cartas-descarte-misterio", [[]], alt_A, "Descarte de mistério (vazio, vai para a mesa)"),
+             deitada("cartas-descarte-extra", [[]], alt_A, "Descarte extra / maço do cenário (vazio)")]
+    lx, ly = sobre[0].tamanho[0], sobre[0].tamanho[1]
+    for i, pc in enumerate(sobre):
+        add(pc, ((i % 2) * lx, (i // 2) * ly, topo_A))
+    add(tampada("caixa-sobre-personagens", A_x, FAIXA - 2 * ly, alt_A, [(1, [1]), (1, [1])],
+                "Caixa com tampa: marcadores e peças soltas"), (0, 2 * ly, topo_A))
+    add(tampada("caixa-sobre-recursos", B_x - A_x, FAIXA, topo - topo_B, [(1, [1, 1]), (1, [1, 1])],
+                "Caixa com tampa (4 compartimentos): espaço livre para os extras no futuro"), (A_x, 0, topo_B))
+
+    # coluna direita: cartas pequenas em pé + caixas
+    larg_d = cfg["caixa_interna"].get("ocupacao_comprovada", {}).get("x", 318.4) - B_x
+    par_pe = lay.get("parede_em_pe", 1.2)
+    peq = bandeja_em_pe("cartas-pequenas-em-pe", B("invencoes", "equipamento", "feras"), p, NIVEL, parede=par_pe,
+                        descricao="Cartas pequenas em pé: Invenções | Equipamento inicial | Feras (2 divisórias)")
+    peq = bandeja_em_pe("cartas-pequenas-em-pe", B("invencoes", "equipamento", "feras"), p, NIVEL, parede=par_pe,
+                        folga_maco=1.5 + larg_d - peq.tamanho[0],
+                        descricao="Cartas pequenas em pé: Invenções | Equipamento inicial | Feras (2 divisórias)")
+    add(peq, (B_x, 0, 0))
+    div = divisoria("divisoria-pequenas", peq.tamanho[1] - 2 * par_pe, NIVEL - p.piso)
+    div.qtd = 2
+    pecas.append(div)
+    add(tampada("caixa-dados-fichas", larg_d, FAIXA - peq.tamanho[1], NIVEL, [(1, [1, 1])],
+                "Caixa com tampa: dados e fichas soltas"), (B_x, peq.tamanho[1], 0))
+    add(tampada("caixa-longa", larg_d, FAIXA, MEIO, [(1, [1, 1, 1])],
+                "Caixa longa com tampa: fichas de descoberta / marcadores"), (B_x, 0, NIVEL))
+    return _fechar(cfg, p, pecas, itens, sl, bar)

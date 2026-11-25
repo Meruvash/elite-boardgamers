@@ -41,48 +41,31 @@ mede os poços de carta direto nos STLs:
 O próprio autor do js500 diz que o projeto é para o **playmat de neoprene** e que o tabuleiro de papelão só cabe se a
 tampa ficar levantada. Por isso o original também não tem espaço para o tabuleiro.
 
-### A solução (versão 2, "misto", para o Bucaneiros PADRÃO)
+### A solução atual (versão 3): só o jogo base
 
-O sleeve escolhido é o **Bucaneiros PADRÃO** (63,5 x 88), com medida externa estimada em **66 x 91 mm**. A carta da
-Edição de Colecionador provavelmente mede 57,5 x 89 (ver PESQUISA.md). O sleeve aceita carta até 1,5 mm maior que o
-tamanho nominal.
+Desde 25/11/2026 o projeto é só o jogo base da Edição de Colecionador: você não tem Mistérios, Livro de Aventuras,
+Treasure Chest, torre nem miniaturas. Isso fica no JSON em `"extras": {"tem": false}`. Trocando para `true`, o gerador
+volta para a versão 2, que tem 104 mm de altura. Com as estimativas atuais da camada plana, a versão 2 **não fecha a
+tampa**; ela só serve se a caixa e a pilha medidas permitirem.
 
-Comparação medida nos STLs dos outros projetos:
-
-| Projeto | Limite medido | PADRÃO 66 x 91 |
-|---|---|---|
-| js500 | poço deitado de 62 de largura | não cabe |
-| Sortirus | poço de 61,6 de largura | não cabe |
-| PengLord | carta em pé no poço de 93, bandeja de 73,2 | cabe |
-
-**Como fica o insert misto:**
-
-- **Maços de jogo deitados** (vão para a mesa):
-  - Eventos, com compra e descarte na mesma peça;
-  - as 3 Aventuras, Mistério e Especiais;
-  - 2 descartes vazios (aventura e mistério).
-
-  O poço tem **68,5 x 93,5 mm**, ou seja, sleeve + 1,25 mm por lado. Tem entalhe de dedo nas laterais e furo no fundo.
-  As bandejas de meia altura empilham: o fundo de uma é a tampa da outra.
-- **Maços dos Mistérios em pé** (guarda), no estilo PengLord:
-  - a carta fica apoiada no lado comprido, num poço de 93 mm e numa bandeja de 70 mm de altura;
-  - os maços são separados por **divisórias soltas** (imprima 3);
-  - há um recorte grande na frente e atrás para puxar as cartas.
-- **Cartas pequenas** (Bucaneiros MINI EURO): 2 bandejas de 2 poços (50 x 73,5 mm), empilhadas na coluna das
-  miniaturas.
-- **Componentes**: as 10 bandejas do original continuam. As caixas novas com tampa embutida completam os vãos.
-- **Tabuleiro**: o topo é plano a **104 mm**, e o espaço dali até a tampa fica reservado para o tabuleiro dobrado, as
-  fichas e o manual.
-- **Ocupação**: o insert ocupa 318,7 x 318,5 mm do fundo. A conferência é feita contra 320 x 320, que ainda é uma
-  estimativa.
+- **Altura**: o insert tem **78 mm**, em dois níveis de 52 + 26 mm. Sobram ~56 mm para a camada plana numa caixa de
+  134 mm. O gerador também exige que feche no **pior caso de 127 mm** de altura interna: sobram 6 mm além dos 43 mm
+  estimados para tabuleiro + fichas + manual + 2 cadernos.
+- **Fundo**: 318,4 x 318,4 mm, o mesmo tamanho comprovado pelo js500.
+- **Cartas** (tamanho oficial da Portal, 58 x 88 e 44 x 68), com sleeve Bucaneiros PADRÃO e MINI EURO:
+  - grandes deitadas em bandejas que vão para a mesa (poço de 68,4 x 93,4 mm):
+    - Eventos, com compra e descarte na mesma peça;
+    - Mistério;
+    - 3 Aventuras;
+    - Especiais;
+    - 3 descartes vazios;
+  - pequenas em pé numa bandeja com 2 divisórias soltas.
+- **Componentes**: as 6 bandejas originais de componentes ficam lado a lado no fundo.
+  - O `obj_19_animals` é a bandeja removível que **encaixa dentro** do `obj_12`, como no js500.
+  - Não imprima as dos Mistérios nem a de miniaturas: `obj_3`, `obj_17` e `obj_20`.
+- **Caixas com tampa** completam o topo. A de 122,8 x 246 mm fica livre para os extras no futuro.
 
 ![montagem](saida/robinson-crusoe-ce/montagem.png)
-
-**Portabilidade:**
-
-- Tirar da caixa: cada bandeja de jogo vai inteira para a mesa, como monte de compra ou de descarte.
-- Mistérios e caixas com tampa ficam fechados até a hora de usar.
-- Guardar: a planta acima mostra o lugar de cada peça, e o tabuleiro vai deitado por cima.
 
 ### Antes de imprimir: meça 5 números
 
@@ -104,10 +87,9 @@ Depois rode `gerar.py` de novo. Se algo deixar de caber, ele diz o que e por qua
 - **Antes de tudo:** imprima as peças de `saida/teste-encaixe/` (`python3 tools/inserts/gerar_teste.py`). São um poço
   deitado, uma bandeja em pé, um poço de carta pequena e uma tampa, com as mesmas folgas do insert. Confira o encaixe
   com o seu sleeve e ajuste `Params` se precisar.
-- Os **23 STLs** de `saida/robinson-crusoe-ce/`. A `divisoria-em-pe` sai em **3 cópias**; o resto, 1 de cada (as
+- Os **19 STLs** de `saida/robinson-crusoe-ce/`. A `divisoria-pequenas` sai em **2 cópias**; o resto, 1 de cada (as
   quantidades estão no `relatorio.json`).
-- As 10 bandejas originais que continuam valendo: `obj_3`, `obj_11` a `obj_17`, `obj_19` e `obj_20`. Os originais que
-  tinham cartas são substituídos.
+- As 7 bandejas originais de componentes: `obj_11` a `obj_16` e `obj_19` (que vai dentro do `obj_12`).
 - PLA ou PETG, camada de 0,2 mm, sem suporte, com a boca para cima. As bandejas em pé têm parede de 1,2 mm: use 3
   perímetros.
 

@@ -92,6 +92,9 @@ def main(argv=None):
           f"(sobra {cx['x'] - ox:.1f} x {cx['y'] - oy:.1f} mm)")
     print(f"topo do insert: {ctx['topo_insert']:.1f} mm | espaço para tabuleiro+camada plana: "
           f"{ctx['espaco_tabuleiro']:.1f} mm | camada plana declarada: {ctx['espessura_plana']:.1f} mm")
+    if ctx.get("z_minimo"):
+        print(f"pior caso (caixa com {ctx['z_minimo']:.0f} mm por dentro): sobram {ctx['folga_pior_caso']:.1f} mm "
+              f"acima da camada plana")
     if falhas:
         print("FALHAS:")
         for e in falhas:

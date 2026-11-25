@@ -147,6 +147,20 @@ class TestMontagem(unittest.TestCase):
         for pc in pecas:
             self.assertEqual(validar_peca(pc)[0], [], pc.nome)
 
+    def test_versao_com_extras_valida(self):
+        cfg = rc.carregar()
+        cfg["extras"]["tem"] = True
+        cfg["caixa_interna"].pop("z_minimo_provavel")
+        cfg["camada_plana"]["itens"] = [{"nome": "tabuleiro", "espessura": 12.0}]  # só geometria
+        pecas, itens, reservas, ctx = rc.montar(cfg)
+        self.assertEqual(validar_montagem((320, 320, 134), itens, reservas), [])
+        self.assertEqual(ctx["topo_insert"], 104)
+
+    def test_versao_base_mais_baixa(self):
+        _, itens, reservas, ctx = rc.montar(rc.carregar())
+        self.assertEqual(ctx["topo_insert"], 78)
+        self.assertEqual(validar_montagem((320, 320, 134), itens, reservas), [])
+
     def test_tabuleiro_grosso_demais_falha(self):
         cfg = rc.carregar()
         cfg["camada_plana"]["itens"].append({"nome": "livro", "espessura": 20})

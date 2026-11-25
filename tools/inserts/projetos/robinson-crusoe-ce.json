@@ -10,11 +10,13 @@
       "x": 318.4,
       "y": 318.4,
       "nota": "O insert js500 ocupa 318,4 x 318,4 mm (69,4+151,2+97,8 e 246+72,4) e um usuário confirma no Printables que coube ('Fit everything as described quite nicely'). Enquanto a caixa não for medida, o gerador não deixa o insert passar disso."
-    }
+    },
+    "z_minimo_provavel": 127.0,
+    "nota_z": "134 é estimativa; a peça mais alta do Sortirus (126,4) indica que a caixa tem pelo menos ~127. O gerador exige que a tampa feche também com 127."
   },
   "camada_plana": {
     "status": "estimado",
-    "nota": "Tudo que vai deitado por cima do insert: tabuleiro dobrado + fichas de cenário + fichas de personagem + manual. Some as espessuras medidas.",
+    "nota": "Tudo que vai deitado por cima do insert. Valores estimados; troque pelos medidos (dá para medir com cartão de banco: 85,6 x 54 x 0,76 mm).",
     "itens": [
       {
         "nome": "Tabuleiro dobrado",
@@ -23,15 +25,20 @@
       },
       {
         "nome": "4 fichas de cenário",
-        "espessura": 7.0
+        "espessura": 8.0
       },
       {
         "nome": "4 fichas de personagem",
-        "espessura": 4.0
+        "espessura": 8.0
       },
       {
         "nome": "Manual de regras",
         "espessura": 4.0
+      },
+      {
+        "nome": "2 cadernos da Campanha Introdutória (espiral)",
+        "espessura": 10.0,
+        "nota": "listados na Rebel.pl ('2 zeszyty Kampanii Wprowadzającej'); fotos do js500 mostram que vão deitados por cima"
       }
     ],
     "folga_tampa": 1.0,
@@ -87,8 +94,8 @@
   "baralhos": {
     "eventos": {
       "tipo": "grande",
-      "qtd": 93,
-      "nota": "73 base + 10 Gamefound + ~10 Moral Dramática"
+      "qtd": 73,
+      "nota": "varejo: 73 (Gamefound teria +10 e Moral Dramática)"
     },
     "misterio": {
       "tipo": "grande",
@@ -96,21 +103,23 @@
     },
     "aventura-construir": {
       "tipo": "grande",
-      "qtd": 40,
-      "nota": "90 base + 30 Gamefound = 120, 3 maços"
+      "qtd": 30,
+      "nota": "varejo: 90 = 3 maços de 30"
     },
     "aventura-coletar": {
       "tipo": "grande",
-      "qtd": 40
+      "qtd": 30,
+      "nota": "varejo: 90 = 3 maços de 30"
     },
     "aventura-explorar": {
       "tipo": "grande",
-      "qtd": 40
+      "qtd": 30,
+      "nota": "varejo: 90 = 3 maços de 30"
     },
     "especiais": {
       "tipo": "grande",
-      "qtd": 12,
-      "nota": "Naufrágio 3, Arrumar acampamento, Sexta-feira, Cão, promos"
+      "qtd": 6,
+      "nota": "Naufrágio 3, Arrumar acampamento 1, Sexta-feira 1, Cão 1"
     },
     "mt-eventos": {
       "tipo": "grande",
@@ -143,7 +152,7 @@
     },
     "feras": {
       "tipo": "pequena",
-      "qtd": 17
+      "qtd": 16
     },
     "mt-invencoes": {
       "tipo": "pequena",
@@ -216,5 +225,9 @@
     "altura_bandeja_em_pe": 70.0,
     "parede_em_pe": 1.2,
     "folga_maco_em_pe": 1.2
+  },
+  "extras": {
+    "tem": false,
+    "nota": "Usuário (25/11/2026): não tem os extras atualmente (Mistérios, Livro de Aventuras, Treasure Chest, torre-vulcão, miniaturas). Com false o gerador monta a versão só do jogo base; true volta à versão completa (v2)."
   }
 }
