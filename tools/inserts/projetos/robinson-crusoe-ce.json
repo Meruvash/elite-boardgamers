@@ -12,7 +12,8 @@
       "nota": "O insert js500 ocupa 318,4 x 318,4 mm (69,4+151,2+97,8 e 246+72,4) e um usuário confirma no Printables que coube ('Fit everything as described quite nicely'). Enquanto a caixa não for medida, o gerador não deixa o insert passar disso."
     },
     "z_minimo_provavel": 127.0,
-    "nota_z": "134 é estimativa; a peça mais alta do Sortirus (126,4) indica que a caixa tem pelo menos ~127. O gerador exige que a tampa feche também com 127."
+    "nota_z": "134 é estimativa; a peça mais alta do Sortirus (126,4) indica que a caixa tem pelo menos ~127. O gerador exige que a tampa feche também com 127.",
+    "nota_xy": "A bandeja plástica original das miniaturas mede ~321 mm de largura na foto com A4 (25/11/2026), coerente com fundo interno de ~320 mm."
   },
   "camada_plana": {
     "status": "estimado",
@@ -21,7 +22,7 @@
       {
         "nome": "Tabuleiro dobrado",
         "espessura": 12.0,
-        "nota": "Aberto 720 x 520 mm (Amazon .com/.ca para a Edição de Colecionador; fórum da Pegasus para a edição comum). Dobrado 3 x 2 ≈ 240 x 260 mm, 6 camadas ≈ 12 mm (estimado: ~2 mm por camada)."
+        "nota": "Dobrado: ~277 x 239 mm medido em foto com A4 (25/11/2026). Espessura ainda estimada (6 camadas x ~2 mm)."
       },
       {
         "nome": "4 fichas de cenário",
@@ -45,7 +46,15 @@
     "tabuleiro_dobrado_estimado": [
       240,
       260
-    ]
+    ],
+    "tabuleiro_dobrado_medido_foto": {
+      "mm": [
+        277,
+        239
+      ],
+      "precisao": "±3% (foto de cima com folha A4 como escala)",
+      "data": "2026-11-25"
+    }
   },
   "impressora": {
     "mesa": [
@@ -57,11 +66,11 @@
   },
   "sleeves": {
     "grande": {
-      "usar": "padrao",
+      "usar": "chimera",
       "compativel_com": [
-        "padrao"
+        "chimera"
       ],
-      "nota": "Escolha do usuário (18/11/2026): Bucaneiros PADRÃO (63,5 x 88), externo estimado 66 x 91. Mesmo formato do Sleeve Kings Standard usado pelo insert PengLord nas cartas da Edição de Colecionador."
+      "nota": "Confirmado por foto do pacote (25/11/2026): Bucaneiros CHIMERA 57,5 x 89. Carta oficial 58 x 88 cabe (tolerância de 1,5 mm). Foto com folha A4 mediu a carta luvada em ~60-61 x 90 mm (±2 mm), coerente com o externo estimado de 60 x 92."
     },
     "pequena": {
       "usar": "mini-euro",

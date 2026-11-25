@@ -3,13 +3,13 @@
   {
    "arquivo": "cartas-eventos.stl",
    "qtd": 1,
-   "x": 72.4,
-   "y": 192.4,
+   "x": 66.4,
+   "y": 194.4,
    "z": 52.0,
-   "volume_cm3": 67.6,
+   "volume_cm3": 65.0,
    "descricao": "Eventos: compra | descarte",
    "notas": [
-    "poço 68.4 x 93.4 x 50.8 mm; cabem ~103 cartas luvadas por poço",
+    "poço 62.4 x 94.4 x 50.8 mm; cabem ~103 cartas luvadas por poço",
     "eventos: 34.7 mm de maço",
     "descarte: 0.0 mm de maço"
    ],
@@ -18,13 +18,13 @@
   {
    "arquivo": "cartas-misterio.stl",
    "qtd": 1,
-   "x": 72.4,
-   "y": 97.4,
+   "x": 66.4,
+   "y": 98.4,
    "z": 52.0,
-   "volume_cm3": 38.2,
+   "volume_cm3": 36.6,
    "descricao": "Mistério (compra)",
    "notas": [
-    "poço 68.4 x 93.4 x 50.8 mm; cabem ~103 cartas luvadas por poço",
+    "poço 62.4 x 94.4 x 50.8 mm; cabem ~103 cartas luvadas por poço",
     "misterio: 24.7 mm de maço"
    ],
    "erros": []
@@ -32,13 +32,13 @@
   {
    "arquivo": "cartas-aventura-construir.stl",
    "qtd": 1,
-   "x": 72.4,
-   "y": 97.4,
+   "x": 66.4,
+   "y": 98.4,
    "z": 26.0,
-   "volume_cm3": 22.8,
+   "volume_cm3": 21.7,
    "descricao": "Aventura — Construir",
    "notas": [
-    "poço 68.4 x 93.4 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "poço 62.4 x 94.4 x 24.8 mm; cabem ~49 cartas luvadas por poço",
     "aventura-construir: 14.3 mm de maço"
    ],
    "erros": []
@@ -46,13 +46,13 @@
   {
    "arquivo": "cartas-aventura-coletar.stl",
    "qtd": 1,
-   "x": 72.4,
-   "y": 97.4,
+   "x": 66.4,
+   "y": 98.4,
    "z": 26.0,
-   "volume_cm3": 22.8,
+   "volume_cm3": 21.7,
    "descricao": "Aventura — Coletar",
    "notas": [
-    "poço 68.4 x 93.4 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "poço 62.4 x 94.4 x 24.8 mm; cabem ~49 cartas luvadas por poço",
     "aventura-coletar: 14.3 mm de maço"
    ],
    "erros": []
@@ -60,13 +60,13 @@
   {
    "arquivo": "cartas-aventura-explorar.stl",
    "qtd": 1,
-   "x": 72.4,
-   "y": 97.4,
+   "x": 66.4,
+   "y": 98.4,
    "z": 26.0,
-   "volume_cm3": 22.8,
+   "volume_cm3": 21.7,
    "descricao": "Aventura — Explorar",
    "notas": [
-    "poço 68.4 x 93.4 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "poço 62.4 x 94.4 x 24.8 mm; cabem ~49 cartas luvadas por poço",
     "aventura-explorar: 14.3 mm de maço"
    ],
    "erros": []
@@ -74,13 +74,13 @@
   {
    "arquivo": "cartas-especiais.stl",
    "qtd": 1,
-   "x": 72.4,
-   "y": 97.4,
+   "x": 66.4,
+   "y": 98.4,
    "z": 27.0,
-   "volume_cm3": 23.4,
+   "volume_cm3": 22.2,
    "descricao": "Naufrágio, Arrumar acampamento, Sexta-feira, Cão",
    "notas": [
-    "poço 68.4 x 93.4 x 25.8 mm; cabem ~51 cartas luvadas por poço",
+    "poço 62.4 x 94.4 x 25.8 mm; cabem ~51 cartas luvadas por poço",
     "especiais: 2.9 mm de maço"
    ],
    "erros": []
@@ -88,13 +88,13 @@
   {
    "arquivo": "cartas-descarte-aventura.stl",
    "qtd": 1,
-   "x": 72.4,
-   "y": 97.4,
+   "x": 66.4,
+   "y": 98.4,
    "z": 27.0,
-   "volume_cm3": 23.4,
+   "volume_cm3": 22.2,
    "descricao": "Descarte de aventura (vazio, vai para a mesa)",
    "notas": [
-    "poço 68.4 x 93.4 x 25.8 mm; cabem ~51 cartas luvadas por poço",
+    "poço 62.4 x 94.4 x 25.8 mm; cabem ~51 cartas luvadas por poço",
     "descarte: 0.0 mm de maço"
    ],
    "erros": []
@@ -102,13 +102,13 @@
   {
    "arquivo": "cartas-descarte-misterio.stl",
    "qtd": 1,
-   "x": 72.4,
-   "y": 97.4,
+   "x": 66.4,
+   "y": 98.4,
    "z": 27.0,
-   "volume_cm3": 23.4,
+   "volume_cm3": 22.2,
    "descricao": "Descarte de mistério (vazio, vai para a mesa)",
    "notas": [
-    "poço 68.4 x 93.4 x 25.8 mm; cabem ~51 cartas luvadas por poço",
+    "poço 62.4 x 94.4 x 25.8 mm; cabem ~51 cartas luvadas por poço",
     "descarte: 0.0 mm de maço"
    ],
    "erros": []
@@ -116,13 +116,13 @@
   {
    "arquivo": "cartas-descarte-extra.stl",
    "qtd": 1,
-   "x": 72.4,
-   "y": 97.4,
+   "x": 66.4,
+   "y": 98.4,
    "z": 27.0,
-   "volume_cm3": 23.4,
+   "volume_cm3": 22.2,
    "descricao": "Descarte extra / maço do cenário (vazio)",
    "notas": [
-    "poço 68.4 x 93.4 x 25.8 mm; cabem ~51 cartas luvadas por poço",
+    "poço 62.4 x 94.4 x 25.8 mm; cabem ~51 cartas luvadas por poço",
     "descarte: 0.0 mm de maço"
    ],
    "erros": []
@@ -131,9 +131,9 @@
    "arquivo": "caixa-sobre-personagens-tampa.stl",
    "qtd": 1,
    "x": 148.3,
-   "y": 48.3,
+   "y": 46.3,
    "z": 1.6,
-   "volume_cm3": 11.3,
+   "volume_cm3": 10.9,
    "descricao": "Tampa embutida de caixa-sobre-personagens",
    "notas": [],
    "erros": []
@@ -142,9 +142,9 @@
    "arquivo": "caixa-sobre-personagens.stl",
    "qtd": 1,
    "x": 151.2,
-   "y": 51.2,
+   "y": 49.2,
    "z": 27.0,
-   "volume_cm3": 35.8,
+   "volume_cm3": 35.1,
    "descricao": "Caixa com tampa: marcadores e peças soltas",
    "notas": [],
    "erros": []
@@ -343,8 +343,8 @@
     0
    ],
    "tam": [
-    192.4,
-    72.4,
+    194.4,
+    66.4,
     52.0
    ],
    "girada_90": true
@@ -353,13 +353,13 @@
    "nome": "cartas-misterio",
    "origem": "gerada",
    "pos": [
-    192.4,
+    194.4,
     246.0,
     0
    ],
    "tam": [
-    97.4,
-    72.4,
+    98.4,
+    66.4,
     52.0
    ],
    "girada_90": true
@@ -373,8 +373,8 @@
     52.0
    ],
    "tam": [
-    97.4,
-    72.4,
+    98.4,
+    66.4,
     26.0
    ],
    "girada_90": true
@@ -383,13 +383,13 @@
    "nome": "cartas-aventura-coletar",
    "origem": "gerada",
    "pos": [
-    97.4,
+    98.4,
     246.0,
     52.0
    ],
    "tam": [
-    97.4,
-    72.4,
+    98.4,
+    66.4,
     26.0
    ],
    "girada_90": true
@@ -398,13 +398,13 @@
    "nome": "cartas-aventura-explorar",
    "origem": "gerada",
    "pos": [
-    194.8,
+    196.8,
     246.0,
     52.0
    ],
    "tam": [
-    97.4,
-    72.4,
+    98.4,
+    66.4,
     26.0
    ],
    "girada_90": true
@@ -418,8 +418,8 @@
     51.0
    ],
    "tam": [
-    72.4,
-    97.4,
+    66.4,
+    98.4,
     27.0
    ],
    "girada_90": false
@@ -428,13 +428,13 @@
    "nome": "cartas-descarte-aventura",
    "origem": "gerada",
    "pos": [
-    72.4,
+    66.4,
     0.0,
     51.0
    ],
    "tam": [
-    72.4,
-    97.4,
+    66.4,
+    98.4,
     27.0
    ],
    "girada_90": false
@@ -444,12 +444,12 @@
    "origem": "gerada",
    "pos": [
     0.0,
-    97.4,
+    98.4,
     51.0
    ],
    "tam": [
-    72.4,
-    97.4,
+    66.4,
+    98.4,
     27.0
    ],
    "girada_90": false
@@ -458,13 +458,13 @@
    "nome": "cartas-descarte-extra",
    "origem": "gerada",
    "pos": [
-    72.4,
-    97.4,
+    66.4,
+    98.4,
     51.0
    ],
    "tam": [
-    72.4,
-    97.4,
+    66.4,
+    98.4,
     27.0
    ],
    "girada_90": false
@@ -474,12 +474,12 @@
    "origem": "gerada",
    "pos": [
     0,
-    194.8,
+    196.8,
     51.0
    ],
    "tam": [
     151.2,
-    51.2,
+    49.2,
     27.0
    ],
    "girada_90": false
@@ -552,20 +552,20 @@
  "folga_sobrando": 13.0,
  "sleeves": {
   "grande": {
-   "chave": "padrao",
-   "nome": "Sleeve PADRÃO",
+   "chave": "chimera",
+   "nome": "Sleeve CHIMERA",
    "carta": [
-    63.5,
-    88
+    57.5,
+    89
    ],
    "externo": [
-    66.0,
-    91.0
+    60.0,
+    92.0
    ],
    "micras": 60,
    "fonte": "estimado",
    "compativeis": [
-    "Sleeve PADRÃO"
+    "Sleeve CHIMERA"
    ]
   },
   "pequena": {
@@ -587,17 +587,17 @@
   }
  },
  "baralhos": {
-  "eventos": "eventos: 73 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 34.7 mm",
-  "misterio": "misterio: 52 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 24.7 mm",
-  "aventura-construir": "aventura-construir: 30 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 14.3 mm",
-  "aventura-coletar": "aventura-coletar: 30 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 14.3 mm",
-  "aventura-explorar": "aventura-explorar: 30 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 14.3 mm",
-  "especiais": "especiais: 6 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 2.9 mm",
-  "mt-eventos": "mt-eventos: 82 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 39.0 mm",
-  "mt-aventura": "mt-aventura: 60 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 28.5 mm",
-  "mt-misterio": "mt-misterio: 24 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 11.4 mm",
-  "mt-insanidade": "mt-insanidade: 27 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 12.8 mm",
-  "mt-outros": "mt-outros: 60 cartas 58x88 em Sleeve PADRÃO (estimado: 66.0x91.0, 60 µm) -> maço 28.5 mm",
+  "eventos": "eventos: 73 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 34.7 mm",
+  "misterio": "misterio: 52 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 24.7 mm",
+  "aventura-construir": "aventura-construir: 30 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 14.3 mm",
+  "aventura-coletar": "aventura-coletar: 30 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 14.3 mm",
+  "aventura-explorar": "aventura-explorar: 30 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 14.3 mm",
+  "especiais": "especiais: 6 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 2.9 mm",
+  "mt-eventos": "mt-eventos: 82 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 39.0 mm",
+  "mt-aventura": "mt-aventura: 60 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 28.5 mm",
+  "mt-misterio": "mt-misterio: 24 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 11.4 mm",
+  "mt-insanidade": "mt-insanidade: 27 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 12.8 mm",
+  "mt-outros": "mt-outros: 60 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 28.5 mm",
   "invencoes": "invencoes: 30 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 14.3 mm",
   "equipamento": "equipamento: 8 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 3.8 mm",
   "feras": "feras: 16 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 7.6 mm",
