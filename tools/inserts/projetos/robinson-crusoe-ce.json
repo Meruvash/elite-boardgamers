@@ -3,16 +3,16 @@
   "caixa_interna": {
     "x": 320.0,
     "y": 320.0,
-    "z": 134.0,
-    "status": "estimado",
+    "z": 127.0,
+    "status": "medido por foto (x, y ~320; z ~122-128)",
     "nota": "Portal declara 33 x 33 x 14 cm (externo). O insert js500 que você mandou ocupa 318,4 mm, então o interno é >= 318,4. Meça o fundo da caixa por dentro e a altura útil com a tampa fechada.",
     "ocupacao_comprovada": {
       "x": 318.4,
       "y": 318.4,
       "nota": "O insert js500 ocupa 318,4 x 318,4 mm (69,4+151,2+97,8 e 246+72,4) e um usuário confirma no Printables que coube ('Fit everything as described quite nicely'). Enquanto a caixa não for medida, o gerador não deixa o insert passar disso."
     },
-    "z_minimo_provavel": 127.0,
-    "nota_z": "134 é estimativa; a peça mais alta do Sortirus (126,4) indica que a caixa tem pelo menos ~127. O gerador exige que a tampa feche também com 127.",
+    "z_minimo_provavel": 124.0,
+    "nota_z": "Foto de 25/11/2026 com A4 e carta em pé contra a parede: altura interna estimada em 122-128 mm (correção de perspectiva pela carta). Bate com o Sortirus (peça de 126,4 mm cabe). Projeto usa 127; o gerador exige que feche também com 124.",
     "nota_xy": "A bandeja plástica original das miniaturas mede ~321 mm de largura na foto com A4 (25/11/2026), coerente com fundo interno de ~320 mm."
   },
   "camada_plana": {
