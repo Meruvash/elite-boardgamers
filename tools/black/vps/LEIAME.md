@@ -55,6 +55,18 @@ servidor Oracle (systemd)            Cloudflare R2 (bucket elite-radar)        s
 - Mudar a frequência: edite `tools/black/vps/systemd/*.timer` no repositório e, no servidor,
   `sudo cp /opt/elite/site/tools/black/vps/systemd/* /etc/systemd/system/ && sudo systemctl daemon-reload`
 
+## Saúde dos robôs (visível de fora do servidor)
+
+Desde 25/11/2026 cada ciclo grava `black/estado/<robo>.json` (início, fim, duração, código de saída, quantos cartões a
+página tem, quantas linhas de bloqueio e as últimas linhas do log, sem links) e envia ao R2 junto com a página:
+
+- https://eliteboardgamers.com.br/black/estado/normal.json (e `ml.json`, `educado.json`, `alertas.json`)
+
+A tarefa agendada "Elite: vigilância do Black de Verdade" (no Claude, de 2 em 2 horas) lê esses arquivos e a hora
+"Atualizado em" da página. Se algum robô parar ou der erro repetido, ela corrige o código em `tools/black/` e publica
+na main; o servidor pega o código novo no ciclo seguinte (o `git fetch` de `tools/` antes de cada ciclo). O que exige
+mexer no próprio servidor (chaves, systemd, disco) ela não alcança e avisa no celular.
+
 ## Cuidados (para não repetir o bloqueio)
 
 - Não volte a publicar dados do Radar por commit, nem rodar os robôs no GitHub Actions.

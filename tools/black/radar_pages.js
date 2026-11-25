@@ -26,7 +26,8 @@ export async function servirDoRadar(context) {
   const obj = await env.RADAR.get(chave);
   if (!obj) return next();
   const ext = chave.split(".").pop().toLowerCase();
-  const html = ext === "html";
+  // HTML e JSON (alertas, estado dos robôs) mudam a cada ciclo: cache curto
+  const html = ext === "html" || ext === "json";
   const headers = new Headers({
     "content-type": TIPOS[ext] || "application/octet-stream",
     "cache-control": html ? "public, max-age=60" : "public, max-age=86400",
