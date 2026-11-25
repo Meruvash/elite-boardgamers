@@ -108,8 +108,8 @@
   "baralhos": {
     "eventos": {
       "tipo": "grande",
-      "qtd": 73,
-      "nota": "varejo: 73 (Gamefound teria +10 e Moral Dramática)"
+      "qtd": 83,
+      "nota": "73 + 10 da Everything New"
     },
     "misterio": {
       "tipo": "grande",
@@ -117,18 +117,18 @@
     },
     "aventura-construir": {
       "tipo": "grande",
-      "qtd": 30,
-      "nota": "varejo: 90 = 3 maços de 30"
+      "qtd": 40,
+      "nota": "90 + 30 da Everything New = 120, 3 maços"
     },
     "aventura-coletar": {
       "tipo": "grande",
-      "qtd": 30,
-      "nota": "varejo: 90 = 3 maços de 30"
+      "qtd": 40,
+      "nota": "90 + 30 da Everything New = 120, 3 maços"
     },
     "aventura-explorar": {
       "tipo": "grande",
-      "qtd": 30,
-      "nota": "varejo: 90 = 3 maços de 30"
+      "qtd": 40,
+      "nota": "90 + 30 da Everything New = 120, 3 maços"
     },
     "especiais": {
       "tipo": "grande",
@@ -179,6 +179,31 @@
     "mt-pequenas": {
       "tipo": "pequena",
       "qtd": 24
+    },
+    "praia": {
+      "tipo": "grande",
+      "qtd": 18,
+      "nota": "Procurando na Praia (Everything New). Quantidade estimada pelo poço de 9 mm do js500; conferir."
+    },
+    "tracos": {
+      "tipo": "grande",
+      "qtd": 18,
+      "nota": "Traços (Everything New). Quantidade estimada pelo poço de 9 mm do js500; conferir."
+    },
+    "tracos-secretos": {
+      "tipo": "grande",
+      "qtd": 18,
+      "nota": "Traços Secretos (Everything New). Quantidade estimada pelo poço de 9 mm do js500; conferir."
+    },
+    "moral-dramatica": {
+      "tipo": "grande",
+      "qtd": 18,
+      "nota": "Moral Dramática (Everything New). Quantidade estimada pelo poço de 9 mm do js500; conferir."
+    },
+    "animais": {
+      "tipo": "grande",
+      "qtd": 40,
+      "nota": "cartas de animais da Everything New (estimado pelo poço de 22 mm do js500; conferir)"
     }
   },
   "originais_reaproveitados": {
@@ -242,6 +267,6 @@
   },
   "extras": {
     "tem": false,
-    "nota": "Usuário (25/11/2026): não tem os extras atualmente (Mistérios, Livro de Aventuras, Treasure Chest, torre-vulcão, miniaturas). Com false o gerador monta a versão só do jogo base; true volta à versão completa (v2). Atualização 25/11/2026: tem as 18 miniaturas (pledge Everything New, sem Livro de Aventuras) e a torre-vulcão, guardada desmontada."
+    "nota": "Usuário (25/11/2026): não tem os extras atualmente (Mistérios, Livro de Aventuras, Treasure Chest, torre-vulcão, miniaturas). Com false o gerador monta a versão só do jogo base; true volta à versão completa (v2). Atualização 25/11/2026: tem as 18 miniaturas (pledge Everything New, sem Livro de Aventuras) e a torre-vulcão, guardada desmontada. Usuário confirmou (25/11/2026): vieram todas as cartas da Everything New."
   }
 }
