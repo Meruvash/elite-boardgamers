@@ -85,6 +85,8 @@ Quando houver série de números (preço ao longo dos meses, ranking), vale o gr
   sotaque de Portugal). Pausas acima de 0,3 s encurtadas e narrador 8% mais rápido.
 - **Toda fala transcrita e comparada com o roteiro**; palavra trocada → nova semente. Atenção à pronúncia de nomes em
   inglês ("Boardgamers", nomes de jogos).
+- **"Elite" sem acento no texto da fala** (pedido do editor, 26/11/2026): escrito "Élite", o narrador carregou no "É" e
+  não disse "elite" como se fala em português. "Boardgamers" pode ir escrito "Bôrdgueimers".
 - **Trilha original e instrumental**, sem nome de artista ou música no prompt, conferida com 0 palavras na
   transcrição. O modão do agro não serve aqui. Estilos para alternar (decisão nossa):
   - `taverna`: alaúde, flauta doce e pandeiro leve, clima de mesa de jogo antiga;
