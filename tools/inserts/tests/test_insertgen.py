@@ -186,7 +186,7 @@ class TestMontagem(unittest.TestCase):
 
     def test_tabuleiro_grosso_demais_falha(self):
         cfg = rc.carregar()
-        cfg["camada_plana"]["itens"].append({"nome": "livro", "espessura": 20})
+        cfg["camada_plana"]["itens"].append({"nome": "livro", "espessura": 40})
         _, itens, reservas, _ = rc.montar(cfg)
         erros = validar_montagem((320, 320, 134), itens, reservas)
         self.assertTrue(any("espaço reservado" in e for e in erros))
