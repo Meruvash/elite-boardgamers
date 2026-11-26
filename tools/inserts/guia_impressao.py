@@ -52,7 +52,7 @@ with PdfPages(sys.argv[4]) as pdf:
 CAIXA (medida com régua e trena): 315,5 x 315,5 mm por dentro, 138 mm de altura útil.
 INSERT MONTADO: 314 x 314 mm de fundo, 100 mm de altura. Por cima: tabuleiro dobrado + fichas
 de cenário + manual + 2 guias (~24 mm). Sobram ~11 mm até a tampa.
-CARTAS: grandes 58 x 88 no sleeve Bucaneiros CHIMERA (luvada ~61 x 90,5);
+CARTAS: grandes 58 x 88 no sleeve Bucaneiros CHIMERA (luvada ~62 x 90,5, medida com régua);
 pequenas 44 x 68 no sleeve Bucaneiros MINI EURO.
 
 CONFIGURAÇÃO DO FATIADOR (vale para todas as peças)

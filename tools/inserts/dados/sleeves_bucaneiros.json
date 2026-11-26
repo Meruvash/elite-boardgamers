@@ -59,11 +59,11 @@
       ],
       "medido": {
         "externo": [
-          61.0,
+          62.0,
           90.5
         ],
         "micras": 60,
-        "nota": "Carta luvada medida em 26/11/2026: comprimento ~90 mm (régua) e largura ~60,5 mm (foto com A4, 25/11). Arredondado para cima: 61 x 90,5. Espessura ainda estimada."
+        "nota": "Largura medida com régua (26/11/2026, foto da carta 'Problemas Inesperados'): ~62 mm (borda do sleeve a ~6,2 cm). Comprimento ~90 mm (régua). A estimativa anterior pela folha A4 (60,5) estava baixa."
       }
     },
     "yugioh": {

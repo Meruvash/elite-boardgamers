@@ -68,7 +68,7 @@
    "volume_cm3": 27.9,
    "descricao": "Em pé: Aventura Construir | Coletar (1 divisória)",
    "notas": [
-    "poço 46.8 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
+    "poço 46.8 x 92.5 mm, carta em pé de 62.0 mm; 1 divisória(s) solta(s)",
     "aventura-construir: 19.0 mm de maço",
     "aventura-coletar: 19.0 mm de maço"
    ],
@@ -83,7 +83,7 @@
    "volume_cm3": 27.9,
    "descricao": "Em pé: Aventura Explorar | Animais (1 divisória)",
    "notas": [
-    "poço 46.8 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
+    "poço 46.8 x 92.5 mm, carta em pé de 62.0 mm; 1 divisória(s) solta(s)",
     "aventura-explorar: 19.0 mm de maço",
     "animais: 19.0 mm de maço"
    ],
@@ -98,7 +98,7 @@
    "volume_cm3": 28.0,
    "descricao": "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)",
    "notas": [
-    "poço 46.8 x 92.5 mm, carta em pé de 61.0 mm; 3 divisória(s) solta(s)",
+    "poço 46.8 x 92.5 mm, carta em pé de 62.0 mm; 3 divisória(s) solta(s)",
     "praia: 8.6 mm de maço",
     "tracos: 8.6 mm de maço",
     "tracos-secretos: 8.6 mm de maço",
@@ -164,13 +164,13 @@
   {
    "arquivo": "cartas-eventos.stl",
    "qtd": 1,
-   "x": 67.4,
-   "y": 96.9,
+   "x": 68.0,
+   "y": 96.5,
    "z": 52.0,
    "volume_cm3": 36.4,
    "descricao": "Eventos (compra). Vai para a mesa.",
    "notas": [
-    "poço 63.4 x 92.9 x 50.8 mm; cabem ~103 cartas luvadas por poço",
+    "poço 64.0 x 92.5 x 50.8 mm; cabem ~103 cartas luvadas por poço",
     "eventos: 39.4 mm de maço"
    ],
    "erros": []
@@ -178,13 +178,13 @@
   {
    "arquivo": "cartas-misterio.stl",
    "qtd": 1,
-   "x": 67.4,
-   "y": 96.9,
+   "x": 68.0,
+   "y": 96.5,
    "z": 34.0,
    "volume_cm3": 26.1,
    "descricao": "Mistério (compra), com as Especiais por baixo. Vai para a mesa.",
    "notas": [
-    "poço 63.4 x 92.9 x 32.8 mm; cabem ~65 cartas luvadas por poço",
+    "poço 64.0 x 92.5 x 32.8 mm; cabem ~65 cartas luvadas por poço",
     "misterio+especiais: 27.6 mm de maço"
    ],
    "erros": []
@@ -219,13 +219,13 @@
   {
    "arquivo": "descarte-eventos.stl",
    "qtd": 1,
-   "x": 67.4,
-   "y": 96.9,
+   "x": 68.0,
+   "y": 96.5,
    "z": 34.8,
-   "volume_cm3": 26.4,
+   "volume_cm3": 26.5,
    "descricao": "Descarte (eventos). Vai para a mesa ao lado do monte de compra.",
    "notas": [
-    "poço 63.4 x 92.9 x 33.6 mm; cabem ~67 cartas luvadas por poço",
+    "poço 64.0 x 92.5 x 33.6 mm; cabem ~67 cartas luvadas por poço",
     "descarte: 0.0 mm de maço"
    ],
    "erros": []
@@ -233,13 +233,13 @@
   {
    "arquivo": "descarte-construir.stl",
    "qtd": 1,
-   "x": 67.4,
-   "y": 96.9,
+   "x": 68.0,
+   "y": 96.5,
    "z": 17.0,
    "volume_cm3": 16.3,
    "descricao": "Descarte (construir). Vai para a mesa ao lado do monte de compra.",
    "notas": [
-    "poço 63.4 x 92.9 x 15.8 mm; cabem ~30 cartas luvadas por poço",
+    "poço 64.0 x 92.5 x 15.8 mm; cabem ~30 cartas luvadas por poço",
     "descarte: 0.0 mm de maço"
    ],
    "erros": []
@@ -247,13 +247,13 @@
   {
    "arquivo": "descarte-coletar.stl",
    "qtd": 1,
-   "x": 67.4,
-   "y": 96.9,
+   "x": 68.0,
+   "y": 96.5,
    "z": 17.0,
-   "volume_cm3": 16.3,
+   "volume_cm3": 16.4,
    "descricao": "Descarte (coletar). Vai para a mesa ao lado do monte de compra.",
    "notas": [
-    "poço 63.4 x 92.9 x 15.8 mm; cabem ~30 cartas luvadas por poço",
+    "poço 64.0 x 92.5 x 15.8 mm; cabem ~30 cartas luvadas por poço",
     "descarte: 0.0 mm de maço"
    ],
    "erros": []
@@ -261,13 +261,13 @@
   {
    "arquivo": "descarte-explorar.stl",
    "qtd": 1,
-   "x": 67.4,
-   "y": 96.9,
+   "x": 68.0,
+   "y": 96.5,
    "z": 17.0,
    "volume_cm3": 16.3,
    "descricao": "Descarte (explorar). Vai para a mesa ao lado do monte de compra.",
    "notas": [
-    "poço 63.4 x 92.9 x 15.8 mm; cabem ~30 cartas luvadas por poço",
+    "poço 64.0 x 92.5 x 15.8 mm; cabem ~30 cartas luvadas por poço",
     "descarte: 0.0 mm de maço"
    ],
    "erros": []
@@ -275,10 +275,10 @@
   {
    "arquivo": "bandeja-aberta-a1.stl",
    "qtd": 1,
-   "x": 25.9,
-   "y": 202.2,
+   "x": 26.3,
+   "y": 204.0,
    "z": 17.0,
-   "volume_cm3": 24.2,
+   "volume_cm3": 24.5,
    "descricao": "Bandeja aberta (fichas soltas)",
    "notas": [],
    "erros": []
@@ -287,9 +287,9 @@
    "arquivo": "bandeja-aberta-a2.stl",
    "qtd": 1,
    "x": 122.8,
-   "y": 43.8,
+   "y": 42.0,
    "z": 17.0,
-   "volume_cm3": 19.5,
+   "volume_cm3": 19.1,
    "descricao": "Bandeja aberta (fichas soltas)",
    "notas": [],
    "erros": []
@@ -297,13 +297,13 @@
   {
    "arquivo": "descarte-misterio.stl",
    "qtd": 1,
-   "x": 67.4,
-   "y": 96.9,
+   "x": 68.0,
+   "y": 96.5,
    "z": 14.0,
-   "volume_cm3": 14.4,
+   "volume_cm3": 14.5,
    "descricao": "Descarte (mistério). Vai para a mesa ao lado do monte de compra.",
    "notas": [
-    "poço 63.4 x 92.9 x 12.8 mm; cabem ~23 cartas luvadas por poço",
+    "poço 64.0 x 92.5 x 12.8 mm; cabem ~23 cartas luvadas por poço",
     "descarte: 0.0 mm de maço"
    ],
    "erros": []
@@ -311,10 +311,10 @@
   {
    "arquivo": "bandeja-aberta-b1.stl",
    "qtd": 1,
-   "x": 45.1,
-   "y": 67.4,
+   "x": 45.5,
+   "y": 68.0,
    "z": 14.0,
-   "volume_cm3": 11.0,
+   "volume_cm3": 11.2,
    "descricao": "Bandeja aberta (fichas soltas)",
    "notas": [],
    "erros": []
@@ -323,9 +323,9 @@
    "arquivo": "bandeja-aberta-b2.stl",
    "qtd": 1,
    "x": 142.0,
-   "y": 178.6,
+   "y": 178.0,
    "z": 14.0,
-   "volume_cm3": 63.6,
+   "volume_cm3": 63.4,
    "descricao": "Bandeja aberta (fichas soltas)",
    "notas": [],
    "erros": []
@@ -355,7 +355,7 @@
   {
    "arquivo": "bandeja-aberta-d.stl",
    "qtd": 1,
-   "x": 150.4,
+   "x": 150.0,
    "y": 68.0,
    "z": 14.0,
    "volume_cm3": 34.9,
@@ -610,8 +610,8 @@
     0
    ],
    "tam": [
-    96.9,
-    67.4,
+    96.5,
+    68.0,
     52.0
    ],
    "girada_90": true
@@ -625,8 +625,8 @@
     52.0
    ],
    "tam": [
-    96.9,
-    67.4,
+    96.5,
+    68.0,
     34.0
    ],
    "girada_90": true
@@ -635,7 +635,7 @@
    "nome": "cartas-pequenas-retrato",
    "origem": "gerada",
    "pos": [
-    96.9,
+    96.5,
     246.0,
     0
    ],
@@ -650,13 +650,13 @@
    "nome": "descarte-eventos",
    "origem": "gerada",
    "pos": [
-    159.55,
+    159.75,
     246.0,
     51.2
    ],
    "tam": [
-    96.9,
-    67.4,
+    96.5,
+    68.0,
     34.8
    ],
    "girada_90": true
@@ -670,8 +670,8 @@
     83.0
    ],
    "tam": [
-    96.9,
-    67.4,
+    96.5,
+    68.0,
     17.0
    ],
    "girada_90": true
@@ -681,12 +681,12 @@
    "origem": "gerada",
    "pos": [
     0,
-    67.4,
+    68.0,
     83.0
    ],
    "tam": [
-    96.9,
-    67.4,
+    96.5,
+    68.0,
     17.0
    ],
    "girada_90": true
@@ -696,12 +696,12 @@
    "origem": "gerada",
    "pos": [
     0,
-    134.8,
+    136.0,
     83.0
    ],
    "tam": [
-    96.9,
-    67.4,
+    96.5,
+    68.0,
     17.0
    ],
    "girada_90": true
@@ -710,13 +710,13 @@
    "nome": "bandeja-aberta-a1",
    "origem": "gerada",
    "pos": [
-    96.9,
+    96.5,
     0.0,
     83.0
    ],
    "tam": [
-    25.9,
-    202.2,
+    26.3,
+    204.0,
     17.0
    ],
    "girada_90": false
@@ -726,12 +726,12 @@
    "origem": "gerada",
    "pos": [
     0,
-    202.2,
+    204.0,
     83.0
    ],
    "tam": [
     122.8,
-    43.8,
+    42.0,
     17.0
    ],
    "girada_90": false
@@ -745,8 +745,8 @@
     86.0
    ],
    "tam": [
-    96.9,
-    67.4,
+    96.5,
+    68.0,
     14.0
    ],
    "girada_90": true
@@ -755,13 +755,13 @@
    "nome": "bandeja-aberta-b1",
    "origem": "gerada",
    "pos": [
-    219.7,
+    219.3,
     0,
     86.0
    ],
    "tam": [
-    45.1,
-    67.4,
+    45.5,
+    68.0,
     14.0
    ],
    "girada_90": false
@@ -771,12 +771,12 @@
    "origem": "gerada",
    "pos": [
     122.8,
-    67.4,
+    68.0,
     86.0
    ],
    "tam": [
     142.0,
-    178.6,
+    178.0,
     14.0
    ],
    "girada_90": false
@@ -820,7 +820,7 @@
     86.0
    ],
    "tam": [
-    150.4,
+    150.0,
     68.0,
     14.0
    ],
@@ -856,7 +856,7 @@
     89
    ],
    "externo": [
-    61.0,
+    62.0,
     90.5
    ],
    "micras": 60,
@@ -884,27 +884,27 @@
   }
  },
  "baralhos": {
-  "eventos": "eventos: 83 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 39.4 mm",
-  "misterio": "misterio: 52 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 24.7 mm",
-  "aventura-construir": "aventura-construir: 40 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 19.0 mm",
-  "aventura-coletar": "aventura-coletar: 40 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 19.0 mm",
-  "aventura-explorar": "aventura-explorar: 40 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 19.0 mm",
-  "especiais": "especiais: 6 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 2.9 mm",
-  "mt-eventos": "mt-eventos: 82 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 39.0 mm",
-  "mt-aventura": "mt-aventura: 60 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 28.5 mm",
-  "mt-misterio": "mt-misterio: 24 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 11.4 mm",
-  "mt-insanidade": "mt-insanidade: 27 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 12.8 mm",
-  "mt-outros": "mt-outros: 60 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 28.5 mm",
+  "eventos": "eventos: 83 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 39.4 mm",
+  "misterio": "misterio: 52 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 24.7 mm",
+  "aventura-construir": "aventura-construir: 40 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 19.0 mm",
+  "aventura-coletar": "aventura-coletar: 40 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 19.0 mm",
+  "aventura-explorar": "aventura-explorar: 40 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 19.0 mm",
+  "especiais": "especiais: 6 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 2.9 mm",
+  "mt-eventos": "mt-eventos: 82 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 39.0 mm",
+  "mt-aventura": "mt-aventura: 60 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 28.5 mm",
+  "mt-misterio": "mt-misterio: 24 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 11.4 mm",
+  "mt-insanidade": "mt-insanidade: 27 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 12.8 mm",
+  "mt-outros": "mt-outros: 60 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 28.5 mm",
   "invencoes": "invencoes: 30 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 14.3 mm",
   "equipamento": "equipamento: 8 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 3.8 mm",
   "feras": "feras: 16 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 7.6 mm",
   "mt-invencoes": "mt-invencoes: 3 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 1.4 mm",
   "mt-equipamento": "mt-equipamento: 17 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 8.1 mm",
   "mt-pequenas": "mt-pequenas: 24 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 11.4 mm",
-  "praia": "praia: 18 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 8.6 mm",
-  "tracos": "tracos: 18 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 8.6 mm",
-  "tracos-secretos": "tracos-secretos: 18 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 8.6 mm",
-  "moral-dramatica": "moral-dramatica: 18 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 8.6 mm",
-  "animais": "animais: 40 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 19.0 mm"
+  "praia": "praia: 18 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 8.6 mm",
+  "tracos": "tracos: 18 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 8.6 mm",
+  "tracos-secretos": "tracos-secretos: 18 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 8.6 mm",
+  "moral-dramatica": "moral-dramatica: 18 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 8.6 mm",
+  "animais": "animais: 40 cartas 58x88 em Sleeve CHIMERA (medido: 62.0x90.5, 60 µm) -> maço 19.0 mm"
  }
 }
