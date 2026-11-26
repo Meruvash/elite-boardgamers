@@ -3,10 +3,10 @@
   {
    "arquivo": "caixa-estreita-tampa.stl",
    "qtd": 1,
-   "x": 25.5,
+   "x": 16.3,
    "y": 243.1,
    "z": 1.6,
-   "volume_cm3": 9.8,
+   "volume_cm3": 6.2,
    "descricao": "Tampa embutida de caixa-estreita",
    "notas": [],
    "erros": []
@@ -14,38 +14,154 @@
   {
    "arquivo": "caixa-estreita.stl",
    "qtd": 1,
-   "x": 28.4,
+   "x": 19.2,
    "y": 246.0,
    "z": 35.0,
-   "volume_cm3": 54.0,
-   "descricao": "Caixa estreita com tampa (marcadores, fichas extras)",
+   "volume_cm3": 48.6,
+   "descricao": "Caixa estreita com tampa: bases de Líder, marcador de 1º jogador, extras",
    "notas": [],
    "erros": []
   },
   {
-   "arquivo": "cartas-expansoes.stl",
+   "arquivo": "cartas-aventura-construir-coletar.stl",
+   "qtd": 1,
+   "x": 53.6,
+   "y": 96.4,
+   "z": 64.0,
+   "volume_cm3": 24.6,
+   "descricao": "Em pé: Aventura Construir | Coletar (1 divisória)",
+   "notas": [
+    "poço 51.2 x 94.0 mm, carta em pé de 60.0 mm; 1 divisória(s) solta(s)",
+    "aventura-construir: 19.0 mm de maço",
+    "aventura-coletar: 19.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-aventura-explorar-animais.stl",
+   "qtd": 1,
+   "x": 53.6,
+   "y": 96.4,
+   "z": 64.0,
+   "volume_cm3": 24.6,
+   "descricao": "Em pé: Aventura Explorar | Animais (1 divisória)",
+   "notas": [
+    "poço 51.2 x 94.0 mm, carta em pé de 60.0 mm; 1 divisória(s) solta(s)",
+    "aventura-explorar: 19.0 mm de maço",
+    "animais: 19.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-expansoes-em-pe.stl",
+   "qtd": 1,
+   "x": 53.6,
+   "y": 96.4,
+   "z": 64.0,
+   "volume_cm3": 24.6,
+   "descricao": "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)",
+   "notas": [
+    "poço 51.2 x 94.0 mm, carta em pé de 60.0 mm; 3 divisória(s) solta(s)",
+    "praia: 8.6 mm de maço",
+    "tracos: 8.6 mm de maço",
+    "tracos-secretos: 8.6 mm de maço",
+    "moral-dramatica: 8.6 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "divisoria-grandes.stl",
+   "qtd": 5,
+   "x": 93.0,
+   "y": 62.3,
+   "z": 1.2,
+   "volume_cm3": 6.8,
+   "descricao": "Divisória solta entre maços em pé",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-sobre-cartas-1-tampa.stl",
+   "qtd": 1,
+   "x": 50.7,
+   "y": 141.7,
+   "z": 1.6,
+   "volume_cm3": 11.4,
+   "descricao": "Tampa embutida de caixa-sobre-cartas-1",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-sobre-cartas-1.stl",
+   "qtd": 1,
+   "x": 53.6,
+   "y": 144.6,
+   "z": 22.0,
+   "volume_cm3": 28.2,
+   "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-sobre-cartas-2-tampa.stl",
+   "qtd": 1,
+   "x": 50.7,
+   "y": 141.7,
+   "z": 1.6,
+   "volume_cm3": 11.4,
+   "descricao": "Tampa embutida de caixa-sobre-cartas-2",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-sobre-cartas-2.stl",
+   "qtd": 1,
+   "x": 53.6,
+   "y": 144.6,
+   "z": 22.0,
+   "volume_cm3": 28.2,
+   "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-eventos.stl",
    "qtd": 1,
    "x": 66.4,
    "y": 98.4,
    "z": 52.0,
    "volume_cm3": 36.6,
-   "descricao": "Procurando na Praia + Traços + Traços Secretos + Moral Dramática (maços empilhados)",
+   "descricao": "Eventos (compra). Vai para a mesa.",
    "notas": [
     "poço 62.4 x 94.4 x 50.8 mm; cabem ~103 cartas luvadas por poço",
-    "praia+tracos+tracos-secretos+moral-dramatica: 34.2 mm de maço"
+    "eventos: 39.4 mm de maço"
    ],
    "erros": []
   },
   {
-   "arquivo": "cartas-pequenas-em-pe.stl",
+   "arquivo": "cartas-misterio.stl",
+   "qtd": 1,
+   "x": 66.4,
+   "y": 98.4,
+   "z": 34.0,
+   "volume_cm3": 26.3,
+   "descricao": "Mistério (compra), com as Especiais por baixo. Vai para a mesa.",
+   "notas": [
+    "poço 62.4 x 94.4 x 32.8 mm; cabem ~65 cartas luvadas por poço",
+    "misterio+especiais: 27.6 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-pequenas-retrato.stl",
    "qtd": 1,
    "x": 31.961,
-   "y": 75.4,
-   "z": 52.0,
-   "volume_cm3": 13.1,
-   "descricao": "Cartas pequenas em pé: Invenções | Equipamento inicial | Feras (2 divisórias)",
+   "y": 51.9,
+   "z": 86.0,
+   "volume_cm3": 15.9,
+   "descricao": "Cartas pequenas em pé (de retrato): Invenções | Equipamento | Feras",
    "notas": [
-    "poço 29.6 x 73.0 mm, carta em pé de 47.5 mm; 2 divisória(s) solta(s)",
+    "poço 29.6 x 49.5 mm, carta em pé de 71.0 mm; 2 divisória(s) solta(s)",
     "invencoes: 14.3 mm de maço",
     "equipamento: 3.8 mm de maço",
     "feras: 7.6 mm de maço"
@@ -55,127 +171,12 @@
   {
    "arquivo": "divisoria-pequenas.stl",
    "qtd": 2,
-   "x": 72.0,
-   "y": 50.3,
+   "x": 48.5,
+   "y": 84.3,
    "z": 1.2,
-   "volume_cm3": 4.2,
+   "volume_cm3": 4.7,
    "descricao": "Divisória solta entre maços em pé",
    "notas": [],
-   "erros": []
-  },
-  {
-   "arquivo": "caixa-dados-extras-tampa.stl",
-   "qtd": 1,
-   "x": 66.5,
-   "y": 69.3,
-   "z": 1.6,
-   "volume_cm3": 7.3,
-   "descricao": "Tampa embutida de caixa-dados-extras",
-   "notas": [],
-   "erros": []
-  },
-  {
-   "arquivo": "caixa-dados-extras.stl",
-   "qtd": 1,
-   "x": 69.4,
-   "y": 72.2,
-   "z": 52.0,
-   "volume_cm3": 36.8,
-   "descricao": "Caixa com tampa: dados de madeira extras, especiais",
-   "notas": [],
-   "erros": []
-  },
-  {
-   "arquivo": "caixa-longa-tampa.stl",
-   "qtd": 1,
-   "x": 41.5,
-   "y": 243.1,
-   "z": 1.6,
-   "volume_cm3": 16.0,
-   "descricao": "Tampa embutida de caixa-longa",
-   "notas": [],
-   "erros": []
-  },
-  {
-   "arquivo": "caixa-longa.stl",
-   "qtd": 1,
-   "x": 44.4,
-   "y": 246.0,
-   "z": 34.0,
-   "volume_cm3": 61.8,
-   "descricao": "Caixa longa com tampa: fichas de descoberta / marcadores",
-   "notas": [],
-   "erros": []
-  },
-  {
-   "arquivo": "cartas-eventos.stl",
-   "qtd": 1,
-   "x": 66.4,
-   "y": 194.4,
-   "z": 52.0,
-   "volume_cm3": 65.0,
-   "descricao": "Eventos: compra | descarte",
-   "notas": [
-    "poço 62.4 x 94.4 x 50.8 mm; cabem ~103 cartas luvadas por poço",
-    "eventos: 39.4 mm de maço",
-    "descarte: 0.0 mm de maço"
-   ],
-   "erros": []
-  },
-  {
-   "arquivo": "cartas-misterio.stl",
-   "qtd": 1,
-   "x": 66.4,
-   "y": 98.4,
-   "z": 52.0,
-   "volume_cm3": 36.6,
-   "descricao": "Mistério (compra); as cartas Especiais ficam por baixo",
-   "notas": [
-    "poço 62.4 x 94.4 x 50.8 mm; cabem ~103 cartas luvadas por poço",
-    "misterio+especiais: 27.6 mm de maço"
-   ],
-   "erros": []
-  },
-  {
-   "arquivo": "cartas-aventura-construir.stl",
-   "qtd": 1,
-   "x": 66.4,
-   "y": 98.4,
-   "z": 34.0,
-   "volume_cm3": 26.3,
-   "descricao": "Aventura — Construir (as de Animais podem ir misturadas)",
-   "notas": [
-    "poço 62.4 x 94.4 x 32.8 mm; cabem ~65 cartas luvadas por poço",
-    "aventura-construir+animais (construir): 25.7 mm de maço"
-   ],
-   "erros": []
-  },
-  {
-   "arquivo": "cartas-aventura-coletar.stl",
-   "qtd": 1,
-   "x": 66.4,
-   "y": 98.4,
-   "z": 34.0,
-   "volume_cm3": 26.3,
-   "descricao": "Aventura — Coletar (as de Animais podem ir misturadas)",
-   "notas": [
-    "poço 62.4 x 94.4 x 32.8 mm; cabem ~65 cartas luvadas por poço",
-    "aventura-coletar+animais (coletar): 25.7 mm de maço"
-   ],
-   "erros": []
-  },
-  {
-   "arquivo": "cartas-aventura-explorar.stl",
-   "qtd": 1,
-   "x": 66.4,
-   "y": 98.4,
-   "z": 34.0,
-   "volume_cm3": 26.3,
-   "descricao": "Aventura — Explorar (as de Animais podem ir misturadas)",
-   "notas": [
-    "poço 62.4 x 94.4 x 32.8 mm; cabem ~65 cartas luvadas por poço",
-    "aventura-explorar+animais (explorar): 25.7 mm de maço"
-   ],
    "erros": []
   }
  ],
@@ -256,22 +257,7 @@
    "girada_90": false
   },
   {
-   "nome": "caixa-estreita",
-   "origem": "gerada",
-   "pos": [
-    122.8,
-    0,
-    51.0
-   ],
-   "tam": [
-    28.4,
-    246.0,
-    35.0
-   ],
-   "girada_90": false
-  },
-  {
-   "nome": "ORIGINAL obj_3_Player Miniatures",
+   "nome": "ORIGINAL penglord/mini_tray_-_large.stl",
    "origem": "original",
    "pos": [
     151.2,
@@ -279,19 +265,34 @@
     0
    ],
    "tam": [
-    97.8,
-    246.0,
-    52.0
+    113.6,
+    173.4,
+    51.2
    ],
-   "girada_90": true
+   "girada_90": false
+  },
+  {
+   "nome": "ORIGINAL penglord/mini_tray_-_camp.stl",
+   "origem": "original",
+   "pos": [
+    151.2,
+    173.4,
+    0
+   ],
+   "tam": [
+    113.6,
+    145.0,
+    51.2
+   ],
+   "girada_90": false
   },
   {
    "nome": "ORIGINAL obj_14_resources.stl",
    "origem": "original",
    "pos": [
-    151.2,
+    142.0,
     0,
-    52.0
+    51.2
    ],
    "tam": [
     122.8,
@@ -304,9 +305,9 @@
    "nome": "PLACAS DO VULCÃO (deitadas, sem bandeja)",
    "origem": "componente",
    "pos": [
-    151.2,
+    144.8,
     0,
-    72.0
+    71.2
    ],
    "tam": [
     120,
@@ -316,62 +317,92 @@
    "girada_90": false
   },
   {
-   "nome": "cartas-expansoes",
+   "nome": "caixa-estreita",
    "origem": "gerada",
    "pos": [
-    249.0,
+    122.8,
     0,
-    0
+    51.0
    ],
    "tam": [
-    66.4,
-    98.4,
-    52.0
-   ],
-   "girada_90": false
-  },
-  {
-   "nome": "cartas-pequenas-em-pe",
-   "origem": "gerada",
-   "pos": [
-    249.0,
-    98.4,
-    0
-   ],
-   "tam": [
-    31.96,
-    75.4,
-    52.0
-   ],
-   "girada_90": false
-  },
-  {
-   "nome": "caixa-dados-extras",
-   "origem": "gerada",
-   "pos": [
-    249.0,
-    173.8,
-    0
-   ],
-   "tam": [
-    69.4,
-    72.2,
-    52.0
-   ],
-   "girada_90": false
-  },
-  {
-   "nome": "caixa-longa",
-   "origem": "gerada",
-   "pos": [
-    274.0,
-    0,
-    52.0
-   ],
-   "tam": [
-    44.4,
+    19.2,
     246.0,
-    34.0
+    35.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "cartas-aventura-construir-coletar",
+   "origem": "gerada",
+   "pos": [
+    264.8,
+    0.0,
+    0
+   ],
+   "tam": [
+    53.6,
+    96.4,
+    64.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "cartas-aventura-explorar-animais",
+   "origem": "gerada",
+   "pos": [
+    264.8,
+    96.4,
+    0
+   ],
+   "tam": [
+    53.6,
+    96.4,
+    64.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "cartas-expansoes-em-pe",
+   "origem": "gerada",
+   "pos": [
+    264.8,
+    192.8,
+    0
+   ],
+   "tam": [
+    53.6,
+    96.4,
+    64.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "caixa-sobre-cartas-1",
+   "origem": "gerada",
+   "pos": [
+    264.8,
+    0.0,
+    64.0
+   ],
+   "tam": [
+    53.6,
+    144.6,
+    22.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "caixa-sobre-cartas-2",
+   "origem": "gerada",
+   "pos": [
+    264.8,
+    144.6,
+    64.0
+   ],
+   "tam": [
+    53.6,
+    144.6,
+    22.0
    ],
    "girada_90": false
   },
@@ -384,7 +415,7 @@
     0
    ],
    "tam": [
-    194.4,
+    98.4,
     66.4,
     52.0
    ],
@@ -394,59 +425,29 @@
    "nome": "cartas-misterio",
    "origem": "gerada",
    "pos": [
-    194.4,
+    0,
+    246.0,
+    52.0
+   ],
+   "tam": [
+    98.4,
+    66.4,
+    34.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "cartas-pequenas-retrato",
+   "origem": "gerada",
+   "pos": [
+    98.4,
     246.0,
     0
    ],
    "tam": [
-    98.4,
-    66.4,
-    52.0
-   ],
-   "girada_90": true
-  },
-  {
-   "nome": "cartas-aventura-construir",
-   "origem": "gerada",
-   "pos": [
-    0.0,
-    246.0,
-    52.0
-   ],
-   "tam": [
-    98.4,
-    66.4,
-    34.0
-   ],
-   "girada_90": true
-  },
-  {
-   "nome": "cartas-aventura-coletar",
-   "origem": "gerada",
-   "pos": [
-    98.4,
-    246.0,
-    52.0
-   ],
-   "tam": [
-    98.4,
-    66.4,
-    34.0
-   ],
-   "girada_90": true
-  },
-  {
-   "nome": "cartas-aventura-explorar",
-   "origem": "gerada",
-   "pos": [
-    196.8,
-    246.0,
-    52.0
-   ],
-   "tam": [
-    98.4,
-    66.4,
-    34.0
+    51.9,
+    31.96,
+    86.0
    ],
    "girada_90": true
   }

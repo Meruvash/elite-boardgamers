@@ -175,6 +175,8 @@ def montar(cfg, p=None):
     ex = cfg.get("extras", {})
     if ex.get("misterios") or ex.get("tem"):
         return _montar_completo(cfg, p)
+    if ex.get("penglord_minis"):
+        return _montar_v5(cfg, p)
     if ex.get("miniaturas"):
         return _montar_v4(cfg, p)
     return _montar_base(cfg, p)
@@ -384,4 +386,116 @@ def _montar_v4(cfg, p=None):
         add(deitada("cartas-" + k, [B(k) + [parte]], TOPO4 - NIVEL,
                     "Aventura — " + k.split("-")[1].capitalize() + " (as de Animais podem ir misturadas)"),
             (i * passo, FAIXA, NIVEL), rot90=1)
+    return _fechar(cfg, p, pecas, itens, sl, bar)
+
+
+def _montar_v5(cfg, p=None):
+    """Versão 5: o que os projetos publicados já resolvem + o espaço do tabuleiro.
+
+    - Componentes: bandejas originais js500/Hooper (obj_11..obj_16; obj_19 dentro do obj_12).
+    - Miniaturas: as duas bandejas do PengLord (figuras + acampamento + companheiros + itens), 113,6 x 318,4.
+    - Cartas: geradas para Bucaneiros CHIMERA / MINI EURO. Eventos e Mistério deitados (vão para a mesa);
+      Aventuras, Animais e expansões em pé com divisórias (estilo PengLord); pequenas em pé, de retrato.
+    - Topo plano a 86 mm; por cima, tabuleiro + fichas de cenário + manual + guias.
+      X 0-151,2      obj_13+12+11 (0-51) + fichas obj_16 + dados obj_15 (51-83) + caixa estreita
+      X 151,2-264,8  miniaturas PengLord (0-51,2) + recursos obj_14 (51,2-71,2) + placas do vulcão (71,2-85,2)
+      X 264,8-318,4  3 bandejas de cartas em pé (0-64) + caixa com tampa (64-86)
+      Faixa sob a coluna 1 (Y 246-318,4): Eventos (0-52), Mistério (52-86), cartas pequenas em pé
+    """
+    p = p or Params()
+    lay = cfg.get("layout", {})
+    cat = carregar_catalogo()
+    sl = {t: sleeve_envelope(cat, d["usar"], d["compativel_com"]) for t, d in cfg["sleeves"].items()}
+    bar = {}
+    for k, d in cfg["baralhos"].items():
+        c = cfg["cartas"][d["tipo"]]
+        bar[k] = Baralho(k, c["tamanho"], d["qtd"], c["espessura"], sl[d["tipo"]])
+    B = lambda *ks: [bar[k] for k in ks]  # noqa: E731
+    gc = cfg["cartas"]["grande"]
+    ref_g = Baralho("ref", gc["tamanho"], 0, gc["espessura"], sl["grande"])
+    orig_t = cfg["originais_reaproveitados"]
+    T = lay.get("topo_v4", 86.0)
+    XY = cfg["caixa_interna"].get("ocupacao_comprovada", {}).get("x", 318.4)
+    par_pe = lay.get("parede_em_pe", 1.2)
+
+    pecas, itens = [], []
+
+    def add(peca, pos, rot90=0):
+        if peca not in pecas:
+            pecas.append(peca)
+        it = Item(peca.nome, peca.tamanho, pos, peca.solido, rot90=rot90)
+        itens.append(it)
+        return it
+
+    def orig(nome, pos):
+        it = Item("ORIGINAL " + nome, orig_t[nome], pos, None, origem="original")
+        itens.append(it)
+        return it
+
+    def tampada(nome, X, Y, Z, colunas, desc):
+        t, tp = bandeja_fichas(nome, X, Y, Z, colunas, p, descricao=desc)
+        pecas.append(tp)
+        return t
+
+    # coluna 1: componentes js500
+    z = 0.0
+    for n in ("obj_13_shelter-upgrades-herb-garden-pen-spyglass.stl",
+              "obj_12_map-tiles-animals-misc-expansions.stl", "obj_11_characters.stl",
+              "obj_16_tokens.stl", "obj_15_dice-determination-black-white-blue.stl"):
+        z = orig(n, (0, 0, z)).caixa[1][2]
+    A_x = orig_t["obj_11_characters.stl"][0]
+    B_w = orig_t["obj_14_resources.stl"][0]
+
+    # coluna 2: miniaturas PengLord + recursos + vulcão
+    ml = orig("penglord/mini_tray_-_large.stl", (A_x, 0, 0))
+    orig("penglord/mini_tray_-_camp.stl", (A_x, ml.caixa[1][1], 0))
+    col3 = A_x + orig_t["penglord/mini_tray_-_large.stl"][0]
+    x_rec = col3 - B_w  # recursos avança sobre a coluna 1, na faixa livre ao lado das fichas/dados
+    rec = orig("obj_14_resources.stl", (x_rec, 0, ml.caixa[1][2]))
+    vx, vy, vz = cfg["componentes_soltos"]["vulcao_placas"]["mm"]
+    itens.append(Item("PLACAS DO VULCÃO (deitadas, sem bandeja)", (vx, vy, vz), (col3 - vx, 0, rec.caixa[1][2]),
+                      None, origem="componente"))
+    add(tampada("caixa-estreita", x_rec - B_w, FAIXA, T - 51.0, [(1, [1, 1, 1])],
+                "Caixa estreita com tampa: bases de Líder, marcador de 1º jogador, extras"), (B_w, 0, 51.0))
+
+    # coluna 3: cartas em pé
+    larg3 = XY - col3
+    alt_pe = lay.get("altura_em_pe_v5", 64.0)
+
+    def em_pe(nome, decks, desc):
+        pc = bandeja_em_pe(nome, decks, p, alt_pe, parede=par_pe, descricao=desc)
+        return bandeja_em_pe(nome, decks, p, alt_pe, parede=par_pe, folga_maco=1.5 + larg3 - pc.tamanho[0],
+                             descricao=desc)
+    an = bar["animais"]
+    pes = [em_pe("cartas-aventura-construir-coletar", B("aventura-construir", "aventura-coletar"),
+                 "Em pé: Aventura Construir | Coletar (1 divisória)"),
+           em_pe("cartas-aventura-explorar-animais", B("aventura-explorar") + [an],
+                 "Em pé: Aventura Explorar | Animais (1 divisória)"),
+           em_pe("cartas-expansoes-em-pe", B("praia", "tracos", "tracos-secretos", "moral-dramatica"),
+                 "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)")]
+    y = 0.0
+    for pc in pes:
+        add(pc, (col3, y, 0))
+        y += pc.tamanho[1]
+    div = divisoria("divisoria-grandes", pes[0].tamanho[1] - 2 * par_pe, alt_pe - p.piso)
+    div.qtd = 5
+    pecas.append(div)
+    for i in range(2):  # duas metades: inteira passaria da mesa da impressora
+        add(tampada(f"caixa-sobre-cartas-{i + 1}", larg3, y / 2, T - alt_pe, [(1, [1])],
+                    "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)"),
+            (col3, i * y / 2, alt_pe))
+
+    # faixa sob a coluna 1: Eventos (0-52) e Mistério (52-86) deitados; pequenas em pé de retrato
+    eve = bandeja_baralhos("cartas-eventos", [B("eventos")], p, altura=NIVEL, ref=ref_g,
+                           descricao="Eventos (compra). Vai para a mesa.")
+    mis = bandeja_baralhos("cartas-misterio", [B("misterio", "especiais")], p, altura=T - NIVEL, ref=ref_g,
+                           descricao="Mistério (compra), com as Especiais por baixo. Vai para a mesa.")
+    add(eve, (0, FAIXA, 0), rot90=1)
+    add(mis, (0, FAIXA, NIVEL), rot90=1)
+    peq = bandeja_em_pe("cartas-pequenas-retrato", B("invencoes", "equipamento", "feras"), p, T, parede=par_pe,
+                        retrato=True, descricao="Cartas pequenas em pé (de retrato): Invenções | Equipamento | Feras")
+    add(peq, (eve.tamanho[1], FAIXA, 0), rot90=1)
+    divp = divisoria("divisoria-pequenas", peq.tamanho[1] - 2 * par_pe, T - p.piso)
+    divp.qtd = 2
+    pecas.append(divp)
     return _fechar(cfg, p, pecas, itens, sl, bar)

@@ -41,92 +41,55 @@ mede os poços de carta direto nos STLs:
 O próprio autor do js500 diz que o projeto é para o **playmat de neoprene** e que o tabuleiro de papelão só cabe se a
 tampa ficar levantada. Por isso o original também não tem espaço para o tabuleiro.
 
-### A solução atual (versão 4): jogo base + Everything New, com miniaturas
+### A solução atual (versão 5): projetos publicados + espaço do tabuleiro
 
-O que você tem (25/11/2026): Edição de Colecionador com a pledge Everything New (18 miniaturas, todas as cartas
-extras, torre-vulcão desmontada). Não tem Livro de Aventuras nem Mistérios. No JSON isso fica como
-`"extras": {"miniaturas": true}`.
+A versão 5 junta o que os projetos publicados já resolvem e só acrescenta o que nenhum deles tem: o espaço do
+tabuleiro e as bandejas de carta para os sleeves Bucaneiros.
 
-**Medidas usadas:**
+| Parte | De onde vem |
+|---|---|
+| Personagens, peças, abrigo, fichas, dados, recursos | bandejas originais do js500/Hooper (`obj_11` a `obj_16`; `obj_19` vai dentro do `obj_12`) |
+| Todas as miniaturas: 16 figuras de personagem, Sexta-feira, Cão, acampamento modular de 8 peças, cavalo, papagaio, gato e 10 itens | as duas bandejas do **PengLord**: `mini_tray_-_large` e `mini_tray_-_camp`, somadas 113,6 x 318,4 mm |
+| Cartas (CHIMERA e MINI EURO) | geradas aqui |
+| Espaço do tabuleiro | gerado aqui: topo plano a 86 mm |
 
-| Medida | Valor | Origem |
-|---|---|---|
-| Fundo da caixa | 318,4 x 318,4 mm | comprovado pelo js500; a bandeja de fábrica mede ~321 mm na foto |
-| Altura interna | 127 mm (o gerador exige que feche também com 124) | foto com A4 + carta: 122–128 mm |
-| Sleeves | Bucaneiros **CHIMERA** (57,5 x 89) nas grandes, **MINI EURO** (45 x 68) nas pequenas | fotos dos pacotes |
-| Cartas | 58 x 88 e 44 x 68 | loja oficial da Portal |
-| Tabuleiro dobrado | ~277 x 239 mm, ~12 mm de espessura | foto com A4; espessura estimada |
-| Bandeja de miniaturas | a original `obj_3` (Hooper) | confirmada pelo usuário |
+**Planta:**
+- **Coluna 1 (0–151,2):** componentes do js500 até 83 mm, com a caixa estreita ao lado das fichas e dados. Embaixo
+  dela, a faixa do fundo leva Eventos deitado (0–52), Mistério deitado com as Especiais por baixo (52–86) e as cartas
+  pequenas em pé.
+- **Coluna 2 (151,2–264,8):** miniaturas do PengLord (0–51) + recursos (51–71) + placas do vulcão deitadas (71–85).
+- **Coluna 3 (264,8–318,4):** 3 bandejas de carta em pé com divisórias soltas (0–64) e 2 caixas com tampa por cima:
+  - Aventura Construir e Coletar;
+  - Aventura Explorar e Animais;
+  - Procurando na Praia, Traços, Traços Secretos e Moral Dramática.
+- **Por cima de tudo:** tabuleiro, fichas de cenário, manual e os 2 guias (~35 mm estimados). Sobram 6 mm numa caixa
+  de 127 e 3 mm numa de 124.
 
-**Como resolvi a altura.** As três bandejas originais de 52 mm não cabem lado a lado. Em vez de empilhar uma inteira
-sobre a outra (104 mm), separei as três bandejas finas de recursos, dados e fichas:
-
-- **Coluna da esquerda:** personagens/peças/abrigo (as fichas de personagem de 3 camadas ficam aqui) + fichas
-  (obj_16) + dados (obj_15) = 83 mm, mais uma caixa estreita com tampa ao lado.
-- **Coluna do meio:** miniaturas (obj_3, 52 mm) + recursos (obj_14) por cima, e sobre eles um **bolsão** onde as
-  placas do vulcão ficam deitadas, sem bandeja. Total: 86 mm.
-- **Coluna da direita, com as cartas:**
-  - no fundo: Procurando na Praia, Traços, Traços Secretos e Moral Dramática; cartas pequenas em pé, com 2
-    divisórias; caixa de dados extras;
-  - por cima: caixa longa com tampa.
-- **Faixa do fundo, com as cartas de mesa:**
-  - embaixo: Eventos (compra e descarte) e Mistério (com as Especiais por baixo);
-  - em cima: as 3 Aventuras, com as cartas de Animais misturadas, como o js500 sugere.
-- **Por cima de tudo (35 mm):** tabuleiro, fichas de cenário, manual e os 2 guias.
-
-**Resultado:** o insert tem **86 mm** de altura e a camada plana estimada tem 35 mm. Sobram 6 mm numa caixa de 127 e
-3 mm numa de 124.
-
-**O que ainda é estimado:**
-- a espessura da pilha de cima;
-- o tamanho das placas do vulcão;
-- a quantidade de cartas das expansões.
-
-Se a pilha real passar de ~38 mm, o gerador acusa. A versão 3 (sem miniaturas, 78 mm) continua disponível com
-`"miniaturas": false`.
+**A única medida que nenhum projeto publicado tem:** a espessura da pilha de cima, de preferência junto com a das
+placas do vulcão.
 
 ![montagem](saida/robinson-crusoe-ce/montagem.png)
 
-### Antes de imprimir: meça 5 números
-
-Ninguém publicou estes dados. Os valores em `projetos/robinson-crusoe-ce.json` estão marcados `"status": "estimado"`.
-
-1. **Caixa por dentro**: largura, profundidade e altura útil com a tampa fechada. O padrão é 320 x 320 x 134. Pela
-   Portal a caixa tem 33 x 33 x 14 cm por fora, e o insert original ocupa 318,4 mm.
-2. **Camada plana**: espessura do tabuleiro dobrado + fichas de cenário + fichas de personagem + manual. O padrão é
-   28 mm, e cabem até 30 mm se a altura interna for 134.
-3. **Sleeve Bucaneiros**: largura e altura por fora, medidas num sleeve com carta dentro. Preencha `"medido"` em
-   `dados/sleeves_bucaneiros.json`, porque a Bucaneiros só informa o tamanho da carta.
-4. **Carta**: tamanho e espessura. Meça 10 cartas empilhadas e divida por 10.
-5. **Quantidade de cartas** de cada maço, sobretudo as dos Mistérios: as fontes divergem sobre quais são pequenas.
-
-Depois rode `gerar.py` de novo. Se algo deixar de caber, ele diz o que e por quanto.
-
 ### O que imprimir
 
-- **Antes de tudo:** imprima as peças de `saida/teste-encaixe/` (`python3 tools/inserts/gerar_teste.py`). São um poço
-  deitado, uma bandeja em pé, um poço de carta pequena e uma tampa, com as mesmas folgas do insert. Confira o encaixe
-  com o seu sleeve e ajuste `Params` se precisar.
-- Os **14 STLs** de `saida/robinson-crusoe-ce/`. A `divisoria-pequenas` sai em **2 cópias**; o resto, 1 de cada (as
-  quantidades estão no `relatorio.json`).
-- As 8 bandejas originais: `obj_3` (miniaturas), `obj_11` a `obj_16` e `obj_19` (que vai dentro do `obj_12`). Não
-  imprima as originais que tinham cartas (`obj_1`, `obj_2`, `obj_4`, `obj_5`, `obj_6`, `obj_8`, `obj_9`,
-  `obj_10`, `obj_21`) nem as dos Mistérios (`obj_17`, `obj_20`).
-- PLA ou PETG, camada de 0,2 mm, sem suporte, com a boca para cima. As bandejas em pé têm parede de 1,2 mm: use 3
-  perímetros.
+- **Antes de tudo:** as peças de `saida/teste-encaixe/` (`python3 tools/inserts/gerar_teste.py`), para conferir o
+  sleeve.
+- Os **12 STLs** de `saida/robinson-crusoe-ce/`. Imprima **5 cópias** da `divisoria-grandes` e **2 cópias** da
+  `divisoria-pequenas`.
+- Do **js500/Hooper** (o seu zip): `obj_11` a `obj_16` e `obj_19`.
+- Do **PengLord** (zip do Printables 877306): `mini_tray_-_large.stl` e `mini_tray_-_camp.stl`.
+- PLA ou PETG, camada de 0,2 mm, sem suporte, com a boca para cima. As bandejas de carta em pé têm parede de 1,2 mm:
+  use 3 perímetros.
 
 ## Estrutura
 
 ```
 insertgen/geom.py      primitivas (caixa arredondada, cavidade em concha, entalhe de dedo)
 insertgen/cartas.py    sleeves (catálogo Bucaneiros), carta luvada, altura do maço
-insertgen/pecas.py     bandeja de baralhos, bandeja de fichas com tampa, calço
-insertgen/validar.py   malha, medidas, parede fina, conteúdo cabe, montagem
+insertgen/pecas.py     bandeja de baralhos deitada/em pé, bandeja de fichas com tampa, divisória
+insertgen/validar.py   malha, medidas, parede fina, conteúdo cabe, montagem, mesa da impressora
 insertgen/previa.py    planta, corte e vista 3D (PNG)
-insertgen/stl.py       STL binário só com numpy
-projetos/              um arquivo .py (layout) + .json (medidas) por jogo
-dados/                 catálogo de sleeves
+insertgen/stl.py       STL binário só com numpy;  insertgen/tmf.py  leitor de 3MF
+projetos/              layout (.py) + medidas (.json) do Robinson Crusoe; versões 2 a 5 escolhidas pelo JSON
+dados/                 catálogo de sleeves Bucaneiros
 ```
-
-Para outro jogo, copie `projetos/robinson_crusoe_ce.py` e o JSON dele, troque as medidas e o layout e aponte o
-`gerar.py` para o novo projeto.

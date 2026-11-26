@@ -164,8 +164,17 @@ class TestMontagem(unittest.TestCase):
         self.assertEqual(ctx["topo_insert"], 78)
         self.assertEqual(validar_montagem((320, 320, 134), itens, reservas), [])
 
+    def test_versao_5_penglord(self):
+        pecas, itens, reservas, ctx = rc.montar(rc.carregar())
+        self.assertEqual(ctx["topo_insert"], 86)
+        self.assertTrue(any("mini_tray_-_camp" in it.nome for it in itens))
+        self.assertEqual(validar_montagem((320, 320, 127), itens, reservas), [])
+        for pc in pecas:
+            self.assertEqual(validar_peca(pc)[0], [], pc.nome)
+
     def test_versao_4_com_miniaturas(self):
         cfg = rc.carregar()
+        cfg["extras"]["penglord_minis"] = False
         pecas, itens, reservas, ctx = rc.montar(cfg)
         self.assertEqual(ctx["topo_insert"], 86)
         self.assertTrue(any("Miniatures" in it.nome for it in itens))

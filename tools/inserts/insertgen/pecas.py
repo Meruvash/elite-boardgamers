@@ -154,7 +154,7 @@ def bloco_espaco(nome, X, Y, Z, p: Params, descricao="Calço"):
 
 
 def bandeja_em_pe(nome, baralhos, p: Params, altura, parede=1.6, folga_comp=1.0, folga_maco=1.5,
-                  esp_divisoria=1.2, descricao=""):
+                  esp_divisoria=1.2, descricao="", retrato=False):
     """Bandeja de guarda com cartas EM PÉ apoiadas no lado comprido (estilo PengLord).
 
     O lado comprido da carta luvada fica ao longo de Y (poço = comprimento + 2*folga_comp);
@@ -164,6 +164,8 @@ def bandeja_em_pe(nome, baralhos, p: Params, altura, parede=1.6, folga_comp=1.0,
     """
     L = max(b.externo[0] for b in baralhos)   # altura da carta em pé
     A = max(b.externo[1] for b in baralhos)   # comprimento, deitado ao longo de Y
+    if retrato:  # carta em pé apoiada no lado CURTO (mais alta, ocupa menos comprimento)
+        L, A = A, L
     n_div = len(baralhos) - 1
     interno_x = sum(b.altura_pilha() for b in baralhos) + n_div * esp_divisoria + folga_maco
     comp = A + 2 * folga_comp

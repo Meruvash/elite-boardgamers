@@ -247,7 +247,18 @@
       91.2,
       104.8,
       13.0
-    ]
+    ],
+    "penglord/mini_tray_-_large.stl": [
+      113.6,
+      173.4,
+      51.2
+    ],
+    "penglord/mini_tray_-_camp.stl": [
+      113.6,
+      145.0,
+      51.2
+    ],
+    "_nota_penglord": "Bandejas de miniaturas do PengLord (Printables 877306 / Thingiverse 6619070, CC BY-NC-SA): guardam todas as miniaturas da campanha (figuras, acampamento modular de 8 peças, companheiros e itens). Juntas medem 113,6 x 318,4 mm."
   },
   "layout": {
     "_nota": "Misto (pedido do usuário, 18/11/2026): maços de jogo deitados (vão para a mesa), maços dos Mistérios em pé (guarda).",
@@ -259,7 +270,8 @@
     "tem": false,
     "nota": "Usuário (25/11/2026): não tem os extras atualmente (Mistérios, Livro de Aventuras, Treasure Chest, torre-vulcão, miniaturas). Com false o gerador monta a versão só do jogo base; true volta à versão completa (v2). Atualização 25/11/2026: tem as 18 miniaturas (pledge Everything New, sem Livro de Aventuras) e a torre-vulcão, guardada desmontada. Usuário confirmou (25/11/2026): vieram todas as cartas da Everything New.",
     "miniaturas": true,
-    "misterios": false
+    "misterios": false,
+    "penglord_minis": true
   },
   "componentes_soltos": {
     "vulcao_placas": {
