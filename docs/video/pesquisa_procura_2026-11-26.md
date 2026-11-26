@@ -29,3 +29,32 @@ Pedido do editor: "Pesquisa um jogo que está sendo bastante procurado."
 Todos sobem com a chegada do Natal. O sinal mais consistente nas três medições é **Coup** (alto nos dois grupos, em alta
 em "jogo de cartas", no autocomplete e com guia no site). Depois, **Ticket to Ride** (único com base anterior e alta de ~3×)
 e **Dixit**. Azul continua forte em volume, mas sem alta própria.
+
+## Refeita a pedido do editor: só board game de hobby, só Google (26/11/2026)
+"Esses jogos aí são muito merda. Eu quero jogo de board game de verdade… autocomplete do Google, Google Trends."
+
+1. **Autocomplete do Google** (pt-BR): sementes do nicho ("board game", "melhores board games", "board game devir",
+   "board game galápagos"…) e varredura por letra ("board game a…z", "boardgame a…z", "jogo de tabuleiro a…z"). Saíram
+   títulos de hobby como Nemesis, Everdell, Heat, Root, Valheim, Zombicide, Arkham Horror, Gloomhaven, SETI, Mistborn,
+   Brass, Agricola, Scythe e Dead by Daylight.
+2. **Google Trends Brasil, 12 meses, semanal**, 28 títulos em lotes de 4 com a mesma âncora (Terraforming Mars), para
+   ficarem na mesma escala. Volume = média das últimas 4 semanas ÷ âncora; crescimento = últimas 4 semanas × as 4 semanas de
+   3 meses atrás.
+
+| Jogo | Volume (× âncora) | Últ. 4 sem. × 3 meses atrás | Observação |
+|---|---|---|---|
+| Catan | 26,1 | 52 × 49 | contaminado (deputado João Henrique Catan) |
+| Zombicide | 8,7 | 59 × 70 | nome único; em queda leve |
+| Carcassonne | 4,8 | 10 × 14 | também é cidade |
+| **Everdell** | 4,6 | 57 × 79 | nome único; expansões novas em alta (Emerland, Newleaf) |
+| Arkham Horror | 4,2 | 28 × 27 | estável |
+| Gloomhaven | 3,5 | 41 × 58 | inclui o jogo digital |
+| Spirit Island | 3,1 | 52 × 45 | inflado por "spirit island gpo" (Roblox) e pelo digital |
+| Frosthaven | 3,0 | 46 × 0 | puxado pela versão digital (steam, pc, ps5) |
+| **Ark Nova** | 2,0 | **35 × 11 (3,3×)** | nome único; o maior crescimento real; no YouTube, "ark nova como jogar" é a 2ª sugestão |
+
+Termos com "board game" no fim (Nemesis, Heat, Root, SETI…) saem com volume quase nulo porque o público busca o nome
+solto, que é ambíguo. Eles não entram na comparação.
+
+**Conclusão:** Ark Nova é o que mais cresce (3,3× em 3 meses) com nome sem ambiguidade e "como jogar" no autocomplete do
+YouTube. Everdell e Zombicide têm mais volume, com expansões puxando a busca.
