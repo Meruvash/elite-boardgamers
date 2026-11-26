@@ -1,9 +1,9 @@
-# "Como se joga Everdell?" (roteiro v2, 26/11/2026, aguardando aprovação)
+# "Como se joga Everdell?" (v2 aprovada e produzida em 26/11/2026)
 
 - **Formato:** "Como se joga" (`docs/video/REFERENCIA_COMO_SE_JOGA.md`), vertical 1080×1920, ~60 s, uma voz.
 - **Pauta:** escolhida pelo editor em 26/11/2026 ("Everdell bora"), a partir de `docs/video/pesquisa_procura_2026-11-26.md`:
   4,6× a âncora no Google Trends Brasil; expansões novas em alta; "everdell como jogar" é a 2ª sugestão do YouTube.
-- **Status:** v2 na conversa. Nada de voz, imagem ou render antes da aprovação.
+- **Status:** aprovada pelo editor ("Aprovado, pode produzir com o Marcio") e entregue em 26/11/2026.
 
 ## Por que a v2
 Pedido do editor (26/11/2026): "Melhora um pouco esse roteiro, precisamos de mais ganchos, siga as referências do guia de
@@ -81,3 +81,54 @@ Fora do molde de propósito: **A3 (estranho)**, que é próprio das pautas de te
 ## v1 (registro)
 Primeira versão com 14 falas e ~70 s, aberta só com "Como se joga Everdell?" e fechada com "Manda pro amigo que vai jurar
 que é ele." Foi substituída pela v2 a pedido do editor (mais ganchos).
+
+## Entrega (26/11/2026)
+- MP4 1080×1920, 60,9 s, −15,3 LUFS, pico −1,8 dBTP, áudio 48 kHz, H.264 com faststart. A transcrição do arquivo final é
+  igual às falas.
+- **Imagem:** a mesa inteira desenhada em código (SVG, CSS e GSAP no HyperFrames): árvore, rio com os 4 recursos, 8 locais,
+  campina, vila de 15 espaços e bichinhos. Nenhuma imagem de IA nem arte da caixa. Montagem em
+  `tools/video/everdell/montar.py`.
+- **Auditoria do vídeo** (`auditar_video.py` do guia): 7/7. A primeira palavra entra aos 0,15 s e há um acontecimento forte
+  aos 2,9 s ("ERRO" e bichinho caído).
+- **Narração:** Marcio, `eleven_multilingual_v2`. A fala 9 foi regravada com outra semente porque a pergunta "E sabe quem
+  começa?" saía emendada no resto da frase.
+- **Trilha:** estilo novo, `floresta` (violão dedilhado, pizzicato e flauta), instrumental conferida (0 palavras).
+
+## Publicação
+**Título do YouTube** (69 caracteres):
+> Como se joga Everdell? O erro que te faz perder um turno inteiro
+
+Alternativas:
+- Everdell em 1 minuto: a regra do "par" que deixa carta de graça
+- Como jogar Everdell: o erro de iniciante que custa um turno
+
+**Descrição do YouTube:**
+```
+Everdell explicado em 1 minuto: a vila de 15 cartas, o turno de uma ação só, o "par" entre criatura e construção (com o Tribunal na vila, a Juíza entra de graça) e o erro que custa um turno inteiro.
+
+Regras: livro de regras da edição Galápagos (EVE001), p. 6, 8, 10, 11, 12 e 13. Guia completo, passo a passo: eliteboardgamers.com.br/como-jogar/everdell/
+
+#Everdell #BoardGames #JogosDeTabuleiro #ComoJogar #Shorts
+```
+
+**Legenda do Instagram:**
+```
+Everdell parece jogo fofo de bichinho. Mas tem um erro que te faz perder um turno inteiro. 🐿️🌳
+
+Em 1 minuto:
+• Você monta uma vila de 15 cartas.
+• Na sua vez, faz uma coisa só: manda um trabalhador buscar recurso ou joga uma carta.
+• O "par": cada criatura tem uma construção. Com o Tribunal na vila, a Juíza entra de graça.
+• Carta verde produz de novo na primavera e no outono.
+• O erro: trabalhador não volta sozinho. Pra trazer todos de volta, você gasta um turno inteiro.
+
+E quem começa? Pelo manual, a pessoa mais humilde da mesa. 😅
+💬 Quem do seu grupo ia brigar por esse título?
+📲 Manda pro grupo da jogatina.
+
+Guia completo, passo a passo, no link da bio.
+
+Regras: manual da edição Galápagos (EVE001). Mesa desenhada em código. Trilha original.
+
+#Everdell #JogosDeTabuleiro #BoardGames #Boardgamer #ComoJogar #JogoDeTabuleiro #Tabletop #EliteBoardgamers #Galapagos
+```
