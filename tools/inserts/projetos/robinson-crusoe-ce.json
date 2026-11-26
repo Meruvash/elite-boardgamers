@@ -12,9 +12,30 @@
     "ocupacao_maxima": 314.0
   },
   "camada_plana": {
-    "status": "estimado",
+    "status": "medido",
     "nota": "Versão 4: fichas de personagem de 3 camadas vão na bandeja original de personagens (obj_11, como no js500); placas do vulcão vão num bolsão dentro do insert. Valores estimados.",
     "itens": [
+      {
+        "nome": "Pilha completa: tabuleiro dobrado + 4 fichas de cenário + manual + 2 guias",
+        "espessura": 26.0,
+        "nota": "Medida com régua em pé (26/11/2026): ~24 mm; uso 26 por segurança. Confirmado pelo usuário que a pilha tinha tudo."
+      }
+    ],
+    "folga_tampa": 1.0,
+    "tabuleiro_dobrado_estimado": [
+      240,
+      260
+    ],
+    "tabuleiro_dobrado_medido_foto": {
+      "mm": [
+        277,
+        239
+      ],
+      "precisao": "±3% (foto de cima com folha A4 como escala)",
+      "data": "2026-11-25"
+    },
+    "medida_foto": "26/11/2026: pilha completa (tabuleiro + fichas de cenário + manual + 2 guias) com régua em pé atrás: a borda de cima esconde a régua entre ~3,2 e ~4 cm (foto desfocada). Os itens declarados somam 40 mm (com folga), coerente com a foto.",
+    "itens_estimados_antes": [
       {
         "nome": "Tabuleiro dobrado",
         "espessura": 17.0,
@@ -32,21 +53,7 @@
         "nome": "2 Guias da Campanha Introdutória (espiral)",
         "espessura": 10.0
       }
-    ],
-    "folga_tampa": 1.0,
-    "tabuleiro_dobrado_estimado": [
-      240,
-      260
-    ],
-    "tabuleiro_dobrado_medido_foto": {
-      "mm": [
-        277,
-        239
-      ],
-      "precisao": "±3% (foto de cima com folha A4 como escala)",
-      "data": "2026-11-25"
-    },
-    "medida_foto": "26/11/2026: pilha completa (tabuleiro + fichas de cenário + manual + 2 guias) com régua em pé atrás: a borda de cima esconde a régua entre ~3,2 e ~4 cm (foto desfocada). Os itens declarados somam 40 mm (com folga), coerente com a foto."
+    ]
   },
   "impressora": {
     "mesa": [
