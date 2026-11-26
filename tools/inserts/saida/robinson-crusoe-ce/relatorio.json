@@ -331,13 +331,13 @@
    "nome": "PLACAS DO VULCÃO (deitadas, sem bandeja)",
    "origem": "componente",
    "pos": [
-    144.8,
+    142.8,
     0,
     71.2
    ],
    "tam": [
-    120,
-    240,
+    122,
+    150,
     13
    ],
    "girada_90": false

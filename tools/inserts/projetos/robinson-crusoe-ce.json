@@ -280,11 +280,11 @@
   "componentes_soltos": {
     "vulcao_placas": {
       "mm": [
-        120,
-        240,
+        122,
+        150,
         13
       ],
-      "nota": "Pilha das placas medida com régua em pé (26/11/2026): ~11 mm; uso 13. O vão em cima da bandeja de recursos tem 120 x 240 mm livres; qualquer placa até esse tamanho cabe."
+      "nota": "26/11/2026: pilha ~11 mm (régua em pé); maior placa ~115-125 x ~130-140 mm (foto de cima com régua, perspectiva). Vão sobre a bandeja de recursos: até 122,8 x 246 mm. Guardar com o lado menor na largura da bandeja de recursos."
     }
   }
 }
