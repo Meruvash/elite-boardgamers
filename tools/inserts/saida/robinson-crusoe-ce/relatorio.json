@@ -480,9 +480,9 @@
  ],
  "erros_montagem": [],
  "topo_insert": 86.0,
- "espessura_plana": 35.0,
+ "espessura_plana": 40.0,
  "espaco_tabuleiro": 51.0,
- "folga_sobrando": 16.0,
+ "folga_sobrando": 11.0,
  "sleeves": {
   "grande": {
    "chave": "chimera",
