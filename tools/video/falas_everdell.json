@@ -1,0 +1,52 @@
+[
+ {
+  "id": 1,
+  "quem": "narrador",
+  "texto": "Como se joga Everdell? Parece jogo fofo de bichinho. Mas tem um erro que te faz perder um turno inteiro. Já te conto."
+ },
+ {
+  "id": 2,
+  "quem": "narrador",
+  "texto": "Antes, a explicação está numa palavra: par."
+ },
+ {
+  "id": 3,
+  "quem": "narrador",
+  "texto": "Você monta uma vila de 15 cartas e ganha quem fizer mais pontos. Cada carta é uma criatura ou uma construção, e custa graveto, cristal, seixo ou fruto."
+ },
+ {
+  "id": 4,
+  "quem": "narrador",
+  "texto": "Na sua vez, você faz uma coisa só: manda um trabalhador buscar recurso, ou paga e joga uma carta da mão ou da campina."
+ },
+ {
+  "id": 5,
+  "quem": "narrador",
+  "texto": "Agora, o par: no manual, cada criatura tem uma construção. Com o Tribunal na vila, a Juíza entra de graça."
+ },
+ {
+  "id": 6,
+  "quem": "narrador",
+  "texto": "E carta verde produz de novo na primavera e no outono. Uma Fazenda jogada cedo te dá fruto três vezes."
+ },
+ {
+  "id": 7,
+  "quem": "narrador",
+  "texto": "E o erro que eu prometi: trabalhador não volta sozinho. Pra trazer todos de volta, você gasta um turno inteiro se preparando pra próxima estação."
+ },
+ {
+  "id": 8,
+  "quem": "narrador",
+  "texto": "Em troca, cada estação traz gente nova: você começa com 2 trabalhadores e chega ao outono com 6."
+ },
+ {
+  "id": 9,
+  "quem": "narrador",
+  "texto": "E sabe quem começa? Pelo manual, a pessoa mais humilde da mesa. Quem do seu grupo ia brigar por esse título?"
+ },
+ {
+  "id": 10,
+  "quem": "narrador",
+  "texto": "Me segue pra aprender o próximo jogo em um minuto."
+ }
+]

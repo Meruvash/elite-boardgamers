@@ -1,54 +1,83 @@
-# "Como se joga Everdell?" (roteiro v1, 26/11/2026, aguardando aprovação)
+# "Como se joga Everdell?" (roteiro v2, 26/11/2026, aguardando aprovação)
 
-- **Formato:** "Como se joga" (`docs/video/REFERENCIA_COMO_SE_JOGA.md`), vertical 1080×1920, ~75 s, uma voz.
-- **Pauta:** escolhida pelo editor em 26/11/2026 ("Everdell bora") a partir de `docs/video/pesquisa_procura_2026-11-26.md`:
-  4,6× a âncora no Google Trends Brasil; expansões novas em alta (Emerland, Newleaf); "everdell como jogar" é a 2ª sugestão
-  do YouTube.
-- **Status:** roteiro na conversa. Nada de voz, imagem ou render antes da aprovação.
+- **Formato:** "Como se joga" (`docs/video/REFERENCIA_COMO_SE_JOGA.md`), vertical 1080×1920, ~60 s, uma voz.
+- **Pauta:** escolhida pelo editor em 26/11/2026 ("Everdell bora"), a partir de `docs/video/pesquisa_procura_2026-11-26.md`:
+  4,6× a âncora no Google Trends Brasil; expansões novas em alta; "everdell como jogar" é a 2ª sugestão do YouTube.
+- **Status:** v2 na conversa. Nada de voz, imagem ou render antes da aprovação.
 
-## Roteiro
-| # | Batida | Fala (narrador) | Na mesa (peças desenhadas por nós, sem a arte da caixa) |
+## Por que a v2
+Pedido do editor (26/11/2026): "Melhora um pouco esse roteiro, precisamos de mais ganchos, siga as referências do guia de
+nova sessão." O guia (`Arcvalion_gospel`, `docs/video/GUIA_SESSAO_NOVA.md`, no branch
+`claude/webdoc-ai-studio-research-fvo7ty`) aponta para o `PADRAO_CASEIRO.md` e a `AUDITORIA_PADRAO_OURO.md`, tirados dos
+vídeos que passaram de 2.000 e de 9.000 visualizações. O que veio de lá:
+- **A abertura de ensinar é a mais fraca:** no Virlo, "você sabia / vou te explicar" aparece em 19% dos vídeos fortes, e o
+  suspense em 30%. A v1 abria só com "Como se joga Everdell?". A v2 junta a pergunta do Google, uma resposta seca que
+  desfaz um mito ("parece jogo fofo… mas") e um **suspense pago depois da metade** ("tem um erro… já te conto", pago na fala 7).
+- **Palavra-chave na fala 2:** "A explicação está numa palavra: X". Aqui, **par**: cada criatura tem a sua construção,
+  e é isso que faz a vila virar combo.
+- **Virada anunciada com "Agora,"** e prova com "o manual diz" (no ouro, "o Código Civil diz").
+- **Escada de números com função:** de 2 a 6 trabalhadores e a Fazenda que dá fruto 3 vezes, não uma lista solta.
+- **Pergunta final sobre uma pessoa da vida de quem assiste**, nunca de sim ou não: "Quem do seu grupo ia brigar por esse
+  título?"
+- **De 55 a 62 s.** A v1 tinha 14 falas e ~70 s. A v2 tem 10 falas, 199 palavras e cerca de 60 s.
+- **Abertura do vídeo (Parte 3 da auditoria):** a primeira palavra em até 0,5 s, a capa por cima das primeiras palavras
+  (e não 1 s de silêncio, como no "50% de quê?") e um acontecimento forte antes de 3 s.
+
+## Falas (v2)
+| # | Função (molde do ouro) | Fala | Na mesa (peças desenhadas por nós) |
 |---|---|---|---|
-| 1 | Título | "Como se joga Everdell?" | A árvore gigante no alto do tabuleiro, o rio e a campina com 8 cartas; o título cai no terço de cima |
-| 2 | Objetivo | "Você monta uma vila de bichos da floresta, e ganha quem fizer mais pontos até o fim do outono." | A câmera desce até a área do jogador: 15 espaços vazios da vila |
-| 3 | O que custa | "Cada carta é uma criatura ou uma construção, e paga-se com recursos: graveto, cristal, seixo e fruto." | Os quatro recursos saltam da margem do rio, um por palavra |
-| 4 | Ação 1 | "No seu turno, você faz uma coisa só. Ou manda um trabalhador buscar recursos no tabuleiro…" | Um trabalhador (bichinho estilizado, de costas) pula para o local de 3 gravetos; "+3" salta |
-| 5 | Ação 2 | "…ou joga uma carta da mão ou da campina, pagando o custo." | Uma carta sai da campina, os gravetos voltam ao rio, a carta entra no espaço 1 da vila |
-| 6 | Disputa | "Local de círculo fechado aceita um trabalhador só. Quem chega primeiro, ocupa." | Um trabalhador de outra cor tenta entrar e é barrado; "×" |
-| 7 | **O truque (1)** | "E aqui está o truque: cada construção libera uma criatura de graça. Com o Tribunal na vila, a Juíza não custa nada." | O Tribunal na vila; a carta da Juíza com "3 frutos" riscado vira "grátis"; ficha de Ocupado cai no Tribunal |
-| 8 | **O truque (2)** | "E carta verde produz de novo na primavera e no outono. Uma Fazenda jogada cedo te dá fruto três vezes." | A Fazenda brilha três vezes, "+1" de fruto a cada vez, com o selo da estação |
-| 9 | **O cuidado** | "Só que trabalhador não volta sozinho. Pra trazer todos de volta, você gasta um turno inteiro se preparando pra próxima estação." | Todos os trabalhadores ficam parados; um relógio de turno se esvazia; eles voltam juntos |
-| 10 | Estações | "E cada estação traz gente nova: você começa com dois trabalhadores e chega ao outono com seis." | Os galhos da árvore soltam trabalhadores: 2 → 3 → 4 → 6 |
-| 11 | O ritmo | "E cada um tem o seu calendário: você pode estar no verão enquanto o outro ainda está na primavera." | Duas vilas lado a lado, com o selo "VERÃO" e "PRIMAVERA" |
-| 12 | Fim | "Depois do outono, cada um joga até passar a vez. Aí somam os pontos das cartas, das fichas e dos eventos." | A vila cheia (15 cartas); o placar sobe de 0 a um total |
-| 13 | Curiosidade | "E sabe quem começa? Tá no manual: a pessoa mais humilde da mesa." | A câmera sobe até a árvore; o trabalhador primeiro jogador ganha uma coroinha que cai |
-| 14 | Compartilhar | "Manda pro amigo que vai jurar que é ele." | Volta à mesa; rodapé discreto: "guia completo: eliteboardgamers.com.br/como-jogar" |
+| 1 | Gancho: pergunta do Google + resposta seca + suspense | "Como se joga Everdell? Parece jogo fofo de bichinho. Mas tem um erro que te faz perder um turno inteiro. Já te conto." | Quadro 0: a árvore gigante e a vila, já em movimento. Em "erro", um trabalhador cai deitado e um relógio de turno se esvazia de uma vez (acontecimento forte antes de 3 s) |
+| 2 | Chave | "Antes, a explicação está numa palavra: par." | "PAR" escrito grande; uma carta de criatura e uma de construção se encaixam lado a lado |
+| 3 | Tradução | "Você monta uma vila de 15 cartas e ganha quem fizer mais pontos. Cada carta é uma criatura ou uma construção, e custa graveto, cristal, seixo ou fruto." | 15 espaços vazios acendem; os quatro recursos saltam da margem do rio, um por palavra |
+| 4 | Como joga | "Na sua vez, você faz uma coisa só: manda um trabalhador buscar recurso, ou paga e joga uma carta da mão ou da campina." | Um bichinho pula para o local de 3 gravetos ("+3"); depois uma carta sai da campina e os gravetos voltam ao rio |
+| 5 | Virada com "Agora," + prova | "Agora, o par: no manual, cada criatura tem uma construção. Com o Tribunal na vila, a Juíza entra de graça." | O Tribunal na vila; a Juíza encosta nele; "3 frutos" riscado vira "GRÁTIS"; cai a ficha de Ocupado |
+| 6 | Segunda revelação | "E carta verde produz de novo na primavera e no outono. Uma Fazenda jogada cedo te dá fruto três vezes." | A Fazenda brilha 3 vezes ("+1" fruto), com o selo da estação em cada brilho |
+| 7 | O erro prometido (paga o suspense) | "E o erro que eu prometi: trabalhador não volta sozinho. Pra trazer todos de volta, você gasta um turno inteiro se preparando pra próxima estação." | Todos os trabalhadores presos nos locais; o relógio de turno se esvazia; eles voltam juntos |
+| 8 | Escada de números | "Em troca, cada estação traz gente nova: você começa com 2 trabalhadores e chega ao outono com 6." | Os galhos da árvore soltam bichinhos: 2 → 3 → 4 → 6 |
+| 9 | Pergunta sobre alguém | "E sabe quem começa? Pelo manual, a pessoa mais humilde da mesa. Quem do seu grupo ia brigar por esse título?" | Uma coroinha de folhas cai sobre o primeiro trabalhador |
+| 10 | Fecho | "Me segue pra aprender o próximo jogo em um minuto." | Volta à mesa inteira; rodapé discreto: "guia completo: eliteboardgamers.com.br/como-jogar" |
 
-## Contagem
-Cerca de 210 palavras, ~70 s a 3 palavras/s.
+**Capa (quadro 0, por cima das primeiras palavras):** etiqueta "EVERDELL EM 1 MINUTO", texto gigante "JOGO FOFO?" e a linha
+"o erro que te custa um turno".
 
-## Fatos (guia do site, `/como-jogar/everdell/`, sobre o livro de regras Galápagos EVE001_regras_v2.0, 24 p.)
-- 15 espaços na vila (p. 11); 8 cartas abertas na Campina (p. 6); recursos: gravetos, cristais (resina), seixos e frutos (p. 4).
-- No turno, uma de três ações: alocar trabalhador, jogar carta, preparar-se para a estação (p. 8).
-- Jogar carta da mão ou da Campina, pagando o custo; criatura custa frutos (p. 10 e 11).
-- Local de círculo fechado: 1 trabalhador só, de qualquer cor (p. 8).
-- Criatura gratuita: com a Construção indicada na vila, a Criatura sai sem pagar; ficha de Ocupado; uma vez por Construção
-  (p. 10). Exemplo do manual: Tribunal e Juíza; a Juíza custa 3 frutos (p. 10).
-- Cartas verdes (Produção): agem ao serem jogadas e de novo ao se preparar para a primavera e para o outono (p. 11 e 13).
-  Fazenda dá fruto (guia, etapa 2, p. 11, 12 e 19).
-- Trabalhadores só voltam com a ação de se preparar para a estação, que gasta o turno (p. 8 e 12).
+## Auditoria (padrão ouro do agro, adaptado ao "Como se joga")
+| Item do ouro | v1 | v2 |
+|---|---|---|
+| A1 abertura num molde aprovado (não só "ensinar") | ❌ só "Como se joga Everdell?" | ✅ pergunta do Google + resposta seca + suspense |
+| A2 gente da vida de quem assiste | ❌ | ⚠️ "você" na fala 1; "seu grupo" na fala 9 (no jogo, a pessoa próxima é quem senta à mesa) |
+| A4 o que quem assiste pode perder | ❌ | ✅ "perder um turno inteiro" |
+| A5 virada dentro da fala 1 | ❌ | ✅ "Parece… Mas…" |
+| A6 fala 1 com até 30 palavras | ✅ | ✅ 23 |
+| A7 fala 1 sem sigla nem número | ✅ | ✅ |
+| B1/B2 "A explicação está numa palavra: X" | ❌ | ✅ "par" |
+| C1 a chave volta adiante | — | ✅ fala 5 |
+| D1 prova com "diz" (manual) | ❌ | ✅ fala 5 |
+| E1 virada com "Agora," | ❌ | ✅ fala 5 |
+| Pergunta aberta até depois da metade | ❌ | ✅ aberta na 1, paga na 7 |
+| F1/F2 escada curta de números | ⚠️ lista | ✅ 2 → 6 trabalhadores; Fazenda 3 vezes |
+| G1–G3 penúltima fala pergunta sobre alguém da vida de quem assiste | ❌ "manda pro amigo" | ✅ "Quem do seu grupo…?" |
+| H1 fecho fixo curto | ❌ | ✅ "Me segue pra…" |
+| I1 uma voz | ✅ | ✅ |
+| I2 10 falas | ❌ 14 | ✅ 10 |
+| I3 de 160 a 195 palavras | ❌ ~210 | ⚠️ 199 (~60 s com o narrador acelerado em 8%) |
+| S1 primeira palavra em até 0,5 s | — | a cumprir na montagem |
+
+Fora do molde de propósito: **A3 (estranho)**, que é próprio das pautas de terra.
+
+## Fatos (guia do site `/como-jogar/everdell/`, sobre o livro de regras Galápagos EVE001_regras_v2.0, 24 p.)
+- Vila de 15 espaços (p. 11); recursos: gravetos, cristais (resina), seixos e frutos (p. 4); vence quem tem mais pontos
+  (p. 14).
+- No turno, uma ação só: alocar trabalhador, jogar carta (da mão ou da Campina, pagando o custo) ou preparar-se para a
+  estação (p. 8, 10 e 11).
+- Criatura gratuita: cada Criatura mostra o nome de uma Construção; com ela na vila, a Criatura sai sem pagar. Exemplo do
+  manual: Tribunal e Juíza, que custa 3 frutos (p. 10).
+- Cartas verdes agem ao serem jogadas e de novo ao se preparar para a primavera e para o outono (p. 11 e 13); a Fazenda
+  dá fruto (guia, etapa 2).
+- Trabalhadores só voltam com a ação de se preparar para a estação, que gasta o turno (p. 8 e 12). Está entre os "três
+  erros mais caros" do guia.
 - Trabalhadores: 2 no começo, 3 na primavera, 4 no verão, 6 no outono (p. 6 e 13).
-- Cada jogador tem a sua estação (p. 12).
-- Fim: depois de se preparar para o outono, joga-se até passar; somam cartas, fichas, bônus das roxas, Jornada e Eventos
-  (p. 12 e 14).
 - "Definam quem começa: a pessoa mais humilde da mesa" (p. 6).
 
-## Autochecagem
-| Item | Situação |
-|---|---|
-| Cada frase move uma peça | Sim |
-| Truque e cuidado | Batidas 7–8 e 9 |
-| Curiosidade com fonte | Manual, p. 6 |
-| Site na fala | Não; só no rodapé final e no post |
-| Arte do jogo | Não copiada: árvore, cartas, bichinhos e recursos desenhados por nós |
-| Simplificações | "Somam os pontos das cartas, das fichas e dos eventos" abrevia a contagem (também bônus das roxas e Jornada); a cartela traz a lista completa |
+## v1 (registro)
+Primeira versão com 14 falas e ~70 s, aberta só com "Como se joga Everdell?" e fechada com "Manda pro amigo que vai jurar
+que é ele." Foi substituída pela v2 a pedido do editor (mais ganchos).
