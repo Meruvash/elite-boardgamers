@@ -1,9 +1,18 @@
-# "50% de quê?": Black de Verdade (roteiro v1, 25/11/2026, aguardando aprovação)
+# "50% de quê?": Black de Verdade (aprovado e produzido em 25/11/2026)
 
 - **Regras:** `docs/video/DIRECAO_VIDEO_ELITE.md` (princípios dos vídeos do agro aplicados à Elite).
 - **Formato:** 1080×1080, 30 fps, cerca de 55 s, uma voz (narrador).
 - **Publicação sugerida:** quinta, 26/11/2026, véspera da Black Friday (sexta, 27/11). As falas 5 e 9 dependem disso.
-- **Status:** roteiro na conversa. Nada de voz, imagem ou render antes da aprovação.
+- **Status:** roteiro aprovado pelo editor em 25/11/2026 ("Aprovado, senta a vara") e produzido no mesmo dia.
+
+## Produção (25/11/2026)
+- **Mudança na fala 2:** "sobre o preço "de"" virou "sobre o preço de antes". Gravado com as aspas, o narrador lia a
+  palavra como letra (a transcrição saiu "preço G"). O sentido não muda.
+- **Números conferidos na hora do render:** radar às 20h40 de 25/11/2026 (116 jogos, até 53% abaixo da média, 10 cupons) e
+  "84 resenhas com fontes" em /resenhas/.
+- **Cor da legenda:** laranja do logo EB (`#E98B1E`), o logo atual do cabeçalho do site.
+- **Duração:** 60,9 s. Capa de 0 a 1,15 s; prints do site em 2 cartões de cerca de 2,2 s.
+- **Trilha:** estilo novo `taverna` (alaúde, flauta doce, pandeiro), 0 palavras na transcrição.
 
 ## 1. Pesquisa de pauta (25/11/2026)
 
@@ -101,7 +110,7 @@ Na lista principal, só jogo bem avaliado (nota 7+ no BGG) ou premiado. Tem cupo
 
 Black de Verdade no link da bio.
 
-Fonte: radar Black de Verdade, eliteboardgamers.com.br/black, lido em 25/11/2026. Pinturas feitas em código. Trilha original.
+Fonte: radar Black de Verdade, eliteboardgamers.com.br/black, lido em 25/11/2026 às 20h40. Pinturas feitas em código. Trilha original.
 
 #BlackFriday #JogosDeTabuleiro #BoardGames #Boardgamer #Promoção #DescontoReal #EliteBoardgamers #Tabuleiro #JogoDeTabuleiro
 ```

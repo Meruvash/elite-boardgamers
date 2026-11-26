@@ -66,12 +66,13 @@ metade de cima, legível a 200 px. Exportar `capa.jpg`.
 
 ### 2.5 Identidade fixa da Elite (troca a paleta do agro pela da marca)
 - 1080×1080, 30 fps.
-- **Legenda** de 1 a 3 palavras, Inter 900 com 54 px, sincronizada palavra por palavra, **preto sobre caixa dourada**
-  (o dourado da coroa do selo) no lugar do amarelo do agro. Mesma posição: um pouco abaixo do centro.
+- **Legenda** de 1 a 3 palavras, Inter 900 com 54 px, sincronizada palavra por palavra, **preto sobre caixa laranja
+  `#E98B1E`** (o laranja do logo "EB" do site) no lugar do amarelo do agro. Mesma posição: um pouco abaixo do centro.
 - Fundo de cartão e tipografia sobre o grafite do site (`#0f1115` / `#171a20`), texto `#eceff3`, verde de destaque
   `#3ddc84` só para "desconto real" e "vale a pena".
 - Títulos em serifa (Newsreader, itálico na palavra-chave), metadados em IBM Plex Mono.
-- **Selo "ELITE BOARDGAMERS" com a coroa** no canto inferior (pequeno, como marca d'água) e grande só na cartela final.
+- **Logo "EB · ELITE BOARD GAMERS"** (`marca/logo-eb-156.webp`, o do cabeçalho do site) grande na cartela final. O
+  banner do site não entra no vídeo.
 - Fonte no rodapé sempre que houver número (mono, ≥ 22 px).
 - Nenhuma imagem gerada por IA.
 
@@ -90,6 +91,14 @@ Quando houver série de números (preço ao longo dos meses, ranking), vale o gr
   - `bossa-lounge`: violão de bossa, contrabaixo e vassourinha, clima de noite de jogo em casa.
 - **Mixagem do agro corrigida em 12/11:** trilha normalizada antes (`loudnorm=I=-30:TP=-6:LRA=11`), volume 1 na
   composição, entrega a −14,5 LUFS e −1,5 dBTP.
+
+## 3.1 Ferramentas (`tools/video/`)
+- `falas.json` → `gerar_vozes.py 1,2,…` (pasta de trabalho fora do git, com `voz/`), pós-processamento e transcrição como
+  no agro; `preparar.py` monta a narração e os tempos; `montar.py` gera a composição HyperFrames.
+- Cenas: `tools/video/cenas/elite_scenes.js` no motor huashu-art-motion (mesma preparação do
+  `Arcvalion_gospel/tools/video/agro-arte/README.md`), com `eras_elite.js`.
+- Prints do site no celular: `prints/capturar.py` (390 px, escala 3).
+- Trilha: `trilha/gerar_trilha.py --estilo taverna` ou `bossa-lounge`.
 
 ## 4. Pauta: eixos da Elite (rodízio)
 | Eixo | Assunto |

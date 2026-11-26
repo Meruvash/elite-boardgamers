@@ -1,0 +1,62 @@
+[
+ {
+  "id": 1,
+  "quem": "narrador",
+  "texto": "Você sabia que um jogo de tabuleiro com 50% de desconto pode estar saindo pelo preço de sempre?",
+  "fala": "Você sabia que um jogo de tabuleiro com cinquenta por cento de desconto pode estar saindo pelo preço de sempre?"
+ },
+ {
+  "id": 2,
+  "quem": "narrador",
+  "texto": "É que a porcentagem da etiqueta é calculada sobre o preço de antes. E esse preço quem coloca é a própria loja.",
+  "fala": "É que a porcentagem da etiqueta é calculada sobre o preço de antes. E esse preço quem coloca é a própria loja."
+ },
+ {
+  "id": 3,
+  "quem": "narrador",
+  "texto": "Então, como saber se o desconto é real? Olhando a etiqueta, não dá.",
+  "fala": "Então, como saber se o desconto é real? Olhando a etiqueta, não dá."
+ },
+ {
+  "id": 4,
+  "quem": "narrador",
+  "texto": "No Black de Verdade, do site Elite Boardgamers, cada preço é comparado com a média real dos últimos meses.",
+  "fala": "No Black de Verdade, do site Élite Bôrdgueimers, cada preço é comparado com a média real dos últimos meses."
+ },
+ {
+  "id": 5,
+  "quem": "narrador",
+  "texto": "E o filtro é rigoroso: só entra jogo pelo menos 20% abaixo dessa média. Às vésperas da Black, passaram mais de cem.",
+  "fala": "E o filtro é rigoroso: só entra jogo pelo menos vinte por cento abaixo dessa média. Às vésperas da Black, passaram mais de cem."
+ },
+ {
+  "id": 6,
+  "quem": "narrador",
+  "texto": "Na lista principal, só jogo bem avaliado ou premiado. E ainda tem cupom, achado da comunidade e alerta no celular, sem cadastro.",
+  "fala": "Na lista principal, só jogo bem avaliado ou premiado. E ainda tem cupom, achado da comunidade e alerta no celular, sem cadastro."
+ },
+ {
+  "id": 7,
+  "quem": "narrador",
+  "texto": "Os links não têm comissão. E depois da Black, o site continua: 84 resenhas de jogos premiados, guias de como jogar e as notícias do hobby.",
+  "fala": "Os links não têm comissão. E depois da Black, o site continua: oitenta e quatro resenhas de jogos premiados, guias de como jogar e as notícias do róbi."
+ },
+ {
+  "id": 8,
+  "quem": "narrador",
+  "texto": "Agora, faz a conta: quanto do seu carrinho é desconto de verdade?",
+  "fala": "Agora, faz a conta: quanto do seu carrinho é desconto de verdade?"
+ },
+ {
+  "id": 9,
+  "quem": "narrador",
+  "texto": "E qual jogo você está esperando baixar nessa Black?",
+  "fala": "E qual jogo você está esperando baixar nessa Black?"
+ },
+ {
+  "id": 10,
+  "quem": "narrador",
+  "texto": "Elite Boardgamers. Black de Verdade no link da bio: eliteboardgamers.com.br.",
+  "fala": "Élite Bôrdgueimers. Black de Verdade no link da bio: élite bôrdgueimers ponto com ponto bê erre."
+ }
+]
