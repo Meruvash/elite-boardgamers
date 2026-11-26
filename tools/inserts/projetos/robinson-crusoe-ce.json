@@ -281,10 +281,10 @@
     "vulcao_placas": {
       "mm": [
         120,
-        125,
-        14
+        240,
+        13
       ],
-      "nota": "6-7 placas contadas na foto de 25/11/2026, ~2 mm cada; tamanho estimado pela placa de lava (~100 x 120)"
+      "nota": "Pilha das placas medida com régua em pé (26/11/2026): ~11 mm; uso 13. O vão em cima da bandeja de recursos tem 120 x 240 mm livres; qualquer placa até esse tamanho cabe."
     }
   }
 }
