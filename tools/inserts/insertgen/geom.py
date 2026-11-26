@@ -99,11 +99,39 @@ def texto_2d(linhas, larg_max, alt_max, tamanho=7.0, entrelinha=1.25):
     return m3.CrossSection(polys, m3.FillRule.EvenOdd)
 
 
-def gravacao_face_y(linhas, x_centro, z_centro, larg_max, alt_max, prof=0.6, y_face=0.0, para_dentro=1):
+def rotulo_2d(linhas, larg_max, alt_max, icones=None, gap=1.5):
+    """Texto + ícones (CrossSections já centrados, tamanho em mm) num só desenho 2D centrado,
+    ajustado para caber em larg_max x alt_max. Face alta: ícones em cima do texto; face baixa: ícones à esquerda."""
+    if not icones:
+        return texto_2d(linhas, larg_max, alt_max)
+    n = len(icones)
+    lado = max(max(b[2] - b[0], b[3] - b[1]) for b in (ic.bounds() for ic in icones))
+    fila = m3.CrossSection()
+    for i, ic in enumerate(icones):
+        fila = fila + ic.translate((i * (lado + gap) - (n - 1) * (lado + gap) / 2, 0))
+    fl, fa = n * lado + (n - 1) * gap, lado
+    if alt_max >= 1.6 * fa:  # empilha: ícones em cima, texto embaixo
+        txt = texto_2d(linhas, larg_max, alt_max - fa - gap)
+        tb = txt.bounds()
+        ta = tb[3] - tb[1]
+        tot = fa + gap + ta
+        sec = fila.translate((0, tot / 2 - fa / 2)) + txt.translate((0, -tot / 2 + ta / 2 - (tb[1] + tb[3]) / 2))
+    else:  # lado a lado
+        txt = texto_2d(linhas, larg_max - fl - gap, alt_max)
+        tb = txt.bounds()
+        tl = tb[2] - tb[0]
+        tot = fl + gap + tl
+        sec = fila.translate((-tot / 2 + fl / 2, 0)) + txt.translate((tot / 2 - tl / 2 - (tb[0] + tb[2]) / 2, 0))
+    b = sec.bounds()
+    k = min(1.0, larg_max / (b[2] - b[0]), alt_max / (b[3] - b[1]))
+    return sec.scale((k, k))
+
+
+def gravacao_face_y(linhas, x_centro, z_centro, larg_max, alt_max, prof=0.6, y_face=0.0, para_dentro=1, icones=None):
     """Sólido do texto para gravar (subtrair) numa face perpendicular a Y.
     para_dentro=+1: face em y=y_face com a peça do lado +Y (face 'da frente');
     para_dentro=-1: face em y=y_face com a peça do lado -Y (face 'de trás', texto espelhado para ler de fora)."""
-    sec = texto_2d(linhas, larg_max, alt_max)
+    sec = rotulo_2d(linhas, larg_max, alt_max, icones)
     if para_dentro < 0:
         sec = sec.mirror((1, 0))
     s = sec.extrude(prof + 0.5).rotate((90, 0, 0))  # texto no plano XZ, ocupa y em [-(prof+0.5), 0]

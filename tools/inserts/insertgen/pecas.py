@@ -95,7 +95,8 @@ def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_pis
     sol = corpo - g.uniao(furos)
     base = sol
     if rotulo:
-        sol = _gravar_pontas(sol, rotulo, X, Y, Z, p.parede)
+        txt, ics = rotulo if isinstance(rotulo, tuple) else (rotulo, None)
+        sol = _gravar_pontas(sol, txt, X, Y, Z, p.parede, icones=ics)
     rot = ["+".join(b.nome for b in poco) if poco else "descarte" for poco in pocos]
     pc = Peca(nome, sol, descricao or ("Poços: " + " | ".join(rot)), fantasmas=fant, medidas={"x": X, "y": Y, "z": Z})
     pc.sem_texto = base
@@ -187,7 +188,8 @@ def bandeja_em_pe(nome, baralhos, p: Params, altura, parede=1.6, folga_comp=1.0,
     sol = corpo - g.uniao(furos)
     base = sol
     if rotulo:
-        sol = _gravar_pontas(sol, rotulo, X, Y, Z, py)
+        txt, ics = rotulo if isinstance(rotulo, tuple) else (rotulo, None)
+        sol = _gravar_pontas(sol, txt, X, Y, Z, py, icones=ics)
     fant, x = [], parede + folga_maco / 2
     for i, b in enumerate(baralhos):
         h = b.altura_pilha()
@@ -209,14 +211,14 @@ def divisoria(nome, comp_poco, altura_util, esp=1.2, folga=0.5):
     return Peca(nome, placa, "Divisória solta entre maços em pé", medidas={"x": X, "y": Y, "z": esp})
 
 
-def _gravar_pontas(sol, rotulo, X, Y, Z, parede, prof=0.6):
+def _gravar_pontas(sol, rotulo, X, Y, Z, parede, prof=0.6, icones=None):
     """Grava o nome nas duas paredes curtas (faces y=0 e y=Y), legível de fora.
     A gravação deixa parede - prof de espessura (o validador exige >= 1,2 mm)."""
     if parede - prof < 1.2 - 1e-6:
         raise ValueError(f"parede de {parede} mm fina demais para gravar {prof} mm de texto")
     larg = X - 2 * max(4.0, parede + 2.5)
-    alt = min(Z * 0.55, 16.0)
+    alt = min(Z * 0.62, 30.0 if icones else 16.0)
     zc = Z * 0.45
-    t1 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, 0.0, +1)
-    t2 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, Y, -1)
+    t1 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, 0.0, +1, icones)
+    t2 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, Y, -1, icones)
     return sol - (t1 + t2)

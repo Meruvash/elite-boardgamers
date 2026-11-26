@@ -63,6 +63,29 @@ def penglord_ajustadas(comprimento_total):
     return out
 
 
+ICONES = os.path.join(AQUI, "..", "dados", "icones")
+
+
+def icones(tamanho=11.0):
+    """Ícones disponíveis (recortados das fotos das cartas). Faltando foto, o ícone fica de fora."""
+    import json as _json
+    from insertgen.icone import icone_de_foto
+    cfg = _json.load(open(os.path.join(ICONES, "icones.json"), encoding="utf-8"))
+    out = {}
+    for k, v in cfg.items():
+        if k.startswith("_"):
+            continue
+        arq = os.path.join(ICONES, v["foto"])
+        if os.path.exists(arq):
+            out[k] = icone_de_foto(arq, tuple(v["recorte"]), tamanho, **v.get("opcoes", {}))
+    return out
+
+
+def com_icone(texto, ic, *chaves):
+    lst = [ic[k] for k in chaves if k in ic]
+    return (texto, lst) if lst else texto
+
+
 def carregar(config=CONFIG):
     with open(config, encoding="utf-8") as fh:
         return json.load(fh)
@@ -502,6 +525,7 @@ def _montar_v5(cfg, p=None):
     larg3 = XY - col3
     alt_pe = lay.get("altura_em_pe_v5", 64.0)
 
+    IC = icones()
     PY = 2.0  # paredes curtas mais grossas nas bandejas em pé, para gravar o nome
 
     def em_pe(nome, decks, desc, rotulo):
@@ -510,12 +534,12 @@ def _montar_v5(cfg, p=None):
                              descricao=desc, parede_y=PY, rotulo=rotulo)
     an = bar["animais"]
     pes = [em_pe("cartas-aventura-construir-coletar", B("aventura-construir", "aventura-coletar"),
-                 "Em pé: Aventura Construir | Coletar (1 divisória)", ["CONSTRUIR", "COLETAR"]),
+                 "Em pé: Aventura Construir | Coletar (1 divisória)", com_icone(["CONSTRUIR", "COLETAR"], IC, "construir", "coletar")),
            em_pe("cartas-aventura-explorar-animais", B("aventura-explorar") + [an],
-                 "Em pé: Aventura Explorar | Animais (1 divisória)", ["EXPLORAR", "ANIMAIS"]),
+                 "Em pé: Aventura Explorar | Animais (1 divisória)", com_icone(["EXPLORAR", "ANIMAIS"], IC, "explorar", "animais")),
            em_pe("cartas-expansoes-em-pe", B("praia", "tracos", "tracos-secretos", "moral-dramatica"),
                  "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)",
-                 ["EXPANSÕES"])]
+                 com_icone(["EXPANSÕES"], IC, "expansoes"))]
     y = 0.0
     for pc in pes:
         add(pc, (col3, y, 0))
@@ -529,10 +553,10 @@ def _montar_v5(cfg, p=None):
             (col3, i * y / 2, alt_pe))
 
     # faixa sob a coluna 1: Eventos (0-52) e Mistério (52-86) deitados; pequenas em pé de retrato
-    eve = bandeja_baralhos("cartas-eventos", [B("eventos")], p, altura=NIVEL, ref=ref_g, rotulo="EVENTOS",
+    eve = bandeja_baralhos("cartas-eventos", [B("eventos")], p, altura=NIVEL, ref=ref_g, rotulo=com_icone("EVENTOS", IC, "eventos"),
                            descricao="Eventos (compra). Vai para a mesa.")
     mis = bandeja_baralhos("cartas-misterio", [B("misterio", "especiais")], p, altura=T - NIVEL, ref=ref_g,
-                           rotulo="MISTÉRIO",
+                           rotulo=com_icone("MISTÉRIO", IC, "misterio"),
                            descricao="Mistério (compra), com as Especiais por baixo. Vai para a mesa.")
     add(eve, (0, FAIXA, 0), rot90=1)
     add(mis, (0, FAIXA, NIVEL), rot90=1)
@@ -544,11 +568,11 @@ def _montar_v5(cfg, p=None):
     divp.qtd = 2
     pecas.append(divp)
     if lay.get("descartes", True):
-        _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3, XY, eve, peq, tampada)
+        _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3, XY, eve, peq, tampada, IC)
     return _fechar(cfg, p, pecas, itens, sl, bar)
 
 
-def _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3, XY, eve, peq, tampada):
+def _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3, XY, eve, peq, tampada, IC=None):
     """Bandejas de descarte (mesmo tamanho das de compra, vão para a mesa ao lado delas).
 
     - Descarte de Eventos: no vão livre sobre a bandeja de acampamento do PengLord (fundo, coluna 2).
@@ -558,8 +582,12 @@ def _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3
     lay = cfg.get("layout", {})
     TD = lay.get("topo_descartes", 100.0)
 
+    IC = IC or {}
+
     def desc(nome, rot, alt):
-        return bandeja_baralhos(nome, [[]], p, altura=alt, ref=ref_g, rotulo=rot,
+        chave = {"EVENTOS": "eventos", "MISTÉRIO": "misterio", "CONSTRUIR": "construir", "COLETAR": "coletar",
+                 "EXPLORAR": "explorar"}.get(rot[-1])
+        return bandeja_baralhos(nome, [[]], p, altura=alt, ref=ref_g, rotulo=com_icone(rot, IC, chave),
                                 descricao=f"Descarte ({rot[-1].lower()}). Vai para a mesa ao lado do monte de compra.")
 
     def aberta(nome, X, Y, Z, desc_):

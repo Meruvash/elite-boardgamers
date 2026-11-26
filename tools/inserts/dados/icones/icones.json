@@ -1,0 +1,12 @@
+{
+ "_sobre": "Ícones das cartas recortados das fotos do usuário (arquivo em dados/icones/, recorte em pixels da foto já endireitada). Cada um vira contorno gravado ao lado do nome.",
+ "construir": {
+  "foto": "construir.png",
+  "recorte": [
+   0,
+   0,
+   116,
+   111
+  ]
+ }
+}
