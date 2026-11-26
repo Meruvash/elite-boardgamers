@@ -54,24 +54,6 @@
   "imagem": "https://eliteboardgamers.com.br/just-one/capa.jpg"
  },
  {
-  "id": "n-fable-quest-arcadia-quest-cooperativo-gamefound",
-  "tema": "noticias",
-  "hora": "2026-11-09T10:03:34Z",
-  "titulo": "📰 Fable Quest leva o mundo de Arcadia Quest para uma campanha cooperativa no Gamefound",
-  "texto": "Arcadia Quest era o jogo em que os amigos se matavam com chibi fofinho, e esse era o charme. Agora todo mundo joga do mesmo lado. A gente entende: briga entre amigos…",
-  "url": "https://eliteboardgamers.com.br/noticias/fable-quest-arcadia-quest-cooperativo-gamefound/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/fable-quest-arcadia-quest-cooperativo-gamefound.jpg"
- },
- {
-  "id": "n-cubyria-architects-of-a-lost-city-kickstarter",
-  "tema": "noticias",
-  "hora": "2026-11-09T10:03:34Z",
-  "titulo": "📰 Cubyria, jogo de montar castelo em três dimensões, passa de 124 mil libras no Kickstarter",
-  "texto": "Jogo que vira maquete na mesa sempre chama atenção, e é para isso que ele foi feito. O próprio manual se resume como Tetris competitivo em 3D, o que é honesto e um…",
-  "url": "https://eliteboardgamers.com.br/noticias/cubyria-architects-of-a-lost-city-kickstarter/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/cubyria-architects-of-a-lost-city-kickstarter.jpg"
- },
- {
   "id": "n-marco-polo-deluxe-master-set-gamefound",
   "tema": "noticias",
   "hora": "2026-11-09T10:03:34Z",
@@ -358,5 +340,23 @@
   "texto": "Ahoy ganha a segunda expansão em português antes de muita gente terminar de entender quem afunda quem no jogo base. É bom sinal: editora só traduz expansão de jogo que…",
   "url": "https://eliteboardgamers.com.br/noticias/meeplebr-pre-venda-12-rios-ahoy-presas-fortuna/",
   "imagem": "https://eliteboardgamers.com.br/noticias/capas/40793.jpg"
+ },
+ {
+  "id": "n-spirit-island-natureza-encarnada-chega-ace-studios",
+  "tema": "noticias",
+  "hora": "2026-11-26T09:50:41Z",
+  "titulo": "📰 Natureza Encarnada, a maior expansão de Spirit Island, chega às lojas pela Ace Studios",
+  "texto": "Spirit Island é o tipo de jogo que a gente recomenda a quem acha cooperativo fácil demais. A expansão é para quem já apanhou bastante da ilha e quer apanhar de outros…",
+  "url": "https://eliteboardgamers.com.br/noticias/spirit-island-natureza-encarnada-chega-ace-studios/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/50279.jpg"
+ },
+ {
+  "id": "n-gouden-ludo-2026-take-time-bomb-busters-men-nefer",
+  "tema": "noticias",
+  "hora": "2026-11-26T09:50:41Z",
+  "titulo": "📰 Take Time, Bomb Busters e Men-Nefer vencem o Gouden Ludo 2026, prêmio belga",
+  "texto": "Take Time coleciona prêmio como quem coleciona figurinha: este é o quarto do ano, pelas contas do BoardGameWire. Para o leitor brasileiro, a boa notícia é outra: os…",
+  "url": "https://eliteboardgamers.com.br/noticias/gouden-ludo-2026-take-time-bomb-busters-men-nefer/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/80860.jpg"
  }
 ]

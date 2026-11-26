@@ -2,7 +2,7 @@
  "mes": "2026-11",
  "label": "Novembro de 2026",
  "titulo_previstos": "Previstos para novembro",
- "total": 33,
+ "total": 34,
  "lancados": [
   {
    "id_jogo": 70028,
@@ -246,6 +246,27 @@
     "id": 3248,
     "nome": "PaperGames",
     "url": "https://ludopedia.com.br/editora/3248/PaperGames"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 50279,
+   "nome": "Spirit Island: Natureza Encarnada",
+   "url": "https://ludopedia.com.br/jogo/spirit-island-nature-incarnate",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/50279_t.jpg",
+   "fl_jogo_base": 0,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 1870,
+    "nome": "Ace Studios",
+    "url": "https://ludopedia.com.br/editora/1870/Ace Studios"
    },
    "status": {
     "id": 1,
