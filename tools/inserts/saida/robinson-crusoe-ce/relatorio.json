@@ -26,12 +26,12 @@
    "arquivo": "cartas-aventura-construir-coletar.stl",
    "qtd": 1,
    "x": 53.6,
-   "y": 96.4,
+   "y": 94.9,
    "z": 64.0,
-   "volume_cm3": 24.6,
+   "volume_cm3": 24.3,
    "descricao": "Em pé: Aventura Construir | Coletar (1 divisória)",
    "notas": [
-    "poço 51.2 x 94.0 mm, carta em pé de 60.0 mm; 1 divisória(s) solta(s)",
+    "poço 51.2 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
     "aventura-construir: 19.0 mm de maço",
     "aventura-coletar: 19.0 mm de maço"
    ],
@@ -41,12 +41,12 @@
    "arquivo": "cartas-aventura-explorar-animais.stl",
    "qtd": 1,
    "x": 53.6,
-   "y": 96.4,
+   "y": 94.9,
    "z": 64.0,
-   "volume_cm3": 24.6,
+   "volume_cm3": 24.3,
    "descricao": "Em pé: Aventura Explorar | Animais (1 divisória)",
    "notas": [
-    "poço 51.2 x 94.0 mm, carta em pé de 60.0 mm; 1 divisória(s) solta(s)",
+    "poço 51.2 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
     "aventura-explorar: 19.0 mm de maço",
     "animais: 19.0 mm de maço"
    ],
@@ -56,12 +56,12 @@
    "arquivo": "cartas-expansoes-em-pe.stl",
    "qtd": 1,
    "x": 53.6,
-   "y": 96.4,
+   "y": 94.9,
    "z": 64.0,
-   "volume_cm3": 24.6,
+   "volume_cm3": 24.3,
    "descricao": "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)",
    "notas": [
-    "poço 51.2 x 94.0 mm, carta em pé de 60.0 mm; 3 divisória(s) solta(s)",
+    "poço 51.2 x 92.5 mm, carta em pé de 61.0 mm; 3 divisória(s) solta(s)",
     "praia: 8.6 mm de maço",
     "tracos: 8.6 mm de maço",
     "tracos-secretos: 8.6 mm de maço",
@@ -72,10 +72,10 @@
   {
    "arquivo": "divisoria-grandes.stl",
    "qtd": 5,
-   "x": 93.0,
+   "x": 91.5,
    "y": 62.3,
    "z": 1.2,
-   "volume_cm3": 6.8,
+   "volume_cm3": 6.7,
    "descricao": "Divisória solta entre maços em pé",
    "notas": [],
    "erros": []
@@ -84,9 +84,9 @@
    "arquivo": "caixa-sobre-cartas-1-tampa.stl",
    "qtd": 1,
    "x": 50.7,
-   "y": 141.7,
+   "y": 139.45,
    "z": 1.6,
-   "volume_cm3": 11.4,
+   "volume_cm3": 11.2,
    "descricao": "Tampa embutida de caixa-sobre-cartas-1",
    "notas": [],
    "erros": []
@@ -95,9 +95,9 @@
    "arquivo": "caixa-sobre-cartas-1.stl",
    "qtd": 1,
    "x": 53.6,
-   "y": 144.6,
+   "y": 142.35,
    "z": 22.0,
-   "volume_cm3": 28.2,
+   "volume_cm3": 27.8,
    "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
    "notas": [],
    "erros": []
@@ -106,9 +106,9 @@
    "arquivo": "caixa-sobre-cartas-2-tampa.stl",
    "qtd": 1,
    "x": 50.7,
-   "y": 141.7,
+   "y": 139.45,
    "z": 1.6,
-   "volume_cm3": 11.4,
+   "volume_cm3": 11.2,
    "descricao": "Tampa embutida de caixa-sobre-cartas-2",
    "notas": [],
    "erros": []
@@ -117,9 +117,9 @@
    "arquivo": "caixa-sobre-cartas-2.stl",
    "qtd": 1,
    "x": 53.6,
-   "y": 144.6,
+   "y": 142.35,
    "z": 22.0,
-   "volume_cm3": 28.2,
+   "volume_cm3": 27.8,
    "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
    "notas": [],
    "erros": []
@@ -127,13 +127,13 @@
   {
    "arquivo": "cartas-eventos.stl",
    "qtd": 1,
-   "x": 66.4,
-   "y": 98.4,
+   "x": 67.4,
+   "y": 96.9,
    "z": 52.0,
-   "volume_cm3": 36.6,
+   "volume_cm3": 36.5,
    "descricao": "Eventos (compra). Vai para a mesa.",
    "notas": [
-    "poço 62.4 x 94.4 x 50.8 mm; cabem ~103 cartas luvadas por poço",
+    "poço 63.4 x 92.9 x 50.8 mm; cabem ~103 cartas luvadas por poço",
     "eventos: 39.4 mm de maço"
    ],
    "erros": []
@@ -141,13 +141,13 @@
   {
    "arquivo": "cartas-misterio.stl",
    "qtd": 1,
-   "x": 66.4,
-   "y": 98.4,
+   "x": 67.4,
+   "y": 96.9,
    "z": 34.0,
-   "volume_cm3": 26.3,
+   "volume_cm3": 26.2,
    "descricao": "Mistério (compra), com as Especiais por baixo. Vai para a mesa.",
    "notas": [
-    "poço 62.4 x 94.4 x 32.8 mm; cabem ~65 cartas luvadas por poço",
+    "poço 63.4 x 92.9 x 32.8 mm; cabem ~65 cartas luvadas por poço",
     "misterio+especiais: 27.6 mm de maço"
    ],
    "erros": []
@@ -341,7 +341,7 @@
    ],
    "tam": [
     53.6,
-    96.4,
+    94.9,
     64.0
    ],
    "girada_90": false
@@ -351,12 +351,12 @@
    "origem": "gerada",
    "pos": [
     264.8,
-    96.4,
+    94.9,
     0
    ],
    "tam": [
     53.6,
-    96.4,
+    94.9,
     64.0
    ],
    "girada_90": false
@@ -366,12 +366,12 @@
    "origem": "gerada",
    "pos": [
     264.8,
-    192.8,
+    189.8,
     0
    ],
    "tam": [
     53.6,
-    96.4,
+    94.9,
     64.0
    ],
    "girada_90": false
@@ -386,7 +386,7 @@
    ],
    "tam": [
     53.6,
-    144.6,
+    142.35,
     22.0
    ],
    "girada_90": false
@@ -396,12 +396,12 @@
    "origem": "gerada",
    "pos": [
     264.8,
-    144.6,
+    142.35,
     64.0
    ],
    "tam": [
     53.6,
-    144.6,
+    142.35,
     22.0
    ],
    "girada_90": false
@@ -415,8 +415,8 @@
     0
    ],
    "tam": [
-    98.4,
-    66.4,
+    96.9,
+    67.4,
     52.0
    ],
    "girada_90": true
@@ -430,8 +430,8 @@
     52.0
    ],
    "tam": [
-    98.4,
-    66.4,
+    96.9,
+    67.4,
     34.0
    ],
    "girada_90": true
@@ -440,7 +440,7 @@
    "nome": "cartas-pequenas-retrato",
    "origem": "gerada",
    "pos": [
-    98.4,
+    96.9,
     246.0,
     0
    ],
@@ -466,11 +466,11 @@
     89
    ],
    "externo": [
-    60.0,
-    92.0
+    61.0,
+    90.5
    ],
    "micras": 60,
-   "fonte": "estimado",
+   "fonte": "medido",
    "compativeis": [
     "Sleeve CHIMERA"
    ]
@@ -494,27 +494,27 @@
   }
  },
  "baralhos": {
-  "eventos": "eventos: 83 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 39.4 mm",
-  "misterio": "misterio: 52 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 24.7 mm",
-  "aventura-construir": "aventura-construir: 40 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 19.0 mm",
-  "aventura-coletar": "aventura-coletar: 40 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 19.0 mm",
-  "aventura-explorar": "aventura-explorar: 40 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 19.0 mm",
-  "especiais": "especiais: 6 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 2.9 mm",
-  "mt-eventos": "mt-eventos: 82 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 39.0 mm",
-  "mt-aventura": "mt-aventura: 60 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 28.5 mm",
-  "mt-misterio": "mt-misterio: 24 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 11.4 mm",
-  "mt-insanidade": "mt-insanidade: 27 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 12.8 mm",
-  "mt-outros": "mt-outros: 60 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 28.5 mm",
+  "eventos": "eventos: 83 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 39.4 mm",
+  "misterio": "misterio: 52 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 24.7 mm",
+  "aventura-construir": "aventura-construir: 40 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 19.0 mm",
+  "aventura-coletar": "aventura-coletar: 40 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 19.0 mm",
+  "aventura-explorar": "aventura-explorar: 40 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 19.0 mm",
+  "especiais": "especiais: 6 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 2.9 mm",
+  "mt-eventos": "mt-eventos: 82 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 39.0 mm",
+  "mt-aventura": "mt-aventura: 60 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 28.5 mm",
+  "mt-misterio": "mt-misterio: 24 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 11.4 mm",
+  "mt-insanidade": "mt-insanidade: 27 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 12.8 mm",
+  "mt-outros": "mt-outros: 60 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 28.5 mm",
   "invencoes": "invencoes: 30 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 14.3 mm",
   "equipamento": "equipamento: 8 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 3.8 mm",
   "feras": "feras: 16 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 7.6 mm",
   "mt-invencoes": "mt-invencoes: 3 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 1.4 mm",
   "mt-equipamento": "mt-equipamento: 17 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 8.1 mm",
   "mt-pequenas": "mt-pequenas: 24 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 11.4 mm",
-  "praia": "praia: 18 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 8.6 mm",
-  "tracos": "tracos: 18 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 8.6 mm",
-  "tracos-secretos": "tracos-secretos: 18 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 8.6 mm",
-  "moral-dramatica": "moral-dramatica: 18 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 8.6 mm",
-  "animais": "animais: 40 cartas 58x88 em Sleeve CHIMERA (estimado: 60.0x92.0, 60 µm) -> maço 19.0 mm"
+  "praia": "praia: 18 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 8.6 mm",
+  "tracos": "tracos: 18 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 8.6 mm",
+  "tracos-secretos": "tracos-secretos: 18 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 8.6 mm",
+  "moral-dramatica": "moral-dramatica: 18 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 8.6 mm",
+  "animais": "animais: 40 cartas 58x88 em Sleeve CHIMERA (medido: 61.0x90.5, 60 µm) -> maço 19.0 mm"
  }
 }
