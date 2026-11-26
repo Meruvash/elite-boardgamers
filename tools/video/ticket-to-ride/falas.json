@@ -1,0 +1,12 @@
+[
+ {"id":1,"quem":"narrador","texto":"Imagina guardar um bilhete de trem a partida inteira e, no fim, ele te tirar pontos. Em Ticket to Ride, pode. Mas tem saída.","fala":"Imagina guardar um bilhete de trem a partida inteira e, no fim, ele te tirar pontos. Em Tíquet tu Ráid, pode. Mas tem saída."},
+ {"id":2,"quem":"narrador","texto":"A explicação está numa palavra: bilhete.","fala":"A explicação está numa palavra: bilhete."},
+ {"id":3,"quem":"narrador","texto":"Você começa com bilhetes secretos, cada um ligando duas cidades do mapa. Ligou com os seus trens, ganha os pontos. Não ligou, perde.","fala":"Você começa com bilhetes secretos, cada um ligando duas cidades do mapa. Ligou com os seus trens, ganha os pontos. Não ligou, perde."},
+ {"id":4,"quem":"narrador","texto":"Na sua vez, uma coisa só: compra duas cartas de vagão, pega mais bilhetes, ou ocupa uma rota pagando cartas da mesma cor.","fala":"Na sua vez, uma coisa só: compra duas cartas de vagão, pega mais bilhetes, ou ocupa uma rota pagando cartas da mesma cor."},
+ {"id":5,"quem":"narrador","texto":"Agora, a saída: rota longa vale muito mais. O manual diz: rota de 3 vagões dá 4 pontos. A de 6 dá 15.","fala":"Agora, a saída: rota longa vale muito mais. O manual diz: rota de três vagões dá quatro pontos. A de seis dá quinze."},
+ {"id":6,"quem":"narrador","texto":"E a locomotiva vale qualquer cor. Só que, se você pegar uma aberta na mesa, compra só essa carta no turno.","fala":"E a locomotiva vale qualquer cor. Só que, se você pegar uma aberta na mesa, compra só essa carta no turno."},
+ {"id":7,"quem":"narrador","texto":"Quando alguém fica com 2 trens ou menos, todo mundo joga mais uma vez. E o maior caminho contínuo ganha 10 pontos.","fala":"Quando alguém fica com dois trens ou menos, todo mundo joga mais uma vez. E o maior caminho contínuo ganha dez pontos."},
+ {"id":8,"quem":"narrador","texto":"E a história do manual original? Em 1900, cinco amigos apostam 1 milhão de dólares pra ver quem visita mais cidades de trem em 7 dias.","fala":"E a história do manual original? Em mil e novecentos, cinco amigos apostam um milhão de dólares pra ver quem visita mais cidades de trem em sete dias."},
+ {"id":9,"quem":"narrador","texto":"Quem do seu grupo ia fechar a sua rota só de pirraça?","fala":"Quem do seu grupo ia fechar a sua rota só de pirraça?"},
+ {"id":10,"quem":"narrador","texto":"Me segue pra aprender o próximo jogo em um minuto.","fala":"Me segue pra aprender o próximo jogo em um minuto."}
+]
