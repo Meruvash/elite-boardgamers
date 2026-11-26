@@ -159,6 +159,7 @@ class TestMontagem(unittest.TestCase):
     def test_versao_base_mais_baixa(self):
         cfg = rc.carregar()
         cfg["extras"]["miniaturas"] = False
+        cfg["extras"]["penglord_minis"] = False
         cfg["camada_plana"]["itens"] = [{"nome": "tabuleiro", "espessura": 12.0}]
         _, itens, reservas, ctx = rc.montar(cfg)
         self.assertEqual(ctx["topo_insert"], 78)
