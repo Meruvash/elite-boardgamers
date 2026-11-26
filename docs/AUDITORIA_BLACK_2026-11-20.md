@@ -9,7 +9,7 @@ lojas a cada minuto, o que fez lojas e o Compara Jogos bloquearem o robô. As tr
 
 | # | Falha | Efeito | Correção |
 |---|-------|--------|----------|
-| 1 | O Compara Jogos passou a listar a Shopee com link curto de afiliado (`s.shopee.com.br`). O robô não reconhecia o formato. | A trava de "link de afiliado de terceiros" descartava a publicação inteira. O robô normal ficou sem publicar desde 17/11 e o educado de 17/11 até 20/11 de manhã. | O robô usa a mesma regra da trava e tira o link na leitura (`tools/black/radar.py`). |
+| 1 | O Compara Jogos passou a listar a Shopee com link curto de afiliado (o domínio curto da Shopee, com o prefixo "s"). O robô não reconhecia o formato. | A trava de "link de afiliado de terceiros" descartava a publicação inteira. O robô normal ficou sem publicar desde 17/11 e o educado de 17/11 até 20/11 de manhã. | O robô usa a mesma regra da trava e tira o link na leitura (`tools/black/radar.py`). |
 | 2 | O `ciclo.sh` do robô educado saía depois de um ciclo e disparava o próximo trabalho na hora. | Visita às lojas a cada minuto, e não a cada 3 horas: cerca de 150 commits em 12 horas. Lojas bloqueadas passaram de 6 para 27, e o Compara Jogos passou a responder 429. | O trabalho espera o resto do intervalo de 3 horas antes de disparar o próximo (`tools/black/ciclo.sh`). |
 | 3 | Não havia limite de idade do preço. | Havia oferta no ar com preço visto há 9 dias (Azul: Mestre Chocolatier) e há 13 dias (Harry Potter: Batalha de Hogwarts). | Preço visto há mais de 4 dias sai do radar (`PRECO_MAX_HORAS`). |
 
