@@ -54,3 +54,11 @@ Medido na transcrição (ElevenLabs scribe_v1, palavras com tempo) e numa folha 
    só como rodapé discreto no fim ("guia completo: eliteboardgamers.com.br/como-jogar") e no texto do post.
 7. **Legenda:** 2 a 4 palavras no terço de cima, branco com contorno, palavra falada em caixa laranja `#E98B1E`.
 8. ~3 palavras/s, 70 a 85 s, uma voz.
+
+## Exportação para o Instagram (pedido do editor, 26/11/2026)
+"Preciso duma versão com qualidade melhor senão o Instagram penaliza o vídeo." Os primeiros masters saíram com 2,3 a
+2,5 Mbps a 30 fps. Desenho chapado comprime muito, e o Instagram recomprime em cima. Padrão a partir de agora:
+1. Render do HyperFrames a **60 fps, CRF 8**: `hyperframes render --fps 60 --crf 8 -o bruto60.mp4`.
+2. Master em **duas passadas a 12 Mbps** (teto de 16 Mbps): H.264 High 4.2, `-tune animation`, yuv420p, BT.709, GOP de
+   2 s, 60 fps, AAC 320 kbps a 48 kHz, −14,5 LUFS, faststart. Arquivo `<nome>-IG.mp4`, de 87 a 91 MB por minuto.
+3. Script: `tools/video/master_instagram.sh` (render a 60 fps). A codificação em duas passadas está descrita acima.
