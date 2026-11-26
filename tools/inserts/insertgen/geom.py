@@ -73,3 +73,42 @@ def uniao(lista):
 def bbox(solido):
     b = solido.bounding_box()
     return (b[0], b[1], b[2]), (b[3], b[4], b[5])
+
+
+def texto_2d(linhas, larg_max, alt_max, tamanho=7.0, entrelinha=1.25):
+    """Texto (uma ou mais linhas, centralizadas) como CrossSection, ajustado para caber em
+    larg_max x alt_max (mm), com origem no centro. Fonte DejaVu Sans Bold (vem com o matplotlib)."""
+    from matplotlib.textpath import TextPath
+    from matplotlib.font_manager import FontProperties
+    fp = FontProperties(family="DejaVu Sans", weight="bold")
+    if isinstance(linhas, str):
+        linhas = [linhas]
+    caminhos = [TextPath((0, 0), t, size=tamanho, prop=fp) for t in linhas]
+    larg = max(c.get_extents().width for c in caminhos)
+    alt_linha = tamanho * entrelinha
+    alt = alt_linha * (len(linhas) - 1) + tamanho
+    k = min(1.0, larg_max / larg, alt_max / alt)
+    polys = []
+    for i, c in enumerate(caminhos):
+        e = c.get_extents()
+        dx = -e.x0 - e.width / 2
+        dy = (len(linhas) - 1 - i) * alt_linha - alt / 2 + tamanho * 0.12
+        for pol in c.to_polygons():
+            if len(pol) >= 3:
+                polys.append([((x + dx) * k, (y + dy) * k) for x, y in pol])
+    return m3.CrossSection(polys, m3.FillRule.EvenOdd)
+
+
+def gravacao_face_y(linhas, x_centro, z_centro, larg_max, alt_max, prof=0.6, y_face=0.0, para_dentro=1):
+    """Sólido do texto para gravar (subtrair) numa face perpendicular a Y.
+    para_dentro=+1: face em y=y_face com a peça do lado +Y (face 'da frente');
+    para_dentro=-1: face em y=y_face com a peça do lado -Y (face 'de trás', texto espelhado para ler de fora)."""
+    sec = texto_2d(linhas, larg_max, alt_max)
+    if para_dentro < 0:
+        sec = sec.mirror((1, 0))
+    s = sec.extrude(prof + 0.5).rotate((90, 0, 0))  # texto no plano XZ, ocupa y em [-(prof+0.5), 0]
+    if para_dentro > 0:
+        s = s.translate((x_centro, y_face + prof, z_centro))
+    else:
+        s = s.mirror((0, 1, 0)).translate((x_centro, y_face - prof, z_centro))
+    return s

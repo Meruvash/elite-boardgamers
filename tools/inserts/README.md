@@ -71,6 +71,19 @@ tabuleiro e as bandejas de carta para os sleeves Bucaneiros.
 - **Por cima de tudo:** tabuleiro, fichas de cenário, manual e os 2 guias (~35 mm estimados). Sobram 6 mm numa caixa
   de 127 e 3 mm numa de 124.
 
+**Nomes em relevo e descartes (27/11/2026):**
+- Cada bandeja de carta tem o nome gravado (0,6 mm) nas duas paredes curtas, legível de fora:
+  EVENTOS, MISTÉRIO, CONSTRUIR/COLETAR, EXPLORAR/ANIMAIS, EXPANSÕES, PEQUENAS e os DESCARTES.
+  As paredes curtas das bandejas em pé passaram a ter 2 mm para caber a gravação.
+- **5 bandejas de descarte**, do mesmo tamanho das de compra, que vão para a mesa ao lado do monte:
+  - Eventos: no vão livre sobre o acampamento do PengLord;
+  - Construir, Coletar e Explorar: na camada de cima;
+  - Mistério: na camada de cima.
+- **Camada de cima (até 100 mm):** os descartes mais 8 bandejas abertas (fichas e dados soltos), que formam um piso
+  plano para o tabuleiro. As placas do vulcão agora ficam numa bandeja rasa própria (`bandeja-vulcao`).
+- O insert subiu de 86 para **100 mm**. Com a pilha de cima medida (~24 mm, 26 no projeto), sobram ~11 mm até a
+  tampa (8 mm no pior caso).
+
 **A única medida que nenhum projeto publicado tem:** a espessura da pilha de cima, de preferência junto com a das
 placas do vulcão.
 
@@ -81,7 +94,7 @@ placas do vulcão.
 - **Antes de tudo:** as peças de `saida/teste-encaixe/` (`python3 tools/inserts/gerar_teste.py`), para conferir o
   sleeve.
 - Os STLs de `saida/robinson-crusoe-ce/`. Imprima **5 cópias** da `divisoria-grandes` e **2 cópias** da
-  `divisoria-pequenas`.
+  `divisoria-pequenas` (30 arquivos ao todo).
 - Do **js500/Hooper** (o seu zip): `obj_11` a `obj_16` e `obj_19`.
 - As bandejas de miniaturas **não** saem do zip do PengLord: use `penglord-miniaturas-figuras.stl` e
   `penglord-miniaturas-acampamento.stl`, geradas aqui já encurtadas (CC BY-NC-SA 4.0, crédito ao PengLord).

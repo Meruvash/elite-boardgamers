@@ -20,6 +20,7 @@ class Peca:
     fantasmas: list = field(default_factory=list)   # [(rótulo, Manifold)]
     medidas: dict = field(default_factory=dict)      # medidas nominais declaradas (x, y, z)
     notas: list = field(default_factory=list)
+    sem_texto: object = None  # sólido antes da gravação dos nomes (usado na checagem de parede fina)
 
     @property
     def tamanho(self):
@@ -44,7 +45,7 @@ class Params:
 
 
 def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_piso=26.0, descricao="",
-                     girar_carta=False, ref=None):
+                     girar_carta=False, ref=None, rotulo=None):
     """Bandeja de mesa para maços DEITADOS (cartas luvadas), poços em fila ao longo de Y.
 
     pocos: lista; cada item é uma lista de Baralho que divide o mesmo poço
@@ -92,8 +93,12 @@ def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_pis
             fant.append((b.nome, g.caixa(L, A, h, (p.parede + (larg_c - L) / 2, y0 + (comp_c - A) / 2, z))))
             z += h
     sol = corpo - g.uniao(furos)
+    base = sol
+    if rotulo:
+        sol = _gravar_pontas(sol, rotulo, X, Y, Z, p.parede)
     rot = ["+".join(b.nome for b in poco) if poco else "descarte" for poco in pocos]
     pc = Peca(nome, sol, descricao or ("Poços: " + " | ".join(rot)), fantasmas=fant, medidas={"x": X, "y": Y, "z": Z})
+    pc.sem_texto = base
     cap = int((prof - p.folga_maco) / ref[0].espessura_unit / 1.08)
     pc.notas.append(f"poço {larg_c:.1f} x {comp_c:.1f} x {prof:.1f} mm; cabem ~{cap} cartas luvadas por poço")
     pc.notas += [f"{r}: {s:.1f} mm de maço" for r, s in zip(rot, pilha)]
@@ -154,7 +159,7 @@ def bloco_espaco(nome, X, Y, Z, p: Params, descricao="Calço"):
 
 
 def bandeja_em_pe(nome, baralhos, p: Params, altura, parede=1.6, folga_comp=1.0, folga_maco=1.5,
-                  esp_divisoria=1.2, descricao="", retrato=False):
+                  esp_divisoria=1.2, descricao="", retrato=False, parede_y=None, rotulo=None):
     """Bandeja de guarda com cartas EM PÉ apoiadas no lado comprido (estilo PengLord).
 
     O lado comprido da carta luvada fica ao longo de Y (poço = comprimento + 2*folga_comp);
@@ -169,23 +174,28 @@ def bandeja_em_pe(nome, baralhos, p: Params, altura, parede=1.6, folga_comp=1.0,
     n_div = len(baralhos) - 1
     interno_x = sum(b.altura_pilha() for b in baralhos) + n_div * esp_divisoria + folga_maco
     comp = A + 2 * folga_comp
-    X, Y, Z = interno_x + 2 * parede, comp + 2 * parede, altura
+    py = parede if parede_y is None else parede_y
+    X, Y, Z = interno_x + 2 * parede, comp + 2 * py, altura
     if Z - p.piso < L + 0.5:
         raise ValueError(f"{nome}: altura {Z} baixa para carta em pé de {L:.1f} mm")
     corpo = g.caixa_arred(X, Y, Z, p.raio_canto)
-    furos = [g.caixa_arred(interno_x, comp, Z, 0.8, (parede, parede, p.piso))]
+    furos = [g.caixa_arred(interno_x, comp, Z, 0.8, (parede, py, p.piso))]
     larg_rec = min(comp - 24, 60.0)
     prof_rec = Z * 0.5
     furos.append(g.entalhe_dedo(larg_rec, prof_rec, parede + 2, (-1, Y / 2, Z), eixo="x"))
     furos.append(g.entalhe_dedo(larg_rec, prof_rec, parede + 2, (X - parede - 1, Y / 2, Z), eixo="x"))
     sol = corpo - g.uniao(furos)
+    base = sol
+    if rotulo:
+        sol = _gravar_pontas(sol, rotulo, X, Y, Z, py)
     fant, x = [], parede + folga_maco / 2
     for i, b in enumerate(baralhos):
         h = b.altura_pilha()
-        fant.append((b.nome, g.caixa(h, A, L, (x, parede + folga_comp, p.piso))))
+        fant.append((b.nome, g.caixa(h, A, L, (x, py + folga_comp, p.piso))))
         x += h + esp_divisoria
     pc = Peca(nome, sol, descricao or ("Em pé: " + " | ".join(b.nome for b in baralhos)),
               fantasmas=fant, medidas={"x": X, "y": Y, "z": Z})
+    pc.sem_texto = base
     pc.notas.append(f"poço {interno_x:.1f} x {comp:.1f} mm, carta em pé de {L:.1f} mm; {n_div} divisória(s) solta(s)")
     pc.notas += [f"{b.nome}: {b.altura_pilha():.1f} mm de maço" for b in baralhos]
     return pc
@@ -197,3 +207,16 @@ def divisoria(nome, comp_poco, altura_util, esp=1.2, folga=0.5):
     placa = g.caixa_arred(X, Y, esp, 3.0)
     placa = placa - g.cilindro(9, esp + 2, (X / 2, Y, -1))
     return Peca(nome, placa, "Divisória solta entre maços em pé", medidas={"x": X, "y": Y, "z": esp})
+
+
+def _gravar_pontas(sol, rotulo, X, Y, Z, parede, prof=0.6):
+    """Grava o nome nas duas paredes curtas (faces y=0 e y=Y), legível de fora.
+    A gravação deixa parede - prof de espessura (o validador exige >= 1,2 mm)."""
+    if parede - prof < 1.2 - 1e-6:
+        raise ValueError(f"parede de {parede} mm fina demais para gravar {prof} mm de texto")
+    larg = X - 2 * max(4.0, parede + 2.5)
+    alt = min(Z * 0.55, 16.0)
+    zc = Z * 0.45
+    t1 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, 0.0, +1)
+    t2 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, Y, -1)
+    return sol - (t1 + t2)

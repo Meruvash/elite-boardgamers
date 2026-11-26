@@ -73,7 +73,11 @@ def validar_peca(peca, parede_min=1.2, mesa=(256, 256, 256)):
     xy = sorted(tam[:2])
     if xy[0] > min(mesa[:2]) or xy[1] > max(mesa[:2]) or tam[2] > mesa[2]:
         erros.append(f"não cabe na mesa da impressora {mesa}")
-    area, onde = parede_fina(peca.solido, parede_min)
+    area, onde = parede_fina(peca.sem_texto if getattr(peca, "sem_texto", None) is not None else peca.solido,
+                             parede_min)
+    if getattr(peca, "sem_texto", None) is not None:
+        prof = (peca.sem_texto.volume() - peca.solido.volume())
+        info["texto_gravado_mm3"] = round(prof, 1)
     info["parede_fina_mm2"] = round(area, 3)
     if area > 1.0:
         erros.append(f"parede mais fina que {parede_min} mm (área {area:.1f} mm² em z/bbox {onde})")

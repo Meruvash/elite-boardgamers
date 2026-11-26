@@ -27,6 +27,17 @@
    "erros": []
   },
   {
+   "arquivo": "bandeja-vulcao.stl",
+   "qtd": 1,
+   "x": 142.0,
+   "y": 246.0,
+   "z": 14.8,
+   "volume_cm3": 62.8,
+   "descricao": "Bandeja rasa onde as placas do vulcão ficam deitadas (apoia a camada de cima)",
+   "notas": [],
+   "erros": []
+  },
+  {
    "arquivo": "caixa-estreita-tampa.stl",
    "qtd": 1,
    "x": 16.3,
@@ -42,8 +53,8 @@
    "qtd": 1,
    "x": 19.2,
    "y": 246.0,
-   "z": 35.0,
-   "volume_cm3": 48.6,
+   "z": 20.2,
+   "volume_cm3": 31.1,
    "descricao": "Caixa estreita com tampa: bases de Líder, marcador de 1º jogador, extras",
    "notas": [],
    "erros": []
@@ -52,9 +63,9 @@
    "arquivo": "cartas-aventura-construir-coletar.stl",
    "qtd": 1,
    "x": 49.2,
-   "y": 94.9,
+   "y": 96.5,
    "z": 64.0,
-   "volume_cm3": 23.1,
+   "volume_cm3": 27.9,
    "descricao": "Em pé: Aventura Construir | Coletar (1 divisória)",
    "notas": [
     "poço 46.8 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
@@ -67,9 +78,9 @@
    "arquivo": "cartas-aventura-explorar-animais.stl",
    "qtd": 1,
    "x": 49.2,
-   "y": 94.9,
+   "y": 96.5,
    "z": 64.0,
-   "volume_cm3": 23.1,
+   "volume_cm3": 27.9,
    "descricao": "Em pé: Aventura Explorar | Animais (1 divisória)",
    "notas": [
     "poço 46.8 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
@@ -82,9 +93,9 @@
    "arquivo": "cartas-expansoes-em-pe.stl",
    "qtd": 1,
    "x": 49.2,
-   "y": 94.9,
+   "y": 96.5,
    "z": 64.0,
-   "volume_cm3": 23.1,
+   "volume_cm3": 28.0,
    "descricao": "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)",
    "notas": [
     "poço 46.8 x 92.5 mm, carta em pé de 61.0 mm; 3 divisória(s) solta(s)",
@@ -110,9 +121,9 @@
    "arquivo": "caixa-sobre-cartas-1-tampa.stl",
    "qtd": 1,
    "x": 46.3,
-   "y": 139.45,
+   "y": 141.85,
    "z": 1.6,
-   "volume_cm3": 10.2,
+   "volume_cm3": 10.4,
    "descricao": "Tampa embutida de caixa-sobre-cartas-1",
    "notas": [],
    "erros": []
@@ -121,9 +132,9 @@
    "arquivo": "caixa-sobre-cartas-1.stl",
    "qtd": 1,
    "x": 49.2,
-   "y": 142.35,
+   "y": 144.75,
    "z": 22.0,
-   "volume_cm3": 26.7,
+   "volume_cm3": 27.0,
    "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
    "notas": [],
    "erros": []
@@ -132,9 +143,9 @@
    "arquivo": "caixa-sobre-cartas-2-tampa.stl",
    "qtd": 1,
    "x": 46.3,
-   "y": 139.45,
+   "y": 141.85,
    "z": 1.6,
-   "volume_cm3": 10.2,
+   "volume_cm3": 10.4,
    "descricao": "Tampa embutida de caixa-sobre-cartas-2",
    "notas": [],
    "erros": []
@@ -143,9 +154,9 @@
    "arquivo": "caixa-sobre-cartas-2.stl",
    "qtd": 1,
    "x": 49.2,
-   "y": 142.35,
+   "y": 144.75,
    "z": 22.0,
-   "volume_cm3": 26.7,
+   "volume_cm3": 27.0,
    "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
    "notas": [],
    "erros": []
@@ -156,7 +167,7 @@
    "x": 67.4,
    "y": 96.9,
    "z": 52.0,
-   "volume_cm3": 36.5,
+   "volume_cm3": 36.4,
    "descricao": "Eventos (compra). Vai para a mesa.",
    "notas": [
     "poço 63.4 x 92.9 x 50.8 mm; cabem ~103 cartas luvadas por poço",
@@ -170,7 +181,7 @@
    "x": 67.4,
    "y": 96.9,
    "z": 34.0,
-   "volume_cm3": 26.2,
+   "volume_cm3": 26.1,
    "descricao": "Mistério (compra), com as Especiais por baixo. Vai para a mesa.",
    "notas": [
     "poço 63.4 x 92.9 x 32.8 mm; cabem ~65 cartas luvadas por poço",
@@ -182,9 +193,9 @@
    "arquivo": "cartas-pequenas-retrato.stl",
    "qtd": 1,
    "x": 31.961,
-   "y": 51.9,
+   "y": 53.5,
    "z": 86.0,
-   "volume_cm3": 15.9,
+   "volume_cm3": 20.2,
    "descricao": "Cartas pequenas em pé (de retrato): Invenções | Equipamento | Feras",
    "notas": [
     "poço 29.6 x 49.5 mm, carta em pé de 71.0 mm; 2 divisória(s) solta(s)",
@@ -202,6 +213,164 @@
    "z": 1.2,
    "volume_cm3": 4.7,
    "descricao": "Divisória solta entre maços em pé",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "descarte-eventos.stl",
+   "qtd": 1,
+   "x": 67.4,
+   "y": 96.9,
+   "z": 34.8,
+   "volume_cm3": 26.4,
+   "descricao": "Descarte (eventos). Vai para a mesa ao lado do monte de compra.",
+   "notas": [
+    "poço 63.4 x 92.9 x 33.6 mm; cabem ~67 cartas luvadas por poço",
+    "descarte: 0.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "descarte-construir.stl",
+   "qtd": 1,
+   "x": 67.4,
+   "y": 96.9,
+   "z": 17.0,
+   "volume_cm3": 16.3,
+   "descricao": "Descarte (construir). Vai para a mesa ao lado do monte de compra.",
+   "notas": [
+    "poço 63.4 x 92.9 x 15.8 mm; cabem ~30 cartas luvadas por poço",
+    "descarte: 0.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "descarte-coletar.stl",
+   "qtd": 1,
+   "x": 67.4,
+   "y": 96.9,
+   "z": 17.0,
+   "volume_cm3": 16.3,
+   "descricao": "Descarte (coletar). Vai para a mesa ao lado do monte de compra.",
+   "notas": [
+    "poço 63.4 x 92.9 x 15.8 mm; cabem ~30 cartas luvadas por poço",
+    "descarte: 0.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "descarte-explorar.stl",
+   "qtd": 1,
+   "x": 67.4,
+   "y": 96.9,
+   "z": 17.0,
+   "volume_cm3": 16.3,
+   "descricao": "Descarte (explorar). Vai para a mesa ao lado do monte de compra.",
+   "notas": [
+    "poço 63.4 x 92.9 x 15.8 mm; cabem ~30 cartas luvadas por poço",
+    "descarte: 0.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "bandeja-aberta-a1.stl",
+   "qtd": 1,
+   "x": 25.9,
+   "y": 202.2,
+   "z": 17.0,
+   "volume_cm3": 24.2,
+   "descricao": "Bandeja aberta (fichas soltas)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "bandeja-aberta-a2.stl",
+   "qtd": 1,
+   "x": 122.8,
+   "y": 43.8,
+   "z": 17.0,
+   "volume_cm3": 19.5,
+   "descricao": "Bandeja aberta (fichas soltas)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "descarte-misterio.stl",
+   "qtd": 1,
+   "x": 67.4,
+   "y": 96.9,
+   "z": 14.0,
+   "volume_cm3": 14.4,
+   "descricao": "Descarte (mistério). Vai para a mesa ao lado do monte de compra.",
+   "notas": [
+    "poço 63.4 x 92.9 x 12.8 mm; cabem ~23 cartas luvadas por poço",
+    "descarte: 0.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "bandeja-aberta-b1.stl",
+   "qtd": 1,
+   "x": 45.1,
+   "y": 67.4,
+   "z": 14.0,
+   "volume_cm3": 11.0,
+   "descricao": "Bandeja aberta (fichas soltas)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "bandeja-aberta-b2.stl",
+   "qtd": 1,
+   "x": 142.0,
+   "y": 178.6,
+   "z": 14.0,
+   "volume_cm3": 63.6,
+   "descricao": "Bandeja aberta (fichas soltas)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "bandeja-aberta-c1.stl",
+   "qtd": 1,
+   "x": 49.2,
+   "y": 144.75,
+   "z": 14.0,
+   "volume_cm3": 21.4,
+   "descricao": "Bandeja aberta (dados, marcadores)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "bandeja-aberta-c2.stl",
+   "qtd": 1,
+   "x": 49.2,
+   "y": 144.75,
+   "z": 14.0,
+   "volume_cm3": 21.4,
+   "descricao": "Bandeja aberta (dados, marcadores)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "bandeja-aberta-d.stl",
+   "qtd": 1,
+   "x": 150.4,
+   "y": 68.0,
+   "z": 14.0,
+   "volume_cm3": 34.9,
+   "descricao": "Bandeja aberta (fichas soltas)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "bandeja-aberta-e.stl",
+   "qtd": 1,
+   "x": 113.6,
+   "y": 68.0,
+   "z": 14.0,
+   "volume_cm3": 28.1,
+   "descricao": "Bandeja aberta (fichas soltas)",
    "notas": [],
    "erros": []
   }
@@ -328,17 +497,17 @@
    "girada_90": false
   },
   {
-   "nome": "PLACAS DO VULCÃO (deitadas, sem bandeja)",
-   "origem": "componente",
+   "nome": "bandeja-vulcao",
+   "origem": "gerada",
    "pos": [
-    142.8,
+    122.8,
     0,
     71.2
    ],
    "tam": [
-    122,
-    150,
-    13
+    142.0,
+    246.0,
+    14.8
    ],
    "girada_90": false
   },
@@ -353,7 +522,7 @@
    "tam": [
     19.2,
     246.0,
-    35.0
+    20.2
    ],
    "girada_90": false
   },
@@ -367,7 +536,7 @@
    ],
    "tam": [
     49.2,
-    94.9,
+    96.5,
     64.0
    ],
    "girada_90": false
@@ -377,12 +546,12 @@
    "origem": "gerada",
    "pos": [
     264.8,
-    94.9,
+    96.5,
     0
    ],
    "tam": [
     49.2,
-    94.9,
+    96.5,
     64.0
    ],
    "girada_90": false
@@ -392,12 +561,12 @@
    "origem": "gerada",
    "pos": [
     264.8,
-    189.8,
+    193.0,
     0
    ],
    "tam": [
     49.2,
-    94.9,
+    96.5,
     64.0
    ],
    "girada_90": false
@@ -412,7 +581,7 @@
    ],
    "tam": [
     49.2,
-    142.35,
+    144.75,
     22.0
    ],
    "girada_90": false
@@ -422,12 +591,12 @@
    "origem": "gerada",
    "pos": [
     264.8,
-    142.35,
+    144.75,
     64.0
    ],
    "tam": [
     49.2,
-    142.35,
+    144.75,
     22.0
    ],
    "girada_90": false
@@ -471,18 +640,213 @@
     0
    ],
    "tam": [
-    51.9,
+    53.5,
     31.96,
     86.0
    ],
    "girada_90": true
+  },
+  {
+   "nome": "descarte-eventos",
+   "origem": "gerada",
+   "pos": [
+    159.55,
+    246.0,
+    51.2
+   ],
+   "tam": [
+    96.9,
+    67.4,
+    34.8
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "descarte-construir",
+   "origem": "gerada",
+   "pos": [
+    0,
+    0.0,
+    83.0
+   ],
+   "tam": [
+    96.9,
+    67.4,
+    17.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "descarte-coletar",
+   "origem": "gerada",
+   "pos": [
+    0,
+    67.4,
+    83.0
+   ],
+   "tam": [
+    96.9,
+    67.4,
+    17.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "descarte-explorar",
+   "origem": "gerada",
+   "pos": [
+    0,
+    134.8,
+    83.0
+   ],
+   "tam": [
+    96.9,
+    67.4,
+    17.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "bandeja-aberta-a1",
+   "origem": "gerada",
+   "pos": [
+    96.9,
+    0.0,
+    83.0
+   ],
+   "tam": [
+    25.9,
+    202.2,
+    17.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "bandeja-aberta-a2",
+   "origem": "gerada",
+   "pos": [
+    0,
+    202.2,
+    83.0
+   ],
+   "tam": [
+    122.8,
+    43.8,
+    17.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "descarte-misterio",
+   "origem": "gerada",
+   "pos": [
+    122.8,
+    0,
+    86.0
+   ],
+   "tam": [
+    96.9,
+    67.4,
+    14.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "bandeja-aberta-b1",
+   "origem": "gerada",
+   "pos": [
+    219.7,
+    0,
+    86.0
+   ],
+   "tam": [
+    45.1,
+    67.4,
+    14.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "bandeja-aberta-b2",
+   "origem": "gerada",
+   "pos": [
+    122.8,
+    67.4,
+    86.0
+   ],
+   "tam": [
+    142.0,
+    178.6,
+    14.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "bandeja-aberta-c1",
+   "origem": "gerada",
+   "pos": [
+    264.8,
+    0.0,
+    86.0
+   ],
+   "tam": [
+    49.2,
+    144.75,
+    14.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "bandeja-aberta-c2",
+   "origem": "gerada",
+   "pos": [
+    264.8,
+    144.75,
+    86.0
+   ],
+   "tam": [
+    49.2,
+    144.75,
+    14.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "bandeja-aberta-d",
+   "origem": "gerada",
+   "pos": [
+    0,
+    246.0,
+    86.0
+   ],
+   "tam": [
+    150.4,
+    68.0,
+    14.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "bandeja-aberta-e",
+   "origem": "gerada",
+   "pos": [
+    151.2,
+    246.0,
+    86.0
+   ],
+   "tam": [
+    113.6,
+    68.0,
+    14.0
+   ],
+   "girada_90": false
   }
  ],
  "erros_montagem": [],
- "topo_insert": 86.0,
+ "topo_insert": 100.0,
  "espessura_plana": 27.0,
- "espaco_tabuleiro": 51.0,
- "folga_sobrando": 24.0,
+ "espaco_tabuleiro": 37.0,
+ "folga_sobrando": 10.0,
  "sleeves": {
   "grande": {
    "chave": "chimera",

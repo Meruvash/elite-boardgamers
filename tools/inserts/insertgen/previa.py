@@ -14,9 +14,9 @@ COR_CAIXA = "#e3a72f"
 
 
 def _cor(it):
-    if it.origem == "original":
+    if it.origem == "original" or it.nome.startswith("penglord"):
         return COR_ORIG
-    return COR_CARTA if it.nome.startswith("cartas") else COR_CAIXA
+    return COR_CARTA if it.nome.startswith(("cartas", "descarte")) else COR_CAIXA
 
 
 def planta(itens, cfg, ctx, caminho):

@@ -20,7 +20,7 @@ import json
 import os
 
 from insertgen.cartas import Baralho, carregar_catalogo, sleeve_envelope
-from insertgen.pecas import Params, bandeja_baralhos, bandeja_em_pe, bandeja_fichas, divisoria
+from insertgen.pecas import Params, bandeja_baralhos, bandeja_em_pe, bandeja_fichas, bloco_espaco, divisoria
 from insertgen.validar import Item
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
@@ -488,31 +488,39 @@ def _montar_v5(cfg, p=None):
     x_rec = col3 - B_w  # recursos avança sobre a coluna 1, na faixa livre ao lado das fichas/dados
     rec = orig("obj_14_resources.stl", (x_rec, 0, ml.caixa[1][2]))
     vx, vy, vz = cfg["componentes_soltos"]["vulcao_placas"]["mm"]
-    itens.append(Item("PLACAS DO VULCÃO (deitadas, sem bandeja)", (vx, vy, vz), (col3 - vx, 0, rec.caixa[1][2]),
-                      None, origem="componente"))
-    add(tampada("caixa-estreita", x_rec - B_w, FAIXA, T - 51.0, [(1, [1, 1, 1])],
+    z_rec = rec.caixa[1][2]
+    bv = bloco_espaco("bandeja-vulcao", col3 - B_w, FAIXA, T - z_rec, p,
+                      descricao="Bandeja rasa onde as placas do vulcão ficam deitadas (apoia a camada de cima)")
+    from insertgen import geom as _g
+    bv.fantasmas.append(("placas do vulcão", _g.caixa(vx, vy, vz, (p.parede + 1, p.parede + 1, p.piso))))
+    pecas.append(bv)
+    itens.append(Item(bv.nome, bv.tamanho, (B_w, 0, z_rec), bv.solido))
+    add(tampada("caixa-estreita", x_rec - B_w, FAIXA, z_rec - 51.0, [(1, [1, 1, 1])],
                 "Caixa estreita com tampa: bases de Líder, marcador de 1º jogador, extras"), (B_w, 0, 51.0))
 
     # coluna 3: cartas em pé
     larg3 = XY - col3
     alt_pe = lay.get("altura_em_pe_v5", 64.0)
 
-    def em_pe(nome, decks, desc):
-        pc = bandeja_em_pe(nome, decks, p, alt_pe, parede=par_pe, descricao=desc)
+    PY = 2.0  # paredes curtas mais grossas nas bandejas em pé, para gravar o nome
+
+    def em_pe(nome, decks, desc, rotulo):
+        pc = bandeja_em_pe(nome, decks, p, alt_pe, parede=par_pe, descricao=desc, parede_y=PY)
         return bandeja_em_pe(nome, decks, p, alt_pe, parede=par_pe, folga_maco=1.5 + larg3 - pc.tamanho[0],
-                             descricao=desc)
+                             descricao=desc, parede_y=PY, rotulo=rotulo)
     an = bar["animais"]
     pes = [em_pe("cartas-aventura-construir-coletar", B("aventura-construir", "aventura-coletar"),
-                 "Em pé: Aventura Construir | Coletar (1 divisória)"),
+                 "Em pé: Aventura Construir | Coletar (1 divisória)", ["CONSTRUIR", "COLETAR"]),
            em_pe("cartas-aventura-explorar-animais", B("aventura-explorar") + [an],
-                 "Em pé: Aventura Explorar | Animais (1 divisória)"),
+                 "Em pé: Aventura Explorar | Animais (1 divisória)", ["EXPLORAR", "ANIMAIS"]),
            em_pe("cartas-expansoes-em-pe", B("praia", "tracos", "tracos-secretos", "moral-dramatica"),
-                 "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)")]
+                 "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)",
+                 ["EXPANSÕES"])]
     y = 0.0
     for pc in pes:
         add(pc, (col3, y, 0))
         y += pc.tamanho[1]
-    div = divisoria("divisoria-grandes", pes[0].tamanho[1] - 2 * par_pe, alt_pe - p.piso)
+    div = divisoria("divisoria-grandes", pes[0].tamanho[1] - 2 * PY, alt_pe - p.piso)
     div.qtd = 5
     pecas.append(div)
     for i in range(2):  # duas metades: inteira passaria da mesa da impressora
@@ -521,16 +529,80 @@ def _montar_v5(cfg, p=None):
             (col3, i * y / 2, alt_pe))
 
     # faixa sob a coluna 1: Eventos (0-52) e Mistério (52-86) deitados; pequenas em pé de retrato
-    eve = bandeja_baralhos("cartas-eventos", [B("eventos")], p, altura=NIVEL, ref=ref_g,
+    eve = bandeja_baralhos("cartas-eventos", [B("eventos")], p, altura=NIVEL, ref=ref_g, rotulo="EVENTOS",
                            descricao="Eventos (compra). Vai para a mesa.")
     mis = bandeja_baralhos("cartas-misterio", [B("misterio", "especiais")], p, altura=T - NIVEL, ref=ref_g,
+                           rotulo="MISTÉRIO",
                            descricao="Mistério (compra), com as Especiais por baixo. Vai para a mesa.")
     add(eve, (0, FAIXA, 0), rot90=1)
     add(mis, (0, FAIXA, NIVEL), rot90=1)
     peq = bandeja_em_pe("cartas-pequenas-retrato", B("invencoes", "equipamento", "feras"), p, T, parede=par_pe,
-                        retrato=True, descricao="Cartas pequenas em pé (de retrato): Invenções | Equipamento | Feras")
+                        retrato=True, parede_y=PY, rotulo="PEQUENAS",
+                        descricao="Cartas pequenas em pé (de retrato): Invenções | Equipamento | Feras")
     add(peq, (eve.tamanho[1], FAIXA, 0), rot90=1)
-    divp = divisoria("divisoria-pequenas", peq.tamanho[1] - 2 * par_pe, T - p.piso)
+    divp = divisoria("divisoria-pequenas", peq.tamanho[1] - 2 * PY, T - p.piso)
     divp.qtd = 2
     pecas.append(divp)
+    if lay.get("descartes", True):
+        _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3, XY, eve, peq, tampada)
     return _fechar(cfg, p, pecas, itens, sl, bar)
+
+
+def _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3, XY, eve, peq, tampada):
+    """Bandejas de descarte (mesmo tamanho das de compra, vão para a mesa ao lado delas).
+
+    - Descarte de Eventos: no vão livre sobre a bandeja de acampamento do PengLord (fundo, coluna 2).
+    - Demais descartes + bandejas abertas de fichas: camada fina por cima de tudo, até TOPO_DESC,
+      apoiada no topo de cada coluna (o tabuleiro passa a deitar sobre ela).
+    """
+    lay = cfg.get("layout", {})
+    TD = lay.get("topo_descartes", 100.0)
+
+    def desc(nome, rot, alt):
+        return bandeja_baralhos(nome, [[]], p, altura=alt, ref=ref_g, rotulo=rot,
+                                descricao=f"Descarte ({rot[-1].lower()}). Vai para a mesa ao lado do monte de compra.")
+
+    def aberta(nome, X, Y, Z, desc_):
+        t, _ = bandeja_fichas(nome, X, Y, Z, [(1, [1])] if min(X, Y) < 60 else [(1, [1, 1]), (1, [1, 1])], p,
+                              tampa=False, descricao=desc_)
+        return t
+
+    # 1) descarte de Eventos no vão sobre o acampamento do PengLord
+    z_pl = 51.2
+    d_ev = desc("descarte-eventos", ["DESCARTE", "EVENTOS"], T - z_pl)
+    w, l = d_ev.tamanho[1], d_ev.tamanho[0]  # girada 90°
+    y_pl = FAIXA
+    add(d_ev, (A_x + (col3 - A_x - w) / 2, y_pl, z_pl), rot90=1)
+
+    # 2) região A (componentes js500, topo 83): 3 descartes de Aventura + 2 bandejas abertas
+    zA = 83.0
+    hA = TD - zA
+    nomes = [("descarte-construir", ["DESCARTE", "CONSTRUIR"]), ("descarte-coletar", ["DESCARTE", "COLETAR"]),
+             ("descarte-explorar", ["DESCARTE", "EXPLORAR"])]
+    y = 0.0
+    for nome, rot in nomes:
+        d = desc(nome, rot, hA)
+        add(d, (0, y, zA), rot90=1)
+        y += d.tamanho[0]
+    larg_d = d.tamanho[1]
+    add(aberta("bandeja-aberta-a1", B_w - larg_d, y, hA, "Bandeja aberta (fichas soltas)"), (larg_d, y * 0, zA))
+    add(aberta("bandeja-aberta-a2", B_w, FAIXA - y, hA, "Bandeja aberta (fichas soltas)"), (0, y, zA))
+
+    # 3) região B+C (caixa estreita + vulcão, topo 86): descarte de Mistério + 2 bandejas abertas
+    zB = T
+    hB = TD - zB
+    d_mi = desc("descarte-misterio", ["DESCARTE", "MISTÉRIO"], hB)
+    add(d_mi, (B_w, 0, zB), rot90=1)
+    xa, ya = B_w + d_mi.tamanho[1], d_mi.tamanho[0]
+    add(aberta("bandeja-aberta-b1", col3 - xa, ya, hB, "Bandeja aberta (fichas soltas)"), (xa, 0, zB))
+    add(aberta("bandeja-aberta-b2", col3 - B_w, FAIXA - ya, hB, "Bandeja aberta (fichas soltas)"), (B_w, ya, zB))
+
+    # 4) coluna 3 (cartas em pé, topo 86) e faixa do fundo (topo 86): bandejas abertas
+    y3 = max(it.caixa[1][1] for it in itens if it.caixa[0][0] >= col3 - 0.01 and it.caixa[0][2] < 1)
+    for i in range(2):
+        add(aberta(f"bandeja-aberta-c{i + 1}", XY - col3, y3 / 2, hB, "Bandeja aberta (dados, marcadores)"),
+            (col3, i * y3 / 2, zB))
+    xf = eve.tamanho[1] + peq.tamanho[1]
+    add(aberta("bandeja-aberta-d", xf, XY - FAIXA, hB, "Bandeja aberta (fichas soltas)"), (0, FAIXA, zB))
+    add(aberta("bandeja-aberta-e", col3 - A_x, XY - FAIXA, hB, "Bandeja aberta (fichas soltas)"),
+        (A_x, FAIXA, zB))
