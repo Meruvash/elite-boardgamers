@@ -168,7 +168,7 @@ class TestMontagem(unittest.TestCase):
     def test_versao_5_penglord(self):
         pecas, itens, reservas, ctx = rc.montar(rc.carregar())
         self.assertEqual(ctx["topo_insert"], 86)
-        self.assertTrue(any("mini_tray_-_camp" in it.nome for it in itens))
+        self.assertTrue(any("penglord-miniaturas-acampamento" in it.nome for it in itens))
         self.assertEqual(validar_montagem((320, 320, 127), itens, reservas), [])
         for pc in pecas:
             self.assertEqual(validar_peca(pc)[0], [], pc.nome)

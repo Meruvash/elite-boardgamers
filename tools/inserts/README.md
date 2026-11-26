@@ -43,6 +43,12 @@ tampa ficar levantada. Por isso o original também não tem espaço para o tabul
 
 ### A solução atual (versão 5): projetos publicados + espaço do tabuleiro
 
+> **A caixa da edição brasileira (Conclave) é menor.** Medida com trena em 26/11/2026, ela tem ~315,5 mm por dentro,
+> contra ~320 mm da caixa da Gamefound. O js500 e o PengLord ocupam 318,4 mm e não caberiam. Por isso a versão 5 ocupa
+> no máximo **314 x 314 mm**. As duas bandejas de miniaturas do PengLord saem **encurtadas 1,4% em Y** (o `gerar.py`
+> gera as duas a partir dos originais em `dados/terceiros/penglord/`), e a coluna de cartas em pé ficou mais estreita.
+> A altura útil medida é ~138 mm.
+
 A versão 5 junta o que os projetos publicados já resolvem e só acrescenta o que nenhum deles tem: o espaço do
 tabuleiro e as bandejas de carta para os sleeves Bucaneiros.
 
@@ -74,10 +80,11 @@ placas do vulcão.
 
 - **Antes de tudo:** as peças de `saida/teste-encaixe/` (`python3 tools/inserts/gerar_teste.py`), para conferir o
   sleeve.
-- Os **12 STLs** de `saida/robinson-crusoe-ce/`. Imprima **5 cópias** da `divisoria-grandes` e **2 cópias** da
+- Os STLs de `saida/robinson-crusoe-ce/`. Imprima **5 cópias** da `divisoria-grandes` e **2 cópias** da
   `divisoria-pequenas`.
 - Do **js500/Hooper** (o seu zip): `obj_11` a `obj_16` e `obj_19`.
-- Do **PengLord** (zip do Printables 877306): `mini_tray_-_large.stl` e `mini_tray_-_camp.stl`.
+- As bandejas de miniaturas **não** saem do zip do PengLord: use `penglord-miniaturas-figuras.stl` e
+  `penglord-miniaturas-acampamento.stl`, geradas aqui já encurtadas (CC BY-NC-SA 4.0, crédito ao PengLord).
 - PLA ou PETG, camada de 0,2 mm, sem suporte, com a boca para cima. As bandejas de carta em pé têm parede de 1,2 mm:
   use 3 perímetros.
 

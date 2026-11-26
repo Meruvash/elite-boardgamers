@@ -1,6 +1,32 @@
 {
  "pecas": [
   {
+   "arquivo": "penglord-miniaturas-figuras.stl",
+   "qtd": 1,
+   "x": 113.6,
+   "y": 171.004,
+   "z": 51.2,
+   "volume_cm3": 92.2,
+   "descricao": "Bandeja do PengLord (CC BY-NC-SA 4.0) encurtada em Y para 98.6%",
+   "notas": [
+    "escala Y 0.9862"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "penglord-miniaturas-acampamento.stl",
+   "qtd": 1,
+   "x": 113.6,
+   "y": 142.996,
+   "z": 51.2,
+   "volume_cm3": 73.1,
+   "descricao": "Bandeja do PengLord (CC BY-NC-SA 4.0) encurtada em Y para 98.6%",
+   "notas": [
+    "escala Y 0.9862"
+   ],
+   "erros": []
+  },
+  {
    "arquivo": "caixa-estreita-tampa.stl",
    "qtd": 1,
    "x": 16.3,
@@ -25,13 +51,13 @@
   {
    "arquivo": "cartas-aventura-construir-coletar.stl",
    "qtd": 1,
-   "x": 53.6,
+   "x": 49.2,
    "y": 94.9,
    "z": 64.0,
-   "volume_cm3": 24.3,
+   "volume_cm3": 23.1,
    "descricao": "Em pé: Aventura Construir | Coletar (1 divisória)",
    "notas": [
-    "poço 51.2 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
+    "poço 46.8 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
     "aventura-construir: 19.0 mm de maço",
     "aventura-coletar: 19.0 mm de maço"
    ],
@@ -40,13 +66,13 @@
   {
    "arquivo": "cartas-aventura-explorar-animais.stl",
    "qtd": 1,
-   "x": 53.6,
+   "x": 49.2,
    "y": 94.9,
    "z": 64.0,
-   "volume_cm3": 24.3,
+   "volume_cm3": 23.1,
    "descricao": "Em pé: Aventura Explorar | Animais (1 divisória)",
    "notas": [
-    "poço 51.2 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
+    "poço 46.8 x 92.5 mm, carta em pé de 61.0 mm; 1 divisória(s) solta(s)",
     "aventura-explorar: 19.0 mm de maço",
     "animais: 19.0 mm de maço"
    ],
@@ -55,13 +81,13 @@
   {
    "arquivo": "cartas-expansoes-em-pe.stl",
    "qtd": 1,
-   "x": 53.6,
+   "x": 49.2,
    "y": 94.9,
    "z": 64.0,
-   "volume_cm3": 24.3,
+   "volume_cm3": 23.1,
    "descricao": "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)",
    "notas": [
-    "poço 51.2 x 92.5 mm, carta em pé de 61.0 mm; 3 divisória(s) solta(s)",
+    "poço 46.8 x 92.5 mm, carta em pé de 61.0 mm; 3 divisória(s) solta(s)",
     "praia: 8.6 mm de maço",
     "tracos: 8.6 mm de maço",
     "tracos-secretos: 8.6 mm de maço",
@@ -83,10 +109,10 @@
   {
    "arquivo": "caixa-sobre-cartas-1-tampa.stl",
    "qtd": 1,
-   "x": 50.7,
+   "x": 46.3,
    "y": 139.45,
    "z": 1.6,
-   "volume_cm3": 11.2,
+   "volume_cm3": 10.2,
    "descricao": "Tampa embutida de caixa-sobre-cartas-1",
    "notas": [],
    "erros": []
@@ -94,10 +120,10 @@
   {
    "arquivo": "caixa-sobre-cartas-1.stl",
    "qtd": 1,
-   "x": 53.6,
+   "x": 49.2,
    "y": 142.35,
    "z": 22.0,
-   "volume_cm3": 27.8,
+   "volume_cm3": 26.7,
    "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
    "notas": [],
    "erros": []
@@ -105,10 +131,10 @@
   {
    "arquivo": "caixa-sobre-cartas-2-tampa.stl",
    "qtd": 1,
-   "x": 50.7,
+   "x": 46.3,
    "y": 139.45,
    "z": 1.6,
-   "volume_cm3": 11.2,
+   "volume_cm3": 10.2,
    "descricao": "Tampa embutida de caixa-sobre-cartas-2",
    "notas": [],
    "erros": []
@@ -116,10 +142,10 @@
   {
    "arquivo": "caixa-sobre-cartas-2.stl",
    "qtd": 1,
-   "x": 53.6,
+   "x": 49.2,
    "y": 142.35,
    "z": 22.0,
-   "volume_cm3": 27.8,
+   "volume_cm3": 26.7,
    "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
    "notas": [],
    "erros": []
@@ -257,8 +283,8 @@
    "girada_90": false
   },
   {
-   "nome": "ORIGINAL penglord/mini_tray_-_large.stl",
-   "origem": "original",
+   "nome": "penglord-miniaturas-figuras",
+   "origem": "gerada",
    "pos": [
     151.2,
     0,
@@ -266,22 +292,22 @@
    ],
    "tam": [
     113.6,
-    173.4,
+    171.0,
     51.2
    ],
    "girada_90": false
   },
   {
-   "nome": "ORIGINAL penglord/mini_tray_-_camp.stl",
-   "origem": "original",
+   "nome": "penglord-miniaturas-acampamento",
+   "origem": "gerada",
    "pos": [
     151.2,
-    173.4,
+    171.0,
     0
    ],
    "tam": [
     113.6,
-    145.0,
+    143.0,
     51.2
    ],
    "girada_90": false
@@ -340,7 +366,7 @@
     0
    ],
    "tam": [
-    53.6,
+    49.2,
     94.9,
     64.0
    ],
@@ -355,7 +381,7 @@
     0
    ],
    "tam": [
-    53.6,
+    49.2,
     94.9,
     64.0
    ],
@@ -370,7 +396,7 @@
     0
    ],
    "tam": [
-    53.6,
+    49.2,
     94.9,
     64.0
    ],
@@ -385,7 +411,7 @@
     64.0
    ],
    "tam": [
-    53.6,
+    49.2,
     142.35,
     22.0
    ],
@@ -400,7 +426,7 @@
     64.0
    ],
    "tam": [
-    53.6,
+    49.2,
     142.35,
     22.0
    ],

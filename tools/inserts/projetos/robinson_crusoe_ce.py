@@ -31,6 +31,38 @@ TOPO = 2 * NIVEL  # 104: topo plano do insert, onde deita o tabuleiro
 FAIXA = 246.0     # comprimento das peças originais; a faixa do fundo começa aqui
 
 
+TERCEIROS = os.path.join(AQUI, "..", "dados", "terceiros", "penglord")
+
+
+def penglord_ajustadas(comprimento_total):
+    """As duas bandejas de miniaturas do PengLord (CC BY-NC-SA 4.0), encurtadas só em Y para que,
+    juntas, meçam `comprimento_total` (originais: 173,4 + 145 = 318,4 mm). O encurtamento é uniforme
+    (~1,4% para 314 mm): compartimentos e paredes diminuem na mesma proporção."""
+    import manifold3d as m3
+    import numpy as np
+    from insertgen import stl as stlio
+    from insertgen.pecas import Peca
+    nomes = [("mini_tray_-_large.stl", "penglord-miniaturas-figuras"),
+             ("mini_tray_-_camp.stl", "penglord-miniaturas-acampamento")]
+    malhas = []
+    for arq, _ in nomes:
+        v, f = stlio.ler(os.path.join(TERCEIROS, arq))
+        v = v - v.min(axis=0)
+        malhas.append((v, f))
+    total = sum(np.ptp(v[:, 1]) for v, _ in malhas)
+    fy = min(1.0, comprimento_total / total)
+    out = []
+    for (v, f), (_, nome) in zip(malhas, nomes):
+        v2 = v * np.array([1.0, fy, 1.0])
+        sol = m3.Manifold(m3.Mesh(vert_properties=v2.astype(np.float32), tri_verts=f.astype(np.uint32)))
+        t = np.ptp(v2, axis=0)
+        pc = Peca(nome, sol, f"Bandeja do PengLord (CC BY-NC-SA 4.0) encurtada em Y para {fy * 100:.1f}%",
+                  medidas={"x": float(t[0]), "y": float(t[1]), "z": float(t[2])})
+        pc.notas.append(f"escala Y {fy:.4f}")
+        out.append(pc)
+    return out
+
+
 def carregar(config=CONFIG):
     with open(config, encoding="utf-8") as fh:
         return json.load(fh)
@@ -415,7 +447,7 @@ def _montar_v5(cfg, p=None):
     ref_g = Baralho("ref", gc["tamanho"], 0, gc["espessura"], sl["grande"])
     orig_t = cfg["originais_reaproveitados"]
     T = lay.get("topo_v4", 86.0)
-    XY = cfg["caixa_interna"].get("ocupacao_comprovada", {}).get("x", 318.4)
+    XY = cfg["caixa_interna"].get("ocupacao_maxima", 318.4)
     par_pe = lay.get("parede_em_pe", 1.2)
 
     pecas, itens = [], []
@@ -446,10 +478,13 @@ def _montar_v5(cfg, p=None):
     A_x = orig_t["obj_11_characters.stl"][0]
     B_w = orig_t["obj_14_resources.stl"][0]
 
-    # coluna 2: miniaturas PengLord + recursos + vulcão
-    ml = orig("penglord/mini_tray_-_large.stl", (A_x, 0, 0))
-    orig("penglord/mini_tray_-_camp.stl", (A_x, ml.caixa[1][1], 0))
-    col3 = A_x + orig_t["penglord/mini_tray_-_large.stl"][0]
+    # coluna 2: miniaturas PengLord (encurtadas em Y para caber na caixa) + recursos + vulcão
+    pl = penglord_ajustadas(XY)
+    for pc in pl:
+        pecas.append(pc)
+    ml = add(pl[0], (A_x, 0, 0))
+    add(pl[1], (A_x, ml.caixa[1][1], 0))
+    col3 = A_x + pl[0].tamanho[0]
     x_rec = col3 - B_w  # recursos avança sobre a coluna 1, na faixa livre ao lado das fichas/dados
     rec = orig("obj_14_resources.stl", (x_rec, 0, ml.caixa[1][2]))
     vx, vy, vz = cfg["componentes_soltos"]["vulcao_placas"]["mm"]
