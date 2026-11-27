@@ -84,6 +84,12 @@ tabuleiro e as bandejas de carta para os sleeves Bucaneiros.
 - O insert subiu de 86 para **100 mm**. Com a pilha de cima medida (~24 mm, 26 no projeto), sobram ~11 mm até a
   tampa (8 mm no pior caso).
 
+**Tampas e conteúdo (27/11/2026):**
+- As 8 bandejas abertas da camada de cima ganharam tampa embutida, rente à borda, e viraram `caixa-a1` a
+  `caixa-e`. Com isso a caixa pode ser guardada em pé.
+- Toda tampa tem o conteúdo gravado em cima. O que vai em cada uma está em `projetos/robinson-crusoe-ce.json`,
+  `conteudo_bandejas`: troque o texto ali e rode `gerar.py`.
+
 **A única medida que nenhum projeto publicado tem:** a espessura da pilha de cima, de preferência junto com a das
 placas do vulcão.
 

@@ -222,3 +222,19 @@ def _gravar_pontas(sol, rotulo, X, Y, Z, parede, prof=0.6, icones=None):
     t1 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, 0.0, +1, icones)
     t2 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, Y, -1, icones)
     return sol - (t1 + t2)
+
+
+def gravar_topo(pc, linhas, prof=0.5, margem=4.0):
+    """Grava texto na face de cima de uma peça plana (tampa), legível de cima. Texto longo em peça
+    estreita é girado 90°. Guarda o sólido sem texto para a checagem de parede."""
+    (x0, y0, z0), (x1, y1, z1) = g.bbox(pc.solido)
+    w, h = x1 - x0, y1 - y0
+    girar = h > 1.8 * w
+    lw, lh = (h - 2 * margem, w - 2 * margem) if girar else (w - 2 * margem, h - 2 * margem)
+    sec = g.rotulo_2d(linhas, lw, min(lh, 20.0))
+    if girar:
+        sec = sec.rotate(90)
+    cut = sec.extrude(prof + 0.5).translate(((x0 + x1) / 2, (y0 + y1) / 2 + (0 if girar else 2.0), z1 - prof))
+    pc.sem_texto = pc.solido
+    pc.solido = pc.solido - cut
+    return pc

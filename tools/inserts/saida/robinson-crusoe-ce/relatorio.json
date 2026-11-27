@@ -43,7 +43,7 @@
    "x": 16.3,
    "y": 243.1,
    "z": 1.6,
-   "volume_cm3": 6.2,
+   "volume_cm3": 6.1,
    "descricao": "Tampa embutida de caixa-estreita",
    "notas": [],
    "erros": []
@@ -55,7 +55,7 @@
    "y": 246.0,
    "z": 20.2,
    "volume_cm3": 31.1,
-   "descricao": "Caixa estreita com tampa: bases de Líder, marcador de 1º jogador, extras",
+   "descricao": "Fichas de número (6) e fichas de clima/tempestade",
    "notas": [],
    "erros": []
   },
@@ -123,7 +123,7 @@
    "x": 46.3,
    "y": 141.85,
    "z": 1.6,
-   "volume_cm3": 10.4,
+   "volume_cm3": 10.3,
    "descricao": "Tampa embutida de caixa-sobre-cartas-1",
    "notas": [],
    "erros": []
@@ -135,7 +135,7 @@
    "y": 144.75,
    "z": 22.0,
    "volume_cm3": 27.0,
-   "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
+   "descricao": "Livre",
    "notas": [],
    "erros": []
   },
@@ -145,7 +145,7 @@
    "x": 46.3,
    "y": 141.85,
    "z": 1.6,
-   "volume_cm3": 10.4,
+   "volume_cm3": 10.3,
    "descricao": "Tampa embutida de caixa-sobre-cartas-2",
    "notas": [],
    "erros": []
@@ -157,7 +157,7 @@
    "y": 144.75,
    "z": 22.0,
    "volume_cm3": 27.0,
-   "descricao": "Caixa com tampa sobre as cartas em pé (dados de madeira extras, fichas)",
+   "descricao": "Livre",
    "notas": [],
    "erros": []
   },
@@ -273,24 +273,46 @@
    "erros": []
   },
   {
-   "arquivo": "bandeja-aberta-a1.stl",
+   "arquivo": "caixa-a1-tampa.stl",
    "qtd": 1,
-   "x": 26.3,
-   "y": 204.0,
-   "z": 17.0,
-   "volume_cm3": 24.5,
-   "descricao": "Bandeja aberta (fichas soltas)",
+   "x": 23.4,
+   "y": 201.1,
+   "z": 1.6,
+   "volume_cm3": 7.3,
+   "descricao": "Tampa embutida de caixa-a1",
    "notas": [],
    "erros": []
   },
   {
-   "arquivo": "bandeja-aberta-a2.stl",
+   "arquivo": "caixa-a1.stl",
+   "qtd": 1,
+   "x": 26.3,
+   "y": 204.0,
+   "z": 17.0,
+   "volume_cm3": 23.7,
+   "descricao": "Marcadores de ferimento e fichas de ferimento especial",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-a2-tampa.stl",
+   "qtd": 1,
+   "x": 119.9,
+   "y": 39.1,
+   "z": 1.6,
+   "volume_cm3": 7.3,
+   "descricao": "Tampa embutida de caixa-a2",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-a2.stl",
    "qtd": 1,
    "x": 122.8,
    "y": 42.0,
    "z": 17.0,
-   "volume_cm3": 19.1,
-   "descricao": "Bandeja aberta (fichas soltas)",
+   "volume_cm3": 20.2,
+   "descricao": "Fichas de Descoberta (22), 2 compartimentos",
    "notas": [],
    "erros": []
   },
@@ -309,68 +331,134 @@
    "erros": []
   },
   {
-   "arquivo": "bandeja-aberta-b1.stl",
+   "arquivo": "caixa-b1-tampa.stl",
+   "qtd": 1,
+   "x": 42.6,
+   "y": 65.1,
+   "z": 1.6,
+   "volume_cm3": 4.3,
+   "descricao": "Tampa embutida de caixa-b1",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-b1.stl",
    "qtd": 1,
    "x": 45.5,
    "y": 68.0,
    "z": 14.0,
-   "volume_cm3": 11.2,
-   "descricao": "Bandeja aberta (fichas soltas)",
+   "volume_cm3": 12.3,
+   "descricao": "Marcador de 1º jogador e marcador de rodada (madeira)",
    "notas": [],
    "erros": []
   },
   {
-   "arquivo": "bandeja-aberta-b2.stl",
+   "arquivo": "caixa-b2-tampa.stl",
+   "qtd": 1,
+   "x": 139.1,
+   "y": 175.1,
+   "z": 1.6,
+   "volume_cm3": 38.7,
+   "descricao": "Tampa embutida de caixa-b2",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-b2.stl",
    "qtd": 1,
    "x": 142.0,
    "y": 178.0,
    "z": 14.0,
-   "volume_cm3": 63.4,
-   "descricao": "Bandeja aberta (fichas soltas)",
+   "volume_cm3": 61.4,
+   "descricao": "8 bases de Líder | fichas adicionais",
    "notas": [],
    "erros": []
   },
   {
-   "arquivo": "bandeja-aberta-c1.stl",
+   "arquivo": "caixa-c1-tampa.stl",
+   "qtd": 1,
+   "x": 46.3,
+   "y": 141.85,
+   "z": 1.6,
+   "volume_cm3": 10.3,
+   "descricao": "Tampa embutida de caixa-c1",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-c1.stl",
    "qtd": 1,
    "x": 49.2,
    "y": 144.75,
    "z": 14.0,
-   "volume_cm3": 21.4,
-   "descricao": "Bandeja aberta (dados, marcadores)",
+   "volume_cm3": 20.7,
+   "descricao": "Dados extras (madeira/resina)",
    "notas": [],
    "erros": []
   },
   {
-   "arquivo": "bandeja-aberta-c2.stl",
+   "arquivo": "caixa-c2-tampa.stl",
+   "qtd": 1,
+   "x": 46.3,
+   "y": 141.85,
+   "z": 1.6,
+   "volume_cm3": 10.3,
+   "descricao": "Tampa embutida de caixa-c2",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-c2.stl",
    "qtd": 1,
    "x": 49.2,
    "y": 144.75,
    "z": 14.0,
-   "volume_cm3": 21.4,
-   "descricao": "Bandeja aberta (dados, marcadores)",
+   "volume_cm3": 20.7,
+   "descricao": "Marcadores e cubos de reserva",
    "notas": [],
    "erros": []
   },
   {
-   "arquivo": "bandeja-aberta-d.stl",
+   "arquivo": "caixa-d-tampa.stl",
+   "qtd": 1,
+   "x": 147.1,
+   "y": 65.1,
+   "z": 1.6,
+   "volume_cm3": 15.1,
+   "descricao": "Tampa embutida de caixa-d",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-d.stl",
    "qtd": 1,
    "x": 150.0,
    "y": 68.0,
    "z": 14.0,
-   "volume_cm3": 34.9,
-   "descricao": "Bandeja aberta (fichas soltas)",
+   "volume_cm3": 28.2,
+   "descricao": "Sleeves sobressalentes (CHIMERA e MINI EURO)",
    "notas": [],
    "erros": []
   },
   {
-   "arquivo": "bandeja-aberta-e.stl",
+   "arquivo": "caixa-e-tampa.stl",
+   "qtd": 1,
+   "x": 110.7,
+   "y": 65.1,
+   "z": 1.6,
+   "volume_cm3": 11.4,
+   "descricao": "Tampa embutida de caixa-e",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-e.stl",
    "qtd": 1,
    "x": 113.6,
    "y": 68.0,
    "z": 14.0,
-   "volume_cm3": 28.1,
-   "descricao": "Bandeja aberta (fichas soltas)",
+   "volume_cm3": 22.9,
+   "descricao": "Cartas e peças promocionais avulsas",
    "notas": [],
    "erros": []
   }
@@ -707,7 +795,7 @@
    "girada_90": true
   },
   {
-   "nome": "bandeja-aberta-a1",
+   "nome": "caixa-a1",
    "origem": "gerada",
    "pos": [
     96.5,
@@ -722,7 +810,7 @@
    "girada_90": false
   },
   {
-   "nome": "bandeja-aberta-a2",
+   "nome": "caixa-a2",
    "origem": "gerada",
    "pos": [
     0,
@@ -752,7 +840,7 @@
    "girada_90": true
   },
   {
-   "nome": "bandeja-aberta-b1",
+   "nome": "caixa-b1",
    "origem": "gerada",
    "pos": [
     219.3,
@@ -767,7 +855,7 @@
    "girada_90": false
   },
   {
-   "nome": "bandeja-aberta-b2",
+   "nome": "caixa-b2",
    "origem": "gerada",
    "pos": [
     122.8,
@@ -782,7 +870,7 @@
    "girada_90": false
   },
   {
-   "nome": "bandeja-aberta-c1",
+   "nome": "caixa-c1",
    "origem": "gerada",
    "pos": [
     264.8,
@@ -797,7 +885,7 @@
    "girada_90": false
   },
   {
-   "nome": "bandeja-aberta-c2",
+   "nome": "caixa-c2",
    "origem": "gerada",
    "pos": [
     264.8,
@@ -812,7 +900,7 @@
    "girada_90": false
   },
   {
-   "nome": "bandeja-aberta-d",
+   "nome": "caixa-d",
    "origem": "gerada",
    "pos": [
     0,
@@ -827,7 +915,7 @@
    "girada_90": false
   },
   {
-   "nome": "bandeja-aberta-e",
+   "nome": "caixa-e",
    "origem": "gerada",
    "pos": [
     151.2,

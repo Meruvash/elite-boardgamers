@@ -286,5 +286,125 @@
       ],
       "nota": "26/11/2026: pilha ~11 mm (régua em pé); maior placa ~115-125 x ~130-140 mm (foto de cima com régua, perspectiva). Vão sobre a bandeja de recursos: até 122,8 x 246 mm. Guardar com o lado menor na largura da bandeja de recursos."
     }
+  },
+  "conteudo_bandejas": {
+    "_nota": "O que vai em cada caixa com tampa (rótulo gravado na tampa). Componentes que ficaram sem lugar ao trocar as bandejas de carta do js500 (descoberta, dados extras, reserva) + extras da Edição de Colecionador. Mude aqui e rode gerar.py.",
+    "bandeja-aberta-a2": {
+      "rotulo": "DESCOBERTA",
+      "descricao": "Fichas de Descoberta (22), 2 compartimentos",
+      "colunas": [
+        [
+          1,
+          [
+            1
+          ]
+        ],
+        [
+          1,
+          [
+            1
+          ]
+        ]
+      ]
+    },
+    "bandeja-aberta-b2": {
+      "rotulo": [
+        "BASES DE LÍDER",
+        "+ FICHAS EXTRAS"
+      ],
+      "descricao": "8 bases de Líder | fichas adicionais",
+      "colunas": [
+        [
+          1,
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    "bandeja-aberta-b1": {
+      "rotulo": [
+        "1º JOGADOR",
+        "RODADA"
+      ],
+      "descricao": "Marcador de 1º jogador e marcador de rodada (madeira)",
+      "colunas": [
+        [
+          1,
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    "bandeja-aberta-c1": {
+      "rotulo": "DADOS EXTRAS",
+      "descricao": "Dados extras (madeira/resina)"
+    },
+    "bandeja-aberta-c2": {
+      "rotulo": "MARCADORES EXTRAS",
+      "descricao": "Marcadores e cubos de reserva"
+    },
+    "bandeja-aberta-a1": {
+      "rotulo": "FERIMENTOS",
+      "descricao": "Marcadores de ferimento e fichas de ferimento especial"
+    },
+    "bandeja-aberta-d": {
+      "rotulo": "SLEEVES RESERVA",
+      "descricao": "Sleeves sobressalentes (CHIMERA e MINI EURO)",
+      "colunas": [
+        [
+          1,
+          [
+            1
+          ]
+        ],
+        [
+          1,
+          [
+            1
+          ]
+        ]
+      ]
+    },
+    "bandeja-aberta-e": {
+      "rotulo": "PROMOS",
+      "descricao": "Cartas e peças promocionais avulsas",
+      "colunas": [
+        [
+          1,
+          [
+            1
+          ]
+        ],
+        [
+          1,
+          [
+            1
+          ]
+        ]
+      ]
+    },
+    "caixa-estreita": {
+      "rotulo": "NÚMEROS · CLIMA",
+      "descricao": "Fichas de número (6) e fichas de clima/tempestade"
+    },
+    "caixa-sobre-cartas-1": {
+      "rotulo": "RESERVA 1",
+      "descricao": "Livre"
+    },
+    "caixa-sobre-cartas-2": {
+      "rotulo": "RESERVA 2",
+      "descricao": "Livre"
+    }
   }
 }

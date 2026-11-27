@@ -20,7 +20,7 @@ import json
 import os
 
 from insertgen.cartas import Baralho, carregar_catalogo, sleeve_envelope
-from insertgen.pecas import Params, bandeja_baralhos, bandeja_em_pe, bandeja_fichas, bloco_espaco, divisoria
+from insertgen.pecas import Params, bandeja_baralhos, bandeja_em_pe, bandeja_fichas, bloco_espaco, divisoria, gravar_topo
 from insertgen.validar import Item
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
@@ -492,7 +492,10 @@ def _montar_v5(cfg, p=None):
         return it
 
     def tampada(nome, X, Y, Z, colunas, desc):
-        t, tp = bandeja_fichas(nome, X, Y, Z, colunas, p, descricao=desc)
+        c = cfg.get("conteudo_bandejas", {}).get(nome, {})
+        t, tp = bandeja_fichas(nome, X, Y, Z, colunas, p, descricao=c.get("descricao", desc))
+        if c.get("rotulo"):
+            gravar_topo(tp, c["rotulo"])
         pecas.append(tp)
         return t
 
@@ -594,9 +597,16 @@ def _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3
         return bandeja_baralhos(nome, [[]], p, altura=alt, ref=ref_g, rotulo=com_icone(rot, IC, chave),
                                 descricao=f"Descarte ({rot[-1].lower()}). Vai para a mesa ao lado do monte de compra.")
 
+    cont = cfg.get("conteudo_bandejas", {})
+
     def aberta(nome, X, Y, Z, desc_):
-        t, _ = bandeja_fichas(nome, X, Y, Z, [(1, [1])] if min(X, Y) < 60 else [(1, [1, 1]), (1, [1, 1])], p,
-                              tampa=False, descricao=desc_)
+        c = cont.get(nome, {})
+        cols = c.get("colunas") or ([(1, [1])] if min(X, Y) < 60 else [(1, [1, 1]), (1, [1, 1])])
+        t, tp = bandeja_fichas(nome.replace("bandeja-aberta", "caixa"), X, Y, Z, [tuple(cc) for cc in cols], p,
+                               tampa=True, descricao=c.get("descricao", desc_))
+        if c.get("rotulo"):
+            gravar_topo(tp, c["rotulo"])
+        pecas.append(tp)
         return t
 
     # 1) descarte de Eventos no vão sobre o acampamento do PengLord
