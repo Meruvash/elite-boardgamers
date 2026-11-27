@@ -1,4 +1,6 @@
 import sys, glob, os, json, numpy as np, trimesh
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from insertgen.filamento import gramas
 import matplotlib; matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
@@ -39,7 +41,7 @@ for pasta, grupo in [('1-teste', 'Teste'), ('2-novas', 'Nova'), ('3-originais-js
             onde = 'solta, dentro das bandejas em pé'
         elif 'animais' in base:
             onde = 'dentro da bandeja de peças de mapa'
-        g = m.volume / 1000 * 1.24 * 0.95
+        g = gramas(m.vertices, m.faces)
         linhas.append(dict(grupo=grupo, arq=n, q=q, x=e[0], y=e[1], z=e[2], g=g * q, d=d, onde=onde, mesh=m))
 tot_g = sum(l['g'] for l in linhas if l['grupo'] != 'Teste')
 tot_p = sum(l['q'] for l in linhas if l['grupo'] != 'Teste')
@@ -71,8 +73,9 @@ ORDEM DE IMPRESSÃO
  2. penglord-miniaturas-figuras.stl — o cliente confere as miniaturas.
  3. Todo o resto das pastas 2-novas e 3-originais-js500 (quantidades na tabela).
 
-TOTAL (sem os testes): {tot_p} peças, ~{tot_g/1000:.1f} kg de filamento (estimativa pelo volume
-das peças; o fatiador dá o valor exato).
+TOTAL (sem os testes): {tot_p} peças, ~{tot_g/1000:.2f} kg de filamento PLA ({tot_g:.0f} g).
+Calculado como o fatiador faz: 3 paredes + 4 camadas de topo/fundo maciças e 15% no miolo.
+2 rolos de 1 kg ficam no limite (sobram ~0,1 kg); com um 3º rolo cobre testes e reimpressões.
 QUANTIDADES QUE NÃO SÃO 1: divisoria-grandes = 5 cópias; divisoria-pequenas = 2 cópias.
 """
     fig.text(0.07, 0.90, txt, fontsize=8.6, va='top', family='DejaVu Sans Mono'); pdf.savefig(fig); plt.close(fig)
