@@ -4,12 +4,12 @@
    "arquivo": "penglord-miniaturas-figuras.stl",
    "qtd": 1,
    "x": 113.6,
-   "y": 171.004,
+   "y": 169.467,
    "z": 51.2,
    "volume_cm3": 92.2,
-   "descricao": "Bandeja do PengLord (CC BY-NC-SA 4.0) encurtada em Y para 98.6%",
+   "descricao": "Bandeja do PengLord (CC BY-NC-SA 4.0) encurtada 3.9 mm no meio dos compartimentos (paredes intactas)",
    "notas": [
-    "escala Y 0.9862"
+    "6 cortes de 0.66 mm"
    ],
    "erros": []
   },
@@ -17,12 +17,12 @@
    "arquivo": "penglord-miniaturas-acampamento.stl",
    "qtd": 1,
    "x": 113.6,
-   "y": 142.996,
+   "y": 143.033,
    "z": 51.2,
-   "volume_cm3": 73.1,
-   "descricao": "Bandeja do PengLord (CC BY-NC-SA 4.0) encurtada em Y para 98.6%",
+   "volume_cm3": 73.5,
+   "descricao": "Bandeja do PengLord (CC BY-NC-SA 4.0) encurtada 2.0 mm no meio dos compartimentos (paredes intactas)",
    "notas": [
-    "escala Y 0.9862"
+    "3 cortes de 0.66 mm"
    ],
    "erros": []
   },
@@ -32,7 +32,7 @@
    "x": 142.0,
    "y": 246.0,
    "z": 14.8,
-   "volume_cm3": 62.8,
+   "volume_cm3": 61.3,
    "descricao": "Bandeja rasa onde as placas do vulcão ficam deitadas (apoia a camada de cima)",
    "notas": [],
    "erros": []
@@ -62,13 +62,13 @@
   {
    "arquivo": "cartas-aventura-construir-coletar.stl",
    "qtd": 1,
-   "x": 49.2,
+   "x": 47.7,
    "y": 96.5,
    "z": 64.0,
-   "volume_cm3": 27.8,
+   "volume_cm3": 27.3,
    "descricao": "Em pé: Aventura Construir | Coletar (1 divisória)",
    "notas": [
-    "poço 46.8 x 92.5 mm, carta em pé de 62.0 mm; 1 divisória(s) solta(s)",
+    "poço 45.3 x 92.5 mm, carta em pé de 62.0 mm; 1 divisória(s) solta(s)",
     "aventura-construir: 19.0 mm de maço",
     "aventura-coletar: 19.0 mm de maço"
    ],
@@ -77,13 +77,13 @@
   {
    "arquivo": "cartas-aventura-explorar-animais.stl",
    "qtd": 1,
-   "x": 49.2,
+   "x": 47.7,
    "y": 96.5,
    "z": 64.0,
-   "volume_cm3": 27.9,
+   "volume_cm3": 27.3,
    "descricao": "Em pé: Aventura Explorar | Animais (1 divisória)",
    "notas": [
-    "poço 46.8 x 92.5 mm, carta em pé de 62.0 mm; 1 divisória(s) solta(s)",
+    "poço 45.3 x 92.5 mm, carta em pé de 62.0 mm; 1 divisória(s) solta(s)",
     "aventura-explorar: 19.0 mm de maço",
     "animais: 19.0 mm de maço"
    ],
@@ -92,13 +92,13 @@
   {
    "arquivo": "cartas-expansoes-em-pe.stl",
    "qtd": 1,
-   "x": 49.2,
+   "x": 47.7,
    "y": 96.5,
    "z": 64.0,
-   "volume_cm3": 28.0,
+   "volume_cm3": 27.5,
    "descricao": "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)",
    "notas": [
-    "poço 46.8 x 92.5 mm, carta em pé de 62.0 mm; 3 divisória(s) solta(s)",
+    "poço 45.3 x 92.5 mm, carta em pé de 62.0 mm; 3 divisória(s) solta(s)",
     "praia: 8.6 mm de maço",
     "tracos: 8.6 mm de maço",
     "tracos-secretos: 8.6 mm de maço",
@@ -120,10 +120,10 @@
   {
    "arquivo": "caixa-sobre-cartas-1-tampa.stl",
    "qtd": 1,
-   "x": 46.3,
+   "x": 44.8,
    "y": 141.85,
    "z": 1.6,
-   "volume_cm3": 10.3,
+   "volume_cm3": 10.0,
    "descricao": "Tampa embutida de caixa-sobre-cartas-1",
    "notas": [],
    "erros": []
@@ -131,10 +131,10 @@
   {
    "arquivo": "caixa-sobre-cartas-1.stl",
    "qtd": 1,
-   "x": 49.2,
+   "x": 47.7,
    "y": 144.75,
    "z": 22.0,
-   "volume_cm3": 27.0,
+   "volume_cm3": 26.6,
    "descricao": "Livre",
    "notas": [],
    "erros": []
@@ -142,10 +142,10 @@
   {
    "arquivo": "caixa-sobre-cartas-2-tampa.stl",
    "qtd": 1,
-   "x": 46.3,
+   "x": 44.8,
    "y": 141.85,
    "z": 1.6,
-   "volume_cm3": 10.3,
+   "volume_cm3": 10.0,
    "descricao": "Tampa embutida de caixa-sobre-cartas-2",
    "notas": [],
    "erros": []
@@ -153,10 +153,10 @@
   {
    "arquivo": "caixa-sobre-cartas-2.stl",
    "qtd": 1,
-   "x": 49.2,
+   "x": 47.7,
    "y": 144.75,
    "z": 22.0,
-   "volume_cm3": 27.0,
+   "volume_cm3": 26.6,
    "descricao": "Livre",
    "notas": [],
    "erros": []
@@ -164,10 +164,10 @@
   {
    "arquivo": "cartas-eventos.stl",
    "qtd": 1,
-   "x": 68.0,
+   "x": 66.4,
    "y": 96.5,
    "z": 52.0,
-   "volume_cm3": 36.4,
+   "volume_cm3": 29.6,
    "descricao": "Eventos (compra). Vai para a mesa.",
    "notas": [
     "poço 64.0 x 92.5 x 50.8 mm; cabem ~103 cartas luvadas por poço",
@@ -178,10 +178,10 @@
   {
    "arquivo": "cartas-misterio.stl",
    "qtd": 1,
-   "x": 68.0,
+   "x": 66.4,
    "y": 96.5,
    "z": 34.0,
-   "volume_cm3": 26.0,
+   "volume_cm3": 21.6,
    "descricao": "Mistério (compra), com as Especiais por baixo. Vai para a mesa.",
    "notas": [
     "poço 64.0 x 92.5 x 32.8 mm; cabem ~65 cartas luvadas por poço",
@@ -195,7 +195,7 @@
    "x": 31.961,
    "y": 53.5,
    "z": 86.0,
-   "volume_cm3": 20.2,
+   "volume_cm3": 20.1,
    "descricao": "Cartas pequenas em pé (de retrato): Invenções | Equipamento | Feras",
    "notas": [
     "poço 29.6 x 49.5 mm, carta em pé de 71.0 mm; 2 divisória(s) solta(s)",
@@ -219,10 +219,10 @@
   {
    "arquivo": "descarte-eventos.stl",
    "qtd": 1,
-   "x": 68.0,
+   "x": 66.4,
    "y": 96.5,
    "z": 34.8,
-   "volume_cm3": 26.5,
+   "volume_cm3": 22.0,
    "descricao": "Descarte (eventos). Vai para a mesa ao lado do monte de compra.",
    "notas": [
     "poço 64.0 x 92.5 x 33.6 mm; cabem ~67 cartas luvadas por poço",
@@ -233,10 +233,10 @@
   {
    "arquivo": "descarte-construir.stl",
    "qtd": 1,
-   "x": 68.0,
+   "x": 66.4,
    "y": 96.5,
    "z": 17.0,
-   "volume_cm3": 16.3,
+   "volume_cm3": 14.0,
    "descricao": "Descarte (construir). Vai para a mesa ao lado do monte de compra.",
    "notas": [
     "poço 64.0 x 92.5 x 15.8 mm; cabem ~30 cartas luvadas por poço",
@@ -247,10 +247,10 @@
   {
    "arquivo": "descarte-coletar.stl",
    "qtd": 1,
-   "x": 68.0,
+   "x": 66.4,
    "y": 96.5,
    "z": 17.0,
-   "volume_cm3": 16.3,
+   "volume_cm3": 14.0,
    "descricao": "Descarte (coletar). Vai para a mesa ao lado do monte de compra.",
    "notas": [
     "poço 64.0 x 92.5 x 15.8 mm; cabem ~30 cartas luvadas por poço",
@@ -261,10 +261,10 @@
   {
    "arquivo": "descarte-explorar.stl",
    "qtd": 1,
-   "x": 68.0,
+   "x": 66.4,
    "y": 96.5,
    "z": 17.0,
-   "volume_cm3": 16.3,
+   "volume_cm3": 14.0,
    "descricao": "Descarte (explorar). Vai para a mesa ao lado do monte de compra.",
    "notas": [
     "poço 64.0 x 92.5 x 15.8 mm; cabem ~30 cartas luvadas por poço",
@@ -276,9 +276,9 @@
    "arquivo": "caixa-a1-tampa.stl",
    "qtd": 1,
    "x": 23.4,
-   "y": 201.1,
+   "y": 196.3,
    "z": 1.6,
-   "volume_cm3": 7.3,
+   "volume_cm3": 7.2,
    "descricao": "Tampa embutida de caixa-a1",
    "notas": [],
    "erros": []
@@ -287,9 +287,9 @@
    "arquivo": "caixa-a1.stl",
    "qtd": 1,
    "x": 26.3,
-   "y": 204.0,
+   "y": 199.2,
    "z": 17.0,
-   "volume_cm3": 23.7,
+   "volume_cm3": 23.2,
    "descricao": "Marcadores de ferimento e fichas de ferimento especial",
    "notas": [],
    "erros": []
@@ -298,9 +298,9 @@
    "arquivo": "caixa-a2-tampa.stl",
    "qtd": 1,
    "x": 119.9,
-   "y": 39.1,
+   "y": 43.9,
    "z": 1.6,
-   "volume_cm3": 7.3,
+   "volume_cm3": 8.2,
    "descricao": "Tampa embutida de caixa-a2",
    "notas": [],
    "erros": []
@@ -309,9 +309,9 @@
    "arquivo": "caixa-a2.stl",
    "qtd": 1,
    "x": 122.8,
-   "y": 42.0,
+   "y": 46.8,
    "z": 17.0,
-   "volume_cm3": 20.2,
+   "volume_cm3": 21.4,
    "descricao": "Fichas de Descoberta (22), 2 compartimentos",
    "notas": [],
    "erros": []
@@ -319,10 +319,10 @@
   {
    "arquivo": "descarte-misterio.stl",
    "qtd": 1,
-   "x": 68.0,
+   "x": 66.4,
    "y": 96.5,
    "z": 14.0,
-   "volume_cm3": 14.4,
+   "volume_cm3": 12.6,
    "descricao": "Descarte (mistério). Vai para a mesa ao lado do monte de compra.",
    "notas": [
     "poço 64.0 x 92.5 x 12.8 mm; cabem ~23 cartas luvadas por poço",
@@ -334,9 +334,9 @@
    "arquivo": "caixa-b1-tampa.stl",
    "qtd": 1,
    "x": 42.6,
-   "y": 65.1,
+   "y": 63.5,
    "z": 1.6,
-   "volume_cm3": 4.3,
+   "volume_cm3": 4.1,
    "descricao": "Tampa embutida de caixa-b1",
    "notas": [],
    "erros": []
@@ -345,9 +345,9 @@
    "arquivo": "caixa-b1.stl",
    "qtd": 1,
    "x": 45.5,
-   "y": 68.0,
+   "y": 66.4,
    "z": 14.0,
-   "volume_cm3": 12.3,
+   "volume_cm3": 12.1,
    "descricao": "Marcador de 1º jogador e marcador de rodada (madeira)",
    "notas": [],
    "erros": []
@@ -356,9 +356,9 @@
    "arquivo": "caixa-b2-tampa.stl",
    "qtd": 1,
    "x": 139.1,
-   "y": 175.1,
+   "y": 176.7,
    "z": 1.6,
-   "volume_cm3": 38.7,
+   "volume_cm3": 39.0,
    "descricao": "Tampa embutida de caixa-b2",
    "notas": [],
    "erros": []
@@ -367,9 +367,9 @@
    "arquivo": "caixa-b2.stl",
    "qtd": 1,
    "x": 142.0,
-   "y": 178.0,
+   "y": 179.6,
    "z": 14.0,
-   "volume_cm3": 61.4,
+   "volume_cm3": 61.9,
    "descricao": "8 bases de Líder | fichas adicionais",
    "notas": [],
    "erros": []
@@ -377,10 +377,10 @@
   {
    "arquivo": "caixa-c1-tampa.stl",
    "qtd": 1,
-   "x": 46.3,
+   "x": 44.8,
    "y": 141.85,
    "z": 1.6,
-   "volume_cm3": 10.3,
+   "volume_cm3": 10.0,
    "descricao": "Tampa embutida de caixa-c1",
    "notas": [],
    "erros": []
@@ -388,10 +388,10 @@
   {
    "arquivo": "caixa-c1.stl",
    "qtd": 1,
-   "x": 49.2,
+   "x": 47.7,
    "y": 144.75,
    "z": 14.0,
-   "volume_cm3": 20.7,
+   "volume_cm3": 20.4,
    "descricao": "Dados extras (madeira/resina)",
    "notas": [],
    "erros": []
@@ -399,10 +399,10 @@
   {
    "arquivo": "caixa-c2-tampa.stl",
    "qtd": 1,
-   "x": 46.3,
+   "x": 44.8,
    "y": 141.85,
    "z": 1.6,
-   "volume_cm3": 10.3,
+   "volume_cm3": 9.9,
    "descricao": "Tampa embutida de caixa-c2",
    "notas": [],
    "erros": []
@@ -410,10 +410,10 @@
   {
    "arquivo": "caixa-c2.stl",
    "qtd": 1,
-   "x": 49.2,
+   "x": 47.7,
    "y": 144.75,
    "z": 14.0,
-   "volume_cm3": 20.7,
+   "volume_cm3": 20.4,
    "descricao": "Marcadores e cubos de reserva",
    "notas": [],
    "erros": []
@@ -422,9 +422,9 @@
    "arquivo": "caixa-d-tampa.stl",
    "qtd": 1,
    "x": 147.1,
-   "y": 65.1,
+   "y": 63.6,
    "z": 1.6,
-   "volume_cm3": 15.1,
+   "volume_cm3": 14.8,
    "descricao": "Tampa embutida de caixa-d",
    "notas": [],
    "erros": []
@@ -433,9 +433,9 @@
    "arquivo": "caixa-d.stl",
    "qtd": 1,
    "x": 150.0,
-   "y": 68.0,
+   "y": 66.5,
    "z": 14.0,
-   "volume_cm3": 28.2,
+   "volume_cm3": 27.8,
    "descricao": "Sleeves sobressalentes (CHIMERA e MINI EURO)",
    "notas": [],
    "erros": []
@@ -444,9 +444,9 @@
    "arquivo": "caixa-e-tampa.stl",
    "qtd": 1,
    "x": 110.7,
-   "y": 65.1,
+   "y": 63.6,
    "z": 1.6,
-   "volume_cm3": 11.4,
+   "volume_cm3": 11.1,
    "descricao": "Tampa embutida de caixa-e",
    "notas": [],
    "erros": []
@@ -455,9 +455,9 @@
    "arquivo": "caixa-e.stl",
    "qtd": 1,
    "x": 113.6,
-   "y": 68.0,
+   "y": 66.5,
    "z": 14.0,
-   "volume_cm3": 22.9,
+   "volume_cm3": 22.5,
    "descricao": "Cartas e peças promocionais avulsas",
    "notas": [],
    "erros": []
@@ -549,7 +549,7 @@
    ],
    "tam": [
     113.6,
-    171.0,
+    169.47,
     51.2
    ],
    "girada_90": false
@@ -559,12 +559,12 @@
    "origem": "gerada",
    "pos": [
     151.2,
-    171.0,
+    169.47,
     0
    ],
    "tam": [
     113.6,
-    143.0,
+    143.03,
     51.2
    ],
    "girada_90": false
@@ -623,7 +623,7 @@
     0
    ],
    "tam": [
-    49.2,
+    47.7,
     96.5,
     64.0
    ],
@@ -638,7 +638,7 @@
     0
    ],
    "tam": [
-    49.2,
+    47.7,
     96.5,
     64.0
    ],
@@ -653,7 +653,7 @@
     0
    ],
    "tam": [
-    49.2,
+    47.7,
     96.5,
     64.0
    ],
@@ -668,7 +668,7 @@
     64.0
    ],
    "tam": [
-    49.2,
+    47.7,
     144.75,
     22.0
    ],
@@ -683,7 +683,7 @@
     64.0
    ],
    "tam": [
-    49.2,
+    47.7,
     144.75,
     22.0
    ],
@@ -699,7 +699,7 @@
    ],
    "tam": [
     96.5,
-    68.0,
+    66.4,
     52.0
    ],
    "girada_90": true
@@ -714,7 +714,7 @@
    ],
    "tam": [
     96.5,
-    68.0,
+    66.4,
     34.0
    ],
    "girada_90": true
@@ -744,7 +744,7 @@
    ],
    "tam": [
     96.5,
-    68.0,
+    66.4,
     34.8
    ],
    "girada_90": true
@@ -759,7 +759,7 @@
    ],
    "tam": [
     96.5,
-    68.0,
+    66.4,
     17.0
    ],
    "girada_90": true
@@ -769,12 +769,12 @@
    "origem": "gerada",
    "pos": [
     0,
-    68.0,
+    66.4,
     83.0
    ],
    "tam": [
     96.5,
-    68.0,
+    66.4,
     17.0
    ],
    "girada_90": true
@@ -784,12 +784,12 @@
    "origem": "gerada",
    "pos": [
     0,
-    136.0,
+    132.8,
     83.0
    ],
    "tam": [
     96.5,
-    68.0,
+    66.4,
     17.0
    ],
    "girada_90": true
@@ -804,7 +804,7 @@
    ],
    "tam": [
     26.3,
-    204.0,
+    199.2,
     17.0
    ],
    "girada_90": false
@@ -814,12 +814,12 @@
    "origem": "gerada",
    "pos": [
     0,
-    204.0,
+    199.2,
     83.0
    ],
    "tam": [
     122.8,
-    42.0,
+    46.8,
     17.0
    ],
    "girada_90": false
@@ -834,7 +834,7 @@
    ],
    "tam": [
     96.5,
-    68.0,
+    66.4,
     14.0
    ],
    "girada_90": true
@@ -849,7 +849,7 @@
    ],
    "tam": [
     45.5,
-    68.0,
+    66.4,
     14.0
    ],
    "girada_90": false
@@ -859,12 +859,12 @@
    "origem": "gerada",
    "pos": [
     122.8,
-    68.0,
+    66.4,
     86.0
    ],
    "tam": [
     142.0,
-    178.0,
+    179.6,
     14.0
    ],
    "girada_90": false
@@ -878,7 +878,7 @@
     86.0
    ],
    "tam": [
-    49.2,
+    47.7,
     144.75,
     14.0
    ],
@@ -893,7 +893,7 @@
     86.0
    ],
    "tam": [
-    49.2,
+    47.7,
     144.75,
     14.0
    ],
@@ -909,7 +909,7 @@
    ],
    "tam": [
     150.0,
-    68.0,
+    66.5,
     14.0
    ],
    "girada_90": false
@@ -924,7 +924,7 @@
    ],
    "tam": [
     113.6,
-    68.0,
+    66.5,
     14.0
    ],
    "girada_90": false

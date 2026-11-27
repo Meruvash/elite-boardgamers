@@ -9,7 +9,8 @@
     "z_minimo_provavel": 135.0,
     "nota_z": "Foto da régua em pé no canto da caixa (26/11/2026): a borda fica entre as marcas de 13,5 e 14,5 cm, a ~13,8 cm. Projeto usa 137 e exige que feche com 135. Substitui a estimativa por foto de 25/11 (122-128), que errou pela perspectiva.",
     "nota_xy": "Medida nos dois sentidos (26/11/2026), trena e régua de aço: 31,8 cm da face externa de uma parede até a face interna da oposta, menos a parede de ~2,5 mm, dá ~315,5 mm nos dois lados. A caixa da edição brasileira (Conclave) é menor que a da Gamefound: o js500 e o PengLord ocupam 318,4 mm e NÃO cabem nela. O insert ocupa no máximo 314 x 314 mm.",
-    "ocupacao_maxima": 314.0
+    "ocupacao_maxima": 312.5,
+    "nota_ocupacao": "312,5 mm (27/11/2026): ~1,5 mm de folga por lado na caixa de ~315,5, para compensar impressora que sai maior e facilitar tirar as peças."
   },
   "camada_plana": {
     "status": "medido",

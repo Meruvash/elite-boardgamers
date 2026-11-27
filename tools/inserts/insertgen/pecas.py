@@ -45,7 +45,7 @@ class Params:
 
 
 def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_piso=26.0, descricao="",
-                     girar_carta=False, ref=None, rotulo=None):
+                     girar_carta=False, ref=None, rotulo=None, parede_lateral=None):
     """Bandeja de mesa para maços DEITADOS (cartas luvadas), poços em fila ao longo de Y.
 
     pocos: lista; cada item é uma lista de Baralho que divide o mesmo poço
@@ -71,26 +71,27 @@ def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_pis
     else:
         prof = prof_min
     n = len(pocos)
-    X = 2 * p.parede + larg_c
+    pl = p.parede if parede_lateral is None else parede_lateral  # paredes compridas (faces X)
+    X = 2 * pl + larg_c
     Y = 2 * p.parede + n * comp_c + (n - 1) * p.divisoria
     Z = p.piso + prof
     corpo = g.caixa_arred(X, Y, Z, p.raio_canto)
     furos, fant = [], []
     for i, poco in enumerate(pocos):
         y0 = p.parede + i * (comp_c + p.divisoria)
-        furos.append(g.caixa_arred(larg_c, comp_c, prof + 1, 1.0, (p.parede, y0, p.piso)))
+        furos.append(g.caixa_arred(larg_c, comp_c, prof + 1, 1.0, (pl, y0, p.piso)))
         cy = y0 + comp_c / 2
         if entalhe:
             prof_ent = max(min(prof * 0.7, prof - 2.5), 4.0)
-            furos.append(g.entalhe_dedo(p.entalhe_larg, prof_ent, p.parede + 2, (-1, cy, Z), eixo="x"))
-            furos.append(g.entalhe_dedo(p.entalhe_larg, prof_ent, p.parede + 2, (X - p.parede - 1, cy, Z), eixo="x"))
+            furos.append(g.entalhe_dedo(p.entalhe_larg, prof_ent, pl + 2, (-1, cy, Z), eixo="x"))
+            furos.append(g.entalhe_dedo(p.entalhe_larg, prof_ent, pl + 2, (X - pl - 1, cy, Z), eixo="x"))
         if furo_piso:
             furos.append(g.cilindro(furo_piso / 2, p.piso + 2, (X / 2, cy, -1)))
         z = p.piso
         for b in poco:
             L, A = ext(b)
             h = b.altura_pilha()
-            fant.append((b.nome, g.caixa(L, A, h, (p.parede + (larg_c - L) / 2, y0 + (comp_c - A) / 2, z))))
+            fant.append((b.nome, g.caixa(L, A, h, (pl + (larg_c - L) / 2, y0 + (comp_c - A) / 2, z))))
             z += h
     sol = corpo - g.uniao(furos)
     base = sol
@@ -152,11 +153,17 @@ def bandeja_fichas(nome, X, Y, Z, colunas, p: Params, tampa=True, descricao=""):
     return Peca(nome, sol, descricao, medidas={"x": X, "y": Y, "z": Z}), tp
 
 
-def bloco_espaco(nome, X, Y, Z, p: Params, descricao="Calço"):
-    """Calço oco (só paredes e piso) para nivelar o topo onde não há peça."""
+def bloco_espaco(nome, X, Y, Z, p: Params, descricao="Calço", entalhes=False):
+    """Calço/bandeja rasa oca (só paredes e piso). Com entalhes=True, ganha um entalhe de dedo no meio de
+    cada parede curta (Y=0 e Y=máx) para tirar da caixa."""
     corpo = g.caixa_arred(X, Y, Z, p.raio_canto)
     oco = g.caixa_arred(X - 2 * p.parede, Y - 2 * p.parede, Z, 1.0, (p.parede, p.parede, p.piso))
-    return Peca(nome, corpo - oco, descricao, medidas={"x": X, "y": Y, "z": Z})
+    furos = [oco]
+    if entalhes:
+        prof = max(Z - p.piso - 2.0, 4.0)
+        furos.append(g.entalhe_dedo(30.0, prof, p.parede + 2, (X / 2, -1, Z), eixo="y"))
+        furos.append(g.entalhe_dedo(30.0, prof, p.parede + 2, (X / 2, Y - p.parede - 1, Z), eixo="y"))
+    return Peca(nome, corpo - g.uniao(furos), descricao, medidas={"x": X, "y": Y, "z": Z})
 
 
 def bandeja_em_pe(nome, baralhos, p: Params, altura, parede=1.6, folga_comp=1.0, folga_maco=1.5,
@@ -219,6 +226,14 @@ def _gravar_pontas(sol, rotulo, X, Y, Z, parede, prof=0.6, icones=None):
     larg = X - 2 * max(4.0, parede + 2.5)
     alt = min(Z * 0.62, 30.0 if icones else 16.0)
     zc = Z * 0.45
+    if Z > 1.8 * X and not icones:  # face alta e estreita: texto em pé, letra bem maior
+        sec = g.texto_2d(rotulo, Z * 0.8, X - 2 * max(3.0, parede + 1.5)).rotate(90)
+        cortes = []
+        for yf, d in ((0.0, +1), (Y, -1)):
+            s2 = (sec.mirror((1, 0)) if d < 0 else sec).extrude(prof + 0.5).rotate((90, 0, 0))
+            s2 = s2.translate((X / 2, yf + prof, Z / 2)) if d > 0 else s2.mirror((0, 1, 0)).translate((X / 2, yf - prof, Z / 2))
+            cortes.append(s2)
+        return sol - (cortes[0] + cortes[1])
     t1 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, 0.0, +1, icones)
     t2 = g.gravacao_face_y(rotulo, X / 2, zc, larg, alt, prof, Y, -1, icones)
     return sol - (t1 + t2)

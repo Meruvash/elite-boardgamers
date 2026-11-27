@@ -35,30 +35,43 @@ TERCEIROS = os.path.join(AQUI, "..", "dados", "terceiros", "penglord")
 
 
 def penglord_ajustadas(comprimento_total):
-    """As duas bandejas de miniaturas do PengLord (CC BY-NC-SA 4.0), encurtadas só em Y para que,
-    juntas, meçam `comprimento_total` (originais: 173,4 + 145 = 318,4 mm). O encurtamento é uniforme
-    (~1,4% para 314 mm): compartimentos e paredes diminuem na mesma proporção."""
+    """As duas bandejas de miniaturas do PengLord (CC BY-NC-SA 4.0) encurtadas em Y para que, juntas,
+    meçam `comprimento_total` (originais: 173,4 + 145 = 318,4 mm).
+
+    Em vez de escalar (o que afinaria as paredes), retira fatias finas que passam só pelo MEIO dos
+    compartimentos: as paredes continuam com a espessura original e cada compartimento perde um pouco.
+    Cortes (Y no arquivo original): figuras = meio das 6 fileiras; acampamento = meio das 3 faixas."""
     import manifold3d as m3
     import numpy as np
     from insertgen import stl as stlio
     from insertgen.pecas import Peca
+    cortes = {"mini_tray_-_large.stl": [14.75, 43.75, 72.75, 100.75, 129.75, 158.75],
+              "mini_tray_-_camp.stl": [14.75, 45.0, 103.0]}
     nomes = [("mini_tray_-_large.stl", "penglord-miniaturas-figuras"),
              ("mini_tray_-_camp.stl", "penglord-miniaturas-acampamento")]
-    malhas = []
+    malhas = {}
     for arq, _ in nomes:
         v, f = stlio.ler(os.path.join(TERCEIROS, arq))
         v = v - v.min(axis=0)
-        malhas.append((v, f))
-    total = sum(np.ptp(v[:, 1]) for v, _ in malhas)
-    fy = min(1.0, comprimento_total / total)
+        malhas[arq] = m3.Manifold(m3.Mesh(vert_properties=v.astype(np.float32), tri_verts=f.astype(np.uint32)))
+    total = sum(malhas[a].bounding_box()[4] for a, _ in nomes)
+    tirar = max(0.0, total - comprimento_total)
+    n_cortes = sum(len(c) for c in cortes.values())
+    d = tirar / n_cortes
     out = []
-    for (v, f), (_, nome) in zip(malhas, nomes):
-        v2 = v * np.array([1.0, fy, 1.0])
-        sol = m3.Manifold(m3.Mesh(vert_properties=v2.astype(np.float32), tri_verts=f.astype(np.uint32)))
-        t = np.ptp(v2, axis=0)
-        pc = Peca(nome, sol, f"Bandeja do PengLord (CC BY-NC-SA 4.0) encurtada em Y para {fy * 100:.1f}%",
-                  medidas={"x": float(t[0]), "y": float(t[1]), "z": float(t[2])})
-        pc.notas.append(f"escala Y {fy:.4f}")
+    for arq, nome in nomes:
+        sol = malhas[arq]
+        for c in sorted(cortes[arq], reverse=True):
+            if d <= 0:
+                break
+            baixo = sol.trim_by_plane((0, -1, 0), -c)          # mantém y <= c
+            cima = sol.trim_by_plane((0, 1, 0), c + d).translate((0, -d, 0))  # y >= c+d, desce d
+            sol = baixo + cima
+        b = sol.bounding_box()
+        pc = Peca(nome, sol, f"Bandeja do PengLord (CC BY-NC-SA 4.0) encurtada {d * len(cortes[arq]):.1f} mm "
+                  f"no meio dos compartimentos (paredes intactas)",
+                  medidas={"x": b[3] - b[0], "y": b[4] - b[1], "z": b[5] - b[2]})
+        pc.notas.append(f"{len(cortes[arq])} cortes de {d:.2f} mm")
         out.append(pc)
     return out
 
@@ -67,7 +80,7 @@ ICONES = os.path.join(AQUI, "..", "dados", "icones")
 
 
 def icones(tamanho=11.0):
-    """Ícones disponíveis (recortados das fotos das cartas). Faltando foto, o ícone fica de fora."""
+    """Ícones disponíveis (recortados das fotos/manual ou desenhados). Faltando arquivo, o ícone fica de fora."""
     import json as _json
     from insertgen.icone import icone_de_foto
     cfg = _json.load(open(os.path.join(ICONES, "icones.json"), encoding="utf-8"))
@@ -519,7 +532,7 @@ def _montar_v5(cfg, p=None):
     rec = orig("obj_14_resources.stl", (x_rec, 0, ml.caixa[1][2]))
     vx, vy, vz = cfg["componentes_soltos"]["vulcao_placas"]["mm"]
     z_rec = rec.caixa[1][2]
-    bv = bloco_espaco("bandeja-vulcao", col3 - B_w, FAIXA, T - z_rec, p,
+    bv = bloco_espaco("bandeja-vulcao", col3 - B_w, FAIXA, T - z_rec, p, entalhes=True,
                       descricao="Bandeja rasa onde as placas do vulcão ficam deitadas (apoia a camada de cima)")
     from insertgen import geom as _g
     bv.fantasmas.append(("placas do vulcão", _g.caixa(vx, vy, vz, (p.parede + 1, p.parede + 1, p.piso))))
@@ -560,9 +573,11 @@ def _montar_v5(cfg, p=None):
             (col3, i * y / 2, alt_pe))
 
     # faixa sob a coluna 1: Eventos (0-52) e Mistério (52-86) deitados; pequenas em pé de retrato
-    eve = bandeja_baralhos("cartas-eventos", [B("eventos")], p, altura=NIVEL, ref=ref_g, rotulo=com_icone("EVENTOS", IC, "eventos"),
+    PL = lay.get("parede_lateral_deitadas", 1.2)
+    eve = bandeja_baralhos("cartas-eventos", [B("eventos")], p, altura=NIVEL, ref=ref_g, parede_lateral=PL, rotulo=com_icone("EVENTOS", IC, "eventos"),
                            descricao="Eventos (compra). Vai para a mesa.")
     mis = bandeja_baralhos("cartas-misterio", [B("misterio", "especiais")], p, altura=T - NIVEL, ref=ref_g,
+                           parede_lateral=PL,
                            rotulo=com_icone("MISTÉRIO", IC, "misterio"),
                            descricao="Mistério (compra), com as Especiais por baixo. Vai para a mesa.")
     add(eve, (0, FAIXA, 0), rot90=1)
@@ -595,6 +610,7 @@ def _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3
         chave = {"EVENTOS": "eventos", "MISTÉRIO": "misterio", "CONSTRUIR": "construir", "COLETAR": "coletar",
                  "EXPLORAR": "explorar"}.get(rot[-1])
         return bandeja_baralhos(nome, [[]], p, altura=alt, ref=ref_g, rotulo=com_icone(rot, IC, chave),
+                                parede_lateral=lay.get("parede_lateral_deitadas", 1.2),
                                 descricao=f"Descarte ({rot[-1].lower()}). Vai para a mesa ao lado do monte de compra.")
 
     cont = cfg.get("conteudo_bandejas", {})

@@ -50,7 +50,7 @@ with PdfPages(sys.argv[4]) as pdf:
     txt = f"""DOCUMENTO DE IMPRESSÃO — todas as medidas em milímetros
 
 CAIXA (medida com régua e trena): 315,5 x 315,5 mm por dentro, 138 mm de altura útil.
-INSERT MONTADO: 314 x 314 mm de fundo, 100 mm de altura. Por cima: tabuleiro dobrado + fichas
+INSERT MONTADO: 312,5 x 312,5 mm de fundo, 100 mm de altura. Por cima: tabuleiro dobrado + fichas
 de cenário + manual + 2 guias (~24 mm). Sobram ~11 mm até a tampa.
 CARTAS: grandes 58 x 88 no sleeve Bucaneiros CHIMERA (luvada ~62 x 90,5, medida com régua);
 pequenas 44 x 68 no sleeve Bucaneiros MINI EURO.
@@ -63,7 +63,7 @@ CONFIGURAÇÃO DO FATIADOR (vale para todas as peças)
    apoiados na mesa, com a boca/abertura para cima. Medidas exatas: qualquer escala estraga o encaixe.
  - Mesa mínima: 256 x 256 mm (a maior peça mede 151,2 x 246 mm)
  - Tolerância esperada: ±0,2 mm. Se a impressora sai "gorda" (peças maiores que o arquivo),
-   calibre antes; as caixas encostam umas nas outras e a folga total na caixa é 1,5 mm por lado.
+   calibre antes; as caixas encostam umas nas outras e a folga na caixa é ~1,5 mm por lado.
 
 ORDEM DE IMPRESSÃO
  1. Pasta 1-teste (5 peças pequenas, < 1 h). O cliente confere se a carta luvada entra e sai
