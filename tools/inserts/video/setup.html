@@ -55,7 +55,7 @@ cx2.font='bold 30px DejaVu Sans';cx2.fillText('TABULEIRO',470,Y(475));
 const tex=new THREE.CanvasTexture(cv);
 const tab=new THREE.Mesh(new THREE.BoxGeometry(1,1,1),[0,0,0,0,0,0].map((_,i)=>new THREE.MeshLambertMaterial(i==4?{map:tex}:{color:'#b59a62'})));sc.add(tab);
 for(const g of grupos){const al=SET.alvo[g.base]; if(!al) continue; for(const m of g.meshes){m.geometry.translate(-al.c[0],-al.c[1],-al.c[2]);}}
-const ordem=grupos.slice().reverse().filter(g=>g.base!=='bandeja-vulcao'&&g.base!=='TABULEIRO');
+const ordem=grupos.slice().reverse().filter(g=>g.base!=='TABULEIRO'&&SET.alvo[g.base]);
 for(const g of grupos){ if(g.base==='TABULEIRO') g.meshes.forEach(m=>m.visible=false); }
 const N=ordem.length, T0=2.5, TB=2.6, DT=0.42, DUR=1.1;
 const tFimMov=T0+TB+N*DT+DUR; const tFim=tFimMov+5.0; window.DURACAO=tFim;
@@ -78,13 +78,13 @@ window.renderFrame=function(t){
     if(t>=T0+TB+i*DT&&t<T0+TB+(i+1)*DT){tit=g.rotulo||g.base;sub=ZONA(al.fim);}
   });
   
-  if(t>=tFimMov){tit='Mesa pronta para jogar';sub=t<tFimMov+1.5?'a bandeja do vulcão fica na caixa':'Eventos no canto e as 3 Aventuras com os dados nos espaços de ação';}
+  if(t>=tFimMov){tit='Mesa pronta para jogar';sub=t<tFimMov+2.2?'só sai da caixa o que se usa na partida':'cartas e dados em cima do tabuleiro; ao lado, só o essencial';}
   // câmera: começa na caixa e abre para a mesa toda
   const k=ease(Math.min(1,t/(T0+TB+2)));
   const k2=ease((t-tFimMov)/2.2);
-  let alvoX=CXo+156+(130-(CXo+156))*k, alvoY=CYo+156+(300-(CYo+156))*k;
+  let alvoX=CXo+156+(200-(CXo+156))*k, alvoY=CYo+156+(250-(CYo+156))*k;
   let R=650+900*k, Z=560+1050*k;
-  alvoX+= (330-alvoX)*k2; alvoY+=(230-alvoY)*k2; R+=(760-R)*k2; Z+=(820-Z)*k2;
+  alvoX+= (380-alvoX)*k2; alvoY+=(150-alvoY)*k2; R+=(1150-R)*k2; Z+=(1300-Z)*k2;
   const ang=-1.4+0.08*Math.sin(t*0.25);
   cam.position.set(alvoX+R*Math.cos(ang)*0.45, alvoY+R*Math.sin(ang), Z);cam.lookAt(alvoX,alvoY,0);
   document.getElementById('tit').textContent=tit;document.getElementById('sub').textContent=sub;

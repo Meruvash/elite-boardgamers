@@ -21,25 +21,27 @@ def fila(nomes, x, y, rot=0, gap=14, para='x'):
         w, h = tam(n, rot)
         if para == 'x': put(n, x + w / 2, y - h / 2, rot); x += w + gap
         else: put(n, x + w / 2, y - h / 2, rot); y -= h + gap
+# Regra: só vai para a mesa o que se usa na partida; caixas de guarda, enchimentos, miniaturas e expansões ficam na caixa.
 # --- em cima do tabuleiro ---
 put('cartas-eventos', 112, 446, 90)                     # espaço do baralho de Eventos (canto sup. esq.)
 for n, cx in (('cartas-aventura-construir', 292), ('cartas-aventura-coletar', 394), ('cartas-aventura-explorar', 484)):
-    put(n, cx, 66, -90)                                  # espaços de ação na faixa de baixo, dados para baixo
-# --- abaixo do tabuleiro: descartes de cada ação logo abaixo do seu monte, depois o monte de componentes ---
+    put(n, cx, 66, -90)                                  # espaços de ação, dados para baixo
+# --- logo abaixo do tabuleiro: só os descartes de cada ação ---
 for n, cx in (('descarte-construir', 292), ('descarte-coletar', 394), ('descarte-explorar', 484)):
-    put(n, cx, -60, -90)
-fila(['ORIGINAL obj_14_resources.stl', 'ORIGINAL obj_16_tokens.stl', 'ORIGINAL obj_15_dice-determination-black-white-blue.stl',
-      'caixa-a2', 'caixa-b1', 'caixa-b2'], 0, -130, rot=90)
-# --- à esquerda: Mistério (compra e descarte), Eventos descartados, cartas pequenas (Feras/Invenções), ilha ---
-fila(['cartas-misterio', 'descarte-misterio', 'descarte-eventos'], -160, 520, rot=90, para='y')
-fila(['cartas-pequenas-retrato', 'ORIGINAL obj_12_map-tiles-animals-misc-expansions.stl', 'animais'], -360, 520, rot=0, para='y')
-# --- acima: cenário, personagens, equipamento ---
-fila(['FICHAS DE CENÁRIO', 'ORIGINAL obj_11_characters.stl', 'ORIGINAL obj_13_shelter-upgrades-herb-garden-pen-spyglass.stl'], 0, 860)
-fila(['MANUAL', 'GUIAS'], 560, 860)
-# --- à direita: expansões, miniaturas, caixas ---
-fila(['cartas-animais-praia', 'cartas-expansoes-em-pe', 'caixa-pe-reserva'], 750, 520, para='y')
-fila(['penglord-miniaturas-figuras', 'penglord-miniaturas-acampamento'], 820, 520)
-fila(['caixa-c1', 'caixa-c2', 'caixa-d', 'caixa-e', 'caixa-funda', 'caixa-estreita', 'caixa-sobre-cartas-1', 'caixa-sobre-cartas-2'], 820, 330)
+    put(n, cx, -58, -90)
+# --- à esquerda (como no manual): ficha de cenário, Mistério, Feras/Invenções, peças de ilha ---
+put('FICHAS DE CENÁRIO', -125, 372)
+fila(['cartas-misterio', 'descarte-misterio'], -250, 205, rot=90)
+fila(['descarte-eventos'], -250, 95, rot=90)
+put('cartas-pequenas-retrato', -60, 60)
+put('ORIGINAL obj_12_map-tiles-animals-misc-expansions.stl', -110, -140, 90)
+# --- à direita: recursos, fichas e dados (o que todo mundo pega durante a partida) ---
+fila(['ORIGINAL obj_14_resources.stl', 'ORIGINAL obj_16_tokens.stl'], 740, 520, gap=10)
+fila(['ORIGINAL obj_15_dice-determination-black-white-blue.stl', 'ORIGINAL obj_13_shelter-upgrades-herb-garden-pen-spyglass.stl'],
+     740, 260, rot=90, gap=10, para='y')
+put('caixa-a2', 590, -70, 90)
+put('caixa-b1', 660, -110)
 fica = [b for b in ordem if b not in alvo and b != 'TABULEIRO']
+fica_set = fica
 print('ficam na caixa:', fica)
-json.dump(dict(alvo=alvo, caixa=[-820, 560]), open('setup.json', 'w'))
+json.dump(dict(alvo=alvo, caixa=[-900, 700], fica=fica), open('setup.json', 'w'))
