@@ -73,10 +73,10 @@ for it in sorted(itens, key=lambda i: (round(i.pos[2]), i.pos[0], i.pos[1])):
         add(nome + '-tampa', '', tv, tf, '#f3c46a', passo_de(z))
 # pilha do tabuleiro
 Z0 = ctx['topo_insert']
-camadas = [('TABULEIRO', 16, '#c9b27a'), ('FICHAS DE CENÁRIO', 4, '#8a5a3a'), ('MANUAL', 2, '#dcd2b0'), ('GUIAS', 4, '#5e7b4e')]
+camadas = [('TABULEIRO', 16, '#c9b27a', 277, 239), ('FICHAS DE CENÁRIO', 4, '#8a5a3a', 210, 297), ('MANUAL', 2, '#dcd2b0', 230, 300), ('GUIAS', 4, '#5e7b4e', 230, 300)]
 z = Z0
-for nm, e, cor in camadas:
-    b = trimesh.creation.box(extents=(277 if nm == 'TABULEIRO' else 290, 239 if nm == 'TABULEIRO' else 290, e))
+for nm, e, cor, bw, bh in camadas:
+    b = trimesh.creation.box(extents=(bw, bh, e))
     b.apply_translation((156.25, 156.25, z + e / 2))
     add(nm, nm, b.vertices, b.faces, cor, 5); z += e
 cx = cfg['caixa_interna']

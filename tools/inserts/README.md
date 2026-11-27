@@ -41,7 +41,26 @@ mede os poços de carta direto nos STLs:
 O próprio autor do js500 diz que o projeto é para o **playmat de neoprene** e que o tabuleiro de papelão só cabe se a
 tampa ficar levantada. Por isso o original também não tem espaço para o tabuleiro.
 
-### A solução atual (versão 5): projetos publicados + espaço do tabuleiro
+### Versão 6 (27/11/2026): Aventuras em cima do tabuleiro
+
+Conferido com o manual oficial (p. 4–5, Setup). O baralho de **Eventos** fica no espaço do canto superior esquerdo do
+tabuleiro. Os **3 baralhos de Aventura** ficam nos espaços de ação da faixa de baixo, cada um com os seus 3 dados.
+
+- **Antes:** as Aventuras ficavam em pé, duas por bandeja.
+- **Agora:** cada Aventura (Construir, Coletar, Explorar) tem uma bandeja deitada própria, de
+  66,4 x 118,1 x 22 mm, com **bolso para os 3 dados** da ação. Ela vai inteira para o espaço da ação no tabuleiro.
+- **Por que bandejas separadas:** o espaçamento dos espaços no tabuleiro foi medido na ilustração do manual, com
+  precisão de ±10 mm. Como cada bandeja é independente, ela cai no espaço mesmo que o espaçamento real seja um pouco
+  diferente.
+- **Mesa, pelo manual:**
+  - Eventos e Aventuras: no tabuleiro;
+  - descartes: logo abaixo de cada monte;
+  - Mistério, Feras, Invenções e peças de ilha: ao lado do tabuleiro;
+  - recursos, fichas e dados: num monte abaixo do tabuleiro.
+- **Nas bandejas em pé** ficaram Animais/Praia e Traços/Traços Secretos/Moral Dramática. No 3º lugar entrou uma
+  caixa de reserva.
+- A camada de cima subiu para **105 mm**. Com a pilha medida (26 mm), sobram ~6 mm até a tampa e 4 mm no pior caso.
+
 
 > **A caixa da edição brasileira (Conclave) é menor.** Medida com trena em 26/11/2026, ela tem ~315,5 mm por dentro,
 > contra ~320 mm da caixa da Gamefound. O js500 e o PengLord ocupam 318,4 mm e não caberiam. Por isso a versão 5 ocupa

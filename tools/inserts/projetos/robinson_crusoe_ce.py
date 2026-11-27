@@ -21,6 +21,8 @@ import os
 
 from insertgen.cartas import Baralho, carregar_catalogo, sleeve_envelope
 from insertgen.pecas import Params, bandeja_baralhos, bandeja_em_pe, bandeja_fichas, bloco_espaco, divisoria, gravar_topo
+
+_BAR = {}
 from insertgen.validar import Item
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
@@ -553,19 +555,21 @@ def _montar_v5(cfg, p=None):
         return bandeja_em_pe(nome, decks, p, alt_pe, parede=par_pe, folga_maco=1.5 + larg3 - pc.tamanho[0],
                              descricao=desc, parede_y=PY, rotulo=rotulo)
     an = bar["animais"]
-    pes = [em_pe("cartas-aventura-construir-coletar", B("aventura-construir", "aventura-coletar"),
-                 "Em pé: Aventura Construir | Coletar (1 divisória)", com_icone(["CONSTRUIR", "COLETAR"], IC, "construir", "coletar")),
-           em_pe("cartas-aventura-explorar-animais", B("aventura-explorar") + [an],
-                 "Em pé: Aventura Explorar | Animais (1 divisória)", com_icone(["EXPLORAR", "ANIMAIS"], IC, "explorar", "animais")),
-           em_pe("cartas-expansoes-em-pe", B("praia", "tracos", "tracos-secretos", "moral-dramatica"),
-                 "Em pé: Procurando na Praia | Traços | Traços Secretos | Moral Dramática (3 divisórias)",
-                 com_icone(["EXPANSÕES"], IC, "expansoes"))]
+    # v6: as Aventuras saíram daqui (vão em bandejas próprias que ficam em cima do tabuleiro)
+    pes = [em_pe("cartas-animais-praia", [an] + B("praia"),
+                 "Em pé: Animais | Procurando na Praia (1 divisória)", ["ANIMAIS", "PRAIA"]),
+           em_pe("cartas-expansoes-em-pe", B("tracos", "tracos-secretos", "moral-dramatica"),
+                 "Em pé: Traços | Traços Secretos | Moral Dramática (2 divisórias)", ["EXPANSÕES"])]
     y = 0.0
     for pc in pes:
         add(pc, (col3, y, 0))
         y += pc.tamanho[1]
+    res3 = tampada("caixa-pe-reserva", larg3, pes[0].tamanho[1], alt_pe, [(1, [1])],
+                   "Caixa com tampa (reserva) no lugar da 3ª bandeja em pé")
+    add(res3, (col3, y, 0))
+    y += res3.tamanho[1]
     div = divisoria("divisoria-grandes", pes[0].tamanho[1] - 2 * PY, alt_pe - p.piso)
-    div.qtd = 5
+    div.qtd = 3
     pecas.append(div)
     for i in range(2):  # duas metades: inteira passaria da mesa da impressora
         add(tampada(f"caixa-sobre-cartas-{i + 1}", larg3, y / 2, T - alt_pe, [(1, [1])],
@@ -586,40 +590,42 @@ def _montar_v5(cfg, p=None):
                         retrato=True, parede_y=PY, rotulo="PEQUENAS",
                         descricao="Cartas pequenas em pé (de retrato): Invenções | Equipamento | Feras")
     add(peq, (eve.tamanho[1], FAIXA, 0), rot90=1)
+    # coluna vazia ao lado das cartas pequenas: caixa funda com tampa (também apoia a camada de cima)
+    yf = FAIXA + peq.tamanho[0]
+    add(tampada("caixa-funda", peq.tamanho[1], XY - yf, T, [(1, [1])],
+                "Caixa funda com tampa ao lado das cartas pequenas"), (eve.tamanho[1], yf, 0))
     divp = divisoria("divisoria-pequenas", peq.tamanho[1] - 2 * PY, T - p.piso)
     divp.qtd = 2
     pecas.append(divp)
+    global _BAR
+    _BAR = bar
     if lay.get("descartes", True):
         _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3, XY, eve, peq, tampada, IC)
     return _fechar(cfg, p, pecas, itens, sl, bar)
 
 
 def _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3, XY, eve, peq, tampada, IC=None):
-    """Bandejas de descarte (mesmo tamanho das de compra, vão para a mesa ao lado delas).
-
-    - Descarte de Eventos: no vão livre sobre a bandeja de acampamento do PengLord (fundo, coluna 2).
-    - Demais descartes + bandejas abertas de fichas: camada fina por cima de tudo, até TOPO_DESC,
-      apoiada no topo de cada coluna (o tabuleiro passa a deitar sobre ela).
-    """
+    """Versão 6. Camada de cima (até TOPO_DESC):
+    - 3 bandejas de Aventura (Construir, Coletar, Explorar) com bolso para os 3 dados da ação: vão para os
+      espaços de ação na faixa de baixo do tabuleiro;
+    - descartes de Construir/Coletar/Explorar, de Mistério e caixas com tampa;
+    - descarte de Eventos no vão sobre o acampamento do PengLord."""
     lay = cfg.get("layout", {})
-    TD = lay.get("topo_descartes", 100.0)
-
+    TD = lay.get("topo_descartes", 105.0)
+    PL = lay.get("parede_lateral_deitadas", 1.2)
     IC = IC or {}
-
-    def desc(nome, rot, alt):
-        chave = {"EVENTOS": "eventos", "MISTÉRIO": "misterio", "CONSTRUIR": "construir", "COLETAR": "coletar",
-                 "EXPLORAR": "explorar"}.get(rot[-1])
-        return bandeja_baralhos(nome, [[]], p, altura=alt, ref=ref_g, rotulo=com_icone(rot, IC, chave),
-                                parede_lateral=lay.get("parede_lateral_deitadas", 1.2),
-                                descricao=f"Descarte ({rot[-1].lower()}). Vai para a mesa ao lado do monte de compra.")
-
     cont = cfg.get("conteudo_bandejas", {})
+    bar = {k: v for k, v in []}
+
+    def desc(nome, rot, alt, chave):
+        return bandeja_baralhos(nome, [[]], p, altura=alt, ref=ref_g, rotulo=com_icone(rot, IC, chave),
+                                parede_lateral=PL, descricao=f"Descarte ({rot[-1].lower()}). Vai para a mesa.")
 
     def aberta(nome, X, Y, Z, desc_):
         c = cont.get(nome, {})
         cols = c.get("colunas") or ([(1, [1])] if min(X, Y) < 60 else [(1, [1, 1]), (1, [1, 1])])
-        t, tp = bandeja_fichas(nome.replace("bandeja-aberta", "caixa"), X, Y, Z, [tuple(cc) for cc in cols], p,
-                               tampa=True, descricao=c.get("descricao", desc_))
+        t, tp = bandeja_fichas(nome, X, Y, Z, [tuple(cc) for cc in cols], p, tampa=True,
+                               descricao=c.get("descricao", desc_))
         if c.get("rotulo"):
             gravar_topo(tp, c["rotulo"])
         pecas.append(tp)
@@ -627,40 +633,43 @@ def _camada_descartes(cfg, p, add, pecas, itens, ref_g, T, A_x, B_w, x_rec, col3
 
     # 1) descarte de Eventos no vão sobre o acampamento do PengLord
     z_pl = 51.2
-    d_ev = desc("descarte-eventos", ["DESCARTE", "EVENTOS"], T - z_pl)
-    w, l = d_ev.tamanho[1], d_ev.tamanho[0]  # girada 90°
-    y_pl = FAIXA
-    add(d_ev, (A_x + (col3 - A_x - w) / 2, y_pl, z_pl), rot90=1)
+    d_ev = desc("descarte-eventos", ["DESCARTE", "EVENTOS"], T - z_pl, "eventos")
+    add(d_ev, (A_x + (col3 - A_x - d_ev.tamanho[1]) / 2, FAIXA, z_pl), rot90=1)
 
-    # 2) região A (componentes js500, topo 83): 3 descartes de Aventura + 2 bandejas abertas
-    zA = 83.0
-    hA = TD - zA
-    nomes = [("descarte-construir", ["DESCARTE", "CONSTRUIR"]), ("descarte-coletar", ["DESCARTE", "COLETAR"]),
-             ("descarte-explorar", ["DESCARTE", "EXPLORAR"])]
+    # 2) região A (componentes js500, topo 83): 3 bandejas de Aventura com bolso de dados + DESCOBERTA
+    zA, hA = 83.0, TD - 83.0
     y = 0.0
-    for nome, rot in nomes:
-        d = desc(nome, rot, hA)
-        add(d, (0, y, zA), rot90=1)
+    for k, rot in (("aventura-construir", "CONSTRUIR"), ("aventura-coletar", "COLETAR"),
+                   ("aventura-explorar", "EXPLORAR")):
+        chave = rot.lower()
+        tb = bandeja_baralhos("cartas-" + k, [[_BAR[k]]], p, altura=hA, ref=ref_g, parede_lateral=PL,
+                              bolso_dados=lay.get("bolso_dados", 20.0), rotulo=com_icone(rot, IC, chave),
+                              descricao=f"Aventura — {rot.capitalize()} + os 3 dados da ação. Vai para o espaço "
+                                        f"da ação na faixa de baixo do tabuleiro.")
+        add(tb, (0, y, zA), rot90=1)
+        y += tb.tamanho[0]
+    add(aberta("caixa-a2", B_w, FAIXA - y, hA, "Caixa com tampa"), (0, y, zA))
+
+    # 3) região B+C (caixa estreita + vulcão, topo 86): 3 descartes de Aventura + 2 caixas
+    zB, hB = T, TD - T
+    y = 0.0
+    for nome, rot, ch in (("descarte-construir", "CONSTRUIR", "construir"), ("descarte-coletar", "COLETAR", "coletar"),
+                          ("descarte-explorar", "EXPLORAR", "explorar")):
+        d = desc(nome, ["DESCARTE", rot], hB, ch)
+        add(d, (B_w, y, zB), rot90=1)
         y += d.tamanho[0]
-    larg_d = d.tamanho[1]
-    add(aberta("bandeja-aberta-a1", B_w - larg_d, y, hA, "Bandeja aberta (fichas soltas)"), (larg_d, y * 0, zA))
-    add(aberta("bandeja-aberta-a2", B_w, FAIXA - y, hA, "Bandeja aberta (fichas soltas)"), (0, y, zA))
+    xa = B_w + d.tamanho[1]
+    add(aberta("caixa-b1", col3 - xa, y, hB, "Caixa com tampa"), (xa, 0, zB))
+    add(aberta("caixa-b2", col3 - B_w, FAIXA - y, hB, "Caixa com tampa"), (B_w, y, zB))
 
-    # 3) região B+C (caixa estreita + vulcão, topo 86): descarte de Mistério + 2 bandejas abertas
-    zB = T
-    hB = TD - zB
-    d_mi = desc("descarte-misterio", ["DESCARTE", "MISTÉRIO"], hB)
-    add(d_mi, (B_w, 0, zB), rot90=1)
-    xa, ya = B_w + d_mi.tamanho[1], d_mi.tamanho[0]
-    add(aberta("bandeja-aberta-b1", col3 - xa, ya, hB, "Bandeja aberta (fichas soltas)"), (xa, 0, zB))
-    add(aberta("bandeja-aberta-b2", col3 - B_w, FAIXA - ya, hB, "Bandeja aberta (fichas soltas)"), (B_w, ya, zB))
-
-    # 4) coluna 3 (cartas em pé, topo 86) e faixa do fundo (topo 86): bandejas abertas
+    # 4) coluna 3 (topo 86): 2 caixas
     y3 = max(it.caixa[1][1] for it in itens if it.caixa[0][0] >= col3 - 0.01 and it.caixa[0][2] < 1)
     for i in range(2):
-        add(aberta(f"bandeja-aberta-c{i + 1}", XY - col3, y3 / 2, hB, "Bandeja aberta (dados, marcadores)"),
-            (col3, i * y3 / 2, zB))
+        add(aberta(f"caixa-c{i + 1}", XY - col3, y3 / 2, hB, "Caixa com tampa"), (col3, i * y3 / 2, zB))
+
+    # 5) faixa do fundo (topo 86): descarte de Mistério + caixa d; caixa e sobre o descarte de Eventos
+    d_mi = desc("descarte-misterio", ["DESCARTE", "MISTÉRIO"], hB, "misterio")
+    add(d_mi, (0, FAIXA, zB), rot90=1)
     xf = eve.tamanho[1] + peq.tamanho[1]
-    add(aberta("bandeja-aberta-d", xf, XY - FAIXA, hB, "Bandeja aberta (fichas soltas)"), (0, FAIXA, zB))
-    add(aberta("bandeja-aberta-e", col3 - A_x, XY - FAIXA, hB, "Bandeja aberta (fichas soltas)"),
-        (A_x, FAIXA, zB))
+    add(aberta("caixa-d", xf - d_mi.tamanho[1], XY - FAIXA, hB, "Caixa com tampa"), (d_mi.tamanho[1], FAIXA, zB))
+    add(aberta("caixa-e", col3 - A_x, XY - FAIXA, hB, "Caixa com tampa"), (A_x, FAIXA, zB))

@@ -45,7 +45,7 @@ class Params:
 
 
 def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_piso=26.0, descricao="",
-                     girar_carta=False, ref=None, rotulo=None, parede_lateral=None):
+                     girar_carta=False, ref=None, rotulo=None, parede_lateral=None, bolso_dados=0.0):
     """Bandeja de mesa para maços DEITADOS (cartas luvadas), poços em fila ao longo de Y.
 
     pocos: lista; cada item é uma lista de Baralho que divide o mesmo poço
@@ -73,12 +73,16 @@ def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_pis
     n = len(pocos)
     pl = p.parede if parede_lateral is None else parede_lateral  # paredes compridas (faces X)
     X = 2 * pl + larg_c
-    Y = 2 * p.parede + n * comp_c + (n - 1) * p.divisoria
+    yb = (bolso_dados + p.divisoria) if bolso_dados else 0.0     # bolso de dados na frente (Y=0)
+    Y = 2 * p.parede + n * comp_c + (n - 1) * p.divisoria + yb
     Z = p.piso + prof
     corpo = g.caixa_arred(X, Y, Z, p.raio_canto)
     furos, fant = [], []
+    if bolso_dados:
+        furos.append(g.cavidade_concha(larg_c, bolso_dados, prof + 5, min(p.raio_concha, prof * 0.6),
+                                       (pl, p.parede, p.piso)))
     for i, poco in enumerate(pocos):
-        y0 = p.parede + i * (comp_c + p.divisoria)
+        y0 = p.parede + yb + i * (comp_c + p.divisoria)
         furos.append(g.caixa_arred(larg_c, comp_c, prof + 1, 1.0, (pl, y0, p.piso)))
         cy = y0 + comp_c / 2
         if entalhe:

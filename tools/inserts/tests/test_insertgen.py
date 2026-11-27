@@ -142,8 +142,9 @@ class TestMontagem(unittest.TestCase):
     def test_projeto_rc_valido(self):
         cfg = rc.carregar()
         pecas, itens, reservas, ctx = rc.montar(cfg)
-        self.assertEqual(validar_montagem((320, 320, 127), itens, reservas), [])
-        self.assertLessEqual(ctx["topo_insert"], 127 - ctx["espessura_plana"])
+        zmin = cfg["caixa_interna"]["z_minimo_provavel"]
+        self.assertEqual(validar_montagem((320, 320, 137), itens, reservas), [])
+        self.assertLessEqual(ctx["topo_insert"], zmin - ctx["espessura_plana"])
         for pc in pecas:
             self.assertEqual(validar_peca(pc)[0], [], pc.nome)
 
@@ -167,7 +168,8 @@ class TestMontagem(unittest.TestCase):
 
     def test_versao_5_penglord(self):
         pecas, itens, reservas, ctx = rc.montar(rc.carregar())
-        self.assertEqual(ctx["topo_insert"], 100)
+        self.assertEqual(ctx["topo_insert"], 105)
+        self.assertTrue(any(pc.nome == "cartas-aventura-explorar" for pc in pecas))
         self.assertTrue(any(pc.nome == "descarte-eventos" for pc in pecas))
         self.assertTrue(all(pc.sem_texto is not None for pc in pecas if pc.nome.startswith(("cartas-", "descarte-"))))
         self.assertTrue(any("penglord-miniaturas-acampamento" in it.nome for it in itens))

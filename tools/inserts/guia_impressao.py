@@ -52,8 +52,8 @@ with PdfPages(sys.argv[4]) as pdf:
     txt = f"""DOCUMENTO DE IMPRESSÃO — todas as medidas em milímetros
 
 CAIXA (medida com régua e trena): 315,5 x 315,5 mm por dentro, 138 mm de altura útil.
-INSERT MONTADO: 312,5 x 312,5 mm de fundo, 100 mm de altura. Por cima: tabuleiro dobrado + fichas
-de cenário + manual + 2 guias (~24 mm). Sobram ~11 mm até a tampa.
+INSERT MONTADO: 312,5 x 312,5 mm de fundo, 105 mm de altura. Por cima: tabuleiro dobrado + fichas
+de cenário + manual + 2 guias (~24 mm). Sobram ~6 mm até a tampa.
 CARTAS: grandes 58 x 88 no sleeve Bucaneiros CHIMERA (luvada ~62 x 90,5, medida com régua);
 pequenas 44 x 68 no sleeve Bucaneiros MINI EURO.
 
@@ -76,7 +76,7 @@ ORDEM DE IMPRESSÃO
 TOTAL (sem os testes): {tot_p} peças, ~{tot_g/1000:.2f} kg de filamento PLA ({tot_g:.0f} g).
 Calculado como o fatiador faz: 3 paredes + 4 camadas de topo/fundo maciças e 15% no miolo.
 2 rolos de 1 kg ficam no limite (sobram ~0,1 kg); com um 3º rolo cobre testes e reimpressões.
-QUANTIDADES QUE NÃO SÃO 1: divisoria-grandes = 5 cópias; divisoria-pequenas = 2 cópias.
+QUANTIDADES QUE NÃO SÃO 1: divisoria-grandes = 3 cópias; divisoria-pequenas = 2 cópias.
 """
     fig.text(0.07, 0.90, txt, fontsize=8.6, va='top', family='DejaVu Sans Mono'); pdf.savefig(fig); plt.close(fig)
     # tabelas

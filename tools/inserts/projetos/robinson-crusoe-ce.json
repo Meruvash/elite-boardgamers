@@ -269,7 +269,10 @@
     "_nota": "Misto (pedido do usuário, 18/11/2026): maços de jogo deitados (vão para a mesa), maços dos Mistérios em pé (guarda).",
     "altura_bandeja_em_pe": 70.0,
     "parede_em_pe": 1.2,
-    "folga_maco_em_pe": 1.2
+    "folga_maco_em_pe": 1.2,
+    "topo_descartes": 105.0,
+    "bolso_dados": 20.0,
+    "_v6": "Versão 6 (27/11/2026): Aventuras em bandejas próprias com bolso de 3 dados, que vão para os espaços de ação na faixa de baixo do tabuleiro (rulebook p.4-5)."
   },
   "extras": {
     "tem": false,
@@ -290,7 +293,19 @@
   },
   "conteudo_bandejas": {
     "_nota": "O que vai em cada caixa com tampa (rótulo gravado na tampa). Componentes que ficaram sem lugar ao trocar as bandejas de carta do js500 (descoberta, dados extras, reserva) + extras da Edição de Colecionador. Mude aqui e rode gerar.py.",
-    "bandeja-aberta-a2": {
+    "caixa-estreita": {
+      "rotulo": "NÚMEROS · CLIMA",
+      "descricao": "Fichas de número (6) e fichas de clima/tempestade"
+    },
+    "caixa-sobre-cartas-1": {
+      "rotulo": "RESERVA 1",
+      "descricao": "Livre"
+    },
+    "caixa-sobre-cartas-2": {
+      "rotulo": "RESERVA 2",
+      "descricao": "Livre"
+    },
+    "caixa-a2": {
       "rotulo": "DESCOBERTA",
       "descricao": "Fichas de Descoberta (22), 2 compartimentos",
       "colunas": [
@@ -308,76 +323,54 @@
         ]
       ]
     },
-    "bandeja-aberta-b2": {
-      "rotulo": [
-        "BASES DE LÍDER",
-        "+ FICHAS EXTRAS"
-      ],
-      "descricao": "8 bases de Líder | fichas adicionais",
+    "caixa-b1": {
+      "rotulo": "FERIMENTOS",
+      "descricao": "Marcadores de ferimento e fichas de ferimento especial",
       "colunas": [
         [
           1,
           [
             1,
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    "caixa-b2": {
+      "rotulo": [
+        "BASES DE LÍDER",
+        "1º JOGADOR · RODADA"
+      ],
+      "descricao": "8 bases de Líder | marcador de 1º jogador e de rodada",
+      "colunas": [
+        [
+          2,
+          [
             1
           ]
         ],
         [
           1,
           [
-            1,
             1
           ]
         ]
       ]
     },
-    "bandeja-aberta-b1": {
-      "rotulo": [
-        "1º JOGADOR",
-        "RODADA"
-      ],
-      "descricao": "Marcador de 1º jogador e marcador de rodada (madeira)",
-      "colunas": [
-        [
-          1,
-          [
-            1,
-            1
-          ]
-        ]
-      ]
-    },
-    "bandeja-aberta-c1": {
+    "caixa-c1": {
       "rotulo": "DADOS EXTRAS",
       "descricao": "Dados extras (madeira/resina)"
     },
-    "bandeja-aberta-c2": {
+    "caixa-c2": {
       "rotulo": "MARCADORES EXTRAS",
       "descricao": "Marcadores e cubos de reserva"
     },
-    "bandeja-aberta-a1": {
-      "rotulo": "FERIMENTOS",
-      "descricao": "Marcadores de ferimento e fichas de ferimento especial"
+    "caixa-d": {
+      "rotulo": "SLEEVES",
+      "descricao": "Sleeves sobressalentes"
     },
-    "bandeja-aberta-d": {
-      "rotulo": "SLEEVES RESERVA",
-      "descricao": "Sleeves sobressalentes (CHIMERA e MINI EURO)",
-      "colunas": [
-        [
-          1,
-          [
-            1
-          ]
-        ],
-        [
-          1,
-          [
-            1
-          ]
-        ]
-      ]
-    },
-    "bandeja-aberta-e": {
+    "caixa-e": {
       "rotulo": "PROMOS",
       "descricao": "Cartas e peças promocionais avulsas",
       "colunas": [
@@ -395,17 +388,13 @@
         ]
       ]
     },
-    "caixa-estreita": {
-      "rotulo": "NÚMEROS · CLIMA",
-      "descricao": "Fichas de número (6) e fichas de clima/tempestade"
-    },
-    "caixa-sobre-cartas-1": {
-      "rotulo": "RESERVA 1",
+    "caixa-pe-reserva": {
+      "rotulo": "RESERVA 3",
       "descricao": "Livre"
     },
-    "caixa-sobre-cartas-2": {
-      "rotulo": "RESERVA 2",
-      "descricao": "Livre"
+    "caixa-funda": {
+      "rotulo": "EXTRAS",
+      "descricao": "Cartas pequenas avulsas / promos de invenção"
     }
   }
 }
