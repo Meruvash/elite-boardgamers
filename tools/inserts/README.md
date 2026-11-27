@@ -41,6 +41,19 @@ mede os poços de carta direto nos STLs:
 O próprio autor do js500 diz que o projeto é para o **playmat de neoprene** e que o tabuleiro de papelão só cabe se a
 tampa ficar levantada. Por isso o original também não tem espaço para o tabuleiro.
 
+### O que vai para a mesa (setup)
+
+Só vai para a mesa o que se usa durante a partida. Caixas de guarda, enchimentos, bandejas de miniaturas e de
+personagens, manual e guias ficam na caixa.
+
+- **Em cima do tabuleiro:** Eventos e as 3 Aventuras (com os dados).
+- **Logo abaixo:** os 3 descartes de Aventura, DESCOBERTA e FERIMENTOS.
+- **À esquerda:** ficha de cenário, Mistério e o descarte dele, descarte de Eventos, cartas pequenas (Feras,
+  Invenções, Equipamento) e peças de ilha.
+- **À direita:**
+  - recursos, fichas, dados/determinação e abrigo (bandejas do js500);
+  - **BASES DE LÍDER · 1º JOGADOR · RODADA**.
+
 ### Versão 6 (27/11/2026): Aventuras em cima do tabuleiro
 
 Conferido com o manual oficial (p. 4–5, Setup). O baralho de **Eventos** fica no espaço do canto superior esquerdo do

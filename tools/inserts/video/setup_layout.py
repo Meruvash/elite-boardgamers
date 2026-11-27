@@ -41,6 +41,7 @@ fila(['ORIGINAL obj_15_dice-determination-black-white-blue.stl', 'ORIGINAL obj_1
      740, 260, rot=90, gap=10, para='y')
 put('caixa-a2', 590, -70, 90)
 put('caixa-b1', 660, -110)
+put('caixa-b2', 860, -60)   # bases de Líder, 1º jogador e rodada: usados durante a partida
 fica = [b for b in ordem if b not in alvo and b != 'TABULEIRO']
 fica_set = fica
 print('ficam na caixa:', fica)
