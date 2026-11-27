@@ -23,7 +23,10 @@ export async function servirDoRadar(context) {
     if (!chave.endsWith("/")) return Response.redirect(url.origin + url.pathname + "/" + url.search, 301);
     chave += "index.html";
   }
-  const obj = await env.RADAR.get(chave);
+  // dois servidores publicam no mesmo bucket: Oracle na raiz e Railway em "v2/". Vale o mais novo; se um parar, o
+  // outro segue no ar sozinho (pedido do usuário em 27/11/2026: um robô cobre o outro)
+  const [a, b] = await Promise.all([env.RADAR.get("v2/" + chave), env.RADAR.get(chave)]);
+  const obj = a && b ? (a.uploaded >= b.uploaded ? a : b) : a || b;
   if (!obj) return next();
   const ext = chave.split(".").pop().toLowerCase();
   // HTML e JSON (alertas, estado dos robôs) mudam a cada ciclo: cache curto

@@ -69,6 +69,11 @@ print('\n'.join(p)); sys.exit(1 if p else 0)"; then
   python3 tools/black/vps/publicar_r2.py black/estado; exit 1
 fi
 
+# servidor de reserva (Railway, R2_PREFIXO=v2): página magra não vai ao ar, para não passar na frente da boa
+if [ -n "${R2_PREFIXO:-}" ]; then
+  n=$(grep -o 'class="of-btn"' black/index.html | wc -l)
+  [ "$n" -lt 30 ] && { echo "página com só $n ofertas: não publica neste ciclo"; exit 0; }
+fi
 python3 tools/black/vps/publicar_r2.py black img/black
 exit $?
 }

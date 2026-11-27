@@ -31,6 +31,13 @@ REUSO = dt.timedelta(hours=12)
 ESTADO = Path(__file__).resolve().parents[2] / "conteudo" / "black" / "lojas_estado.json"
 NUNCA = re.compile(r"amazon\.|mercadolivre|mercadolibre|magazineluiza|magalu|americanas|casasbahia|shopee|aliexpress", re.I)
 
+# lojas que bloquearam e ainda não liberaram: não são visitadas em servidor nenhum (tools/black/lojas_pausadas.txt)
+try:
+    PAUSADAS = {l.strip().lower() for l in (Path(__file__).resolve().parent / "lojas_pausadas.txt").read_text(encoding="utf-8").splitlines()
+                if l.strip() and not l.startswith("#")}
+except OSError:
+    PAUSADAS = set()
+
 _sessao = requests.Session()
 _sessao.headers.update({"User-Agent": UA})
 _robots, _ultimo, _bloqueadas = {}, {}, set()
@@ -105,7 +112,7 @@ def em_descanso(dom):
 
 def _pode(url):
     dom = urlparse(url).netloc.lower()
-    if NUNCA.search(dom) or dom in _bloqueadas or em_descanso(dom):
+    if NUNCA.search(dom) or dom in PAUSADAS or dom in _bloqueadas or em_descanso(dom):
         return False
     if MODO == "educado" and _loja(dom)["paginas"] >= LIMITE_ESPECIAL.get(dom, LIMITE_DIA):
         return False

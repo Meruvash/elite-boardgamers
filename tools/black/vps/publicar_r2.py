@@ -17,6 +17,8 @@ import boto3
 
 RAIZ = Path(__file__).resolve().parents[3]
 BUCKET = os.environ.get("R2_BUCKET", "elite-radar")
+# Railway publica em "v2/" (R2_PREFIXO); o site prefere a cópia mais nova entre v2/ e a raiz (Oracle)
+PREFIXO = os.environ.get("R2_PREFIXO", "").strip("/") + ("/" if os.environ.get("R2_PREFIXO", "").strip("/") else "")
 
 
 def cliente():
@@ -41,11 +43,11 @@ def main(pastas):
     s3 = cliente()
     enviados = iguais = 0
     for pasta in pastas:
-        etags = remotos(s3, pasta.rstrip("/") + "/")
+        etags = remotos(s3, PREFIXO + pasta.rstrip("/") + "/")
         for arq in sorted((RAIZ / pasta).rglob("*")):
             if not arq.is_file() or arq.name.startswith("."):
                 continue
-            chave = arq.relative_to(RAIZ).as_posix()
+            chave = PREFIXO + arq.relative_to(RAIZ).as_posix()
             dados = arq.read_bytes()
             if etags.get(chave) == hashlib.md5(dados).hexdigest():
                 iguais += 1
