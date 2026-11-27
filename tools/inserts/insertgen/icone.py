@@ -9,7 +9,7 @@ import manifold3d as m3
 
 
 def icone_de_foto(caminho, recorte, tamanho=12.0, limiar=None, claro=True, raio_util=0.62, simplificar=0.15,
-                  engrossar=0.0):
+                  engrossar=0.0, min_frac=0.25):
     from PIL import Image, ImageOps, ImageFilter
     from scipy import ndimage
     import matplotlib
@@ -33,7 +33,7 @@ def icone_de_foto(caminho, recorte, tamanho=12.0, limiar=None, claro=True, raio_
     cen = ndimage.center_of_mass(m, lab, range(1, n + 1))
     perto = [((cy - h / 2) ** 2 + (cx - w / 2) ** 2) ** 0.5 < 0.35 * min(w, h) for cy, cx in cen]
     maior = max(t for t, ok in zip(tam, perto) if ok) if any(perto) else tam.max()
-    manter = [i + 1 for i, (t, ok) in enumerate(zip(tam, perto)) if ok and t >= 0.25 * maior]
+    manter = [i + 1 for i, (t, ok) in enumerate(zip(tam, perto)) if ok and t >= min_frac * maior]
     m = np.isin(lab, manter)
     m = ndimage.binary_fill_holes(m) if False else m
     cs = plt.contour(np.pad(m.astype(float), 2), levels=[0.5])
@@ -51,3 +51,28 @@ def icone_de_foto(caminho, recorte, tamanho=12.0, limiar=None, claro=True, raio_
     sec = sec.simplify(simplificar)
     # garante traço mínimo imprimível (0,8 mm): abre e fecha
     return sec
+
+
+def icone_bau(tamanho=12.0):
+    """Baú do tesouro desenhado em vetor, no estilo do ícone 'Treasure card' do manual:
+    tampa abaulada, corpo, duas tiras verticais, junta da tampa e fechadura.
+    As tiras/junta ficam em relevo (sem gravação), com 0,9 mm para a impressora reproduzir."""
+    L, Hc, Ht = 12.0, 6.0, 4.5          # largura, altura do corpo, altura da tampa
+    corpo = m3.CrossSection.square((L, Hc))
+    r = 2.2
+    tampa = m3.CrossSection.batch_hull([
+        m3.CrossSection.square((L, 0.01)).translate((0, Hc)),
+        m3.CrossSection.circle(r, 48).translate((r, Hc + Ht - r)),
+        m3.CrossSection.circle(r, 48).translate((L - r, Hc + Ht - r))])
+    bau = corpo + tampa
+    t = 0.9
+    linhas = (m3.CrossSection.square((L + 2, t)).translate((-1, Hc - t / 2))                       # junta
+              + m3.CrossSection.square((t, Hc + Ht + 2)).translate((L * 0.27 - t / 2, -1))        # tira esq.
+              + m3.CrossSection.square((t, Hc + Ht + 2)).translate((L * 0.73 - t / 2, -1)))       # tira dir.
+    fechadura = m3.CrossSection.square((2.2, 2.6)).translate((L / 2 - 1.1, Hc - 2.2))
+    furo = m3.CrossSection.circle(0.45, 24).translate((L / 2, Hc - 1.2))
+    sec = (bau - linhas - fechadura) + (fechadura - m3.CrossSection.square((1.4, 1.8)).translate((L / 2 - 0.7, Hc - 1.8))) 
+    sec = sec - furo
+    b = sec.bounds()
+    k = tamanho / max(b[2] - b[0], b[3] - b[1])
+    return sec.translate((-(b[0] + b[2]) / 2, -(b[1] + b[3]) / 2)).scale((k, k))

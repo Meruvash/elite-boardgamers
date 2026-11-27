@@ -54,17 +54,7 @@
   "fonte": "Manual oficial, p. 40: ação Explore"
  },
  "misterio": {
-  "foto": "misterio.png",
-  "recorte": [
-   0,
-   0,
-   250,
-   180
-  ],
-  "opcoes": {
-   "claro": false,
-   "raio_util": 0.95
-  },
-  "fonte": "Manual oficial, p. 40: Mystery cards / Creature card"
+  "vetor": "bau",
+  "fonte": "Desenho vetorial no estilo do ícone 'Treasure card' do manual oficial (p. 40); o original é pequeno demais para contornar."
  }
 }

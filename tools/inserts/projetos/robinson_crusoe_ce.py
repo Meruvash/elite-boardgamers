@@ -75,6 +75,10 @@ def icones(tamanho=11.0):
     for k, v in cfg.items():
         if k.startswith("_"):
             continue
+        if v.get("vetor") == "bau":
+            from insertgen.icone import icone_bau
+            out[k] = icone_bau(tamanho)
+            continue
         arq = os.path.join(ICONES, v["foto"])
         if os.path.exists(arq):
             out[k] = icone_de_foto(arq, tuple(v["recorte"]), tamanho, **v.get("opcoes", {}))
