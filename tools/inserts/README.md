@@ -48,8 +48,11 @@ personagens, manual e guias ficam na caixa.
 
 - **Em cima do tabuleiro:** Eventos e as 3 Aventuras (com os dados).
 - **Logo abaixo:** os 3 descartes de Aventura, DESCOBERTA e FERIMENTOS.
-- **À esquerda:** ficha de cenário, Mistério e o descarte dele, descarte de Eventos, cartas pequenas (Feras,
-  Invenções, Equipamento) e peças de ilha.
+- **À esquerda:** ficha de cenário, Mistério e o descarte dele, descarte de Eventos, e as cartas pequenas:
+  INVENÇÕES (em pé), FERAS e EQUIPAMENTO INICIAL (cada uma na sua bandeja baixa).
+- **Peças de ilha:** sai só a pilha, como o manual manda ("empilhe viradas para baixo ao lado do tabuleiro"). A
+  bandeja grande de peças de mapa do js500 é de preparação e fica na caixa. Uma bandeja só para a pilha
+  (hexágono de ~86 mm x 22 mm) não cabe em nenhum vão da caixa.
 - **À direita:**
   - recursos, fichas, dados/determinação e abrigo (bandejas do js500);
   - **BASES DE LÍDER · 1º JOGADOR · RODADA**.

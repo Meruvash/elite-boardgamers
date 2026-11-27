@@ -272,7 +272,8 @@
     "folga_maco_em_pe": 1.2,
     "topo_descartes": 105.0,
     "bolso_dados": 20.0,
-    "_v6": "Versão 6 (27/11/2026): Aventuras em bandejas próprias com bolso de 3 dados, que vão para os espaços de ação na faixa de baixo do tabuleiro (rulebook p.4-5)."
+    "_v6": "Versão 6 (27/11/2026): Aventuras em bandejas próprias com bolso de 3 dados, que vão para os espaços de ação na faixa de baixo do tabuleiro (rulebook p.4-5).",
+    "vulcao_y": 158.0
   },
   "extras": {
     "tem": false,

@@ -15,7 +15,7 @@ PASSOS = [
         "Esquerda: ABRIGO (bandeja mais fina) → PEÇAS DE MAPA (com a bandejinha de ANIMAIS dentro) → PERSONAGENS.",
         "Meio: MINIATURAS — figuras na frente, acampamento atrás.",
         "Direita, em pé, da frente para trás: ANIMAIS·PRAIA → EXPANSÕES → RESERVA 3.",
-        "Canto de trás, à esquerda: EVENTOS (deitada); ao lado, PEQUENAS (em pé, na frente) e EXTRAS (atrás).",
+        "Canto de trás, à esquerda: EVENTOS (deitada); ao lado, INVENÇÕES (em pé, na frente) e EXTRAS (atrás).",
     ]),
     ("2. SEGUNDO ANDAR", [
         "Sobre PERSONAGENS: FICHAS → DADOS·DETERMINAÇÃO por cima.",
@@ -24,8 +24,9 @@ PASSOS = [
         "Sobre EVENTOS: MISTÉRIO.   Sobre o acampamento: DESCARTE EVENTOS.",
         "Sobre as 3 bandejas em pé: RESERVA 1 (frente) e RESERVA 2 (atrás).",
     ]),
-    ("3. VULCÃO", [
-        "BANDEJA DO VULCÃO por cima de RECURSOS + caixa estreita; placas da torre deitadas dentro.",
+    ("3. VULCÃO, FERAS E EQUIPAMENTO", [
+        "BANDEJA DO VULCÃO (frente) por cima de RECURSOS + caixa estreita; placas da torre deitadas dentro.",
+        "Atrás dela, no mesmo nível: FERAS e EQUIPAMENTO INICIAL (bandejas baixas, lado a lado).",
     ]),
     ("4. CAMADA DE CIMA (tudo fica no mesmo nível)", [
         "Sobre DADOS: CONSTRUIR, COLETAR, EXPLORAR (com os 3 dados de cada ação no bolso); DESCOBERTA atrás.",
@@ -41,14 +42,14 @@ PASSOS = [
 
 NOMES = {
     "obj_13": "ABRIGO\n↓ PEÇAS DE MAPA\n↓ PERSONAGENS", "obj_12": "PEÇAS DE MAPA", "obj_11": "PERSONAGENS", "obj_16": "FICHAS\n↓ DADOS·DETERMIN.",
-    "obj_15": "FICHAS\n↓ DADOS·DETERMIN.", "obj_14": "RECURSOS", "cartas-eventos": "EVENTOS", "cartas-pequenas-retrato": "PEQ.",
+    "obj_15": "FICHAS\n↓ DADOS·DETERMIN.", "obj_14": "RECURSOS", "cartas-eventos": "EVENTOS", "cartas-pequenas-retrato": "INV.", "cartas-feras": "FERAS", "cartas-equipamento": "EQUIP.",
     "penglord-miniaturas-figuras": "MINIATURAS\nfiguras", "penglord-miniaturas-acampamento": "MINIATURAS\nacampamento",
     "cartas-aventura-construir": "CONSTRUIR\n+ dados", "cartas-aventura-coletar": "COLETAR\n+ dados",
     "cartas-aventura-explorar": "EXPLORAR\n+ dados", "cartas-animais-praia": "ANIMAIS\nPRAIA", "caixa-pe-reserva": "RESERVA 3",
     "caixa-funda": "EXTRAS",
     "cartas-expansoes-em-pe": "EXPANSÕES", "caixa-estreita": "NÚM.\nCLIMA", "descarte-eventos": "DESC.\nEVENTOS",
     "cartas-misterio": "MISTÉRIO", "caixa-sobre-cartas-1": "RESERVA 1", "caixa-sobre-cartas-2": "RESERVA 2",
-    "bandeja-vulcao": "VULCÃO\n(sobre RECURSOS\n+ NÚM.·CLIMA)", "descarte-construir": "DESC. CONSTRUIR", "descarte-coletar": "DESC. COLETAR",
+    "bandeja-vulcao": "VULCÃO", "descarte-construir": "DESC. CONSTRUIR", "descarte-coletar": "DESC. COLETAR",
     "descarte-explorar": "DESC. EXPLORAR", "caixa-a2": "DESCOBERTA", "caixa-b1": "FERIM.", "caixa-d": "SLEEVES",
     "descarte-misterio": "DESC.\nMISTÉRIO", "caixa-b2": "BASES DE LÍDER · 1º JOG.", "caixa-e": "PROMOS", "caixa-c1": "DADOS\nEXTRAS", "caixa-c2": "MARCAD.\nEXTRAS"}
 

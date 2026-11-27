@@ -33,8 +33,10 @@ for n, cx in (('descarte-construir', 292), ('descarte-coletar', 394), ('descarte
 put('FICHAS DE CENÁRIO', -125, 372)
 fila(['cartas-misterio', 'descarte-misterio'], -250, 205, rot=90)
 fila(['descarte-eventos'], -250, 95, rot=90)
-put('cartas-pequenas-retrato', -60, 60)
-put('ORIGINAL obj_12_map-tiles-animals-misc-expansions.stl', -110, -140, 90)
+put('cartas-pequenas-retrato', -60, 40)
+put('cartas-feras', -60, -70)
+put('cartas-equipamento', -125, -70)
+put('PILHA DE ILHA', -215, -75)
 # --- à direita: recursos, fichas e dados (o que todo mundo pega durante a partida) ---
 fila(['ORIGINAL obj_14_resources.stl', 'ORIGINAL obj_16_tokens.stl'], 740, 520, gap=10)
 fila(['ORIGINAL obj_15_dice-determination-black-white-blue.stl', 'ORIGINAL obj_13_shelter-upgrades-herb-garden-pen-spyglass.stl'],

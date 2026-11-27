@@ -534,12 +534,21 @@ def _montar_v5(cfg, p=None):
     rec = orig("obj_14_resources.stl", (x_rec, 0, ml.caixa[1][2]))
     vx, vy, vz = cfg["componentes_soltos"]["vulcao_placas"]["mm"]
     z_rec = rec.caixa[1][2]
-    bv = bloco_espaco("bandeja-vulcao", col3 - B_w, FAIXA, T - z_rec, p, entalhes=True,
+    VY = lay.get("vulcao_y", 158.0)  # placas ~122 x 150 mm: não precisa dos 246 inteiros
+    bv = bloco_espaco("bandeja-vulcao", col3 - B_w, VY, T - z_rec, p, entalhes=True,
                       descricao="Bandeja rasa onde as placas do vulcão ficam deitadas (apoia a camada de cima)")
     from insertgen import geom as _g
     bv.fantasmas.append(("placas do vulcão", _g.caixa(vx, vy, vz, (p.parede + 1, p.parede + 1, p.piso))))
     pecas.append(bv)
     itens.append(Item(bv.nome, bv.tamanho, (B_w, 0, z_rec), bv.solido))
+    # no espaço que sobrou ao lado do vulcão: Feras e Equipamento inicial em bandejas baixas, separadas
+    xb = B_w
+    for nome, k, rot in (("cartas-feras", "feras", "FERAS"), ("cartas-equipamento", "equipamento", ["EQUIPAMENTO", "INICIAL"])):
+        tb = bandeja_baralhos(nome, [B(k)], p, altura=T - z_rec, parede_lateral=lay.get("parede_lateral_deitadas", 1.2),
+                              rotulo=rot, descricao=f"{rot if isinstance(rot, str) else ' '.join(rot)} (cartas pequenas, "
+                                                     f"deitadas). Vai para o lado do tabuleiro.")
+        add(tb, (xb, VY + (FAIXA - VY - tb.tamanho[1]) / 2, z_rec))
+        xb += tb.tamanho[0]
     add(tampada("caixa-estreita", x_rec - B_w, FAIXA, z_rec - 51.0, [(1, [1, 1, 1])],
                 "Caixa estreita com tampa: bases de Líder, marcador de 1º jogador, extras"), (B_w, 0, 51.0))
 
@@ -586,17 +595,16 @@ def _montar_v5(cfg, p=None):
                            descricao="Mistério (compra), com as Especiais por baixo. Vai para a mesa.")
     add(eve, (0, FAIXA, 0), rot90=1)
     add(mis, (0, FAIXA, NIVEL), rot90=1)
-    peq = bandeja_em_pe("cartas-pequenas-retrato", B("invencoes", "equipamento", "feras"), p, T, parede=par_pe,
-                        retrato=True, parede_y=PY, rotulo="PEQUENAS",
-                        descricao="Cartas pequenas em pé (de retrato): Invenções | Equipamento | Feras")
+    peq = bandeja_em_pe("cartas-pequenas-retrato", B("invencoes"), p, T, parede=par_pe,
+                        retrato=True, parede_y=PY, rotulo="INVENÇÕES",
+                        folga_maco=32.0 - 2 * par_pe - bar["invencoes"].altura_pilha(),  # base larga: não tomba
+                        descricao="Baralho de Invenções em pé (de retrato)")
     add(peq, (eve.tamanho[1], FAIXA, 0), rot90=1)
     # coluna vazia ao lado das cartas pequenas: caixa funda com tampa (também apoia a camada de cima)
     yf = FAIXA + peq.tamanho[0]
     add(tampada("caixa-funda", peq.tamanho[1], XY - yf, T, [(1, [1])],
                 "Caixa funda com tampa ao lado das cartas pequenas"), (eve.tamanho[1], yf, 0))
-    divp = divisoria("divisoria-pequenas", peq.tamanho[1] - 2 * PY, T - p.piso)
-    divp.qtd = 2
-    pecas.append(divp)
+    # (sem divisórias: a bandeja de cartas pequenas agora só leva as Invenções)
     global _BAR
     _BAR = bar
     if lay.get("descartes", True):

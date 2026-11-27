@@ -48,6 +48,10 @@ for it in sorted(itens, key=lambda i: (round(i.pos[2]), i.pos[0], i.pos[1])):
             v, f = dec(m.vertices, m.faces, 3000)
             v = v - v.min(axis=0) + np.array([it.pos[0] + 151.2 - 91.2 - 2, it.pos[1] + 2, it.pos[2] + 22 - 13])
             add('animais', 'ANIMAIS', v, f, '#a0a0a0', passo_de(z))
+            # pilha das 11 peças de ilha (hexágonos ~84 mm, 2 mm cada) dentro da bandeja de mapa
+            hx = trimesh.creation.cylinder(radius=42, height=22, sections=6)
+            hx.apply_translation((it.pos[0] + 151.2 - 48, it.pos[1] + 246 - 48, it.pos[2] + 22 - 11 + 0.5))
+            add('PILHA DE ILHA', 'PEÇAS DE ILHA (só a pilha)', hx.vertices, hx.faces, '#6e8f5a', passo_de(z))
         continue
     pc = pmap.get(nome)
     if pc is None:

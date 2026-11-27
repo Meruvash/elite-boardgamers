@@ -96,7 +96,12 @@ def texto_2d(linhas, larg_max, alt_max, tamanho=7.0, entrelinha=1.25):
         for pol in c.to_polygons():
             if len(pol) >= 3:
                 polys.append([((x + dx) * k, (y + dy) * k) for x, y in pol])
-    return m3.CrossSection(polys, m3.FillRule.EvenOdd)
+    sec = m3.CrossSection(polys, m3.FillRule.EvenOdd)
+    # funde contornos que só se encostam num ponto (ex.: cedilha do Ç), senão a malha fica com aresta dupla
+    sec = sec.offset(0.05, m3.JoinType.Round, circular_segments=12).offset(-0.05, m3.JoinType.Round, circular_segments=12).simplify(0.02)
+    # descarta pedacinhos menores que a impressora consegue fazer (< 0,3 mm²)
+    partes = [q for q in sec.decompose() if q.area() >= 0.3]
+    return m3.CrossSection.compose(partes) if partes else sec
 
 
 def rotulo_2d(linhas, larg_max, alt_max, icones=None, gap=1.5):
