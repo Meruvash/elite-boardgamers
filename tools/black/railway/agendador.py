@@ -8,6 +8,9 @@ servidores (tools/black/radar_pages.js). Código novo chega sozinho: o Railway r
 O robô de alertas não roda aqui (o da Oracle já manda; dois mandariam o mesmo aviso duas vezes).
 """
 import os
+import re
+import urllib.request
+from urllib.parse import urlparse
 import shutil
 import subprocess
 import time
@@ -36,6 +39,29 @@ def preparar():
         origem.symlink_to(destino)
 
 
+def liberadas():
+    """Lojas que o servidor da Oracle voltou a ler direto (cartão "página da loja" no site): já liberaram o robô.
+    Vão para conteudo/black/lojas_liberadas.txt e saem da lista de pausa (tools/black/lojas.py)."""
+    try:
+        req = urllib.request.Request("https://eliteboardgamers.com.br/black/",
+                                     headers={"User-Agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)"})
+        html = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "ignore")
+    except Exception as ex:  # noqa: BLE001
+        print(f"aviso: não li a página para ver lojas liberadas ({ex})", flush=True)
+        return
+    doms = set()
+    for cartao in html.split('class="of-img"')[1:]:
+        if "página da loja" in cartao:
+            m = re.search(r'class="of-btn" href="([^"]+)"', cartao)
+            if m:
+                doms.add(urlparse(m.group(1)).netloc.lower())
+    arq = APP / "conteudo/black/lojas_liberadas.txt"
+    antes = set(arq.read_text(encoding="utf-8").split()) if arq.exists() else set()
+    if doms - antes:
+        arq.write_text("\n".join(sorted(antes | doms)) + "\n", encoding="utf-8")
+        print("lojas liberadas:", ", ".join(sorted(doms - antes)), flush=True)
+
+
 def main():
     preparar()
     os.environ["ELITE_DIR"] = str(APP)
@@ -52,6 +78,8 @@ def main():
                 print(f"robô {robo} terminou com código {p.returncode}", flush=True)
                 rodando.pop(robo)
             if agora >= proximo[robo]:
+                if robo == "educado":
+                    liberadas()
                 print(f"== ciclo do robô {robo}", flush=True)
                 rodando[robo] = subprocess.Popen(["bash", str(APP / "tools/black/vps/rodar.sh"), robo], cwd=APP)
                 proximo[robo] = agora + intervalo

@@ -37,6 +37,13 @@ try:
                 if l.strip() and not l.startswith("#")}
 except OSError:
     PAUSADAS = set()
+# loja pausada que voltou a ser lida direto pelo servidor da Oracle (do endereço que ela tinha bloqueado) já liberou:
+# o agendador do Railway grava essas lojas em conteudo/black/lojas_liberadas.txt e elas saem da pausa sozinhas
+try:
+    PAUSADAS -= {l.strip().lower() for l in (Path(__file__).resolve().parents[2] / "conteudo" / "black" / "lojas_liberadas.txt")
+                 .read_text(encoding="utf-8").splitlines() if l.strip()}
+except OSError:
+    pass
 
 _sessao = requests.Session()
 _sessao.headers.update({"User-Agent": UA})

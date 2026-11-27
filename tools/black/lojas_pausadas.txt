@@ -1,49 +1,37 @@
 # Lojas que bloquearam o robô depois do erro de 20/11/2026 (um domínio por linha).
 # Nenhum robô visita estas lojas, em servidor nenhum, até a loja liberar ou mandar o feed
 # (docs/black/PEDIDO_LIBERACAO_LOJAS.md). Loja que liberar: apague a linha dela.
+# 27/11/2026: saíram da lista as lojas que o robô da Oracle voltou a ler direto (já liberaram).
 brinkashop.commercesuite.com.br
 loja-ludocafe.lojaintegrada.com.br
 loja.adoletajogos.com.br
-loja.frodosbg.com.br
 loja.gamehives.com.br
 loja.joyjoycafe.com.br
 ludostation.com.br
 vempramesajogos.commercesuite.com.br
-www.alquimistasdosjogos.com.br
-www.animusludere.com.br
 www.boardgamebarato.com.br
 www.boargames.com.br
 www.borbagames.com.br
 www.borderjogos.com.br
 www.brinkz.com.br
-www.cangaiajogos.com.br
 www.dalaran.com.br
 www.elfosecia.com.br
-www.espacoarcs.com.br
 www.expressoboardgames.com.br
 www.facilshopping.com.br
 www.happynerd.com.br
 www.immerstore.com.br
 www.javalijogos.com.br
 www.jogasampa.com.br
-www.leaolivros.com.br
 www.livtoys.com.br
 www.lojameeplebrjogos.com.br
 www.masmorra.com.br
-www.mecadosjogos.com.br
 www.mosaicoloja.com.br
 www.mundogalapagos.com.br
-www.omniverse.com.br
 www.pandaboardgames.com.br
-www.placegames.com.br
-www.playeasy.com.br
 www.pousocultural.com.br
 www.reunionjogos.com.br
 www.shopdg.com.br
 www.spaceboardgames.com.br
-www.tabulerio.com.br
-www.tabuloja.com
-www.tavernareal.com
 www.tiogera.com.br
 www.tocadotabuleiro.com
 www.tschuss.com.br

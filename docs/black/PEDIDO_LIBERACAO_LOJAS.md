@@ -32,6 +32,10 @@ Elite Boardgamers
 
 ## Lojas que bloquearam (estado de 23/11/2026)
 
+Atualização de 27/11/2026: Alquimistas dos Jogos, Place Games, Omniverse, TabuLoja, TabuleRIO, Taverna Real, PlayEasy,
+Animus Ludere, Leão Livros, Cangaia Jogos, Meca dos Jogos, Espaço ARCS e Frodos BG já liberaram (o robô voltou a ler a
+página delas). A lista que vale é tools/black/lojas_pausadas.txt, que se atualiza sozinha.
+
 Masmorra, Alquimistas dos Jogos, Meeple BR, Galápagos (mundogalapagos), Dalaran, Taverna Real, Tschüss, Omniverse,
 PlayEasy, Place Games, TabuleRIO, TabuLoja, Toca do Tabuleiro, Animus Ludere, Leão Livros, Cangaia Jogos, Meca dos
 Jogos, Espaço ARCS, Frodos BG, Panda Board Games, Space Board Games, Expresso Board Games, Happy Nerd, Elfos & Cia,
