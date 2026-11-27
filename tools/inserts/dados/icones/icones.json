@@ -8,5 +8,18 @@
    116,
    111
   ]
+ },
+ "eventos": {
+  "foto": "eventos.png",
+  "recorte": [
+   0,
+   0,
+   400,
+   400
+  ],
+  "opcoes": {
+   "claro": false,
+   "raio_util": 0.72
+  }
  }
 }
