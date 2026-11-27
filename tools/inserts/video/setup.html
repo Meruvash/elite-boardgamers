@@ -1,0 +1,81 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#20242b;overflow:hidden;font-family:DejaVu Sans,Arial,sans-serif}
+#leg{position:absolute;left:36px;top:28px;color:#fff;text-shadow:0 2px 6px #000}
+#tit{font-size:30px;font-weight:700}#sub{font-size:22px;margin-top:6px;color:#ffd27a;min-height:28px}
+#pe{position:absolute;right:30px;bottom:22px;color:#9aa3ad;font-size:15px}
+</style></head><body><div id="leg"><div id="tit"></div><div id="sub"></div></div>
+<div id="pe">Robinson Crusoe — setup a partir do insert</div>
+<script type="module">
+import * as THREE from './three.js';
+const W=1280,H=720;
+const ren=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});ren.setSize(W,H);ren.setPixelRatio(1);
+ren.shadowMap.enabled=false;document.body.appendChild(ren.domElement);
+const sc=new THREE.Scene();sc.background=new THREE.Color('#20242b');
+const cam=new THREE.PerspectiveCamera(32,W/H,10,12000);cam.up.set(0,0,1);
+sc.add(new THREE.HemisphereLight(0xffffff,0x40434a,1.1));
+const dl=new THREE.DirectionalLight(0xffffff,1.4);dl.position.set(-300,-500,900);sc.add(dl);
+const dl2=new THREE.DirectionalLight(0xffffff,0.5);dl2.position.set(600,300,400);sc.add(dl2);
+const dados=await (await fetch('cena.json')).json();const SET=await (await fetch('setup.json')).json();const [CXo,CYo]=SET.caixa;
+const [BX,BY,BZ]=dados.caixa, OFF=(BX-dados.ocup)/2;
+// mesa e caixa
+const mesa=new THREE.Mesh(new THREE.PlaneGeometry(9000,8000),new THREE.MeshLambertMaterial({color:'#5a3f2c'}));mesa.position.set(0,150,-3.5);sc.add(mesa);
+const papel=new THREE.MeshLambertMaterial({color:'#e9e4d8'});const papel2=new THREE.MeshLambertMaterial({color:'#cfc6b2',transparent:true,opacity:0.35});
+const T=2.5;
+function caixa(x,y,z,w,d,h,mat){const m=new THREE.Mesh(new THREE.BoxGeometry(w,d,h),mat);m.position.set(CXo+x+w/2,CYo+y+d/2,z+h/2);sc.add(m);return m;}
+caixa(-OFF-T,-OFF-T,-T,BX+2*T,BY+2*T,T,papel);
+caixa(-OFF-T,-OFF-T,0,T,BY+2*T,BZ,papel);caixa(BX-OFF,-OFF-T,0,T,BY+2*T,BZ,papel);
+caixa(-OFF,BY-OFF,0,BX,T,BZ,papel);caixa(-OFF,-OFF-T,0,BX,T,BZ,papel2); // parede da frente translúcida
+// objetos
+const grupos=[];const mapa={};
+for(const o of dados.objs){
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(o.v,3));g.setIndex(o.f);g.computeVertexNormals();
+  const mat=new THREE.MeshLambertMaterial({color:o.cor,transparent:false,opacity:1});
+  const m=new THREE.Mesh(g,mat);m.position.set(CXo,CYo,0);sc.add(m);
+  const base=o.nome.split(':')[0].replace(/-tampa$/,'');
+  if(!(base in mapa)){mapa[base]={base,meshes:[],rotulo:o.rotulo,passo:o.passo};grupos.push(mapa[base]);}
+  mapa[base].meshes.push(m);if(o.rotulo&&!mapa[base].rotulo)mapa[base].rotulo=o.rotulo;
+}
+// tabuleiro que desdobra
+const cv=document.createElement('canvas');cv.width=720;cv.height=520;const cx2=cv.getContext('2d');
+cx2.fillStyle='#d8c58e';cx2.fillRect(0,0,720,520);cx2.strokeStyle='#8c6a3c';cx2.lineWidth=6;cx2.strokeRect(10,10,700,500);
+cx2.fillStyle='#9fbf7a';cx2.beginPath();cx2.ellipse(250,280,170,150,0.3,0,7);cx2.fill();
+cx2.fillStyle='#6b4a2a';cx2.font='bold 44px DejaVu Sans';cx2.fillText('TABULEIRO',430,90);
+for(let i=0;i<5;i++){cx2.strokeRect(440+i*52,140,44,60);} for(let i=0;i<3;i++){cx2.strokeRect(440+i*80,300,64,90);}
+const tex=new THREE.CanvasTexture(cv);
+const tab=new THREE.Mesh(new THREE.BoxGeometry(1,1,1),[0,0,0,0,0,0].map((_,i)=>new THREE.MeshLambertMaterial(i==4?{map:tex}:{color:'#b59a62'})));sc.add(tab);
+const ordem=grupos.slice().reverse().filter(g=>g.base!=='bandeja-vulcao'&&g.base!=='TABULEIRO');
+for(const g of grupos){ if(g.base==='TABULEIRO') g.meshes.forEach(m=>m.visible=false); }
+const N=ordem.length, T0=2.5, TB=2.6, DT=0.42, DUR=1.1;
+const tFimMov=T0+TB+N*DT+DUR; const tFim=tFimMov+4.0; window.DURACAO=tFim;
+const ease=x=>x<0?0:x>1?1:(x<0.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2);
+const ZONA=b=>b.startsWith('cartas-eventos')||b.startsWith('cartas-misterio')||b.startsWith('descarte-eventos')||b.startsWith('descarte-misterio')?'atrás do tabuleiro':
+ b.startsWith('cartas-aventura')||b.startsWith('cartas-expansoes')||b.startsWith('descarte-')?'à direita do tabuleiro':
+ b.includes('obj_11')||b.includes('obj_12')||['FICHAS DE CENÁRIO','MANUAL','GUIAS'].includes(b)?'à esquerda (preparação)':'na frente, ao alcance de todos';
+window.renderFrame=function(t){
+  let tit='Abrindo a caixa',sub='';
+  // tabuleiro: sai da caixa e desdobra
+  const ta=ease((t-T0)/TB);
+  const w=277+(720-277)*ta, d=239+(520-239)*ta, h=16+(3-16)*ta;
+  const x0=CXo+156.25, y0=CYo+156.25, x1=360, y1=260;
+  tab.scale.set(w,d,h);tab.position.set(x0+(x1-x0)*ta, y0+(y1-y0)*ta, (1-ta)*(100+8)+h/2+Math.sin(Math.PI*ta)*260);
+  tab.visible=t>=0.0;
+  if(t>=T0&&t<T0+TB){tit='Tabuleiro';sub='sai por cima e é aberto no centro da mesa';}
+  ordem.forEach((g,i)=>{
+    const a=ease((t-(T0+TB+i*DT))/DUR); const al=SET.alvo[g.base];
+    for(const m of g.meshes){ if(g.base==='TABULEIRO') continue;
+      const sx=CXo, sy=CYo; const ex=al?al[0]:sx, ey=al?al[1]:sy, ez=al?al[2]:0;
+      m.position.set(sx+(ex-sx)*a, sy+(ey-sy)*a, ez*a + Math.sin(Math.PI*a)*(220+i*2)); }
+    if(t>=T0+TB+i*DT&&t<T0+TB+(i+1)*DT){tit=g.rotulo||'';sub=ZONA(g.base);}
+  });
+  for(const g of grupos) if(g.base==='bandeja-vulcao') g.meshes.forEach(m=>m.position.set(CXo,CYo,0));
+  if(t>=tFimMov){tit='Mesa pronta para jogar';sub='a bandeja do vulcão fica na caixa';}
+  // câmera: começa na caixa e abre para a mesa toda
+  const k=ease(Math.min(1,t/(T0+TB+2)));
+  const alvoX=CXo+156+(-60-(CXo+156))*k, alvoY=CYo+156+(40-(CYo+156))*k;
+  const R=700+1350*k, ang=-1.35+0.1*Math.sin(t*0.25);
+  cam.position.set(alvoX+R*Math.cos(ang)*0.4, alvoY+R*Math.sin(ang), 560+1600*k);cam.lookAt(alvoX,alvoY,0);
+  document.getElementById('tit').textContent=tit;document.getElementById('sub').textContent=sub;
+  ren.render(sc,cam);
+};
+window.pronto=true;
+</script></body></html>
