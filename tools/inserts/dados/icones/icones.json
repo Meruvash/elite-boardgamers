@@ -7,7 +7,8 @@
    0,
    116,
    111
-  ]
+  ],
+  "fonte": "Foto do usuário (carta Ferimento Desagradável)"
  },
  "eventos": {
   "foto": "eventos.png",
@@ -20,6 +21,50 @@
   "opcoes": {
    "claro": false,
    "raio_util": 0.72
-  }
+  },
+  "fonte": "Foto do usuário (trilha de fases do tabuleiro)"
+ },
+ "coletar": {
+  "foto": "coletar.png",
+  "recorte": [
+   0,
+   0,
+   144,
+   170
+  ],
+  "opcoes": {
+   "claro": true,
+   "raio_util": 0.95,
+   "engrossar": 0.3
+  },
+  "fonte": "Manual oficial da Edição de Colecionador, p. 40 (Icons & Symbols): ação Gather"
+ },
+ "explorar": {
+  "foto": "explorar.png",
+  "recorte": [
+   0,
+   0,
+   143,
+   190
+  ],
+  "opcoes": {
+   "claro": true,
+   "raio_util": 0.95
+  },
+  "fonte": "Manual oficial, p. 40: ação Explore"
+ },
+ "misterio": {
+  "foto": "misterio.png",
+  "recorte": [
+   0,
+   0,
+   250,
+   180
+  ],
+  "opcoes": {
+   "claro": false,
+   "raio_util": 0.95
+  },
+  "fonte": "Manual oficial, p. 40: Mystery cards / Creature card"
  }
 }

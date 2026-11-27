@@ -8,7 +8,8 @@ import numpy as np
 import manifold3d as m3
 
 
-def icone_de_foto(caminho, recorte, tamanho=12.0, limiar=None, claro=True, raio_util=0.62, simplificar=0.15):
+def icone_de_foto(caminho, recorte, tamanho=12.0, limiar=None, claro=True, raio_util=0.62, simplificar=0.15,
+                  engrossar=0.0):
     from PIL import Image, ImageOps, ImageFilter
     from scipy import ndimage
     import matplotlib
@@ -45,6 +46,8 @@ def icone_de_foto(caminho, recorte, tamanho=12.0, limiar=None, claro=True, raio_
     b = sec.bounds()
     k = tamanho / max(b[2] - b[0], b[3] - b[1])
     sec = sec.translate((-(b[0] + b[2]) / 2, -(b[1] + b[3]) / 2)).scale((k, k))
+    if engrossar:
+        sec = sec.offset(engrossar, m3.JoinType.Round, circular_segments=16)
     sec = sec.simplify(simplificar)
     # garante traço mínimo imprimível (0,8 mm): abre e fecha
     return sec
